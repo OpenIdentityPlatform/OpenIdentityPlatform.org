@@ -1,5 +1,5 @@
 ## Welcome to Open Identity Platform Community
-Open Identity Platform Community is open-source community organization, based in GitHub: https://github.com/OpenIdentityPlatform
+Open Identity Platform Community is open-source community organization, based in GitHub: [https://github.com/OpenIdentityPlatform](https://github.com/OpenIdentityPlatform)
 
 ### Products
 Access management, identity management, user-managed access, directory services, and an identity gateway, designed and built as a single, unified platform:
