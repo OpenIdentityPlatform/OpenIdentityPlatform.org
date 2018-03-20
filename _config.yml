@@ -1,7 +1,7 @@
-theme: jekyll-theme-slate
 name: Open Identity Platform Community
 description: Access management, identity management, user-managed access, directory services, and an identity gateway, designed and built as a single, unified platform.
 avatar: https://avatars3.githubusercontent.com/u/30845478?s=200&v=4
+theme: jekyll-theme-slate
 
 footer-links:
   dribbble:
