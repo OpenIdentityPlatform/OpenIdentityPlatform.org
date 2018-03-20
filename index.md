@@ -12,7 +12,7 @@ Product | Description
 
 Source code and binary distribution are available under the Common Development and Distribution License (CDDL).
 
-### Contact
+### Contacts
 Join us:
 * OpenAM Community Mailing List: [open-identity-platform@googlegroups.com](mailto://open-identity-platform@googlegroups.com)
 * OpenAM Community Archive: [https://groups.google.com/d/forum/open-identity-platform](https://groups.google.com/d/forum/open-identity-platform)
