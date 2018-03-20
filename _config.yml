@@ -4,9 +4,7 @@ avatar: https://avatars3.githubusercontent.com/u/30845478?s=200&v=4
 theme: jekyll-theme-slate
 repo_url: https://github.com/OpenIdentityPlatform
 image: https://avatars3.githubusercontent.com/u/30845478?s=200&v=4
-
-footer-links:
-  github: OpenIdentityPlatform
+github: OpenIdentityPlatform
 
 exclude:
   - Gemfile
