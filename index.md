@@ -1,37 +1,22 @@
-## Welcome to GitHub Pages
+## Welcome to Open Identity Platform Community
+Open Identity Platform Community is open-source community organization, based in GitHub: https://github.com/OpenIdentityPlatform
 
-You can use the [editor on GitHub](https://github.com/OpenIdentityPlatform/OpenIdentityPlatform.org/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+### Products
+Access management, identity management, user-managed access, directory services, and an identity gateway, designed and built as a single, unified platform:
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Product | Description 
+--------|-------------
+[OpenDJ](https://github.com/OpenIdentityPlatform/OpenDJ/blob/master/README.md) | OpenDJ is an LDAPv3 compliant directory service, which has been developed for the Java platform, providing a high performance, highly available, and secure store for the identities managed by your organization. Its easy installation process, combined with the power of the Java platform makes OpenDJ the simplest, fastest directory to deploy and manage.
+[OpenAM](https://github.com/OpenIdentityPlatform/OpenAM/blob/master/README.md) | Open Access Management (OpenAM) is an access management solution that includes Authentication, SSO, Authorization, Federation, Entitlements and Web Services Security.
+[OpenIG](https://github.com/OpenIdentityPlatform/OpenIG/blob/master/README.md) | Open Identity Gateway (OpenIG) is a high-performance reverse proxy server with specialized session management and credential replay functionality.
 
-### Markdown
+Source code and binary distribution are available under the Common Development and Distribution License (CDDL).
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### Contact
+Join us:
+* OpenAM Community Mailing List: open-identity-platform@googlegroups.com
+* OpenAM Community Archive: https://groups.google.com/d/forum/open-identity-platform
+* OpenAM Community on Gitter: https://gitter.im/OpenIdentityPlatform/Lobby
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/OpenIdentityPlatform/OpenIdentityPlatform.org/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Sponsors
+* 3A Systems, LLC support@openam.org.ru 
