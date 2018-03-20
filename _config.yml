@@ -5,7 +5,9 @@ theme: jekyll-theme-slate
 repo_url: https://github.com/OpenIdentityPlatform
 image: https://avatars3.githubusercontent.com/u/30845478?s=200&v=4
 
-# Exclude these files from your production _site
+footer-links:
+  github: OpenIdentityPlatform
+
 exclude:
   - Gemfile
   - Gemfile.lock
