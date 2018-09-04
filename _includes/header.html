@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="description" content="{{ page.description | default: site.description | smartify }}">
+<meta name="author" content="{{ site.authors }}">
+<meta name="generator" content="Jekyll v{{ jekyll.version }}">
+
+<title>
+  {%- if page.title -%}
+    {{ page.title | smartify }} · {{ site.title | smartify }}
+  {%- else -%}
+    {{ site.title | smartify }} · {{ site.description | smartify }}
+  {%- endif -%}
+</title>
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link rel="stylesheet" href="{{'./assets/css/main.css'}}" >
