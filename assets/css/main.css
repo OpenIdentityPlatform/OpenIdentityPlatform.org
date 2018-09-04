@@ -1,0 +1,24 @@
+#main {
+  padding-top: 5rem;
+}
+
+.banner {
+  background-image: url('../img/landing-bg.jpg');
+  background-size: cover;
+  min-height: 500px;
+}
+
+.banner-mask {
+  background-color: #0d4a5499;
+}
+
+.footer {
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  line-height: 60px; /* Vertically center the text there */
+}
+
+.text-white a {
+  color: white;
+}
