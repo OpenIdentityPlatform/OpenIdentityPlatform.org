@@ -1,0 +1,18 @@
+---
+layout: home
+---
+
+<h2>Recent articles:</h2>
+{% for post in site.data.blogposts %}
+
+<a target="_blank" href="{{post.link}}">
+<div class="card mb-3">
+  <div class="card-body">
+    <h4>
+      {{post.title}}
+    </h4>
+    <p>{{post.description}}</p>
+  </div>
+</div>
+</a>
+{% endfor %}

@@ -1,5 +1,6 @@
 #main {
   padding-top: 5rem;
+  padding-bottom: 1rem;
 }
 
 .banner {
@@ -14,11 +15,25 @@
 
 .footer {
   width: 100%;
-  /* Set the fixed height of the footer here */
   height: 60px;
-  line-height: 60px; /* Vertically center the text there */
+  line-height: 60px;
 }
 
 .text-white a {
   color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th {
+  text-align: left;
+  padding: 5px;
+  background-color: #f6f8fa;
+  border: 1px solid black;
+}
+td {
+  padding: 5px;
+  border: 1px solid black;
 }
