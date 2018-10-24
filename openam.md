@@ -22,8 +22,7 @@ So, OpenAM can help you to solve all this issues. Key features of OpenAM are:
 * **Developer SDK** - OpenAM ships with Java SDK, which allows to interact with authorization API, authentication API, manage accounts and so on...
 
 
-* **Security** - As OpenAM is open source, it allows
-открытый код OpenAM позволяет сообществу и клиентам проверять его на наличие возможных уязвимостей, кроме этого PIN-тесты проводимые клиентами, которые используют OpenAM доказали его безопасность.
+* **Security** - As OpenAM is open source, it allows community and clients test it for possible vulnerabilities, and do PIN tests.
 
 
 Useful links:
