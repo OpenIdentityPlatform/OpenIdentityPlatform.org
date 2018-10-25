@@ -2,7 +2,7 @@
   name: 'OpenAM'
   link: 'https://github.com/OpenIdentityPlatform/OpenAM/blob/master/README.md'
   description: 'Open Access Management (OpenAM) is an access management solution that includes Authentication, SSO, Authorization, Federation, Entitlements and Web Services Security.'
-  details_link: '/openam/'
+  details_link: '/openam'
 -
   name: 'OpenDJ'
   link: 'https://github.com/OpenIdentityPlatform/OpenDJ/blob/master/README.md'
