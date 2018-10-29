@@ -7,6 +7,7 @@
   name: 'OpenDJ'
   link: 'https://github.com/OpenIdentityPlatform/OpenDJ/blob/master/README.md'
   description: 'OpenDJ is an LDAPv3 compliant directory service, which has been developed for the Java platform, provides a high performance, highly available, and secure store for identities, that managed by your organization. Its easy installation process, combined with the power of the Java platform makes OpenDJ the simplest, fastest directory to deploy and manage.'
+  details_link: '/opendj'
 -
   name: 'OpenIG'
   link: 'https://github.com/OpenIdentityPlatform/OpenIG/blob/master/README.md'
