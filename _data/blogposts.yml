@@ -4,7 +4,7 @@
 #  description: 'В данной статье описывается пример реализации аутентификации через ЕСИА'
 -
   title: 'OpenDJ 4.2.5 Released'
-  link: '/blog/opendj-4-2-5-released/'
+  link: '/blog/opendj-4-2-5-released'
   description: ''
 -
   title: 'OpenAM Quick Start with Docker'
