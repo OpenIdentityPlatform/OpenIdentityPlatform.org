@@ -3,6 +3,10 @@
 #  link: 'how-to-auth-via-esia/'
 #  description: 'В данной статье описывается пример реализации аутентификации через ЕСИА'
 -
+  title: 'OpenAM: How to write custom authentication module'
+  link: https://github.com/OpenIdentityPlatform/OpenAM/wiki/Write-a-custom-authentication-module
+  description: 'Following artice describes how to write a custom authentication module and implement it on OpenAM'
+-
   title: 'OpenDJ 4.2.5 Released'
   link: '/blog/opendj-4-2-5-released'
   description: ''
