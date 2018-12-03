@@ -2,6 +2,15 @@
 #  title: 'Аутентификация через ЕСИА'
 #  link: 'how-to-auth-via-esia/'
 #  description: 'В данной статье описывается пример реализации аутентификации через ЕСИА'
+
+-
+  title: 'OpenDJ Administration Guide'
+  link: https://github.com/OpenIdentityPlatform/OpenDJ/wiki/Administration-Guide
+  description: 'We added OpenDJ Administration Guide to our wiki'
+-
+  title: 'OpenDJ vs OpenLDAP'
+  link: https://github.com/OpenIdentityPlatform/OpenDJ/wiki/OpenDJ-vs-OpenLDAP
+  description: 'OpenDJ vs OpenLDAP comparsion'
 -
   title: 'OpenAM: How to write custom authentication module'
   link: https://github.com/OpenIdentityPlatform/OpenAM/wiki/Write-a-custom-authentication-module

@@ -7,8 +7,16 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
 
         <ul class="navbar-nav ml-auto">
+          <li class="nav-item active dropdown">
+            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="sr-only">(current)</span></a>
+            <div class="dropdown-menu">
+              {% for product in site.data.products %}
+                <a class="dropdown-item" href="{{product.details_link}}">{{product.short_descritopn}}</a>
+              {% endfor %}
+            </div>
+          </li>
           <li class="nav-item active">
-            <a class="nav-link" href="/blog/">Our Blog <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/blog/">Blog <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item active">
             <a target="_blank" class="nav-link" href="{{site.repo_url}}"><i class="fa fa-github-alt"></i> Fork us<span class="sr-only">(current)</span></a>
