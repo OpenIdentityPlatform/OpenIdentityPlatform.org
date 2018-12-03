@@ -12,7 +12,7 @@
   name: 'OpenIG'
   link: 'https://github.com/OpenIdentityPlatform/OpenIG/'
   description: 'Open Identity Gateway (OpenIG) is a high-performance reverse proxy server with specialized session management and credential replay functionality.'
-  details_link: 'https://github.com/OpenIdentityPlatform/OpenIG/blob/master/README.md'
+  details_link: '/openig'
 -
   name: 'OpenICF'
   link: 'https://github.com/OpenIdentityPlatform/OpenICF/'
