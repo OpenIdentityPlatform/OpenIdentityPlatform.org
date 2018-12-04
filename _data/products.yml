@@ -26,5 +26,5 @@
   name: 'OpenIDM'
   link: 'https://github.com/OpenIdentityPlatform/OpenIDM/'
   short_descritopn: 'Open Identity Management'
-  description: 'Open Identity Management (OpenIDM) is an open standards based Identity Management, Provisioning and Compliance solution. Provisioning users, devices, and things is a repetitive and potentially time-consuming task that has a significant impact on security and user access. Ensuring the right access to the right service (or user, or device) is the essential step in Identity Management. It’s critical for you to correctly manage roles and entitlements assigned to users, devices, or things, based on your organizational need and structure (such as job function, title, and geography) and assign and remove entitlements and resources consistently and rapidly. provided.'
+  description: 'Open Identity Management (OpenIDM) is an open standards based Identity Management, Provisioning and Compliance solution. Provisioning users, devices, and things is a repetitive and potentially time-consuming task that has a significant impact on security and user access. '
   details_link: 'https://github.com/OpenIdentityPlatform/OpenIDM/blob/master/README.md'

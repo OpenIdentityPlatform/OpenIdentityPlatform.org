@@ -1,0 +1,91 @@
+---
+---
+@import 'colors.scss';
+
+#main {
+  padding-top: 5rem;
+  padding-bottom: 1rem;
+}
+
+.text-white a {
+  color: white;
+}
+
+a {
+  color: $color4;
+}
+
+.banner {
+  background-image: url('../img/landing-bg.jpg');
+  background-size: cover;
+  min-height: 500px;
+  .banner-mask {
+    background-color: $banner-mask-color;
+  }
+
+  .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    color: $color5;
+  }
+}
+
+.product {
+  a {
+    color: $color3;
+  }
+
+  a:hover {
+    text-decoration: none;
+  }
+  .github-link {
+    fill: $color5;
+    color:#fff;
+    position: absolute;
+    top: 0;
+    border: 0;
+    right: 0;
+  }
+}
+
+
+.footer {
+  width: 100%;
+  height: 60px;
+  line-height: 60px;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th {
+  text-align: left;
+  padding: 5px;
+  background-color: #f6f8fa;
+  border: 1px solid black;
+}
+td {
+  padding: 5px;
+  border: 1px solid black;
+}
+
+a.blogpost  {
+  color: inherit;
+}
+
+.bg-primary {
+  background-color: $primary-color !important;
+}
+
+.bg-secodary {
+  background-color: $secondary-color !important;
+}
+
+.card-header {
+
+}

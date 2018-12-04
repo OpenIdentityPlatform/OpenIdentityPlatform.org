@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-info">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
   <div class="container">
       <a class="navbar-brand" href="/">{{site.title}}</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -7,7 +7,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
 
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active dropdown">
+          <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="sr-only">(current)</span></a>
             <div class="dropdown-menu">
               {% for product in site.data.products %}
@@ -15,11 +15,11 @@
               {% endfor %}
             </div>
           </li>
-          <li class="nav-item active">
+          <li class="nav-item {{page.navbar.blog_active}}">
             <a class="nav-link" href="/blog/">Blog <span class="sr-only">(current)</span></a>
           </li>
-          <li class="nav-item active">
-            <a target="_blank" class="nav-link" href="{{site.repo_url}}"><i class="fa fa-github-alt"></i> Fork us<span class="sr-only">(current)</span></a>
+          <li class="nav-item">
+            <a target="_blank" class="nav-link" href="{{site.repo_url}}"><i class="fa fa-github"></i> Fork us<span class="sr-only">(current)</span></a>
           </li>
         </ul>
       </div>
