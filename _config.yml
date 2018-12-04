@@ -3,6 +3,8 @@ description: Access management, identity management, user-managed access, direct
 avatar: https://avatars3.githubusercontent.com/u/30845478?s=200&v=4
 repo_url: https://github.com/OpenIdentityPlatform
 image: https://avatars3.githubusercontent.com/u/30845478?s=200&v=4
+keywords: Access Management, Identity Management, Directory Services, LDAP, Identity Gateway, SSO, IDM, OpenAM, OpenDJ, OpenIG, OpenICF, OpenIDM, Open Identity Platform
+site_name: Open Identity Platform - Open Source Solutions for Access Management, Identity Management, Directory Services
 
 exclude:
   - Gemfile

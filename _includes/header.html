@@ -1,18 +1,24 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="{%- if page.title -%} {{ page.title | smartify }} · {{ site.title | smartify }}{%- else -%}{{ site.title | smartify }} · {{ site.description | smartify }}{%- endif -%}" />
+<meta property="og:description" content="{{ page.description | default: site.description | smartify }}" />
+<meta property="og:url" content="http://www.openidentityplatform.org/" />
+<meta property="og:site_name" content="{{site.site_name}} " />
+
 <meta name="description" content="{{ page.description | default: site.description | smartify }}">
+<meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
 <meta name="author" content="{{ site.authors }}">
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-<title>
-  {%- if page.title -%}
-    {{ page.title | smartify }} · {{ site.title | smartify }}
-  {%- else -%}
-    {{ site.title | smartify }} · {{ site.description | smartify }}
-  {%- endif -%}
-</title>
+<link rel='dns-prefetch' href='https://stackpath.bootstrapcdn.com' />
+<link rel='dns-prefetch' href='https://www.googletagmanager.com' />
+
+<title>{%- if page.title -%} {{ page.title | smartify }} · {{ site.title | smartify }}{%- else -%}{{ site.title | smartify }} · {{ site.description | smartify }}{%- endif -%}</title>
 <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
