@@ -11,9 +11,11 @@
      {% if page.landing == true %}
       {% include banner.html %}
      {% endif %}
-    <div id="main" class="container">
-      {{content}}
-    </div>
+     <section id="main-section">
+      <div id="main" class="container">
+        {{content}}
+      </div>
+    </section>
     {% include footer.html %}
     {% include scripts.html %}
   </body>
