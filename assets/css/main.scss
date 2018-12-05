@@ -31,6 +31,10 @@ a {
   a {
     color: $color5;
   }
+  a.btn, button.btn {
+    background-color: $color5;
+    color: white;
+  }
 }
 
 #star-scheme {
@@ -59,6 +63,16 @@ a {
     top: 0;
     border: 0;
     right: 0;
+  }
+
+  a.btn, button.btn {
+    background-color: $color5;
+    border-color: $color5;
+    color: white;
+  }
+  .card-footer {
+    background-color: unset;
+    border-top: none;
   }
 }
 
