@@ -1,8 +1,11 @@
-#-
-#  title: 'Аутентификация через ЕСИА'
-#  link: 'how-to-auth-via-esia/'
-#  description: 'В данной статье описывается пример реализации аутентификации через ЕСИА'
-
+-
+  title: 'OpenAM Persistent Cookie Authentication Module'
+  link: https://github.com/OpenIdentityPlatform/OpenAM/wiki/reCaptcha-module
+  description: 'How to configure Google reCaptcha Authentication Module for OpenAM'
+-
+  title: 'OpenAM Persistent Cookie Authentication Module'
+  link: https://github.com/OpenIdentityPlatform/OpenAM/wiki/Persistent-Cookie-module
+  description: 'How to configure Authentication Persistent Cookie Authentication Module for OpenAM'
 -
   title: 'OpenDJ Administration Guide'
   link: https://github.com/OpenIdentityPlatform/OpenDJ/wiki/Administration-Guide
@@ -23,7 +26,6 @@
   title: 'OpenAM Quick Start with Docker'
   link: 'https://github.com/OpenIdentityPlatform/OpenAM/wiki/Quick-Start-Guide'
   description: 'Following article describes how to install OpenAM with Docker and protect simple site'
-
 -
   title: 'How to Login via Facebook OAuth2 Identity Provider'
   link: 'https://github.com/OpenIdentityPlatform/OpenAM/wiki/Login-via-Facebook-OAuth2-Identity-Provider'
