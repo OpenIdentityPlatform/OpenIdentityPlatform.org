@@ -2,6 +2,7 @@
 layout: home
 title: OpenIG - Open Indentity Gateway
 description: OpenIG - Open Source reserve proxy server with
+keywords: OpenIG, Indentity Gateway, reverse proxy, session management, credential replay, Open Identity Platform
 ---
 ## OpenIG
 The Open Identity Gateway (OpenIG) is a high-performance reverse proxy server with specialized session management and credential replay functionality.

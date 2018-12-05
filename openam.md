@@ -2,6 +2,7 @@
 layout: home
 title: OpenAM - Open Access Manager
 description: OpenAM - Access Management, Identity Management, Single Sign On and Identity Provider Solution to protect your sites.
+keywords: OpenAM, Access Management, Authentication, Authorization, SSO, Single Sign On, Identity Provider, Open Identity Platform
 ---
 ## OpenAM
 If you have multiple sites and applications in your company, probably you need to provide seamless authentication to all of them. So when user logged in at one of your sites once, he does not need to enter his credentials on other sites.
