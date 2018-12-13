@@ -1,4 +1,8 @@
 -
+  title: 'OpenDJ 4.3.1 Released'
+  link: '/blog/opendj-4-3-1-released'
+  description: ''
+-
   title: 'OpenAM Persistent Cookie Authentication Module'
   link: https://github.com/OpenIdentityPlatform/OpenAM/wiki/reCaptcha-module
   description: 'How to configure Google reCaptcha Authentication Module for OpenAM'
