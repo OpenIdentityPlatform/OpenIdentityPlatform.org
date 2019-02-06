@@ -7,7 +7,7 @@
   link: '/blog/opendj-4-3-1-released'
   description: ''
 -
-  title: 'OpenAM Persistent Cookie Authentication Module'
+  title: 'OpenAM Google reCaptcha Authentication Module'
   link: https://github.com/OpenIdentityPlatform/OpenAM/wiki/reCaptcha-module
   description: 'How to configure Google reCaptcha Authentication Module for OpenAM'
 -
@@ -50,6 +50,6 @@
   description: 'Following article describes how login to OpenAM via Odnoklassniki OAuth2 IDP'
 
 -
-  title: 'How to Login via "Госуслуги РФ" OAuth2 Identity Provider'
+  title: 'How to Login via "Gosuslugi RF" OAuth2 Identity Provider'
   link: 'https://github.com/OpenIdentityPlatform/OpenAM/wiki/Login-via-%22%D0%93%D0%BE%D1%81%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8-%D0%A0%D0%A4%22-OAuth2-Identity-Provider'
   description: 'Following article describes how login to OpenAM via "Госуслуги РФ" OAuth2 IDP'
