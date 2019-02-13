@@ -11,4 +11,4 @@ keywords: 'OpenDJ, Directory Service, Directory Services, LDAP, Open Identity Pl
 * Docker image is unpriveleged for OpenShift
 * Added template for OpenShift deployment
 
-* Fixed other issues ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/fb933c66527ddaafc0e78da9d454228af7b1d4dd...81d03a4f69ddefa02d2fe9a87565b1d127753c14)
+* Fixed other issues ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/fb933c66527ddaafc0e78da9d454228af7b1d4dd...81d03a4f69ddefa02d2fe9a87565b1d127753c14))
