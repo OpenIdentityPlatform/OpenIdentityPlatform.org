@@ -10,7 +10,7 @@ keywords: 'OpenAM, Access Management, Authentication, Authorization, SSO, Single
 ## What's new
 * Updated embedded OpenDJ version
 * Added NameValueOutputCallback
-* Docker image is unpriveleged for use in OpenShift
+* Docker image is unpriveleged for OpenShift
 * Upgrade Docker image to Tomcat 8.5
 * Added Invalid Attempts Data user attribute to admin console
 * Force remove leading dot from cookie domain to avoid Tomcat 8.5 cookie issue
