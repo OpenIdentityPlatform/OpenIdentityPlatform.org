@@ -1,0 +1,22 @@
+.need-support {
+  position: fixed;
+  z-index: 100;
+  right: 30px;
+  bottom: 30px;
+
+  a.btn.btn-primary, button.btn.btn-primary {
+    background-color: $color5;
+    border-color: $color5;
+    color: white;
+  }
+
+  a.btn.btn-primary:active, button.btn.btn-primary:active, a.active, button.btn.btn-primary.active {
+    background-color: $color5;
+    border-color: $color5;
+    color: white;
+  }
+}
+
+.popover {
+  max-width: 500px
+}
