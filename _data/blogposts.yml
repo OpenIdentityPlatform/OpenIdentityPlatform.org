@@ -1,5 +1,9 @@
 -
-  title: 'Convert OpenAM token to OpenID Connect (JWT) '
+  title: 'OpenAM-JEE-Agents 4.1.2 Released'
+  link: '/blog/openam-jee-agents-14-2-1-released'
+  description: ''
+-
+  title: 'Convert OpenAM Token to OpenID Connect (JWT)'
   link: 'https://github.com/OpenIdentityPlatform/OpenIG/wiki/Convert-OpenAM-token-to-OpenID-Connect-%28JWT%29'
   description: 'Sample configuration shows, how to convert OpenAM token to OpenID Connect (JWT) with OpenIG'
 -
