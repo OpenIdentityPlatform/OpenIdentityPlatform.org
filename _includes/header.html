@@ -14,10 +14,11 @@
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
 <link rel='dns-prefetch' href='https://stackpath.bootstrapcdn.com' />
 <link rel='dns-prefetch' href='https://www.googletagmanager.com' />
-
+{%- if page.canonical -%}
+<link rel="canonical" href="{{page.canonical}}" />
+{%- endif -%}
 <title>{%- if page.title -%} {{ page.title | smartify }} · {{ site.title | smartify }}{%- else -%}{{ site.title | smartify }} · {{ site.description | smartify }}{%- endif -%}</title>
 <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
