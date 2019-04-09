@@ -1,4 +1,8 @@
 -
+  title: 'How to Use Apache Cassandra as User DataStore'
+  link: '/blog/How-to-Use-Apache-Cassandra-as-User-DataStore-in-OpenAM'
+  description: 'How to Use High Perfomant and Availability DataStore Apache Cassandra as User DataStore in OpenAM'
+-
   title: 'OpenAM-JEE-Agents 4.1.2 Released'
   link: '/blog/openam-jee-agents-14-2-1-released'
   description: ''
