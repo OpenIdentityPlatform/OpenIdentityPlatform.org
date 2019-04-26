@@ -1,4 +1,8 @@
 -
+  title: 'How To Protect Web Services with OpenIG'
+  link: '/blog/How-To-Protect-Web-Services-with-OpenIG.md'
+  description: 'How to protect web services with OpenIG with examples and source code'
+-
   title: 'How to Use Apache Cassandra as User DataStore'
   link: '/blog/How-to-Use-Apache-Cassandra-as-User-DataStore-in-OpenAM'
   description: 'How to Use High Perfomant and Availability DataStore Apache Cassandra as User DataStore in OpenAM'
