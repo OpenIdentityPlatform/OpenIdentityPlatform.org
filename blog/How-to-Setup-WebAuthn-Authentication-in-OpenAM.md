@@ -50,11 +50,12 @@ For example there is a `/users` realm in OpenAM that need to be protected with W
 ### Setup WebAuthn Registration Module
 
 In OpenAM console, navigate to `/users` realm and create new WebAuthn Registration Authentication module:
-![OpenAM Create WebAuthn Registration Authentication Module](/assets/img/webauthn/webauthn-registration-new.png)
+![OpenAM Create WebAuthn Registration Authentication Module](/assets/img/webauthn/webauthn-registration-new.png){:class="col-md-6 d-block"}
 
 Setup required settings:
 
-![OpenAM  WebAuthn Registration Authentication Module Settings](/assets/img/webauthn/webauthn-registration-settings.png)
+![OpenAM  WebAuthn Registration Authentication Module Settings](/assets/img/webauthn/webauthn-registration-settings.png){:class="col-md-6 d-block"}
+
 
 | Setting | Description |
 |--------|-------------|
@@ -67,17 +68,17 @@ Setup required settings:
 ### Setup WebAutn Registration Authentication Chain
 
 Create new authentication chain `webauthn-regustration`
-![OpenAM  WebAuthn Registration Authentication Chain](/assets/img/webauthn/webauthn-registration-authchain.png)
+![OpenAM  WebAuthn Registration Authentication Chain](/assets/img/webauthn/webauthn-registration-authchain.png){:class="col-md-6 d-block"}
 
 ### Testing WebAutn Registration Authentication Chain
 
 Try to login using registration authentication chain and register public key for the user account. Open in browser url https://openam.example.com:8443/openam/UI/Login?org=/users&service=webauthn-registration, (change host and port to yours).
 
-![OpenAM  WebAuthn Registration User Name](/assets/img/webauthn/webauthn-registration-username.png)
+![OpenAM  WebAuthn Registration User Name](/assets/img/webauthn/webauthn-registration-username.png){:class="col-md-6 d-block"}
 
 Enter User Name and then click Log In button
 
-![OpenAM  WebAuthn Registration USB Key](/assets/img/webauthn/webauthn-registration-key.png)
+![OpenAM  WebAuthn Registration USB Key](/assets/img/webauthn/webauthn-registration-key.png){:class="col-md-6 d-block"}
 
 Insert USB Token if you have not done it before. Registration successful.
 
@@ -85,11 +86,11 @@ Insert USB Token if you have not done it before. Registration successful.
 
 In OpenAM console, navigate to `/users` realm and create new WebAuthn Authentication module:
 
-![OpenAM Create WebAuthn Registration Authentication Module](/assets/img/webauthn/webauthn-authentication-new.png)
+![OpenAM Create WebAuthn Registration Authentication Module](/assets/img/webauthn/webauthn-authentication-new.png){:class="col-md-6 d-block"}
 
 Setup required settings:
 
-![OpenAM  WebAuthn Authentication Module Settings](/assets/img/webauthn/webauthn-authentication-settings.png)
+![OpenAM  WebAuthn Authentication Module Settings](/assets/img/webauthn/webauthn-authentication-settings.png){:class="col-md-6 d-block"}
 
 | Setting | Description |
 |--------|-------------|
@@ -99,16 +100,16 @@ Setup required settings:
 
 ### Setup WebAutn Authentication Chain
 Create new authentication chain `webauthn-authentication`
-![OpenAM  WebAuthn Authentication Chain](/assets/img/webauthn/webauthn-authentication-authchain.png)
+![OpenAM  WebAuthn Authentication Chain](/assets/img/webauthn/webauthn-authentication-authchain.png){:class="col-md-6 d-block"}
 
 ### Testing WebAutn Authentication Chain
 
-Try to login using  authentication chain and login using registered public key for the user account. Open in browser url https://openam.example.com:8443/openam/UI/Login?org=/users&service=webauthn-authentication, (change host and port to yours).
+Try to login using  authentication chain and login using registered public key for the user account. Open in browser url https://openam.example.com:8443/openam/UI/Login?org=/users&service=webauthn-authentication, (change host and port to yours).{:class="col-md-6"}
 
-![OpenAM  WebAuthn Authentication User Name](/assets/img/webauthn/webauthn-authentication-username.png)
+![OpenAM  WebAuthn Authentication User Name](/assets/img/webauthn/webauthn-authentication-username.png){:class="col-md-6 d-block"}
 
 Enter User Name and then click Log In button
 
-![OpenAM  WebAuthn Authentication USB Key](/assets/img/webauthn/webauthn-registration-key.png)
+![OpenAM  WebAuthn Authentication USB Key](/assets/img/webauthn/webauthn-registration-key.png){:class="col-md-6 d-block"}
 
 Insert USB Token if you have not done it before. Authentication successful.
