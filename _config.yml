@@ -16,3 +16,4 @@ exclude:
   - .gitignore
 
 highlighter: rouge
+markdown: kramdown
