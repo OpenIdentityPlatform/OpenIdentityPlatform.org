@@ -8,7 +8,7 @@ keywords: 'WebAuthn, Authentication, Registration, Login, OpenAM, Access Managem
 
 # How to Setup WebAuthn Authentication in OpenAM
 
-Original article: [https://github.com/OpenIdentityPlatform/OpenAM/wiki/How-to-Setup-WebAuthn-Authentication-in-OpenAM](https://github.com/OpenIdentityPlatform/OpenAM/wiki/How-to-Setup-WebAuthn-Authentication-in-OpenAM)
+[Original article](https://github.com/OpenIdentityPlatform/OpenAM/wiki/How-to-Setup-WebAuthn-Authentication-in-OpenAM)
 
 
 ## Introduction
@@ -45,11 +45,11 @@ For local development and testing you can use U2F emulators:
 
 ## Setting up Authentication modules
 
-For example there is a `/users` realm in OpenAM that need to be protected with WebAuthn authentication.
+For example there is a **/users** realm in OpenAM that need to be protected with WebAuthn authentication.
 
 ### Setup WebAuthn Registration Module
 
-In OpenAM console, navigate to `/users` realm and create new WebAuthn Registration Authentication module:
+In OpenAM console, navigate to **/users** realm and create new WebAuthn Registration Authentication module:
 ![OpenAM Create WebAuthn Registration Authentication Module](/assets/img/webauthn/webauthn-registration-new.png){:class="col-md-6 d-block"}
 
 Setup required settings:
@@ -66,12 +66,13 @@ Setup required settings:
 
 ### Setup WebAutn Registration Authentication Chain
 
-Create new authentication chain `webauthn-regustration`
+Create new authentication chain **webauthn-regustration**
 ![OpenAM  WebAuthn Registration Authentication Chain](/assets/img/webauthn/webauthn-registration-authchain.png){:class="col-md-6 d-block"}
 
 ### Testing WebAutn Registration Authentication Chain
 
-Try to login using registration authentication chain and register public key for the user account. Open in browser url https://openam.example.com:8443/openam/UI/Login?org=/users&service=webauthn-registration, (change host and port to yours).
+Try to login using registration authentication chain and register public key for the user account. Open in browser url https://[host]:[port]/openam/UI/Login?org=/users&service=webauthn-registration
+ (change host and port to yours).
 
 ![OpenAM  WebAuthn Registration User Name](/assets/img/webauthn/webauthn-registration-username.png){:class="col-md-6 d-block"}
 
@@ -83,7 +84,7 @@ Insert USB Token if you have not done it before. Registration successful.
 
 ## Setup WebAuth Authentication Module
 
-In OpenAM console, navigate to `/users` realm and create new WebAuthn Authentication module:
+In OpenAM console, navigate to **/users** realm and create new WebAuthn Authentication module:
 
 ![OpenAM Create WebAuthn Registration Authentication Module](/assets/img/webauthn/webauthn-authentication-new.png){:class="col-md-6 d-block"}
 
@@ -98,12 +99,12 @@ Setup required settings:
 |**User attribute to retrieve Public Keys**| User indetity attribiute to retrieve authentication data|
 
 ### Setup WebAutn Authentication Chain
-Create new authentication chain `webauthn-authentication`
+Create new authentication chain **webauthn-authentication**
 ![OpenAM  WebAuthn Authentication Chain](/assets/img/webauthn/webauthn-authentication-authchain.png){:class="col-md-6 d-block"}
 
 ### Testing WebAutn Authentication Chain
 
-Try to login using  authentication chain and login using registered public key for the user account. Open in browser url https://openam.example.com:8443/openam/UI/Login?org=/users&service=webauthn-authentication, (change host and port to yours).
+Try to login using  authentication chain and login using registered public key for the user account. Open in browser url https://[host]:[port]/openam/UI/Login?org=/users&service=webauthn-authentication, (change host and port to yours).
 
 ![OpenAM  WebAuthn Authentication User Name](/assets/img/webauthn/webauthn-authentication-username.png){:class="col-md-6 d-block"}
 
