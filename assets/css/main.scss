@@ -4,6 +4,12 @@
 
 @import 'widgets.scss';
 
+@media (max-width: 576px) {
+  #main-section {
+    font-size: 1.2rem;
+  }
+}
+
 #main {
   padding-top: 5rem;
   padding-bottom: 1rem;
