@@ -3,7 +3,7 @@ layout: home
 landing: true
 landing-title: "Welcome to Open Identity Platform Community"
 landing-title2: "Open-source community organization, hosted on <a href=\"https://github.com\">GitHub</a>"
-landing-title3: "We develop and support Access Management, Identity Management, User-Managed Access, Directory Services and Identity Gateway, designed and built as a single, unified platform"
+landing-title3: "We develop and support Single Sign On, Access Management, Identity Management, User-Managed Access, Directory Services and Identity Gateway, designed and built as a single, unified platform"
 canonical: "https://www.openidentityplatform.org"
 ---
 <!--<h3>Products</h3>
@@ -38,6 +38,22 @@ canonical: "https://www.openidentityplatform.org"
   </div>
   {% endfor %}
 </div>
+
+<h3>Recent From our Blog:</h3>
+{% for post in site.data.blogposts limit:3%}
+
+<a class="blogpost" href="{{post.link}}">
+<div class="card mb-3">
+  <div class="card-body">
+    <h4>
+      {{post.title}}
+    </h4>
+    <p>{{post.description}}</p>
+  </div>
+</div>
+</a>
+{% endfor %}
+
 <p>Source code and binary distribution are available under the <a title="License" href="https://github.com/OpenIdentityPlatform/OpenAM/blob/master/LICENSE.md">Common Development and Distribution License (CDDL)</a>.</p>
 
 <h3>Contacts</h3>
