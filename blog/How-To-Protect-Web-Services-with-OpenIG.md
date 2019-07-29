@@ -8,14 +8,14 @@ keywords: 'OpenIG, API Gateway, Security, Authentication, Authorization, OSWAP, 
 
 # How To Protect Web Services with OpenIG
 
-Original article: [https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-To-Protect-Web-Services-with-OpenIG)
+Original article: [https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-To-Protect-Web-Services-with-OpenIG](https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-To-Protect-Web-Services-with-OpenIG)
 
 
 ## Introduction
 
 Securing web services is critical part of production environment to prevent compromising application from attacks. In microservice architecture, there is no need to implement security for each microservice. Each microservice should be responsible for its atomic functionality.  To protect services you need to user API Gateway application. Consider how to protect simple web service with Open Identity Gateway (OpenIG) in the following article.
 
-Source code for this article is located here: https://github.com/maximthomas/openig-protect-ws/
+Source code for this article: [https://github.com/maximthomas/openig-protect-ws/](https://github.com/maximthomas/openig-protect-ws/)
 
 ## Sample Service
 Consider service application with 2 endpoints http://localhost:8080/ - public http://localhost:8080/secure - private, so only authenticated users should have access to it.
