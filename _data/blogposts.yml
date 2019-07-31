@@ -1,4 +1,24 @@
 -
+  title: 'OpenAM 14.4.1 Released'
+  link: '/blog/openam-14-4-1-released'
+  description: 'Implemented WebAuthn Authentication Module'
+-
+  title: 'OpenDJ 4.4.3 Released'
+  link: '/blog/opendj-4-4-3-released'
+  description: ''
+-
+  title: 'OpenIG 5.0.7 Released'
+  link: '/blog/openig-5-0-7-released'
+  description: ''
+-
+  title: 'OpenAM-JEE-Agents 4.1.4 Released'
+  link: '/blog/openam-jee-agents-4-1-4-released'
+  description: 'OpenAM Version Updated'
+-
+  title: 'OpenICF 1.5.2 Released'
+  link: '/blog/openicf-1-5-2-released'
+  description: 'OpenAM Version Updated'
+-
   title: 'How to Setup WebAuthn Authentication in OpenAM'
   link: '/blog/How-to-Setup-WebAuthn-Authentication-in-OpenAM'
   description: 'How to Setup WebAuthn Authentication and Registration in OpenAM'
@@ -13,7 +33,7 @@
 -
   title: 'OpenAM 14.3.1 Released'
   link: '/blog/openam-14-3-1-released'
-  description: ''
+  description: 'Implemeted Apache Cassandra as User Data Store'
 -
   title: 'OpenDJ 4.4.2 Released'
   link: '/blog/opendj-4-4-2-released'
