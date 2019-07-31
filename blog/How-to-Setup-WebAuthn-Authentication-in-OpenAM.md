@@ -10,6 +10,17 @@ keywords: 'WebAuthn, Authentication, Registration, Login, OpenAM, Access Managem
 
 [Original article](https://github.com/OpenIdentityPlatform/OpenAM/wiki/How-to-Setup-WebAuthn-Authentication-in-OpenAM)
 
+## Table of Contents
+
+- [Introduction](#introduction)
+  * [Notes](#notes)
+- [Setting up Authentication modules](#setting-up-authentication-modules)
+  * [Setup WebAuthn Registration Module](#setup-webauthn-registration-module)
+  * [Setup WebAutn Registration Authentication Chain](#setup-webautn-registration-authentication-chain)
+  * [Testing WebAutn Registration Authentication Chain](#testing-webautn-registration-authentication-chain)
+- [Setup WebAuth Authentication Module](#setup-webauth-authentication-module)
+  * [Setup WebAutn Authentication Chain](#setup-webautn-authentication-chain)
+  * [Testing WebAutn Authentication Chain](#testing-webautn-authentication-chain)
 
 ## Introduction
 

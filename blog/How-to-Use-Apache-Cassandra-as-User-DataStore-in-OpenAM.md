@@ -10,6 +10,15 @@ keywords: 'Apache Cassandra, Cassandra, high perfomance, high availability, Open
 
 Original article: [https://github.com/OpenIdentityPlatform/OpenAM/wiki/How-to-Use-Apache-Cassandra-as-User-DataStore-in-OpenAM](https://github.com/OpenIdentityPlatform/OpenAM/wiki/How-to-Use-Apache-Cassandra-as-User-DataStore-in-OpenAM)
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Prepare Apache Cassandra to use as User DataStore](#prepare-apache-cassandra-to-use-as-user-datastore)
+- [OpenAM Setup](#openam-setup)
+  * [Server settings](#server-settings)
+  * [Plugin configuration](#plugin-configuration)
+  * [User Configuration](#user-configuration)
+  * [Group Configuration](#group-configuration)
 
 ## Introduction
 One of the performance bottlenecks of authentication is User DataStore. This becomes noticeable when the total number of user accounts exceeds `4 000 000`.
