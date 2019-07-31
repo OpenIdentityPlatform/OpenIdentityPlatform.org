@@ -5,10 +5,11 @@ landing-title2: "How To Protect Web Services with OpenIG"
 description: "How To Protect Web Services with OpenIG"
 keywords: 'OpenIG, API Gateway, Security, Authentication, Authorization, OSWAP, Single Sign On,  Open Identity Platform'
 ---
-
 # How To Protect Web Services with OpenIG
 
 Original article: [https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-To-Protect-Web-Services-with-OpenIG](https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-To-Protect-Web-Services-with-OpenIG)
+
+[![OpenIG logo](/assets/img/openig-logo.png){:class="col-md-4 d-block"}](/openig)
 
 ## Table of Contents
 
