@@ -13,6 +13,9 @@
      {% endif %}
      <section id="main-section">
       <div id="main" class="container">
+        {% if page.share-buttons == true %}
+          {% include share-buttons.html%}
+        {% endif %}
         {{content}}
       </div>
     </section>
