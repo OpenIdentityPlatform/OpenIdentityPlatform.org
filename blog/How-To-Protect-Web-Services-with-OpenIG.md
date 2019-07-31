@@ -10,6 +10,22 @@ keywords: 'OpenIG, API Gateway, Security, Authentication, Authorization, OSWAP, 
 
 Original article: [https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-To-Protect-Web-Services-with-OpenIG](https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-To-Protect-Web-Services-with-OpenIG)
 
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Sample Service](#sample-service)
+  * [Running Sample Service](#running-sample-service)
+  * [Runing Sample Service in Docker container](#runing-sample-service-in-docker-container)
+- [OpenIG Setup](#openig-setup)
+  * [Proxy Requests to Sample Service](#proxy-requests-to-sample-service)
+- [Securing Sample Service](#securing-sample-service)
+  * [HTTP Methods Restriction](#http-methods-restriction)
+  * [Validate Content-Type Request Header](#validate-content-type-request-header)
+  * [Validate Accept Request Header and Content-Type Response Header](#validate-accept-request-header-and-content-type-response-header)
+  * [Add Response Security Headers X-Frame-Options and X-Content-Type-Options](#add-response-security-headers-x-frame-options-and-x-content-type-options)
+  * [Authentication Check](#authentication-check)
+  * [JWT Validation](#jwt-validation)
+
 
 ## Introduction
 
