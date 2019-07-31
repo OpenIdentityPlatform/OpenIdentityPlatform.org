@@ -1,12 +1,12 @@
 ---
 layout: home
-landing-title: "OpenDJ 4.4.2 Released"
-landing-title2: "OpenDJ 4.4.2 Released"
-description: Open Identity Community just released OpenDJ v4.4.2
+landing-title: "OpenDJ 4.4.3 Released"
+landing-title2: "OpenDJ 4.4.3 Released"
+description: Open Identity Community just released OpenDJ v4.4.3
 keywords: 'OpenDJ, Directory Service, Directory Services, LDAP, Open Identity Platform, Docker, OpenShift'
 ---
-# OpenDJ 4.4.2 Released
-[Download](https://github.com/OpenIdentityPlatform/OpenDJ/releases/tag/4.4.2)
+# OpenDJ 4.4.3 Released
+[Download](https://github.com/OpenIdentityPlatform/OpenDJ/releases/tag/4.4.3)
 ## What's new
 * Docker image fixes and improvements
 * Reduce required free disk space for upgrade and import operations

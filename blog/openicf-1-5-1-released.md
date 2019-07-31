@@ -1,8 +1,8 @@
 ---
 layout: home
 landing-title: "OpenICF 1.5.1 Released"
-landing-title2: "Open Identity Connector Framework (OpenICF) 4.4.2 Released"
-description: Open Identity Community just released OpenICF v4.4.2
+landing-title2: "Open Identity Connector Framework (OpenICF) 1.5.1 Released"
+description: Open Identity Community just released OpenICF v1.5.1
 keywords: 'OpenICF, OpenIDM, Identity Management, Open Identity Connector Framework, Open Identity Platform'
 ---
 # OpenICF 1.5.1 Released
@@ -12,4 +12,4 @@ keywords: 'OpenICF, OpenIDM, Identity Management, Open Identity Connector Framew
 * Fixed Maven build
 * Build and release via Travis CI
 
-* Fixed other issues ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/fa7d144b1123d58bc24fa59ccb68acf7c37e00b7...cb421e386051d5d7b9b9d4155f979f23a3bb70eb))
+* Fixed other issues ([more details](https://github.com/OpenIdentityPlatform/OpenICF/compare/c5bc76da245971021067a7766d3676f2c813a778...3d462bd84555a13a35d4eebedb602a386601572c))
