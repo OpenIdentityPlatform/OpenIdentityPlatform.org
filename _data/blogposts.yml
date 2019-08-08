@@ -1,4 +1,8 @@
 -
+  title: 'OpenIDM 5.5.0 Released'
+  link: '/blog/openidm-5-5-0-released'
+  description: 'OpenIDM completely build from source, added Docker distribution and CI via Travis-CI'
+-
   title: 'OpenAM 14.4.1 Released'
   link: '/blog/openam-14-4-1-released'
   description: 'Implemented WebAuthn Authentication Module'
