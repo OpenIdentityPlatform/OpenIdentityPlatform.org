@@ -6,7 +6,10 @@
 <meta property="og:title" content="{%- if page.title -%} {{ page.title | smartify }} · {{ site.title | smartify }}{%- else -%}{{ site.title | smartify }} · {{ site.description | smartify }}{%- endif -%}" />
 <meta property="og:description" content="{{ page.description | default: site.description | smartify }}" />
 <meta property="og:url" content="http://www.openidentityplatform.org/" />
-<meta property="og:site_name" content="{{site.site_name}} " />
+<meta property="og:site_name" content="{{site.site_name}}" />
+{%- if page.imageurl -%}
+<meta property="og:image" content="{{page.imageurl}}" />
+{%- endif -%}
 
 <meta name="description" content="{{ page.description | default: site.description | smartify }}">
 <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
@@ -26,6 +29,7 @@
 <!--<link rel="stylesheet" href="{{'/assets/css/style.css'}}" >-->
 <link rel="stylesheet" href="{{'/assets/css/highlight.css'}}" >
 <link rel="stylesheet" href="{{'/assets/css/main.css'}}" >
+
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128188813-1"></script>
 <script>

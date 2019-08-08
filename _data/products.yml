@@ -20,16 +20,16 @@
   details_link: '/openig'
   release_link: 'https://github.com/OpenIdentityPlatform/OpenIG/releases'
 -
+  name: 'OpenIDM'
+  link: 'https://github.com/OpenIdentityPlatform/OpenIDM/'
+  short_descritopn: 'Open Identity Management'
+  description: 'Open Identity Management (OpenIDM) is an open standards based Identity Management, Provisioning and Compliance solution. Provisioning users, devices, and things is a repetitive and potentially time-consuming task that has a significant impact on security and user access. '
+  details_link: '/openidm'
+  release_link: 'https://github.com/OpenIdentityPlatform/OpenIDM/releases'
+-
   name: 'OpenICF'
   link: 'https://github.com/OpenIdentityPlatform/OpenICF/'
   short_descritopn: 'Open Identity Connector Framework'
   description: 'Open Identity Connector Framework (OpenICF) provides interoperability between identity, compliance and risk management solutions. An OpenICF Connector enables provisioning software, such as OpenIDM, to manage the identities that are maintained by a specific identity provider.'
   details_link: 'https://github.com/OpenIdentityPlatform/OpenICF/'
   release_link: 'https://github.com/OpenIdentityPlatform/OpenICF/releases'
--
-  name: 'OpenIDM'
-  link: 'https://github.com/OpenIdentityPlatform/OpenIDM/'
-  short_descritopn: 'Open Identity Management'
-  description: 'Open Identity Management (OpenIDM) is an open standards based Identity Management, Provisioning and Compliance solution. Provisioning users, devices, and things is a repetitive and potentially time-consuming task that has a significant impact on security and user access. '
-  details_link: 'https://github.com/OpenIdentityPlatform/OpenIDM/'
-  release_link: 'https://github.com/OpenIdentityPlatform/OpenIDM/releases'
