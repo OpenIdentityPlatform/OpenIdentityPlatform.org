@@ -4,7 +4,7 @@ landing-title: "OpenIDM 5.5.0 Released"
 landing-title2: "Open Identity Management (OpenIDM) 5.5.0 Released"
 description: Open Identity Community just released OpenIDM v5.5.0
 keywords: 'OpenIDM, Identity Management, Open Identity Platform'
-imageurl: '/assets/img/openidm-logo.png'
+imageurl: 'openidm-logo.png'
 ---
 # OpenIDM 5.5.0 Released
 [Download](https://github.com/OpenIdentityPlatform/OpenIDM/releases/tag/5.5.0)

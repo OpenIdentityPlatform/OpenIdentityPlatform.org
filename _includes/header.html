@@ -8,7 +8,9 @@
 <meta property="og:url" content="http://www.openidentityplatform.org/" />
 <meta property="og:site_name" content="{{site.site_name}}" />
 {%- if page.imageurl -%}
-<meta property="og:image" content="{{page.imageurl}}" />
+<meta property="og:image" content="{{ site.url }}/assets/img/{{page.imageurl}}" />
+{% else %}
+<meta property="og:image" content="https://avatars2.githubusercontent.com/u/30845478?s=280&amp;v=4" />
 {%- endif -%}
 
 <meta name="description" content="{{ page.description | default: site.description | smartify }}">
