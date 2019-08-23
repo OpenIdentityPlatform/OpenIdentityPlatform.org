@@ -8,6 +8,10 @@
   #main-section {
     font-size: 1.2rem;
   }
+
+  .need-support, .need-support-popover {
+    font-size: 1.2rem;
+  }
 }
 
 #main {
@@ -21,6 +25,7 @@
 
 a {
   color: $color4;
+  word-wrap: break-word;
 }
 
 .banner {
@@ -122,4 +127,8 @@ a.blogpost  {
 
 .card-header {
 
+}
+
+.popover {
+  max-width: 95%;
 }
