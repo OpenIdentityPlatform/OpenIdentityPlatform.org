@@ -5,26 +5,6 @@ landing-title2: "OpenAM 14.1.14 Released"
 description: Open Identity Community just released OpenAM v14.1.14
 keywords: 'OpenAM, Access Management, Authentication, Authorization, SSO, Single Sign On, Identity Provider, Open Identity Platform, Release, OAuth2, SAML, API Authentication'
 ---
-```yaml
-version: '3.1'
-
-services:
-  sample-service:
-    build:
-      context: ./sample-service
-    restart: always
-    ports:
-      - "8081:8080"
-
-  openig:
-    image: openidentityplatform/openig:latest
-    volumes:
-      - ./openig-config:/usr/local/openig-config
-    environment:
-      CATALINA_OPTS: -Dopenig.base=/usr/local/openig-config -Dendpoint.api=http://sample-service:8080/
-    ports:
-      - "8080:8080"
-```
 
 # OpenAM 14.1.14 Released
 [Download](https://github.com/OpenIdentityPlatform/OpenAM/releases/tag/14.1.14)

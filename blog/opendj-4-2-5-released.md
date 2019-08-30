@@ -2,6 +2,7 @@
 layout: home
 landing-title: "OpenDJ 4.2.5 Released"
 landing-title2: "OpenDJ 4.2.5 Released"
+description: Open Identity Community just released OpenDJ v4.2.5
 ---
 # OpenDJ 4.2.5 Released
 [Download](https://github.com/OpenIdentityPlatform/OpenDJ/releases/tag/4.2.5)
