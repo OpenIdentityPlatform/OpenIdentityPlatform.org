@@ -1,4 +1,8 @@
 -
+  title: 'OpenAM 14.4.2 Released'
+  link: '/blog/openam-14-4-2-released'
+  description: 'Implemented WebAuthn Authentication Module'
+-
   title: 'OpenAM Quick Start Guide'
   link: '/blog/openam-quick-start-guide'
   description: 'How to quick start with OpenAM and Apache HTTP Server'
