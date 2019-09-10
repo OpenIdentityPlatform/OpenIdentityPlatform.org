@@ -1,19 +1,27 @@
+{% capture og_url %}{{ site.url }}{{ page.url | remove: "index.html" | remove: ".html" }}{% endcapture %}
+{% capture og_image %}{%- if page.imageurl -%}{{ site.url }}/assets/img/{{page.imageurl}}{% else %}https://avatars2.githubusercontent.com/u/30845478?s=280&amp;v=4{%- endif -%}{% endcapture %}
+{% capture page_title %} {%- if page.title -%} {{ page.title | smartify }} · {{ site.title | smartify }}{%- else -%}{{ site.title | smartify }} · {{ site.description | smartify }}{%- endif -%}{% endcapture %}
+{% capture page_description %}{{ page.description | default: site.description | smartify }}{% endcapture %}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website" />
-<meta property="og:title" content="{%- if page.title -%} {{ page.title | smartify }} · {{ site.title | smartify }}{%- else -%}{{ site.title | smartify }} · {{ site.description | smartify }}{%- endif -%}" />
-<meta property="og:description" content="{{ page.description | default: site.description | smartify }}" />
-<meta property="og:url" content="http://www.openidentityplatform.org/" />
+<meta property="og:title" content="{{ page_title }}" />
+<meta property="og:description" content="{{ page_description }}" />
+<meta property="og:url" content="{{ og_url }}" />
 <meta property="og:site_name" content="{{site.site_name}}" />
-{%- if page.imageurl -%}
-<meta property="og:image" content="{{ site.url }}/assets/img/{{page.imageurl}}" />
-{% else %}
-<meta property="og:image" content="https://avatars2.githubusercontent.com/u/30845478?s=280&amp;v=4" />
-{%- endif -%}
+<meta property="og:image" content="{{ og_image }}" />
 
-<meta name="description" content="{{ page.description | default: site.description | smartify }}">
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="{{ og_url }}">
+<meta property="twitter:title" content="{{ page_title }}">
+<meta property="twitter:description" content="{{ page_description }}">
+<meta property="twitter:image" content="{{ og_image }}" />
+
+
+<meta name="description" content="{{ page_description }}">
 <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
 <meta name="author" content="{{ site.authors }}">
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
@@ -24,7 +32,7 @@
 {%- if page.canonical -%}
 <link rel="canonical" href="{{page.canonical}}" />
 {%- endif -%}
-<title>{%- if page.title -%} {{ page.title | smartify }} · {{ site.title | smartify }}{%- else -%}{{ site.title | smartify }} · {{ site.description | smartify }}{%- endif -%}</title>
+<title>{{ page_title }}</title>
 <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -33,6 +41,7 @@
 <link rel="stylesheet" href="{{'/assets/css/main.css'}}" >
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
+
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-128188813-1"></script>
 <script>
   window.dataLayer = window.dataLayer || [];

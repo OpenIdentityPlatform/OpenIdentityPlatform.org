@@ -4,6 +4,7 @@ landing-title: "OpenAM 14.4.2 Released"
 landing-title2: "OpenAM 14.4.2 Released"
 description: Open Identity Platform Community just released OpenAM v14.4.1
 keywords: 'OpenAM, Access Management, Authentication,  Radius, SSO, Single Sign On, Open Identity Platform, Release, OAuth2, Authentication, OIDC'
+imageurl: 'openam-logo.png'
 ---
 # OpenAM 14.4.2 Released
 [Download](https://github.com/OpenIdentityPlatform/OpenAM/releases/tag/14.4.2)

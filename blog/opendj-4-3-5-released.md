@@ -4,6 +4,7 @@ landing-title: "OpenDJ 4.3.5 Released"
 landing-title2: "OpenDJ 4.3.5 Released"
 description: Open Identity Community just released OpenDJ v4.3.5
 keywords: 'OpenDJ, Directory Service, Directory Services, LDAP, Open Identity Platform'
+imageurl: 'opendj-logo.png'
 ---
 # OpenDJ 4.3.5 Released
 [Download](https://github.com/OpenIdentityPlatform/OpenDJ/releases/tag/4.3.5)
