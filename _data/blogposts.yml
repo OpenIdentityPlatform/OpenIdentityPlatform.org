@@ -1,4 +1,8 @@
 -
+  title: 'OpenDJ Tips and How-Tos'
+  link: '/blog/opendj-tips-and-howtos'
+  description: 'Some useful commands one could use to manage OpenDJ'
+-
   title: 'OpenAM 14.4.2 Released'
   link: '/blog/openam-14-4-2-released'
   description: 'Implemented WebAuthn Authentication Module'
