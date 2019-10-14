@@ -8,7 +8,7 @@ imageurl: 'openam-og.png'
 share-buttons: true
 ---
 
-# How OpenAM Works Simple Explanation
+<h1>How <a href="https://github.com/OpenIdentityPlatform/OpenAM">OpenAM</a> Works Simple Explanation</h1> 
 
 ## Table of Contents
 - [Introduction](#introduction)
