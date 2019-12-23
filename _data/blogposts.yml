@@ -1,4 +1,8 @@
 -
+  title: 'How To Run OpenAM in Kubernetes'
+  link: '/blog/how-to-run-openam-kubernetes'
+  description: 'This article explains how to run OpenAM in Kubernetes using StatefulSet'
+-
   title: 'What is Single Sign-On and How does it Work'
   link: '/blog/what-is-single-sign-on-and-how-does-it-work'
   description: 'This article gives a basic understanding about Single Sign-On technology'
