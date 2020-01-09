@@ -1,7 +1,7 @@
 ---
 layout: home
 landing-title: "How To Run OpenAM in Kubernetes"
-landing-title2: "What is Single Sign-On and How does it Work"
+landing-title2: "How To Run OpenAM in Kubernetes"
 description: "This article explains how to run OpenAM in Kubernetes"
 keywords: ''
 imageurl: 'openam-og.png'
@@ -55,7 +55,7 @@ kubectl apply -f openam-service.yaml
 Make sure the service has been created:
 
 ```
-kubectl get svc openam-service
+kubectl get svc openam
 
 NAME             TYPE        CLUSTER-IP   EXTERNAL-IP   PORT(S)    AGE
 openam-service   ClusterIP   None         <none>        8080/TCP   7s
