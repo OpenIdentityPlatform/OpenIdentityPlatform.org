@@ -1,4 +1,8 @@
 -
+  title: 'How To Run OpenIG in Kubernetes'
+  link: '/blog/how-to-run-openig-kubernetes'
+  description: 'This article explains how to deploy OpenIG in Kubernetes'
+-
   title: 'How To Run OpenDJ in Kubernetes'
   link: '/blog/how-to-run-opendj-kubernetes'
   description: 'This article explains how to run OpenDJ in Kubernetes using StatefulSet'
