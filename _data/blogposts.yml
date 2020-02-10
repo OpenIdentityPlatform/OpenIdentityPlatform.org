@@ -1,4 +1,8 @@
 -
+  title: 'How To Protect Kubernetes Services With OpenIG'
+  link: '/blog/how-to-protect-kubernetes-services-with-openig'
+  description: 'TThis article explains how to protect services deployed on Kubernetes with OpenIG'
+-
   title: 'How To Run OpenIG in Kubernetes'
   link: '/blog/how-to-run-openig-kubernetes'
   description: 'This article explains how to deploy OpenIG in Kubernetes'
