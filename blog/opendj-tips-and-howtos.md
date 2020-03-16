@@ -1,6 +1,6 @@
 ---
 layout: home
-landing-title: "OpenDJ Tips and How-Tos"
+title: "OpenDJ Tips and How-Tos"
 landing-title2: "OpenDJ Tips and How-Tos"
 description: Some useful commands one could use to manage OpenDJ
 keywords: 'OpenDJ, Directory Service, how to, tips, replication, setup'

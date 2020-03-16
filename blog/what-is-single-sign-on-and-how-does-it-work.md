@@ -1,6 +1,6 @@
 ---
 layout: home
-landing-title: "What is Single Sign-On and How does it Work"
+title: "What is Single Sign-On and How does it Work"
 landing-title2: "What is Single Sign-On and How does it Work"
 description: "This article gives a basic understanding about Single Sign-On technology"
 keywords: ''
