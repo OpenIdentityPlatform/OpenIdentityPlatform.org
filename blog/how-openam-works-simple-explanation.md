@@ -1,6 +1,6 @@
 ---
 layout: home
-landing-title: "How OpenAM Works Simple Explanation"
+title: "How OpenAM Works Simple Explanation"
 landing-title2: "How OpenAM Works Simple Explanation"
 description: "This article explains how OpenAM and its ecosystem works in a very simple way"
 keywords: ''

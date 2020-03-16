@@ -1,6 +1,6 @@
 ---
 layout: home
-landing-title: "Stateful vs Stateless Authentication"
+title: "Stateful vs Stateless Authentication"
 landing-title2: "Stateful vs Stateless Authentication"
 description: "Stateful vs Stateless Authentication Comparsion"
 keywords: ''

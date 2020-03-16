@@ -1,6 +1,6 @@
 ---
 layout: home
-landing-title: "How To Run OpenDJ in Kubernetes"
+title: "How To Run OpenDJ in Kubernetes"
 landing-title2: "How To Run OpenDJ in Kubernetes"
 description: "This article explains how to run OpenDJ in Kubernetes"
 keywords: ''
