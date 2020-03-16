@@ -2,7 +2,7 @@
 layout: home
 landing-title: "OpenIG 5.0.8 Released"
 landing-title2: "OpenIG 5.0.8 Released"
-description: Open Identity Community just released OpenIG v5.0.8
+description: Open Identity Community just released OpenIG v5.0.8 - Update logging, routes configuration, security issues fix
 keywords: 'OpenIG, API Gateway, Identity Gateway'
 imageurl: 'openig-og.png'
 ---
