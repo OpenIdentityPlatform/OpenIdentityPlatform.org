@@ -1,4 +1,8 @@
 -
+  title: 'How to Add Authentication and Protect Your Application With OpenAM and OpenIG Stack'
+  link: '/blog/how-to-add-authorization-with-openam-openig'
+  description: 'How to add OpenAM authentication for an application, and setup proxying to the application using OpenIG so an unauthenticated user could not access the application'
+-
   title: 'OpenIG 5.0.8 Released'
   link: '/blog/openig-5-0-8-released'
   description: 'Update logging, routes configuration, security issues fix'
