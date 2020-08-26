@@ -1,4 +1,8 @@
 -
+  title: 'How To Setup Active Directory Authenticaion In OpenAM'
+  link: '/blog/how-to-setup-active-directory-authentication-in-openam'
+  description: 'How to use Active Directory as a user data source and use for authentication'
+-
   title: 'OpenIG 5.0.8 Released'
   link: '/blog/openig-5-0-8-released'
   description: 'Update logging, routes configuration, security issues fix'
