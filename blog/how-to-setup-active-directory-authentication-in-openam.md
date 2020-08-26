@@ -13,13 +13,13 @@ Original article: [https://github.com/OpenIdentityPlatform/OpenAM/wiki/How-To-Se
 
 ## Preface
 
-If your organization uses Microsoft Active Directory for user storage, it is a good practice to use Active Directory user accounts to authenticate in all your enterprise applications. OpenAM supports Microsoft Active Directory 
+If your organization uses Microsoft Active Directory for user storage, it is a good practice to use Active Directory user accounts to authenticate in all your enterprise applications. OpenAM supports Microsoft Active Directory
 
 But setting up Microsoft Active Directory as a user data store could be tricky. In this article, we'll help you to set up user data store in OpenAM
 
 ## Setup Active Directory User Data Store
 
-Enterprise users should be in a separate realm. 
+Enterprise users should be in a separate realm.
 
 ---
 
@@ -48,10 +48,10 @@ There are the most important settings in a table below:
 |**LDAP Users Search Filter** | (objectclass=person)|
 |**DN Cache** | Enabled |
 
-
+<br>
 ## Test Data Store and Authentication
 
-If you set all settings correctly, you should see user account form your active directory, in Subjects tab in the realm.
+If you set all settings correctly, you should see user accounts form your active directory, in Subjects tab in the realm.
 
 Then test authentication:
 Open OpenAM URL in your browser, for example
@@ -65,4 +65,3 @@ For legacy UI:
 [http://openam.example.org:8080/openam/UI/Login?org=/staff](http://openam.example.org:8080/openam/UI/Login?org=/staff)
 
 Enter your Active Directory credentials, and you should be successfully authenticated
-
