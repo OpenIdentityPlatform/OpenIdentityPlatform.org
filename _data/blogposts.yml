@@ -1,4 +1,8 @@
 -
+  title: 'OpenDJ 4.4.7 Released'
+  link: '/blog/opendj-4-4-7-released'
+  description: ''
+-
   title: 'How To Setup Active Directory Authenticaion In OpenAM'
   link: '/blog/how-to-setup-active-directory-authentication-in-openam'
   description: 'How to use Active Directory as a user data source and use for authentication'
