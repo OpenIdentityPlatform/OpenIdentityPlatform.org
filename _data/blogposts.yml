@@ -1,4 +1,8 @@
 -
+  title: 'OpenAM 14.5.3 Released'
+  link: '/blog/openam-14-5-3-released'
+  description: 'New QR Authentication module, and many more improvements and bug fixes'
+-
   title: 'OpenDJ 4.4.7 Released'
   link: '/blog/opendj-4-4-7-released'
   description: 'Docker image improvements, library updates, bug fixes'
