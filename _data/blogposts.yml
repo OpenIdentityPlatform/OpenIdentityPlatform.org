@@ -1,4 +1,8 @@
 -
+  title: 'How to Setup Kerberos Authentication with OpenAM'
+  link: '/blog/how-to-setup-kerberos-authentication-in-openam'
+  description: 'How to setup Kerberos Single Sign On authentication with OpenAM and authenticate seamlessly using Active Directory account'
+-
   title: 'OpenAM 14.5.3 Released'
   link: '/blog/openam-14-5-3-released'
   description: 'New QR Authentication module, and many more improvements and bug fixes'
