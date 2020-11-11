@@ -1,4 +1,8 @@
 -
+  title: 'How to Setup 2FA with Google Authenticator in OpenAM'
+  link: '/blog/how-to-setup-2fa-with-google-authenticatior-in-openam'
+  description: 'How to setup Google Authenticator as two-factor authentication (2FA) in OpenAM'
+-
   title: 'How to Setup Kerberos Authentication with OpenAM'
   link: '/blog/how-to-setup-kerberos-authentication-in-openam'
   description: 'How to setup Kerberos Single Sign On authentication with OpenAM and authenticate seamlessly using Active Directory account'
