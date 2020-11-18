@@ -1,4 +1,8 @@
 -
+  title: 'Passwordless Authentication Methods, their Pros, and Cons'
+  link: '/blog/passwordless-authentication-methods'
+  description: 'In the following acticle we cover basic passwordless authentication method, their use cases, cons and pros'
+-
   title: 'How to Setup 2FA with Google Authenticator in OpenAM'
   link: '/blog/how-to-setup-2fa-with-google-authenticatior-in-openam'
   description: 'How to setup Google Authenticator as two-factor authentication (2FA) in OpenAM'
