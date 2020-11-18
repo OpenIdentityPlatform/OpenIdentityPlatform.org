@@ -2,7 +2,7 @@
 layout: home
 title: "Passwordless Authentication Methods, their Pros, and Cons"
 landing-title2: "Passwordless Authentication Methods, their Pros, and Cons"
-description: "In the following acticle we cover basic passwordless authentication method, their use cases, cons and pros"
+description: "In the following article we cover basic passwordless authentication method, their use cases, cons and pros"
 keywords: 'passwordless, 2FA, kerberos'
 share-buttons: true
 ---
