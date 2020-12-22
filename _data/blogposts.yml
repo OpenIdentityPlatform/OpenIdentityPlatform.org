@@ -1,4 +1,8 @@
 -
+  title: 'Migrate OpenAM to Apache Cassandra without a Single Point of Failure'
+  link: '/blog/migrate-openam-to-apache-cassandra-without-single-point-of-failure'
+  description: 'How to plan data storages and data centers resources for OpenAM fault tolerance'
+-
   title: 'Passwordless Authentication Methods, their Pros, and Cons'
   link: '/blog/passwordless-authentication-methods'
   description: 'In the following acticle we cover basic passwordless authentication method, their use cases, cons and pros'
