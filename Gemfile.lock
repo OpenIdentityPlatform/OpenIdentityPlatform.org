@@ -212,7 +212,11 @@ GEM
       jekyll-seo-tag (~> 2.1)
     minitest (5.14.2)
     multipart-post (2.1.1)
+<<<<<<< HEAD
     nokogiri (1.10.10)
+=======
+    nokogiri (1.10.8)
+>>>>>>> upstream/master
       mini_portile2 (~> 2.4.0)
     octokit (4.20.0)
       faraday (>= 0.9)
@@ -227,8 +231,8 @@ GEM
     rouge (3.23.0)
     ruby-enum (0.8.0)
       i18n
-    ruby2_keywords (0.0.2)
-    rubyzip (2.3.0)
+    ruby_dep (1.5.0)
+    rubyzip (2.2.0)
     safe_yaml (1.0.5)
     sass (3.7.4)
       sass-listen (~> 4.0.0)
