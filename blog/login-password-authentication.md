@@ -2,7 +2,7 @@
 layout: home
 landing-title: "Login and Password Authenticaion"
 landing-title2: "Login and Password Authenticaion"
-description: "Login and password authentication, implementation, tips and hints"
+description: "Login and password authentication, implementation, tips and hints, advantages and disadvantages"
 keywords: 'Login, password, authentication, basics'
 imageurl: ''
 ---
