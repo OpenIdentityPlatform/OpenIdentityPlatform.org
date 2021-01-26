@@ -1,4 +1,8 @@
 -
+  title: 'Login and Password Authenticaion'
+  link: '/blog/login-password-authentication'
+  description: 'Login and password authentication, implementation, tips and hints'
+-
   title: 'Migrate OpenAM to Apache Cassandra without a Single Point of Failure'
   link: '/blog/migrate-openam-to-apache-cassandra-without-single-point-of-failure'
   description: 'How to plan data storages and data centers resources for OpenAM fault tolerance'
