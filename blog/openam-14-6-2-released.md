@@ -25,7 +25,7 @@ imageurl: 'openam-og.png'
 * Improved generateSessionId perfomance (exclude search by handle)
 * Improved session quota exhaustion performance: replace parallel execution with thread pool
 * Migration to Apache Cassandra 4
-* Added MD5 hash digest password encryption for Mysql IDP data store?
+* Added MD5 hash digest password encryption for Mysql IDP data store
 * Added kid (key alias) to JWS STS tokens
 * Add encryption to sensitive CTS data: SESSION_ID + SESSION_HANDLE
 * Modified login check for selfService, this correct making it disapear on stage 2

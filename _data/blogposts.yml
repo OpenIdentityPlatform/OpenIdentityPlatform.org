@@ -1,4 +1,12 @@
 -
+  title: 'OpenAM 14.6.2 Released'
+  link: '/blog/openam-14-6-2-released'
+  description: 'Migration to Apache Cassandra 4, performance improvements, fixed issues'
+-
+  title: 'OpenDJ 4.4.10 Released'
+  link: '/blog/opendj-4-4-10-released'
+  description: 'Docker image improvements, library updates, fixed issues'
+-
   title: 'Login and Password Authenticaion'
   link: '/blog/login-password-authentication'
   description: 'Login and password authentication, implementation, tips and hints, advantages and disadvantages'
