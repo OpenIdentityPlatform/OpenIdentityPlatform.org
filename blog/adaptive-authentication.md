@@ -92,7 +92,7 @@ Advantages
 - Machine learning algorithms can identify factors or combinations of authentication factors that are not obvious to the expert
 - The possibility of continuous learning while accumulating authentication data and automatic algorithm adjustment when the logic of the authentication services changes
 
-Недостатки
+Disadvantages
 
 - Requires qualified personnel to set up
 - Cold start problem - the system cannot work until enough data has been collected for machine learning
