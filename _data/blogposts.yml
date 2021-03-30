@@ -1,4 +1,8 @@
 -
+  title: 'Adaptive Authentication'
+  link: '/blog/adaptive-authentication'
+  description: 'How to Improve Security Without Annoying Users'
+-
   title: 'OpenAM 14.6.2 Released'
   link: '/blog/openam-14-6-2-released'
   description: 'Migration to Apache Cassandra 4, performance improvements, fixed issues'
