@@ -64,10 +64,10 @@ bin/dsconfig --hostname localhost --port 4444 --bindDN "cn=Directory Manager" --
 
 # Use Self Signed Certificate 
 Create the store with the following command. You'll be asked to enter a password for the .pfx file.
-```
+```bash
 openssl pkcs12 -export -out opendj.pfx -inkey private.key -in server.crt -certfile cachain.crt
 ```
 Then when you run the container just set this environment variable with the pfx path and the password.
-```
+```bash
 OPENDJ_SSL_OPTIONS="--usePkcs12keyStore /data/opendj.pfx --keyStorePassword PASSWORD"
 ```
