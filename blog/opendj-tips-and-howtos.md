@@ -36,3 +36,38 @@ bin/dsreplication initialize --baseDN dc=example,dc=com --adminUID admin --admin
 ```bash
 bin/dsreplication disable --disableAll --port 4444 --hostname localhost --bindDN "cn=Directory Manager" --adminPassword password --trustAll --no-prompt
 ```
+
+# List all indexes
+```bash
+bin/backendstat show-index-status --backendID userRoot --baseDN dc=example,dc=com
+```
+
+# Rebuild Degraded Indexes ONLINE
+```bash
+bin/rebuild-index --hostname localhost --port 4444 --bindDN "cn=Directory Manager" --bindPassword password --baseDN dc=example,dc=com --rebuildDegraded --trustAll
+```
+
+# List the available protocols and cipher suites, read the supportedTLSProtocols and supportedTLSCiphers 
+```bash
+bin/ldapsearch --hostname localhost --port 1636 --useSSL --trustAll --baseDN "" --searchScope base "(objectclass=*)" supportedTLSCiphers supportedTLSProtocols
+```
+
+# Allow only TLSv1.2 ssl-protocol
+```bash
+#LDAPS / LDAP / HTTP Connection Handlers
+bin/dsconfig --hostname localhost --port 4444 --bindDN "cn=Directory Manager" --bindPassword password set-connection-handler-prop --handler-name "LDAPS Connection Handler" --add ssl-protocol:TLSv1.2 --trustAll --no-prompt
+#Administration Connector
+bin/dsconfig --hostname localhost --port 4444 --bindDN "cn=Directory Manager" --bindPassword password set-administration-connector-prop --add ssl-protocol:TLSv1.2 --trustAll --no-prompt
+#Crypto Manager
+bin/dsconfig --hostname localhost --port 4444 --bindDN "cn=Directory Manager" --bindPassword password set-crypto-manager-prop --add ssl-protocol:TLSv1.2 --trustAll --no-prompt
+```
+
+# Use Self Signed Certificate 
+Create the store with the following command. You'll be asked to enter a password for the .pfx file.
+```
+openssl pkcs12 -export -out opendj.pfx -inkey private.key -in server.crt -certfile cachain.crt
+```
+Then when you run the container just set this environment variable with the pfx path and the password.
+```
+OPENDJ_SSL_OPTIONS="--usePkcs12keyStore /data/opendj.pfx --keyStorePassword PASSWORD"
+```
