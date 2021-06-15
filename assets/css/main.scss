@@ -136,3 +136,13 @@ a.blogpost  {
 .popover {
   max-width: 95%;
 }
+
+@media (min-width: 576px) {
+  img[alt*=mobile] {
+    width: 50%;
+  }
+
+  img[alt*='QR code'] {
+    width: 50%;
+  }
+}
