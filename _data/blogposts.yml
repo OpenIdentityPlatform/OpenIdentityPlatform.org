@@ -1,4 +1,8 @@
 -
+  title: 'OpenAM QR Authentication'
+  link: '/blog/openam-qr-authentication'
+  description: 'How QR authentication works and how to setup it in OpenAM'
+-
   title: 'Adaptive Authentication'
   link: '/blog/adaptive-authentication'
   description: 'How to Improve Security Without Annoying Users'
