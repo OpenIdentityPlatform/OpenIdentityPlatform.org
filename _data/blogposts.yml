@@ -1,4 +1,8 @@
 -
+  title: 'OpenAM 14.6.3 Released'
+  link: '/blog/openam-14-6-3-released'
+  description: 'Apache Cassandra performance improvements, Same Site cookie settings, QR authentication UI etc'
+-
   title: 'OpenAM QR Authentication'
   link: '/blog/openam-qr-authentication'
   description: 'How QR authentication works and how to setup it in OpenAM'
