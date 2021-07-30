@@ -1,4 +1,9 @@
 -
+  title: 'OpenAM 14.6.4 Released'
+  link: '/blog/openam-14-6-4-released'
+  description: 'Fixed CVE-2021-35464 remote code execution, updated Apache Cassandra Embedded version, reduced Docker image size'
+
+-
   title: 'OpenAM 14.6.3 Released'
   link: '/blog/openam-14-6-3-released'
   description: 'Apache Cassandra performance improvements, Same Site cookie settings, QR authentication UI etc'
