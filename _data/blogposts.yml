@@ -1,4 +1,8 @@
 -
+  title: 'ICAP Filter in OpenIG'
+  link: '/blog/icap-filter-openig'
+  description: 'How to setup ICAP Filter for DLP and Antivirus protection with OpenIG'
+-
   title: 'OpenAM 14.6.4 Released'
   link: '/blog/openam-14-6-4-released'
   description: 'Fixed CVE-2021-35464 remote code execution, updated Apache Cassandra Embedded version, reduced Docker image size'
