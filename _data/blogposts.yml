@@ -1,4 +1,8 @@
 -
+  title: 'How to Integrate OpenIG and Message Brokers'
+  link: '/blog/openig-message-brokers'
+  description: 'How to send and receive message broker messages to http and backwards'
+-
   title: 'ICAP Filter in OpenIG'
   link: '/blog/icap-filter-openig'
   description: 'How to setup ICAP Filter for DLP and Antivirus protection with OpenIG'
