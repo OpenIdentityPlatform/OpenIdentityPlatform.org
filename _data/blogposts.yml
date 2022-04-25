@@ -1,4 +1,8 @@
 -
+  title: 'OpenDJ 4.4.13 Released'
+  link: '/blog/opendj-4-4-13-released'
+  description: 'Added FIPS support, Docker image improvements, JSON support, security updates'
+-
   title: 'How to Integrate OpenIG and Message Brokers'
   link: '/blog/openig-message-brokers'
   description: 'How to send and receive message broker messages to http and backwards'
