@@ -1,4 +1,8 @@
 -
+  title: 'OpenAM Monitoring Using Prometheus'
+  link: '/blog/openam-prometheus'
+  description: 'This article covers basic OpenAM and Prometheus setup'
+-
   title: 'OpenDJ 4.4.13 Released'
   link: '/blog/opendj-4-4-13-released'
   description: 'Added FIPS support, Docker image improvements, JSON support, security updates'
