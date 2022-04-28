@@ -7,11 +7,13 @@ keywords: 'prometheus, openam, snmp, monitoring'
 share-buttons: true
 ---
 
-# OpenAM Prometheus Monitoring
+# OpenAM Monitoring Using Prometheus
+
+[Original article](https://github.com/OpenIdentityPlatform/OpenAM/wiki/OpenAM-Monitoring-Using-Prometheus)
 
 ## Preface
 
-[OpenAM](/openam){:target="_blank"} can expose SNMP metrics. To expose these metrics to Prometheus we will use [snmp_exporter](https://github.com/prometheus/snmp_exporter){:target="_blank"} tool, provided by the Prometheus community.
+[OpenAM](https://github.com/OpenIdentityPlatform/OpenAM){:target="_blank"} can expose SNMP metrics. To expose these metrics to Prometheus we will use [snmp_exporter](https://github.com/prometheus/snmp_exporter){:target="_blank"} tool, provided by the Prometheus community.
 
 To follow the current manual Docker and Docker Compose should be installed 
 
@@ -33,7 +35,7 @@ docker-compose up
 
 ## Setup OpenAM and SNMP Monitoring
 
-Open OpenAM URL and create a basic configuration (see [OpenAM Quick Start Gude](/blog/openam-quick-start-guide){:target="_blank"})
+Open OpenAM URL and create a basic configuration (see [OpenAM Quick Start Gude](https://github.com/OpenIdentityPlatform/OpenAM/wiki/Quick-Start-Guide)){:target="_blank"})
 
 Enable SNMP in OpenAM. Login into OpenAM console, goto **Configure -> Global Services -> Monitoring**
 
