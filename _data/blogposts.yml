@@ -1,4 +1,8 @@
 -
+  title: 'OpenAM 14.6.5 Released'
+  link: '/blog/openam-14-6-5-released'
+  description: 'Security updates, SAML impromvemens, Apache Cassandra CTS and user data store performance imporvemennts and many more...'
+-
   title: 'OpenAM Monitoring Using Prometheus'
   link: '/blog/openam-prometheus'
   description: 'This article covers basic OpenAM and Prometheus setup'
