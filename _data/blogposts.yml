@@ -1,4 +1,8 @@
 -
+  title: 'OpenDJ 4.5.0 Released'
+  link: '/blog/opendj-4-5-0-released'
+  description: 'Added Java 11, 16, 17, 18 compartibility, Docker image improvements, PBKDF2-HMAC-SHA256 and PBKDF-HMAC-SHA512 password encoding schemes and many more...'
+-
   title: 'OpenAM 14.6.5 Released'
   link: '/blog/openam-14-6-5-released'
   description: 'Security updates, SAML impromvemens, Apache Cassandra CTS and user data store performance imporvemennts and many more...'
