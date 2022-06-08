@@ -2,14 +2,14 @@
   name: 'OpenAM'
   link: 'https://github.com/OpenIdentityPlatform/OpenAM/'
   short_descritopn: 'Open Access Management'
-  description: 'Open Access Management (OpenAM) is an access management solution that includes Authentication, SSO, Authorization, Federation, Entitlements and Web Services Security.'
+  description: 'Open Access Management (OpenAM) is an access management solution that includes Authentication, SSO, Authorization, Federation, Entitlements, and Web Services Security.'
   details_link: '/openam'
   release_link: 'https://github.com/OpenIdentityPlatform/OpenAM/releases'
 -
   name: 'OpenDJ'
   link: 'https://github.com/OpenIdentityPlatform/OpenDJ/'
   short_descritopn: 'Open Directory Services'
-  description: 'OpenDJ is an LDAPv3 compliant directory service, which has been developed for the Java platform, provides a high performance, highly available, and secure store for identities, that managed by your organization. Its easy installation process, combined with the power of the Java platform makes OpenDJ the simplest, fastest directory to deploy and manage.'
+  description: 'OpenDJ is an LDAPv3 compliant directory service, which has been developed for the Java platform and provides a high performance, highly available, and secure store for identities, that are managed by your organization. Its easy installation process, combined with the power of the Java platform makes OpenDJ the simplest, fastest directory to deploy and manage.'
   details_link: '/opendj'
   release_link: 'https://github.com/OpenIdentityPlatform/OpenDJ/releases'
 -
@@ -23,7 +23,7 @@
   name: 'OpenIDM'
   link: 'https://github.com/OpenIdentityPlatform/OpenIDM/'
   short_descritopn: 'Open Identity Management'
-  description: 'Open Identity Management (OpenIDM) is an open standards based Identity Management, Provisioning and Compliance solution. Provisioning users, devices, and things is a repetitive and potentially time-consuming task that has a significant impact on security and user access. '
+  description: 'Open Identity Management (OpenIDM) is an open standards-based Identity Management, Provisioning, and Compliance solution. Provisioning users, devices, and things is a repetitive and potentially time-consuming task that has a significant impact on security and user access. '
   details_link: '/openidm'
   release_link: 'https://github.com/OpenIdentityPlatform/OpenIDM/releases'
 -
