@@ -1,4 +1,8 @@
 -
+  title: 'How to Start OpenAM and OpenDJ in Separate Docker Contaners'
+  link: '/blog/openam-opendj-docker'
+  description: 'In this article we will prepare and create OpenAM and OpenDJ instances in separate Docker containers'
+-
   title: 'OpenDJ 4.5.0 Released'
   link: '/blog/opendj-4-5-0-released'
   description: 'Added Java 11, 16, 17, 18 compartibility, Docker image improvements, PBKDF2-HMAC-SHA256 and PBKDF-HMAC-SHA512 password encoding schemes and many more...'
