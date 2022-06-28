@@ -1,7 +1,7 @@
 -
   title: 'OpenAM 14.6.6 Released'
   link: '/blog/openam-14-6-6-released'
-  description: 'Security updates, SAML impromvemens, Apache Cassandra CTS and user data store performance imporvemennts and many more...'
+  description: 'Fix NT auth module vulnerability'
 -
   title: 'How to Start OpenAM and OpenDJ in Separate Docker Contaners'
   link: '/blog/openam-opendj-docker'
