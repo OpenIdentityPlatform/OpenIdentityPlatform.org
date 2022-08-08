@@ -1,4 +1,9 @@
 -
+  title: 'OpenDJ 4.5.1 Released'
+  link: '/blog/opendj-4-5-1-released'
+  description: 'Added BCFKS FIPS key store type support, minor improvements and bug fixes'
+
+-
   title: 'OpenAM 14.6.6 Released'
   link: '/blog/openam-14-6-6-released'
   description: 'Fix NT auth module vulnerability'
