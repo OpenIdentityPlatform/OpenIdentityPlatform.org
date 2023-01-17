@@ -14,6 +14,11 @@
   }
 }
 
+//navbar
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(255, 255, 255);
+}
+
 #main {
   padding-top: 5rem;
   padding-bottom: 1rem;
@@ -51,6 +56,9 @@ img {
   a.btn, button.btn {
     background-color: $color5;
     color: white;
+  }
+  p {
+    font-size: 1.25rem; 
   }
 }
 
