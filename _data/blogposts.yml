@@ -1,4 +1,9 @@
 -
+  title: 'OpenAM 14.7.1 Released'
+  link: '/blog/openam-14-7-1-released'
+  description: 'Fixed classic UI in JDK 11 and higher, minor improvements'
+  
+-
   title: 'OpenAM 14.7.0 Released'
   link: '/blog/openam-14-7-0-released'
   description: 'Added JDK 11, 17, 19 support, performance improvements, fixed vulnerabilities'
