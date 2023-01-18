@@ -7,7 +7,7 @@ keywords: 'OpenDJ, Directory Service, Directory Services, LDAP, Open Identity Pl
 imageurl: 'opendj-og.png'
 share-buttons: true
 ---
-# OpenDJ 4.5.1 Released
+# OpenDJ 4.5.3 Released
 [Download](https://github.com/OpenIdentityPlatform/OpenDJ/releases/tag/4.5.3)
 ## What's new
 
