@@ -1,4 +1,9 @@
 -
+  title: 'OpenAM 14.7.0 Released'
+  link: '/blog/openam-14-7-0-released'
+  description: 'Added JDK 11, 17, 19 support, performance improvements, fixed vulnerabilities'
+
+-
   title: 'OpenDJ 4.5.4 Released'
   link: '/blog/opendj-4-5-4-released'
   description: 'Added JDK 11, 17, 19 support, added Docker JDK 17 platforms: linux/amd64, linux/arm64/8, linux/arm/v7'
