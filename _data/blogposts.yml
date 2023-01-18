@@ -1,4 +1,9 @@
 -
+  title: 'OpenDJ 4.5.3 Released'
+  link: '/blog/opendj-4-5-3-released'
+  description: 'Fixed bugs, improved build pricess'
+
+-
   title: 'OpenDJ 4.5.1 Released'
   link: '/blog/opendj-4-5-1-released'
   description: 'Added BCFKS FIPS key store type support, minor improvements and bug fixes'
