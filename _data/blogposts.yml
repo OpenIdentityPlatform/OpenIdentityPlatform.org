@@ -1,4 +1,9 @@
 -
+  title: 'How to Customise OpenAM'
+  link: '/blog/how-to-customise-openam'
+  description: 'This article explains how create custom OpenAM project and run it in the local environment'
+  
+-
   title: 'OpenAM 14.7.1 Released'
   link: '/blog/openam-14-7-1-released'
   description: 'Fixed classic UI in JDK 11 and higher, minor improvements'
