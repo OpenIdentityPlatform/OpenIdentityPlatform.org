@@ -9,17 +9,13 @@ share-buttons: true
 ---
 <h1>How To Protect Kubernetes Services With OpenIG</h1>
 
+Original article: [https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-To-Protect-Kubernetes-Services-With-OpenIG](https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-To-Protect-Kubernetes-Services-With-OpenIG)
+
 - [Preface](#preface)
 - [Deploy Sample Service For Test](#deploy-sample-service-for-test)
 - [Deploy OpenIG](#deploy-openig)
-  * [Create OpenIG Service](#create-openig-service)
-  * [Create OpenIG ConfigMaps](#create-openig-configmaps)
-    + [Create Main ConfigMap](#create-main-configmap)
-    + [Create ConfigMaps for OpenIG Routes](#create-configmaps-for-openig-routes)
-  * [Create OpenIG Deployment](#create-openig-deployment)
 - [Check if OpenIG works](#check-if-openig-works)
 - [Expose OpenIG via Ingress and Test](#expose-openig-via-ingress-and-test)
-  * [Test Access](#test-access)
 
 
 ## Preface

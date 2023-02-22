@@ -9,6 +9,13 @@ share-buttons: true
 
 # How to setup ICAP Filter for DLP and Antivirus protection with OpenIG
 
+Original article: [https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-to-setup-ICAP-Filter-for-DLP-and-Antivirus-protection-with-OpenIG](https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-to-setup-ICAP-Filter-for-DLP-and-Antivirus-protection-with-OpenIG)
+
+
+- [Introduction](#introduction)
+- [Setup Filter](#setup-filter)
+- [Testing Solution](#testing-solution)
+
 ## Introduction
 [Internet Content Adaptation Protocol (ICAP)](https://en.wikipedia.org/wiki/Internet_Content_Adaptation_Protocol){:target="_blank"}  - is a lightweight protocol that is generally used to implement virus scanning and content filtering.
 

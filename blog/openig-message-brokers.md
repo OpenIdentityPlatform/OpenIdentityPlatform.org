@@ -9,6 +9,9 @@ share-buttons: true
 
 # How to Integrate OpenIG and Message Brokers
 
+Original article: [https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-to-Integrate-OpenIG-and-Message-Brokers](https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-to-Integrate-OpenIG-and-Message-Brokers)
+
+
 - [Introduction](#introduction)
 - [Use Cases](#use-cases)
   * [Send HTTP Requests to Apache Kafka](#send-http-requests-to-apache-kafka)

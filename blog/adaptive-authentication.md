@@ -7,7 +7,9 @@ keywords: 'authentication'
 share-buttons: true
 ---
 
-# Adaptive Authentication: How to Improve Security Without Annoying Users.
+# Adaptive Authentication: How to Improve Security Without Annoying Users
+
+Original article: [https://github.com/OpenIdentityPlatform/OpenAM/wiki/Adaptive-Authentication:-How-to-Improve-Security-Without-Annoying-Users](https://github.com/OpenIdentityPlatform/OpenAM/wiki/Adaptive-Authentication:-How-to-Improve-Security-Without-Annoying-Users)
 
 - [Introduction](#introduction)
 - [How Adaptive Authentication Works](#how-adaptive-authentication-works)

@@ -10,11 +10,11 @@ share-buttons: true
 
 <h1>How <a href="https://github.com/OpenIdentityPlatform/OpenAM">OpenAM</a> Works Simple Explanation</h1>
 
+Original article: [https://github.com/OpenIdentityPlatform/OpenAM/wiki/How-OpenAM-Works-Simple-Explanation](https://github.com/OpenIdentityPlatform/OpenAM/wiki/How-OpenAM-Works-Simple-Explanation)
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [OpenAM Ecosystem](#openam-ecosystem)
-  * [Components](#components)
-  * [Scheme](#scheme)
 - [How Resource Protection Works](#how-resource-protection-works)
 - [How User Authentication Works](#how-user-authentication-works)
 - [Conclusion](#conclusion)
