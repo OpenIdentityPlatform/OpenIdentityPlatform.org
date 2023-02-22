@@ -1,4 +1,14 @@
 -
+  title: 'OpenIG 5.1.1 Released'
+  link: '/blog/openig-5-1-1-released'
+  description: 'Added cache settings to token transformation filter'
+
+-
+  title: 'OpenAM 14.7.2 Released'
+  link: '/blog/openam-14-7-2-released'
+  description: 'NTLMv2 authentication module, ordered authentication post process classes'
+
+-
   title: 'How to Customise OpenAM'
   link: '/blog/how-to-customise-openam'
   description: 'This article explains how create custom OpenAM project and run it in the local environment'
@@ -59,6 +69,12 @@
   title: 'ICAP Filter in OpenIG'
   link: '/blog/icap-filter-openig'
   description: 'How to setup ICAP Filter for DLP and Antivirus protection with OpenIG'
+
+-
+  title: 'OpenIG 5.1.0 Released'
+  link: '/blog/openig-5-1-0-released'
+  description: 'Added message brokers integration, ICAP Filter for DLP and Antivirus protection by and many other updates'
+
 -
   title: 'OpenAM 14.6.4 Released'
   link: '/blog/openam-14-6-4-released'
