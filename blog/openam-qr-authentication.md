@@ -7,15 +7,14 @@ keywords: 'authentication, qr'
 share-buttons: true
 ---
 
-# OpenAM QR Authentication
+# OpenAM QR Authentication Module
+
+Original article: [https://github.com/OpenIdentityPlatform/OpenAM/wiki/OpenAM-QR-Authentication-Module](https://github.com/OpenIdentityPlatform/OpenAM/wiki/OpenAM-QR-Authentication-Module)
 
   - [Introduction](#introduction)
   - [Process Description](#process-description)
   - [OpenAM Configuration](#openam-configuration)
-    * [Create QR Authentication Module Instance](#create-qr-authentication-module-instance)
-    * [Create Authentication Chain](#create-authentication-chain)
   - [Mobile Application Configuration](#mobile-application-configuration)
-    + [Mobile Application Setup](#mobile-application-setup)
   - [Testing Solution](#testing-solution)
 
 ## Introduction

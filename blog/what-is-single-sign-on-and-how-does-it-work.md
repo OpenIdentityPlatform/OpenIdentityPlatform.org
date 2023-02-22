@@ -10,6 +10,8 @@ share-buttons: true
 
 <h1>What is Single Sign-On and How does it Work</h1>
 
+Original article: [https://github.com/OpenIdentityPlatform/OpenAM/wiki/What-is-Single-Sign-On-and-How-does-it-Work](https://github.com/OpenIdentityPlatform/OpenAM/wiki/What-is-Single-Sign-On-and-How-does-it-Work)
+
 ## Table of Contents
 - [What is Single Sign-On](#what-is-single-sign-on)
 - [How does Single Sign On Work](#how-does-single-sign-on-work)
