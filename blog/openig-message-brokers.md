@@ -16,6 +16,7 @@ Original article: [https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-to-In
 - [Use Cases](#use-cases)
   * [Send HTTP Requests to Apache Kafka](#send-http-requests-to-apache-kafka)
   * [Send Apache Kafka Messages to HTTP Endpoint](#send-apache-kafka-messages-to-http-endpoint)
+  * [Embedded Apache Kafka](#embedded-apache-kafka)
   * [Send HTTP Requests to IBM MQ](#send-http-requests-to-ibm-mq)
   * [Send IBM MQ Messages to HTTP Endpoint](#send-ibm-mq-messages-to-http-endpoint)
 
@@ -200,6 +201,104 @@ There is a new record in the sample service log:
 2022-04-21 07:26:14.645 DEBUG 1 --- [nio-8080-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [POST /kafka2http, headers=[kafka-offset:"29", kafka-topic:"topic2", content-length:"16", host:"sample-service:8080", connection:"Keep-Alive", user-agent:"Apache-HttpAsyncClient/4.1.4 (Java/1.8.0_212)"], payload={"data": "test"}]
 ```
 
+### Embedded Apache Kafka
+
+If there are no message brokers in the infrastructure, but there is a need to receive and redirect Kafka messages, OpenIG offers embedded Apache Kafka.
+To setup embedded kafka, add `EmbeddedKafka` to OpenIG config.json file.
+
+`config.json`
+```json
+{
+  "heap": [
+    ...
+      {
+        "name": "EmbeddedKafka",
+        "type": "EmbeddedKafka",
+        "config": {
+          "zookeper.port": "${system['zookeper.port']}",
+          "security.inter.broker.protocol": "${empty system['keystore.location'] ?'PLAINTEXT':'SSL'}",
+          "listeners": "${system['kafka.bootstrap']}",
+          "advertised.listeners": "${system['kafka.bootstrap']}",
+          "ssl.endpoint.identification.algorithm": "",
+          "ssl.enabled.protocols":"TLSv1.2",
+          "ssl.keystore.location":"${system['keystore.location']}",
+          "ssl.keystore.password":"${empty system['keystore.password']?'changeit':system['keystore.password']}",
+          "ssl.key.password":"${empty system['key.password']?'changeit':system['key.password']}",
+          "ssl.truststore.location":"${system['truststore.location']}",
+          "ssl.truststore.password":"${empty system['truststore.password']?'changeit':system['truststore.password']}"			
+        },
+    ...
+  ]
+}
+```
+
+Some significant **EmbeddedKafka** settings:
+
+|Setting| Name|
+|-|-|
+| `zookeper.port` | Zookeeper port for Embedded Apache Kafka. If not set Kafka won't start  |
+| `listeners` | Port and hosts which Kafka binds to for listening |
+| `advertised.listeners` |Port and hosts which Kafka clients listening |
+
+Add kafka listener to OpenIG heap and create a route that listens Kafka message and redirects it to HTTP endpoint (you can also redirect the message to another message broker).
+
+`config.json`
+```json
+{
+  "heap": [
+    ...
+      {
+      "name": "kafka-consumer",
+      "type": "MQ_Kafka",
+      "config": {
+        "bootstrap.servers": "openig:9092",
+        "topic.consume": "topic1",
+        "method": "POST",
+        "uri": "/kafka2http"
+      }
+    ...
+  ]
+}
+```
+
+`10-kafka2http.json`
+```json
+{
+  "name": "${(request.method == 'POST') and matches(request.uri.path, '^/kafka2http$')}",
+  "condition": "${(request.method == 'POST') and matches(request.uri.path, '^/kafka2http$')}",
+  "monitor": true,
+  "timer": true,
+  "handler": {
+    "type": "Chain",
+    "config": {
+      "filters": [],
+      "handler": {
+      "type": "DispatchHandler",
+        "config": {
+          "bindings": [{
+              "handler": "ClientHandler",
+              "capture": "all",
+              "baseURI": "${system['endpoint.api']}"
+          }]
+        }
+      }
+    }
+  }
+}
+```
+
+Start OpenIG.
+Now you can create a topic in embedded OpenIG Kafka and send messages to the topic.
+
+```bash
+$ kafka-console-producer.sh --topic topic1 --bootstrap-server localhost:9092
+>{"data": "test"}
+```
+
+There is a new record in the sample service log:
+```
+2022-04-21 07:26:14.645 DEBUG 1 --- [nio-8080-exec-6] o.s.w.f.CommonsRequestLoggingFilter      : After request [POST /kafka2http, headers=[kafka-offset:"29", kafka-topic:"topic2", content-length:"16", host:"sample-service:8080", connection:"Keep-Alive", user-agent:"Apache-HttpAsyncClient/4.1.4 (Java/1.8.0_212)"], payload={"data": "test"}]
+```
 
 ### Send HTTP Requests to IBM MQ
 
