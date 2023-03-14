@@ -1,4 +1,8 @@
 -
+  title: 'How to Protect WebSocket connection with OpenAM and OpenIG'
+  link: '/blog/openam-openig-websocket'
+  description: 'How to setup OpenAM and OpenIG stack to protect WebSocket connection'
+-
   title: 'OpenIG 5.1.1 Released'
   link: '/blog/openig-5-1-1-released'
   description: 'Added cache settings to token transformation filter'
