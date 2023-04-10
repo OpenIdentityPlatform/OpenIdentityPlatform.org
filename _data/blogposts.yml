@@ -1,4 +1,8 @@
 -
+  title: 'Setup Tracing with OpenTelemetry and Jaeger'
+  link: '/blog/openam-openig-jaeger'
+  description: 'How to setup tracing with OpenTelemetry and Jaeger'
+-
   title: 'How to Protect WebSocket connection with OpenAM and OpenIG'
   link: '/blog/openam-openig-websocket'
   description: 'How to setup OpenAM and OpenIG stack to protect WebSocket connection'
