@@ -1,4 +1,9 @@
 -
+  title: 'How to Create Custom OpenAM DataStore Integration'
+  link: '/blog/how-to-create-openam-custom-datastore-integration'
+  description: 'How to create custom OpenAM DataStore integration using MongoDB as an example'
+
+-
   title: 'Setup Tracing with OpenTelemetry and Jaeger'
   link: '/blog/openam-openig-jaeger'
   description: 'How to setup tracing with OpenTelemetry and Jaeger'

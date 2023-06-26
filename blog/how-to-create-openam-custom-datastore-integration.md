@@ -3,7 +3,7 @@ layout: home
 title: "How to Create Custom OpenAM DataStore Integration"
 landing-title2: "How to Customise OpenAM"
 description: "This article explains how develop IdRepo plugin to connect to an external user data store"
-keywords: 'OpenAM, Customisation'
+keywords: 'OpenAM, Customisation, MongoDB, DataStore'
 imageurl: 'openam-og.png'
 share-buttons: true
 ---
