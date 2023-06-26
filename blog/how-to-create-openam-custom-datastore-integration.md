@@ -325,7 +325,3 @@ Test authentication via API, using Universal Id value as login and password from
 
 ## Conclusion
 In the following article, we have developed a very simple User Data Store without any modification, just to understand how it works. For a production environment password hashing connection pooling etc, should be implemented.
-
-
-
-(/assets/img/openam-idrepo/idrepo-ldap.png)
