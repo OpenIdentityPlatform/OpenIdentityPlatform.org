@@ -1,10 +1,9 @@
+<meta charset="utf-8">
 {% capture og_url %}{{ site.url }}{{ page.url | remove: "index.html" | remove: ".html" }}{% endcapture %}
 {% capture og_image %}{%- if page.imageurl -%}{{ site.url }}/assets/img/{{page.imageurl}}{% else %}https://avatars2.githubusercontent.com/u/30845478?s=280&amp;v=4{%- endif -%}{% endcapture %}
 {% capture page_title %} {%- if page.title -%} {{ page.title | smartify }} · {{ site.title | smartify }}{%- else -%}{{ site.title | smartify }} · {{ site.description | smartify }}{%- endif -%}{% endcapture %}
 {% capture page_description %}{{ page.description | default: site.description | smartify }}{% endcapture %}
-<meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="website" />
 <meta property="og:title" content="{{ page_title }}" />
