@@ -1,4 +1,8 @@
 -
+  title: 'OpenDJ 4.5.5 Released'
+  link: '/blog/opendj-4-5-5-released'
+  description: 'Extend admin port connection limits, PBKDF2-HMAC-SHA256 and PBKDF-HMAC-SHA512 password storage is configured by default, and many more...'
+-
   title: 'How to Create Custom OpenAM DataStore Integration'
   link: '/blog/how-to-create-openam-custom-datastore-integration'
   description: 'How to create custom OpenAM DataStore integration using MongoDB as an example'
