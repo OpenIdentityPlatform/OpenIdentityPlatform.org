@@ -1,4 +1,9 @@
 -
+  title: 'OpenAM 14.7.3 Released'
+  link: '/blog/openam-14-7-3-released'
+  description: 'Internal session cache improvements, fixed security vulnerabilites'
+
+-
   title: 'OpenDJ 4.5.5 Released'
   link: '/blog/opendj-4-5-5-released'
   description: 'Extend admin port connection limits, PBKDF2-HMAC-SHA256 and PBKDF-HMAC-SHA512 password storage is configured by default, and many more...'
