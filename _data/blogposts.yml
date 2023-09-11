@@ -1,4 +1,8 @@
 -
+  title: 'OpenDJ 4.5.6 Released'
+  link: '/blog/opendj-4-5-6-released'
+  description: 'Fixed unused trailing bytes in ASN.1 sequence'
+-
   title: 'OpenAM 14.7.3 Released'
   link: '/blog/openam-14-7-3-released'
   description: 'Internal session cache improvements, fixed security vulnerabilites'
