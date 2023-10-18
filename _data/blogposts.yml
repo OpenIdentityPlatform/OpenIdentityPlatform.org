@@ -1,4 +1,9 @@
 -
+  title: 'OpenAM 14.7.4 Released'
+  link: '/blog/openam-14-7-4-released'
+  description: 'Added Docker Xmx UseContainerSupport, updated embeddeed OpenDJ version, and many other issues fixed'
+
+-
   title: 'OpenDJ 4.5.9 Released'
   link: '/blog/opendj-4-5-9-released'
   description: 'Generate SHA256WithRSA certificate as default, remove TLSv1 as a default protocol'
