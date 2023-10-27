@@ -1,4 +1,8 @@
 -
+  title: 'OpenDJ 4.6.1 Released'
+  link: '/blog/opendj-4-6-1-released'
+  description: 'Allow store LDAP catalog data in Apache Cassandra or ScyllaDB NOSQL cluster, added JDK 21 compartibility'
+-
   title: 'OpenAM 14.7.4 Released'
   link: '/blog/openam-14-7-4-released'
   description: 'Added Docker Xmx UseContainerSupport, updated embeddeed OpenDJ version, and many other issues fixed'
