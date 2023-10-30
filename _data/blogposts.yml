@@ -1,4 +1,8 @@
 -
+  title: 'OpenDJ: Supercharged LDAP Data Storage and Performance'
+  link: '/blog/opendj-ldap-data-storage-and-performance'
+  description: 'OpenDJ now supports Apache Cassandra and ScyllaDB as a backend with all performance, resillience and scalability benefits'
+-
   title: 'OpenDJ 4.6.1 Released'
   link: '/blog/opendj-4-6-1-released'
   description: 'Allow store LDAP catalog data in Apache Cassandra or ScyllaDB NOSQL cluster, added JDK 21 compartibility'
