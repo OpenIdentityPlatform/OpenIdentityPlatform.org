@@ -1,4 +1,8 @@
 -
+  title: 'OpenAM 14.8.1 Released'
+  link: '/blog/openam-14-8-1-released'
+  description: 'Added Docker Xmx UseContainerSupport, updated embeddeed OpenDJ version, and many other issues fixed'
+-
   title: 'OpenDJ: Supercharged LDAP Data Storage and Performance'
   link: '/blog/opendj-ldap-data-storage-and-performance'
   description: 'OpenDJ now supports Apache Cassandra and ScyllaDB as a backend with all performance, resillience and scalability benefits'
