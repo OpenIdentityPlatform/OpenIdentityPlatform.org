@@ -1,4 +1,8 @@
 -
+  title: 'OpenIG 5.2.1 Released'
+  link: '/blog/openig-5-2-1-released'
+  description: 'Added JDK 21 support'
+-
   title: 'OpenAM 14.8.1 Released'
   link: '/blog/openam-14-8-1-released'
   description: 'Added Docker Xmx UseContainerSupport, updated embeddeed OpenDJ version, and many other issues fixed'
