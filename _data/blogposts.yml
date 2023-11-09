@@ -1,4 +1,8 @@
 -
+  title: 'SAML Authentication in Yandex Cloud via OpenAM'
+  link: '/blog/saml-authentication-in-yandex-cloud-via-openam'
+  description: 'How to setup federated authenticaion in Yandex Clound via OpenAM using SAML'
+-
   title: 'OpenIG 5.2.1 Released'
   link: '/blog/openig-5-2-1-released'
   description: 'Added JDK 21 support'
