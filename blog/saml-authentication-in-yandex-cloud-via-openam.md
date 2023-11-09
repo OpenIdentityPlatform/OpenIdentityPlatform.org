@@ -139,8 +139,8 @@ When you finish setting up SSO, test that everything works properly:
 1. Open your browser in guest or private browsing mode.
 2. Follow the URL to log in to the management console:
     
-    `https://console.cloud.yandex.ru/federations/<ID_федерации>`
+    `https://console.cloud.yandex.ru/federations/<federation_ID>`
     
 3. Enter OpenAM user credentials and click Login.
 
-On successful authentication, the IdP server will redirect you to URL `https://console.cloud.yandex.ru/federations/<ID_федерации>`, which you have set in the `metadata.xml` file for the Service Provider in the OpenAM settings and then to the [management console](https://console.cloud.yandex.ru/) home page. In the top-right corner, you will be able to see you are logged in to the console as a federated user.
+On successful authentication, the IdP server will redirect you to URL `https://console.cloud.yandex.ru/federations/<federation_ID>`, which you have set in the `metadata.xml` file for the Service Provider in the OpenAM settings and then to the [management console](https://console.cloud.yandex.ru/) home page. In the top-right corner, you will be able to see you are logged in to the console as a federated user.
