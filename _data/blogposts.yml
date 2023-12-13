@@ -1,4 +1,8 @@
 -
+  title: 'OpenAM 14.8.2 Released'
+  link: '/blog/openam-14-8-2-released'
+  description: 'Added Docker Xmx UseContainerSupport, updated embeddeed OpenDJ version, and many other issues fixed'
+-
   title: 'SAML Authentication in Yandex Cloud via OpenAM'
   link: '/blog/saml-authentication-in-yandex-cloud-via-openam'
   description: 'How to setup federated authenticaion in Yandex Clound via OpenAM using SAML'
