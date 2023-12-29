@@ -1,4 +1,8 @@
 -
+  title: 'OpenAM and Spring Boot 3 Integration via SAMLv2 Protocol'
+  link: '/blog/openam-spring-boot-saml'
+  description: 'How to setup federated authenticaion in Spring Boot Application via OpenAM using SAMLv2 Protocol'
+-
   title: 'OpenAM and Spring Boot 3 Integration via OIDC OAuth2 Protocol'
   link: '/blog/openam-spring-boot-oidc'
   description: 'How to setup federated authenticaion in Spring Boot Application via OpenAM using OIDC OAuth2 Protocol'
