@@ -4,7 +4,11 @@ title: OpenIG - Open Indentity Gateway
 description: OpenIG - Open Source reserve proxy server with
 keywords: OpenIG, Indentity Gateway, reverse proxy, session management, credential replay, Open Identity Platform
 ---
-<h1><a href="https://github.com/OpenIdentityPlatform/OpenIG">OpenIG</a></h1>
+<div class="container text-center mb-4">
+    <a target="_blank" href="https://github.com/OpenIdentityPlatform/OpenIG">
+        <img src="/assets/img/openig-logo.png" width="40%" alt="OpenDJ Logo"/>
+    </a>
+</div>
 
 The Open Identity Gateway (OpenIG) is a high-performance reverse proxy server with specialized session management and credential replay functionality.
 
@@ -31,3 +35,4 @@ Useful links:
 * [Fork OpenIG](https://github.com/OpenIdentityPlatform/OpenIG)
 * [Run OpenIG as Docker Image](https://hub.docker.com/r/openidentityplatform/openig/)
 * [Documentation](https://github.com/OpenIdentityPlatform/OpenIG/wiki/)
+* [How To Guides](https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-To-Guides)
