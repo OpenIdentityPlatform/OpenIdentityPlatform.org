@@ -1,4 +1,8 @@
 -
+  title: 'OpenAM 14.8.3 Released'
+  link: '/blog/openam-14-8-3-released'
+  description: 'Added JSONStdout audit logger, setGroups action to the user REST endpoint, updated embeddeed OpenDJ version, and many other issues fixed'
+-
   title: 'OpenAM and Spring Boot 3 Integration via OpenAM Cookie'
   link: '/blog/openam-spring-boot-cookie'
   description: 'How to setup authenticaion in Spring Boot Application via OpenAM'
