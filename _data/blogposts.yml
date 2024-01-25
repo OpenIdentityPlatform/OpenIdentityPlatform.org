@@ -1,4 +1,8 @@
 -
+  title: 'OpenIG 5.2.2 Released'
+  link: '/blog/openig-5-2-2-released'
+  description: 'Add Sec-WebSocket Protocol support'
+-
   title: 'OpenAM 14.8.3 Released'
   link: '/blog/openam-14-8-3-released'
   description: 'Added JSONStdout audit logger, setGroups action to the user REST endpoint, updated embeddeed OpenDJ version, and many other issues fixed'
