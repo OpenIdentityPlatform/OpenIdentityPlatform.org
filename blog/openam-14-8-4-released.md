@@ -12,8 +12,8 @@ imageurl: 'openam-og.png'
 ## What's new
 * Properties reading improved performance 
 * Improved performance for user datastore
-* Added system property to disable cross-sites monitoring in cluster
-* Fixed users lockout duration multiplication
+* Added system property to disable cross-site monitoring in a cluster
+* Fixed user lockout duration multiplication
 * Added binding for LDAP & AD authentication
 * CORS settings configuration moved from web.xml to administration console
  
