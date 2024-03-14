@@ -1,4 +1,9 @@
 -
+  title: 'OpenAM 14.8.4 Released'
+  link: '/blog/openam-14-8-4-released'
+  description: 'Moved CORS settings to administration console, added binding for LDAP & AD authentication, signinficant performance improvements'
+
+-
   title: 'OpenIG 5.2.2 Released'
   link: '/blog/openig-5-2-2-released'
   description: 'Add Sec-WebSocket Protocol support'
