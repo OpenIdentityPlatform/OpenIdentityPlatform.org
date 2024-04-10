@@ -1,4 +1,8 @@
 -
+  title: 'OpenAM Authentication via Gosuslugi Portal'
+  link: '/blog/openam-esia'
+  description: 'How to prepare and setup OpenAM to use Gosuslugi Portal Authentication'
+-
   title: 'How to Setup OAuth2/OIDC Federation in OpenAM'
   link: '/blog/openam-oauth-federation'
   description: 'How to Setup OAuth2/OIDC federation between OpenAM Server and Client Instances'
