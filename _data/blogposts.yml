@@ -1,4 +1,8 @@
 -
+  title: 'How to Setup Active Directory Authentication in a Spring Boot Application'
+  link: '/blog/openam-ad-springboot'
+  description: 'How to configure OpenAM to authenticate in a Spring Boot Application via Active Directory'
+-
   title: 'How to Setup OAuth2/OIDC Federation in OpenAM'
   link: '/blog/openam-oauth-federation'
   description: 'How to Setup OAuth2/OIDC federation between OpenAM Server and Client Instances'
