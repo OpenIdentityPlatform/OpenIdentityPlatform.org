@@ -1,4 +1,8 @@
 -
+  title: 'How to Add Authentication and Protect Your Application With OpenAM and OpenIG Stack'
+  link: '/blog/how-to-add-authorization-with-openam-openig'
+  description: 'How to add OpenAM authentication for an application, and setup proxying to the application using OpenIG so an unauthenticated user could not access the application'
+-
   title: 'How to Setup Active Directory Authentication in a Spring Boot Application'
   link: '/blog/openam-ad-springboot'
   description: 'How to configure OpenAM to authenticate in a Spring Boot Application via Active Directory'
@@ -229,10 +233,6 @@
   title: 'How To Setup Active Directory Authenticaion In OpenAM'
   link: '/blog/how-to-setup-active-directory-authentication-in-openam'
   description: 'How to use Active Directory as a user data source and use for authentication'
--
-  title: 'How to Add Authentication and Protect Your Application With OpenAM and OpenIG Stack'
-  link: '/blog/how-to-add-authorization-with-openam-openig'
-  description: 'How to add OpenAM authentication for an application, and setup proxying to the application using OpenIG so an unauthenticated user could not access the application'
 -
   title: 'OpenIG 5.0.8 Released'
   link: '/blog/openig-5-0-8-released'
