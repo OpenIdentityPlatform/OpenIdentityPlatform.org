@@ -65,6 +65,14 @@ Go to the admin console, select the root realm, and select Authentication → Ch
 
 ![SSO Kerberos Authentication Chain Settings](/assets/img/openam-kerberos/2-kerberos-chain.png)
 
+## Realm Configuration
+
+Go to Authentication → Chains for realm and on the User Profile tab, set the `User Profile` setting to `Ignore`.
+
+![OpenAM Realm User Profile Settings](/assets/img/openam-kerberos/3-openam-realm-auth-settings.png)
+
+So, you can authenticate with Kerberos without setting up Active Directory as a User Data Store in OpenAM.
+
 # Test Solution
 On a Windows machine, authenticate with your Active Directory account and go to [http://openam.example.com:8080/openam/XUI/#login/&realm=/&service=sso](http://openam.example.com:8080/openam/XUI/#login/&realm=/&service=sso)
 
