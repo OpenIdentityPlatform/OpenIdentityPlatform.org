@@ -1,4 +1,9 @@
 -
+  title: 'OpenDJ 4.6.3 Released'
+  link: '/blog/opendj-4-6-3-released'
+  description: 'Fixed OpenIDM compartibility, bump Docker image JRE to 19 version'
+
+-
   title: 'How to Add Authentication and Protect Your Application With OpenAM and OpenIG Stack'
   link: '/blog/how-to-add-authorization-with-openam-openig'
   description: 'How to add OpenAM authentication for an application, and setup proxying to the application using OpenIG so an unauthenticated user could not access the application'
