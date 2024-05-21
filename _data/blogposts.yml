@@ -1,4 +1,12 @@
 -
+  title: 'OpenIDM 6.0.0 Released'
+  link: '/blog/openidm-6-0-0-released'
+  description: 'Added Java LTS 11, 17, 21 version support, extend Docker supported architectures, OpenICF version updatec'
+-
+  title: 'OpenICF 1.6.0 Released'
+  link: '/blog/openicf-1-6-0-released'
+  description: 'Added Java LTS 11, 17, 21 version support, extend Docker supported architectures'
+-
   title: 'OpenDJ 4.6.3 Released'
   link: '/blog/opendj-4-6-3-released'
   description: 'Fixed OpenIDM compartibility, bump Docker image JRE to 19 version'
