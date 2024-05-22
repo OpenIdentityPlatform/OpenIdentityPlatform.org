@@ -1,4 +1,9 @@
 -
+  title: 'OpenAM 15.0.0 Released'
+  link: '/blog/openam-15-0-0-released'
+  description: 'Changes ESIA signature algorithm from RSA to GOST, added WebAuthn support to XUI'
+
+-
   title: 'OpenIDM 6.0.0 Released'
   link: '/blog/openidm-6-0-0-released'
   description: 'Added Java LTS 11, 17, 21 version support, extend Docker supported architectures, OpenICF version updatec'
