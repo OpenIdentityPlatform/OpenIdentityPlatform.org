@@ -1,4 +1,8 @@
 -
+  title: 'How to Setup WebAuthn Authentication in OpenAM'
+  link: '/blog/How-to-Setup-WebAuthn-Authentication-in-OpenAM'
+  description: 'How to Setup WebAuthn Authentication and Registration in OpenAM'
+-
   title: 'OpenAM 15.0.0 Released'
   link: '/blog/openam-15-0-0-released'
   description: 'Changes ESIA signature algorithm from RSA to GOST, added WebAuthn support to XUI'
@@ -323,10 +327,6 @@
   title: 'OpenICF 1.5.2 Released'
   link: '/blog/openicf-1-5-2-released'
   description: 'OpenAM Version Updated'
--
-  title: 'How to Setup WebAuthn Authentication in OpenAM'
-  link: '/blog/How-to-Setup-WebAuthn-Authentication-in-OpenAM'
-  description: 'How to Setup WebAuthn Authentication and Registration in OpenAM'
 -
   title: 'OpenICF 1.5.1 Released'
   link: '/blog/openicf-1-5-1-released'

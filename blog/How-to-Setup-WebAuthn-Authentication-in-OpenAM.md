@@ -3,7 +3,7 @@ layout: home
 landing-title: "How to Setup WebAuthn Authentication in OpenAM"
 landing-title2: "How to Setup WebAuthn Authentication and Registration in OpenAM"
 description: "How to Setup WebAuthn Authentication in OpenAM"
-keywords: 'WebAuthn, Authentication, Registration, Login, OpenAM, Access Management, Authentication, Authorization, Single Sign On,  Open Identity Platform'
+keywords: 'WebAuthn, passkeys, Authentication, Registration, Login, OpenAM, Access Management, Authentication, Authorization, Single Sign On,  Open Identity Platform'
 share-buttons: true
 ---
 
@@ -11,117 +11,137 @@ share-buttons: true
 
 [Original article](https://github.com/OpenIdentityPlatform/OpenAM/wiki/How-to-Setup-WebAuthn-Authentication-in-OpenAM)
 
-## Table of Contents
-
-- [Introduction](#introduction)
-  * [Notes](#notes)
-- [Setting up Authentication modules](#setting-up-authentication-modules)
-  * [Setup WebAuthn Registration Module](#setup-webauthn-registration-module)
-  * [Setup WebAutn Registration Authentication Chain](#setup-webautn-registration-authentication-chain)
-  * [Testing WebAutn Registration Authentication Chain](#testing-webautn-registration-authentication-chain)
-- [Setup WebAuth Authentication Module](#setup-webauth-authentication-module)
-  * [Setup WebAutn Authentication Chain](#setup-webautn-authentication-chain)
-  * [Testing WebAutn Authentication Chain](#testing-webautn-authentication-chain)
-
 ## Introduction
 
-[WebAuthn](https://en.wikipedia.org/wiki/WebAuthn) is
-[W3C](https://www.w3.org/) and [FIDO](https://fidoalliance.org/) standart
+[WebAuthn](https://en.wikipedia.org/wiki/WebAuthn) is a
+[W3C](https://www.w3.org/) and [FIDO](https://fidoalliance.org/) standard
 that describes Web public key authentication.
-For authentication client can use Hardware USB, Bluetooth or NFC tokens,
-or mobile biometric authentication, such as fingerprint or FaceID.
-WebAuthn is much harder to compromise comparing, for example, password authentication,
-because 3d party software will never gain access to the private key.
+For authentication, a client can use Hardware USB, Bluetooth, or NFC tokens,
+or mobile or laptop biometric authentication, such as fingerprint or FaceID.
 
-WebAuthn browser support:
-* Google Chrome.
-* Mozilla Firefox.
-* Microsoft Edge.
-* Apple Safari.
-* Opera.
+In short, WebAuthn uses mutual authentication, utilizing an asymmetric encryption algorithm and exchange of credential messages encrypted  with public keys (passkeys). Therefore, WebAuthn is resistant to phishing.
 
-More info about WebAutn browser support:
-[https://caniuse.com/#search=webauthn](https://caniuse.com/#search=webauthn)
+More details about the standard can be found at [https://www.w3.org/TR/webauthn-3/](https://www.w3.org/TR/webauthn-3/)
 
-The latest W3C WebAuthn Standart:
-[https://w3c.github.io/webauthn/](https://w3c.github.io/webauthn/)
+### Browsers Support
 
-### Notes
+WebAuthn is supported by most modern browsers, including Google Chrome, Mozilla Firefox (with partial support), Apple Safari, and Microsoft Edge, including their mobile versions. For up-to-date information about browsers and devices supporting WebAuthn, visit  [https://caniuse.com/?search=webauthn](https://caniuse.com/?search=webauthn).
 
-**WebAuthn works only for localhost hostname or for SSL connection**
+### Devices Support
 
-For local development and testing you can use U2F emulators:
-* For Linux: U2F emulator written in Rust [https://github.com/danstiner/rust-u2f](https://github.com/danstiner/rust-u2f)
-* For Mac: U2F Emulator by GitHub [https://github.com/github/SoftU2F](https://github.com/danstiner/rust-u2f)
+Passkeys created on iPhone, iPad, or Mac can be used on the same device or another iPhone, iPad, or Mac with the same Apple ID. The passkeys are synchronized automatically.
+
+Passkeys created on Android devices can be used on an Android device with the same Google account. The passkeys are synchronized automatically
+
+More details at the link [https://passkeys.dev/device-support/](https://passkeys.dev/device-support/)
 
 
-## Setting up Authentication modules
+## OpenAM Setup
+Since WebAuthn in a browser only works over HTTPS or on the localhost domain, for demonstration purposes we will deploy OpenAM in a Docker container on localhost. 
 
-For example there is a **/clients** realm in OpenAM that need to be protected with WebAuthn authentication.
+Create a network in Docker for OpenAM
 
-### Setup WebAuthn Registration Module
+```bash
+docker network create openam
+```
 
-In OpenAM console, navigate to **/clients** realm and create new WebAuthn Registration Authentication module:
-![OpenAM Create WebAuthn Registration Authentication Module](/assets/img/webauthn/webauthn-registration-new.png){:class="col-md-6 d-block"}
+Then run the OpenAM Docker container with the following command
 
-Setup required settings:
+```bash
+docker run -p 8080:8080 --network openam --name openam openidentityplatform/openam
+```
 
-![OpenAM  WebAuthn Registration Authentication Module Settings](/assets/img/webauthn/webauthn-registration-settings.png){:class="col-md-6 d-block"}
+Once the OpenAM server is running, perform the initial configuration by running the following command and wait for the configuration to complete.
 
-| Setting | Description |
-|--------|-------------|
-|**Attestation Type**| [Attestation Conveyance Preference](https://w3c.github.io/webauthn/#attestation-conveyance). Indicates, wether attestation required by server or not. Possible values are: {::nomarkdown}<ul><li><b>direct</b> - attestation, generated by authenticator required by server</li><li><b>idirect</b> - allows client to decide wether attestation is required</li><li><b>none</b> - server does not care about attestation</li></ul>{:/}
-|**Authenticator Type**|[Authenticator Attachment Enumeration](https://w3c.github.io/webauthn/#dom-publickeycredentialcreationoptions-authenticatorselection) - specifies authenticator type. Wether it could be platform specific, such as TouchID, or removable, such as USB Token. Possible values are: {::nomarkdown}<ul><li><b>cross-platform</b> - removable authenticator</li><li><b>platform</b> - platform specific authenticator</li><li><b>unspecified</b> - any authenticator type </li></ul>{:/} |
-|**Auth Level**| Modlue Authentication Level|
-|**Timeout**| WebAuthn registratation timeout in milliseconds|
-|**User attribute to store Public Keys**| User indetity attribiute to store authentication data|
+```bash
+docker exec -w '/usr/openam/ssoconfiguratortools' openam bash -c \
+'echo "ACCEPT_LICENSES=true
+SERVER_URL=http://localhost:8080
+DEPLOYMENT_URI=/$OPENAM_PATH
+BASE_DIR=$OPENAM_DATA_DIR
+locale=en_US
+PLATFORM_LOCALE=en_US
+AM_ENC_KEY=
+ADMIN_PWD=passw0rd
+AMLDAPUSERPASSWD=p@passw0rd
+COOKIE_DOMAIN=localhost
+ACCEPT_LICENSES=true
+DATA_STORE=embedded
+DIRECTORY_SSL=SIMPLE
+DIRECTORY_SERVER=localhost
+DIRECTORY_PORT=50389
+DIRECTORY_ADMIN_PORT=4444
+DIRECTORY_JMX_PORT=1689
+ROOT_SUFFIX=dc=openam,dc=example,dc=org
+DS_DIRMGRDN=cn=Directory Manager
+DS_DIRMGRPASSWD=passw0rd" > conf.file && java -jar openam-configurator-tool*.jar --file conf.file'
+```
+After successful configuration, you can proceed to further configuration. Let's configure the WebAuthn registration and authentication chains.
 
-### Setup WebAutn Registration Authentication Chain
 
-Create new authentication chain **webauthn-regustration**
-![OpenAM  WebAuthn Registration Authentication Chain](/assets/img/webauthn/webauthn-registration-authchain.png){:class="col-md-6 d-block"}
+## WebAuthn Registration Setup
 
-### Testing WebAutn Registration Authentication Chain
+### Authentication Module Setup
 
-Try to login using registration authentication chain and register public key for the user account. Open in browser url https://[host]:[port]/openam/UI/Login?org=/clients&service=webauthn-registration
- (change host and port to yours).
+Open the OpenAM administration console at [http://localhost:8080/openam/XUI/#login/](http://localhost:8080/openam/XUI/#login/)
+In the login field enter the `amadmin` value, in the password field enter the value from the `ADMIN_PWD` parameter of the setup command, in this case, `passw0rd`.
+Select the root realm and then goto Authentication → Modules in the left menu. Create a new authentication module `WebAuthn Registration`
 
-![OpenAM  WebAuthn Registration User Name](/assets/img/webauthn/webauthn-registration-username.png){:class="col-md-6 d-block"}
+![OpenAM Create WebAuthn Registration Authentication Module](/assets/img/webauthn/0-webauthn-registration-new-module.png)
 
-Enter User Name and then click Log In button
+The default module settings can be left unchanged.
 
-![OpenAM  WebAuthn Registration USB Key](/assets/img/webauthn/webauthn-registration-key.png){:class="col-md-6 d-block"}
+![OpenAM  WebAuthn Registration Authentication Module Settings](/assets/img/webauthn/1-webauthn-registration-module.png)
 
-Insert USB Token if you have not done it before. Registration successful.
+### Authentication Chain Setup
 
-## Setup WebAuth Authentication Module
+Go to the admin console, select the root realm and select Authentication → Chains from the menu. Create a `webauthn-registration` authentication chain with the created `webauthn-registration` module.
+![OpenAM  WebAuthn Registration Authentication Chain](/assets/img/webauthn/2-webauthn-registration-chain.png)
 
-In OpenAM console, navigate to **/clients** realm and create new WebAuthn Authentication module:
+## WebAuthn Authentication Setup
 
-![OpenAM Create WebAuthn Registration Authentication Module](/assets/img/webauthn/webauthn-authentication-new.png){:class="col-md-6 d-block"}
+### Authentication Module Setup
 
-Setup required settings:
+Open the OpenAM administration console. Select the root realm and then goto Authentication → Modules in the left menu. Create a new authentication module `WebAuthn Authentication`
 
-![OpenAM  WebAuthn Authentication Module Settings](/assets/img/webauthn/webauthn-authentication-settings.png){:class="col-md-6 d-block"}
+![OpenAM Create WebAuthn Authentication Module](/assets/img/webauthn/3-webauthn-authentication-new-module.png)
 
-| Setting | Description |
-|--------|-------------|
-|**Auth Level**| Modlue Authentication Level|
-|**Timeout**| WebAuthn authentication timeout in milliseconds|
-|**User attribute to retrieve Public Keys**| User indetity attribiute to retrieve authentication data|
+The default module settings can be left unchanged.
 
-### Setup WebAutn Authentication Chain
-Create new authentication chain **webauthn-authentication**
-![OpenAM  WebAuthn Authentication Chain](/assets/img/webauthn/webauthn-authentication-authchain.png){:class="col-md-6 d-block"}
+![OpenAM WebAuthn Authentication Module Settings](/assets/img/webauthn/4-webauthn-authentication-module.png)
 
-### Testing WebAutn Authentication Chain
 
-Try to login using  authentication chain and login using registered public key for the user account. Open in browser url https://[host]:[port]/openam/UI/Login?org=/clients&service=webauthn-authentication, (change host and port to yours).
+### Authentication Chain Setup
+Go to the admin console, select the root realm and select Authentication → Chains from the menu. Create a `webauthn-authentication` authentication chain with the created `webauthn-authentication` module.
 
-![OpenAM  WebAuthn Authentication User Name](/assets/img/webauthn/webauthn-authentication-username.png){:class="col-md-6 d-block"}
+![OpenAM  WebAuthn Authentication Chain](/assets/img/webauthn/5-webauthn-authentication-chain.png)
 
-Enter User Name and then click Log In button
+## Test the Solution
 
-![OpenAM  WebAuthn Authentication USB Key](/assets/img/webauthn/webauthn-registration-key.png){:class="col-md-6 d-block"}
+Log out of the OpenAM admin console or open a browser in Incognito mode and log in at http://localhost:8080/openam/XUI/#login with the user credentials `demo`. In the login field enter `demo` in the password field enter `changeit`.
 
-Insert USB Token if you have not done it before. Authentication successful.
+### Registration
+
+For demonstration purposes, we will use the WebAuthn emulator built into the browser. How to enable it is described at [https://developer.chrome.com/docs/devtools/webauthn](https://developer.chrome.com/docs/devtools/webauthn).
+
+Add a virtual authenticator with Supports resident keys and Supports user verification settings enabled.
+
+![WebAuthn New Chrome Authenticator](/assets/img/webauthn/6-webauthn-chrome-new-authenticator.png)
+
+Open the registration authentication chain at [http://localhost:8080/openam/XUI/#login&service=webauthn-registration](http://localhost:8080/openam/XUI/#login&service=webauthn-registration) and click the `Register` button. 
+
+![WebAuthn New Chrome Authenticator](/assets/img/webauthn/7-webauthn-registration.png)
+
+You will be immediately redirected back to the console with the `demo` account, and in the developer tools for the authenticator you will see the registered credentials for the demo user.
+
+![WebAuthn Chrome Authenticator Credentials](/assets/img/webauthn/8-webauthn-authenticator-credentials.png)
+
+### Authentication
+In the Console under the user `demo` click on the user icon and select Logout
+![OpenAM Logout](/assets/img/webauthn/9-openam-demo-logout.png)
+
+Go to [http://localhost:8080/openam/XUI/#login&service=webauthn-authentication](http://localhost:8080/openam/XUI/#login&service=webauthn-authentication) and click the `Log In` button. An account selection window will pop up.
+
+![Authenticator Account Selection](/assets/img/webauthn/10-account-selection.png)
+
+Select the `demo` account and click Continue. You will be authenticated with the `demo` account .
