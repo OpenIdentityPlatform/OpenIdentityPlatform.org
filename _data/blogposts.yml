@@ -1,4 +1,12 @@
 -
+  title: 'OpenIDM 6.0.1 Released'
+  link: '/blog/openidm-6-0-1-released'
+  description: 'Update Docker image to JRE 19 and restore lnux/s390x and linux/arm64/8 platforms'
+-
+  title: 'OpenICF 1.6.1 Released'
+  link: '/blog/openicf-1-6-1-released'
+  description: 'Update Docker image to JRE 19 and restore lnux/s390x platform'
+-
   title: 'How to Setup WebAuthn Authentication in OpenAM'
   link: '/blog/How-to-Setup-WebAuthn-Authentication-in-OpenAM'
   description: 'How to Setup WebAuthn Authentication and Registration in OpenAM'
