@@ -3,6 +3,44 @@
   link: '/blog/openam-esia'
   description: 'How to prepare and setup OpenAM to use Gosuslugi Portal Authentication'
 -
+  title: 'OpenIDM 6.0.1 Released'
+  link: '/blog/openidm-6-0-1-released'
+  description: 'Update Docker image to JRE 19 and restore lnux/s390x and linux/arm64/8 platforms'
+-
+  title: 'OpenICF 1.6.1 Released'
+  link: '/blog/openicf-1-6-1-released'
+  description: 'Update Docker image to JRE 19 and restore lnux/s390x platform'
+-
+  title: 'How to Setup WebAuthn Authentication in OpenAM'
+  link: '/blog/How-to-Setup-WebAuthn-Authentication-in-OpenAM'
+  description: 'How to Setup WebAuthn Authentication and Registration in OpenAM'
+-
+  title: 'OpenAM 15.0.0 Released'
+  link: '/blog/openam-15-0-0-released'
+  description: 'Changes ESIA signature algorithm from RSA to GOST, added WebAuthn support to XUI'
+
+-
+  title: 'OpenIDM 6.0.0 Released'
+  link: '/blog/openidm-6-0-0-released'
+  description: 'Added Java LTS 11, 17, 21 version support, extend Docker supported architectures, OpenICF version update'
+-
+  title: 'OpenICF 1.6.0 Released'
+  link: '/blog/openicf-1-6-0-released'
+  description: 'Added Java LTS 11, 17, 21 version support, extend Docker supported architectures'
+-
+  title: 'OpenDJ 4.6.3 Released'
+  link: '/blog/opendj-4-6-3-released'
+  description: 'Fixed OpenIDM compartibility, bump Docker image JRE to 19 version'
+
+-
+  title: 'How to Add Authentication and Protect Your Application With OpenAM and OpenIG Stack'
+  link: '/blog/how-to-add-authorization-with-openam-openig'
+  description: 'How to add OpenAM authentication for an application, and setup proxying to the application using OpenIG so an unauthenticated user could not access the application'
+-
+  title: 'How to Setup Active Directory Authentication in a Spring Boot Application'
+  link: '/blog/openam-ad-springboot'
+  description: 'How to configure OpenAM to authenticate in a Spring Boot Application via Active Directory'
+-
   title: 'How to Setup OAuth2/OIDC Federation in OpenAM'
   link: '/blog/openam-oauth-federation'
   description: 'How to Setup OAuth2/OIDC federation between OpenAM Server and Client Instances'
@@ -230,10 +268,6 @@
   link: '/blog/how-to-setup-active-directory-authentication-in-openam'
   description: 'How to use Active Directory as a user data source and use for authentication'
 -
-  title: 'How to Add Authentication and Protect Your Application With OpenAM and OpenIG Stack'
-  link: '/blog/how-to-add-authorization-with-openam-openig'
-  description: 'How to add OpenAM authentication for an application, and setup proxying to the application using OpenIG so an unauthenticated user could not access the application'
--
   title: 'OpenIG 5.0.8 Released'
   link: '/blog/openig-5-0-8-released'
   description: 'Update logging, routes configuration, security issues fix'
@@ -305,10 +339,6 @@
   title: 'OpenICF 1.5.2 Released'
   link: '/blog/openicf-1-5-2-released'
   description: 'OpenAM Version Updated'
--
-  title: 'How to Setup WebAuthn Authentication in OpenAM'
-  link: '/blog/How-to-Setup-WebAuthn-Authentication-in-OpenAM'
-  description: 'How to Setup WebAuthn Authentication and Registration in OpenAM'
 -
   title: 'OpenICF 1.5.1 Released'
   link: '/blog/openicf-1-5-1-released'
