@@ -5,6 +5,7 @@ landing-title2: "How To Protect Web Services with OpenIG"
 description: "How To Protect Web Services with OpenIG"
 keywords: 'OpenIG, API Gateway, Security, Authentication, Authorization, OSWAP, Single Sign On,  Open Identity Platform'
 share-buttons: true
+canonical: https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-To-Protect-Web-Services-with-OpenIG
 ---
 # How To Protect Web Services with OpenIG
 
@@ -27,7 +28,7 @@ Original article: [https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-To-Pr
   * [Add Response Security Headers X-Frame-Options and X-Content-Type-Options](#add-response-security-headers-x-frame-options-and-x-content-type-options)
   * [Authentication Check](#authentication-check)
   * [JWT Validation](#jwt-validation)
-
+  * [Authorization Check](#authorization-check)
 
 ## Introduction
 
@@ -554,7 +555,7 @@ $ curl -v -X POST -H 'Content-Type: application/json' -H 'Accept: application/js
 {"hello":"world"}
 ```
 
-### Authentication Check
+### Authentication Check 
 
 If you need to protect services from unauthenticatead access, there is no need to implement access control on each service. You can check access to the service with OpenIG, and if access has been granted, enrich request with the headers containing identity information. For example, authentication service returns to the client signed [JSON Web Token](https://en.wikipedia.org/wiki/JSON_Web_Token) (JWT) and client use this JWT to authenticate in service. There is a public key on OpenIG and OpenIG verifies JWT Sign and enrich
 
@@ -576,7 +577,7 @@ Lets generate with https://jwt.io/ and generated `private_key.pem` signed JWT to
 
 Sample token:
 ```
-eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzYW1wbGUtc2VydmljZSIsInN1YiI6IjEyMzQ1Njc4OTAiLCJuYW1lIjoiSm9obiBEb2UiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNTE2MjM5MDIyLCJleHAiOjE2MTYyMzkwMjJ9.Vxo5eGo9WVhHrf5cVO1Rjam9RfyrUSCdVeAr6mZz7bsNbR7cPz-qHHH-2Odrrk1INVyPgQH0yukf-n58WWZhAG0rTOkMF__eSSLDj-I85PxniJQvd85-cHdCyaklHJ1hA4LVSP27tJMc_7VBEuwnFB2XlqQs7dLbqmCd6skvDpMJASLHcwYadg-i-2os9hJsc6d1uzlpeJaaUxb-TD-ofEJpAfD9YaMO595bOFJvtNVhbXRxEDgAn2w73MS9GkC-uL91SuS1nQEy9HKxRQUHBstLNiuPtW3zdmI9f0SWqbaTqEz428S67VKQ6RuMVIMN5vjlqclJqVYNO2nyrc4TkyV-1PYJdlWyDRdbcCHuh0JWdC2aBa7bEBN0QTAOhCx6hflo5DEW8ehTp_9LsSI1hJTcyGBmQkc5EhvDMsrjxh2K1x-Zsa_2cBJbczSvk4TL70FT32FRpzJs-mdwID_lvoK4LFnA51z79jN0e8yXlHXJLPGsv8DhZxTziDGbBSBEiqxLGkelto6x85b8YJ-Y4dUgpoIlXJ7B6SsgNo6jcQBuYvgtD5c7cKHraGIZCu_i_exCyqd6CupsBzONTIqKwnzEVNtx1Ars5PfN3ncVN6CE_tIYOYYVBD_Dl9vlAWtImqhaxb5XoEOv5bKUbRNMIEDYy-3_K5w_BLquESc39MM
+eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzYW1wbGUtc2VydmljZSIsInN1YiI6IjEyMzQ1Njc4OTAiLCJuYW1lIjoiSm9obiBEb2UiLCJyb2xlIjoibWFuYWdlciIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNzI2MjM5MDIyfQ.bhzhwj2cY1iYbpx7Mzbukfi1jOCvWP-Pdd9dm3hf7lZDDuokNVDUXU3jvHial4QN-bOTSNCUKVy907hokcVeQaFwbiYoZs485Kr230Z0y9MU6zbDe8yQp68-71TDgJGIZ78YYOKvJTrzCWgWgE_Py1DskG_ViSxfGFlETpFQa056Rk2bty-9iuc_Cx5_Wr6RCcJTG6WYRrBtdWGIFxljEjxSAcJYmGPPA8dHHORDOnmka2OAjWURnsqbz50aI_SrWpnqp4i2eXVA1b5QD5rlsgc_QAqJptghrijBlRPhasTk1N-kXE8Ozboa0FwGfIRr7gNiG-3if7INZe2R5NUCmjlAlywcSfOunWuSzY8tLGTHV2swnQPP8lBXwVJcS5nJMqBNIbcLcFWHk3ryvvtf-LYty_jAY8v1zDe9-DwFPWI0rry8fmiZj7yhAnvX5EHZHvSQtp_zyPpVWvOXFPwasI0jdKoxhWvyJpbmw-D95J5CgJAMfkrWPDQKVt3ipebwnMJStA3xAPPyl28mTBYhJrT6gzIOS3DseoVKK4adn34ZrQi2Hm-wyUtbdulopK739MKM73NYgoFXSJeVUqcy4iw3-In5XmOhdRnUL50TSiaNBbkys8iK7r00HD3kI3CH0GfaPdrcgRgaFXKmVDhX-tEaPJYcuEUTHfQAxWwMdiw
 ```
 
 ### JWT Validation
@@ -641,31 +642,34 @@ if (jwt!=null && jwt.startsWith("Bearer eyJ")) {
         def sjwt=new JwtBuilderFactory().reconstruct(jwt, SignedJwt.class)
 
         //verify jwt signature
-        if (!sjwt.verify(new SigningManager().newRsaSigningHandler(getKey(sjwt.getClaimsSet()))))
+        if (!sjwt.verify(new SigningManager().newRsaSigningHandler(getKey(sjwt.getClaimsSet())))) {
             throw new Exception("invalid signature")
+        }
 
         //check jwt expiration
-        if ((sjwt.getClaimsSet().getExpirationTime()!=null && sjwt.getClaimsSet().getExpirationTime().before(new Date())))
+        if ((sjwt.getClaimsSet().getExpirationTime()!=null && sjwt.getClaimsSet().getExpirationTime().before(new Date()))) {
             throw new Exception("signature expired "+sjwt.getClaimsSet().getExpirationTime())
+        }
 
         //add name from JWT claim to header
         request.headers.put('X-Auth-Username', sjwt.getClaimsSet().getClaim("name"))
 
         return next.handle(new org.forgerock.openig.openam.StsContext(context, jwt), request)
-    }catch(Exception e) {
-        return getUnauthorizedResponse(e.getMessage())
+    } catch(Exception e) {
+        e.printStackTrace();
+        return getErrorResponse(Status.UNAUTHORIZED, e.getMessage())
     }
 } else {
     //returns 401 status if JWT not present in request
-    return getUnauthorizedResponse("Not Authenticated")
+    return getErrorResponse(Status.UNAUTHORIZED, "Not Authenticated")
 }
 
 return next.handle(context, request)
 
 
-def getUnauthorizedResponse(message) {
+def getErrorResponse(status, message) {
     def response = new Response()
-    response.status = Status.UNAUTHORIZED
+    response.status = status
     response.headers['Content-Type'] = "application/json"
     response.setEntity("{'error' : '" + message + "'}")
     return response
@@ -684,56 +688,147 @@ def getKey(claims) {
 
     throw new Exception('Unknown issuer')
 }
+
 ```
 
-Lets check valid request
+Lets check a valid request
 ```
-$ curl -v -X GET -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzYW1wbGUtc2VydmljZSIsInN1YiI6IjEyMzQ1Njc4OTAiLCJuYW1lIjoiSm9obiBEb2UiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNTE2MjM5MDIyLCJleHAiOjE2MTYyMzkwMjJ9.Vxo5eGo9WVhHrf5cVO1Rjam9RfyrUSCdVeAr6mZz7bsNbR7cPz-qHHH-2Odrrk1INVyPgQH0yukf-n58WWZhAG0rTOkMF__eSSLDj-I85PxniJQvd85-cHdCyaklHJ1hA4LVSP27tJMc_7VBEuwnFB2XlqQs7dLbqmCd6skvDpMJASLHcwYadg-i-2os9hJsc6d1uzlpeJaaUxb-TD-ofEJpAfD9YaMO595bOFJvtNVhbXRxEDgAn2w73MS9GkC-uL91SuS1nQEy9HKxRQUHBstLNiuPtW3zdmI9f0SWqbaTqEz428S67VKQ6RuMVIMN5vjlqclJqVYNO2nyrc4TkyV-1PYJdlWyDRdbcCHuh0JWdC2aBa7bEBN0QTAOhCx6hflo5DEW8ehTp_9LsSI1hJTcyGBmQkc5EhvDMsrjxh2K1x-Zsa_2cBJbczSvk4TL70FT32FRpzJs-mdwID_lvoK4LFnA51z79jN0e8yXlHXJLPGsv8DhZxTziDGbBSBEiqxLGkelto6x85b8YJ-Y4dUgpoIlXJ7B6SsgNo6jcQBuYvgtD5c7cKHraGIZCu_i_exCyqd6CupsBzONTIqKwnzEVNtx1Ars5PfN3ncVN6CE_tIYOYYVBD_Dl9vlAWtImqhaxb5XoEOv5bKUbRNMIEDYy-3_K5w_BLquESc39MM' http://localhost:8080/secure
-Note: Unnecessary use of -X or --request, GET is already inferred.
-*   Trying 127.0.0.1...
-* TCP_NODELAY set
-* Connected to localhost (127.0.0.1) port 8080 (#0)
+curl -v GET -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzYW1wbGUtc2VydmljZSIsInN1YiI6IjEyMzQ1Njc4OTAiLCJuYW1lIjoiSm9obiBEb2UiLCJyb2xlIjoibWFuYWdlciIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNzI2MjM5MDIyfQ.bhzhwj2cY1iYbpx7Mzbukfi1jOCvWP-Pdd9dm3hf7lZDDuokNVDUXU3jvHial4QN-bOTSNCUKVy907hokcVeQaFwbiYoZs485Kr230Z0y9MU6zbDe8yQp68-71TDgJGIZ78YYOKvJTrzCWgWgE_Py1DskG_ViSxfGFlETpFQa056Rk2bty-9iuc_Cx5_Wr6RCcJTG6WYRrBtdWGIFxljEjxSAcJYmGPPA8dHHORDOnmka2OAjWURnsqbz50aI_SrWpnqp4i2eXVA1b5QD5rlsgc_QAqJptghrijBlRPhasTk1N-kXE8Ozboa0FwGfIRr7gNiG-3if7INZe2R5NUCmjlAlywcSfOunWuSzY8tLGTHV2swnQPP8lBXwVJcS5nJMqBNIbcLcFWHk3ryvvtf-LYty_jAY8v1zDe9-DwFPWI0rry8fmiZj7yhAnvX5EHZHvSQtp_zyPpVWvOXFPwasI0jdKoxhWvyJpbmw-D95J5CgJAMfkrWPDQKVt3ipebwnMJStA3xAPPyl28mTBYhJrT6gzIOS3DseoVKK4adn34ZrQi2Hm-wyUtbdulopK739MKM73NYgoFXSJeVUqcy4iw3-In5XmOhdRnUL50TSiaNBbkys8iK7r00HD3kI3CH0GfaPdrcgRgaFXKmVDhX-tEaPJYcuEUTHfQAxWwMdiw' http://localhost:8080/secure 
+* Could not resolve host: GET
+* Closing connection 0
+curl: (6) Could not resolve host: GET
+*   Trying 127.0.0.1:8080...
+* Connected to localhost (127.0.0.1) port 8080 (#1)
 > GET /secure HTTP/1.1
 > Host: localhost:8080
-> User-Agent: curl/7.58.0
+> User-Agent: curl/8.1.2
 > Content-Type: application/json
 > Accept: application/json
-> Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzYW1wbGUtc2VydmljZSIsInN1YiI6IjEyMzQ1Njc4OTAiLCJuYW1lIjoiSm9obiBEb2UiLCJhZG1pbiI6dHJ1ZSwiaWF0IjoxNTE2MjM5MDIyLCJleHAiOjE2MTYyMzkwMjJ9.Vxo5eGo9WVhHrf5cVO1Rjam9RfyrUSCdVeAr6mZz7bsNbR7cPz-qHHH-2Odrrk1INVyPgQH0yukf-n58WWZhAG0rTOkMF__eSSLDj-I85PxniJQvd85-cHdCyaklHJ1hA4LVSP27tJMc_7VBEuwnFB2XlqQs7dLbqmCd6skvDpMJASLHcwYadg-i-2os9hJsc6d1uzlpeJaaUxb-TD-ofEJpAfD9YaMO595bOFJvtNVhbXRxEDgAn2w73MS9GkC-uL91SuS1nQEy9HKxRQUHBstLNiuPtW3zdmI9f0SWqbaTqEz428S67VKQ6RuMVIMN5vjlqclJqVYNO2nyrc4TkyV-1PYJdlWyDRdbcCHuh0JWdC2aBa7bEBN0QTAOhCx6hflo5DEW8ehTp_9LsSI1hJTcyGBmQkc5EhvDMsrjxh2K1x-Zsa_2cBJbczSvk4TL70FT32FRpzJs-mdwID_lvoK4LFnA51z79jN0e8yXlHXJLPGsv8DhZxTziDGbBSBEiqxLGkelto6x85b8YJ-Y4dUgpoIlXJ7B6SsgNo6jcQBuYvgtD5c7cKHraGIZCu_i_exCyqd6CupsBzONTIqKwnzEVNtx1Ars5PfN3ncVN6CE_tIYOYYVBD_Dl9vlAWtImqhaxb5XoEOv5bKUbRNMIEDYy-3_K5w_BLquESc39MM
->
-< HTTP/1.1 200 OK
-< Server: Apache-Coyote/1.1
-< Date: Thu, 25 Apr 2019 07:58:34 GMT
+> Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzYW1wbGUtc2VydmljZSIsInN1YiI6IjEyMzQ1Njc4OTAiLCJuYW1lIjoiSm9obiBEb2UiLCJyb2xlIjoibWFuYWdlciIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNzI2MjM5MDIyfQ.bhzhwj2cY1iYbpx7Mzbukfi1jOCvWP-Pdd9dm3hf7lZDDuokNVDUXU3jvHial4QN-bOTSNCUKVy907hokcVeQaFwbiYoZs485Kr230Z0y9MU6zbDe8yQp68-71TDgJGIZ78YYOKvJTrzCWgWgE_Py1DskG_ViSxfGFlETpFQa056Rk2bty-9iuc_Cx5_Wr6RCcJTG6WYRrBtdWGIFxljEjxSAcJYmGPPA8dHHORDOnmka2OAjWURnsqbz50aI_SrWpnqp4i2eXVA1b5QD5rlsgc_QAqJptghrijBlRPhasTk1N-kXE8Ozboa0FwGfIRr7gNiG-3if7INZe2R5NUCmjlAlywcSfOunWuSzY8tLGTHV2swnQPP8lBXwVJcS5nJMqBNIbcLcFWHk3ryvvtf-LYty_jAY8v1zDe9-DwFPWI0rry8fmiZj7yhAnvX5EHZHvSQtp_zyPpVWvOXFPwasI0jdKoxhWvyJpbmw-D95J5CgJAMfkrWPDQKVt3ipebwnMJStA3xAPPyl28mTBYhJrT6gzIOS3DseoVKK4adn34ZrQi2Hm-wyUtbdulopK739MKM73NYgoFXSJeVUqcy4iw3-In5XmOhdRnUL50TSiaNBbkys8iK7r00HD3kI3CH0GfaPdrcgRgaFXKmVDhX-tEaPJYcuEUTHfQAxWwMdiw
+> 
+< HTTP/1.1 200 
+< Date: Wed, 19 Jun 2024 08:59:06 GMT
 < X-Content-Type-Options: nosniff
 < X-Frame-Options: deny
-< Content-Type: application/json;charset=UTF-8
+< Content-Type: application/json
 < Transfer-Encoding: chunked
-<
-* Connection #0 to host localhost left intact
-{"name":"John Doe"}
+< 
+* Connection #1 to host localhost left intact
+{"hello":"John Doe"}
 ```
 
 Request without JWT:
 ```
-$ curl -v -X GET -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Authorization: Bearer'  http://localhost:8080/secure
-Note: Unnecessary use of -X or --request, GET is already inferred.
-*   Trying 127.0.0.1...
-* TCP_NODELAY set
-* Connected to localhost (127.0.0.1) port 8080 (#0)
+curl -v GET -H 'Content-Type: application/json' -H 'Accept: application/json'  http://localhost:8080/secure
+* Could not resolve host: GET
+* Closing connection 0
+curl: (6) Could not resolve host: GET
+*   Trying 127.0.0.1:8080...
+* Connected to localhost (127.0.0.1) port 8080 (#1)
 > GET /secure HTTP/1.1
 > Host: localhost:8080
-> User-Agent: curl/7.58.0
+> User-Agent: curl/8.1.2
 > Content-Type: application/json
 > Accept: application/json
-> Authorization: Bearer
->
-< HTTP/1.1 401 Unauthorized
-< Server: Apache-Coyote/1.1
+> 
+< HTTP/1.1 401 
 < X-Content-Type-Options: nosniff
 < X-Frame-Options: deny
 < Content-Type: application/json
 < Content-Length: 31
-< Date: Thu, 25 Apr 2019 07:58:07 GMT
-<
-* Connection #0 to host localhost left intact
+< Date: Wed, 19 Jun 2024 08:59:43 GMT
+< 
+* Connection #1 to host localhost left intact
 {'error' : 'Not Authenticated'}
 ```
+
+### Authorization Check
+
+Let's configure OpenIG so it authorizes access only to users with the `manager` role. The role will be taken from the `role` JWT claim . If the JWT `role` claim does not exist or is different from `manager`, OpenIG will return 403 Forbidden HTTP status.
+
+Let's add the `allowedRole` parameter to the `ScriptableFilter` filter in the route so that we can set the allowed role in the route without changing the script.
+
+```json
+...
+{
+  "type": "ScriptableFilter",
+  "config": {
+    "type": "application/x-groovy",
+    "file": "jwt.groovy",
+    "args": {
+      "iss": {
+        "sample-service": "${read('/usr/local/openig-config/keys/public_key.pem')}"                              
+      },
+      "allowedRole": "manager"
+    }
+  }
+}
+...
+```
+
+Let's add a role check to `jwt.groovy` after the JWT validation:
+
+```Groovy
+//check jwt expiration
+if ((sjwt.getClaimsSet().getExpirationTime()!=null && sjwt.getClaimsSet().getExpirationTime().before(new Date()))) {
+    throw new Exception("signature expired "+sjwt.getClaimsSet().getExpirationTime())
+}
+
+//check role
+ if (!sjwt.getClaimsSet().keys().contains("role") 
+    || !allowedRole.equals(sjwt.getClaimsSet().getClaim("role", String.class))) {
+     return getErrorResponse(Status.FORBIDDEN, "Forbidden")            
+}
+```
+
+Lets test a valid request
+```
+curl -v GET -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzYW1wbGUtc2VydmljZSIsInN1YiI6IjEyMzQ1Njc4OTAiLCJuYW1lIjoiSm9obiBEb2UiLCJyb2xlIjoibWFuYWdlciIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNzI2MjM5MDIyfQ.bhzhwj2cY1iYbpx7Mzbukfi1jOCvWP-Pdd9dm3hf7lZDDuokNVDUXU3jvHial4QN-bOTSNCUKVy907hokcVeQaFwbiYoZs485Kr230Z0y9MU6zbDe8yQp68-71TDgJGIZ78YYOKvJTrzCWgWgE_Py1DskG_ViSxfGFlETpFQa056Rk2bty-9iuc_Cx5_Wr6RCcJTG6WYRrBtdWGIFxljEjxSAcJYmGPPA8dHHORDOnmka2OAjWURnsqbz50aI_SrWpnqp4i2eXVA1b5QD5rlsgc_QAqJptghrijBlRPhasTk1N-kXE8Ozboa0FwGfIRr7gNiG-3if7INZe2R5NUCmjlAlywcSfOunWuSzY8tLGTHV2swnQPP8lBXwVJcS5nJMqBNIbcLcFWHk3ryvvtf-LYty_jAY8v1zDe9-DwFPWI0rry8fmiZj7yhAnvX5EHZHvSQtp_zyPpVWvOXFPwasI0jdKoxhWvyJpbmw-D95J5CgJAMfkrWPDQKVt3ipebwnMJStA3xAPPyl28mTBYhJrT6gzIOS3DseoVKK4adn34ZrQi2Hm-wyUtbdulopK739MKM73NYgoFXSJeVUqcy4iw3-In5XmOhdRnUL50TSiaNBbkys8iK7r00HD3kI3CH0GfaPdrcgRgaFXKmVDhX-tEaPJYcuEUTHfQAxWwMdiw' http://localhost:8080/secure
+* Could not resolve host: GET
+* Closing connection 0
+curl: (6) Could not resolve host: GET
+*   Trying 127.0.0.1:8080...
+* Connected to localhost (127.0.0.1) port 8080 (#1)
+> GET /secure HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/8.1.2
+> Content-Type: application/json
+> Accept: application/json
+> Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzYW1wbGUtc2VydmljZSIsInN1YiI6IjEyMzQ1Njc4OTAiLCJuYW1lIjoiSm9obiBEb2UiLCJyb2xlIjoibWFuYWdlciIsImlhdCI6MTUxNjIzOTAyMiwiZXhwIjoxNzI2MjM5MDIyfQ.bhzhwj2cY1iYbpx7Mzbukfi1jOCvWP-Pdd9dm3hf7lZDDuokNVDUXU3jvHial4QN-bOTSNCUKVy907hokcVeQaFwbiYoZs485Kr230Z0y9MU6zbDe8yQp68-71TDgJGIZ78YYOKvJTrzCWgWgE_Py1DskG_ViSxfGFlETpFQa056Rk2bty-9iuc_Cx5_Wr6RCcJTG6WYRrBtdWGIFxljEjxSAcJYmGPPA8dHHORDOnmka2OAjWURnsqbz50aI_SrWpnqp4i2eXVA1b5QD5rlsgc_QAqJptghrijBlRPhasTk1N-kXE8Ozboa0FwGfIRr7gNiG-3if7INZe2R5NUCmjlAlywcSfOunWuSzY8tLGTHV2swnQPP8lBXwVJcS5nJMqBNIbcLcFWHk3ryvvtf-LYty_jAY8v1zDe9-DwFPWI0rry8fmiZj7yhAnvX5EHZHvSQtp_zyPpVWvOXFPwasI0jdKoxhWvyJpbmw-D95J5CgJAMfkrWPDQKVt3ipebwnMJStA3xAPPyl28mTBYhJrT6gzIOS3DseoVKK4adn34ZrQi2Hm-wyUtbdulopK739MKM73NYgoFXSJeVUqcy4iw3-In5XmOhdRnUL50TSiaNBbkys8iK7r00HD3kI3CH0GfaPdrcgRgaFXKmVDhX-tEaPJYcuEUTHfQAxWwMdiw
+> 
+< HTTP/1.1 200 
+< Date: Wed, 19 Jun 2024 09:05:31 GMT
+< X-Content-Type-Options: nosniff
+< X-Frame-Options: deny
+< Content-Type: application/json
+< Transfer-Encoding: chunked
+< 
+* Connection #1 to host localhost left intact
+{"hello":"John Doe"}%  
+```
+
+Let's test a request with JWT with an invalid role:
+```
+curl -v -H 'Content-Type: application/json' -H 'Accept: application/json' -H 'Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzYW1wbGUtc2VydmljZSIsInN1YiI6IjEyMzQ1Njc4OTAiLCJuYW1lIjoiSm9obiBEb2UiLCJyb2xlIjoiYmFkIiwiaWF0IjoxNTE2MjM5MDIyLCJleHAiOjE3MjYyMzkwMjJ9.UezPgiGOcbp9CMM7hkrbvFsPmFIOnPnph5n60wF9jEWfGAIpS3dgBYvsprsVx0iZaUfhj2GTTLXhQUKrEM08n6jhUBSlwQ22LYBEHhBY57-AwtUhFZVJL8En00tc3HTGLV_El55PyvJvuLRbQ_fZB7rfp27OMPS0y2ciehz21_90TGKvUWUUGJgqDvRPchSKdO7LVa97oigGUp8vi7XiutMxopMLoms63f7FbasbIxMfgEFa48cuJTTcmk7genlPpMX8CBeBUjVriK0452uYdONvSFllqX2rdHwi7idKV-wB0qeUdNq2MDgcVqTrztxRQ8_ezoZVMnn3OLzuSABSpHKtPM3G3uVctY2X408zwOqe86BFvahT1eyBsEmrtszaIL-REy6vy-6P8JJ7iZdD720F1h3VyXj7PWNQiA-v3TumBLpRiML4Clb0SmqpB2iIvPhAz2-ob1w9BBxbvES6n95JEvFDlsv0JqOpvs-ZqQeR1pL7ML0RDR6ZR7xMWE6iVC4hlHEyX5Ufi6CBvkzVLVSnbIPyIBSBc4bzDzqdRkgt139bEdD-htrKWFmGkJKl_yvNcW_rYCkeMmb60km389XUtpiBoSc5CmKkcxrjsarvEMRh-AkIqB5R7Hz0KVKFdp1Hlzj4v1CQKK8eM4Poiq0NoO9IgHFJtgZKMosD7Qc
+' http://localhost:8080/secure
+*   Trying 127.0.0.1:8080...
+* Connected to localhost (127.0.0.1) port 8080 (#0)
+> GET /secure HTTP/1.1
+> Host: localhost:8080
+> User-Agent: curl/8.1.2
+> Content-Type: application/json
+> Accept: application/json
+> Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzYW1wbGUtc2VydmljZSIsInN1YiI6IjEyMzQ1Njc4OTAiLCJuYW1lIjoiSm9obiBEb2UiLCJyb2xlIjoiYmFkIiwiaWF0IjoxNTE2MjM5MDIyLCJleHAiOjE3MjYyMzkwMjJ9.UezPgiGOcbp9CMM7hkrbvFsPmFIOnPnph5n60wF9jEWfGAIpS3dgBYvsprsVx0iZaUfhj2GTTLXhQUKrEM08n6jhUBSlwQ22LYBEHhBY57-AwtUhFZVJL8En00tc3HTGLV_El55PyvJvuLRbQ_fZB7rfp27OMPS0y2ciehz21_90TGKvUWUUGJgqDvRPchSKdO7LVa97oigGUp8vi7XiutMxopMLoms63f7FbasbIxMfgEFa48cuJTTcmk7genlPpMX8CBeBUjVriK0452uYdONvSFllqX2rdHwi7idKV-wB0qeUdNq2MDgcVqTrztxRQ8_ezoZVMnn3OLzuSABSpHKtPM3G3uVctY2X408zwOqe86BFvahT1eyBsEmrtszaIL-REy6vy-6P8JJ7iZdD720F1h3VyXj7PWNQiA-v3TumBLpRiML4Clb0SmqpB2iIvPhAz2-ob1w9BBxbvES6n95JEvFDlsv0JqOpvs-ZqQeR1pL7ML0RDR6ZR7xMWE6iVC4hlHEyX5Ufi6CBvkzVLVSnbIPyIBSBc4bzDzqdRkgt139bEdD-htrKWFmGkJKl_yvNcW_rYCkeMmb60km389XUtpiBoSc5CmKkcxrjsarvEMRh-AkIqB5R7Hz0KVKFdp1Hlzj4v1CQKK8eM4Poiq0NoO9IgHFJtgZKMosD7Qc
+> 
+> 
+< HTTP/1.1 403 
+< X-Content-Type-Options: nosniff
+< X-Frame-Options: deny
+< Content-Type: application/json
+< Content-Length: 23
+< Date: Wed, 19 Jun 2024 09:06:32 GMT
+< 
+* Connection #0 to host localhost left intact
+{'error' : 'Forbidden'}%  
+```
+

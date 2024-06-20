@@ -1,4 +1,8 @@
 -
+  title: 'How To Protect Web Services with OpenIG'
+  link: '/blog/How-To-Protect-Web-Services-with-OpenIG'
+  description: 'How to protect web services with OpenIG with examples and source code'
+-
   title: 'OpenAM Authentication via Gosuslugi Portal'
   link: '/blog/openam-esia'
   description: 'How to prepare and setup OpenAM to use Gosuslugi Portal Authentication'
@@ -355,10 +359,6 @@
   title: 'OpenDJ 4.4.2 Released'
   link: '/blog/opendj-4-4-2-released'
   description: ''
--
-  title: 'How To Protect Web Services with OpenIG'
-  link: '/blog/How-To-Protect-Web-Services-with-OpenIG'
-  description: 'How to protect web services with OpenIG with examples and source code'
 -
   title: 'How to Use Apache Cassandra as User DataStore'
   link: '/blog/How-to-Use-Apache-Cassandra-as-User-DataStore-in-OpenAM'
