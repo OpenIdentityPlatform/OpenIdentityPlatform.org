@@ -31,5 +31,5 @@
   link: 'https://github.com/OpenIdentityPlatform/OpenICF/'
   short_descritopn: 'Open Identity Connector Framework'
   description: 'Open Identity Connector Framework (OpenICF) provides interoperability between identity, compliance and risk management solutions. An OpenICF Connector enables provisioning software, such as OpenIDM, to manage the identities that are maintained by a specific identity provider.'
-  details_link: 'https://github.com/OpenIdentityPlatform/OpenICF/'
+  details_link: '/openicf'
   release_link: 'https://github.com/OpenIdentityPlatform/OpenICF/releases'
