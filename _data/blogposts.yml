@@ -1,4 +1,8 @@
 -
+  title: 'How to Protect WebSocket connection with OpenAM and OpenIG'
+  link: '/blog/openam-openig-websocket'
+  description: 'How to setup OpenAM and OpenIG stack to protect WebSocket connection'
+-
   title: 'How To Protect Web Services with OpenIG'
   link: '/blog/How-To-Protect-Web-Services-with-OpenIG'
   description: 'How to protect web services with OpenIG with examples and source code'
@@ -133,10 +137,6 @@
   title: 'Setup Tracing with OpenTelemetry and Jaeger'
   link: '/blog/openam-openig-jaeger'
   description: 'How to setup tracing with OpenTelemetry and Jaeger'
--
-  title: 'How to Protect WebSocket connection with OpenAM and OpenIG'
-  link: '/blog/openam-openig-websocket'
-  description: 'How to setup OpenAM and OpenIG stack to protect WebSocket connection'
 -
   title: 'OpenIG 5.1.1 Released'
   link: '/blog/openig-5-1-1-released'
