@@ -5,6 +5,7 @@ landing-title2: "How to Protect WebSocket Connection with OpenAM and OpenIG"
 description: "How to setup OpenAM and OpenIG stack to protect WebSocket connection"
 keywords: 'openam, openig, gateway, websocket'
 share-buttons: true
+canonical: https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-to-Protect-WebSocket-Connection-with-OpenAM-and-OpenIG
 ---
 
 # How to Protect WebSocket Connection with OpenAM and OpenIG
@@ -18,7 +19,7 @@ Original article: [https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-to-Pr
 - [Test Solution](#test-solution)
 
 
-## Introduction
+# Introduction
 
 This article is a continuation of the article [How to Add Authorization and Protect Your Application With OpenAM and OpenIG Stack
 ](https://github.com/OpenIdentityPlatform/OpenAM/wiki/How-to-Add-Authorization-and-Protect-Your-Application-With-OpenAM-and-OpenIG-Stack). The previous article described how to protect regular HTTP endpoints. In the following, we will protect a WebSocket connection with OpenAM authentication. To simplify the setup and deployment of services we will use Docker and Docker Compose tools.
@@ -83,6 +84,88 @@ Create folder `openig-config` go to the folder and create two files ``admin.json
 }
 ```
 
+Add a static HTML page with an UI for testing WebSocket connection. In `openig-config` folder create `static` directory and add `ws-client.html` file with the following contents: 
+
+```html
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <title>WS-Client</title>
+    <style>
+        #log p {
+            margin: 0;
+        }
+        #log p.error {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+  <div>
+    <h1>WS-Client</h1>
+      <button id='connect' type='button'>Connect</button>
+      &nbsp;
+      <button id='send' type='button'>Send Message</button>
+      <br>
+      <label for='log'>Log:</label>
+      <div id='log'></div>
+  </div>
+  <script>
+      const connectBtn = document.getElementById('connect');
+      connectBtn.onclick = connect;
+      let socket;
+      function connect() {
+          appendToConsole('connecting...')
+          const endpoint = 'ws://' + location.host + '/ws-handler';
+          socket = new WebSocket(endpoint);
+          socket.onmessage = function(event) {
+              appendToConsole('got response message from server: ' + event.data);
+          };
+          socket.onopen = function () {
+              appendToConsole('connected')
+          };
+          socket.onerror = function (e) {
+              appendToConsole('socket error occurred', true);
+          }
+          socket.onclose = function () {
+              appendToConsole('socket connection closed')
+          }
+      }
+
+      const sendBtn = document.getElementById('send');
+      sendBtn.onclick = function () {
+          if(socket.readyState !== WebSocket.OPEN) {
+              appendToConsole('socket is not open', true);
+              return;
+          }
+          appendToConsole('sending message...');
+          try {
+              socket.send('Test message');
+          } catch (e) {
+              appendToConsole('error sending message: ' + e.message, true)
+          }
+      }
+
+      function appendToConsole(message, error) {
+          let className = '';
+          if (error) {
+              console.error(message);
+              className = 'error';
+          } else {
+              console.log(message);
+          }
+          const log = document.getElementById('log');
+          const p = document.createElement('p');
+          p.innerText = message;
+          p.className = className;
+          log.append(p)
+      }
+  </script>
+</body>
+</html> 
+```
+
 Then add OpenIG routes for the `echo-server` UI and WebSocket endpoints. Create a `routes` folder in the `openig-config` folder.
 In `routes` folder create a `10-ui.json` for UI and a `10-websocket.json` as well.
 `10-ui.json`
@@ -105,86 +188,7 @@ In `routes` folder create a `10-ui.json` for UI and a `10-websocket.json` as wel
          "type":"StaticResponseHandler",
          "config": {
             "status": 200,
-            "entity": "<!DOCTYPE html>
-            <html lang='en'>
-            <head>
-                <meta charset='UTF-8'>
-                <title>WS-Client</title>
-                <style>
-                    #log p {
-                        margin: 0;
-                    }
-                    #log p.error {
-                        color: red;
-                    }
-                </style>
-            </head>
-            <body>
-              <div>
-                <h1>WS-Client</h1>
-                  <button id='connect' type='button'>Connect</button>
-                  &nbsp;
-                  <button id='send' type='button'>Send Message</button>
-                  <br>
-                  <label for='log'>Log:</label>
-                  <div id='log'>
-            
-                  </div>
-              </div>
-              <script>
-                  const connectBtn = document.getElementById('connect');
-                  connectBtn.onclick = connect;
-                  let socket;
-                  function connect() {
-                      appendToConsole('connecting...')
-                      const endpoint = 'ws://' + location.host + '/ws-handler';
-                      socket = new WebSocket(endpoint);
-                      socket.onmessage = function(event) {
-                          appendToConsole('got response message from server: ' + event.data);
-                      };
-                      socket.onopen = function () {
-                          appendToConsole('connected')
-                      };
-                      socket.onerror = function (e) {
-                          appendToConsole('socket error occurred', true);
-                      }
-                      socket.onclose = function () {
-                          appendToConsole('socket connection closed')
-                      }
-                  }
-            
-                  const sendBtn = document.getElementById('send');
-                  sendBtn.onclick = function () {
-                      if(socket.readyState !== WebSocket.OPEN) {
-                          appendToConsole('socket is not open', true);
-                          return;
-                      }
-                      appendToConsole('sending message...');
-                      try {
-                          socket.send('Test message');
-                      } catch (e) {
-                          appendToConsole('error sending message: ' + e.message, true)
-                      }
-                  }
-            
-                  function appendToConsole(message, error) {
-                      let className = '';
-                      if (error) {
-                          console.error(message);
-                          className = 'error';
-                      } else {
-                          console.log(message);
-                      }
-                      const log = document.getElementById('log');
-                      const p = document.createElement('p');
-                      p.innerText = message;
-                      p.className = className;
-                      log.append(p)
-                  }
-            
-              </script>
-            </body>
-            </html>"
+            "entity": "${read(system['openig.base'].concat('/config/static/ws-client.html'))}"
          }
        }
     ]
@@ -274,7 +278,7 @@ System properties from OpenIG example configuration
 |openam|points to OpenAM instance (we will use this setting in the future chapters)|
 |org.openidentityplatform.openig.websocket.ttl|The interval in seconds, during which the validity of the session is checked (default 180)|
 
-Run the `docker compose` command using the updated file. After OpenIG and sample servie are up, open [http://localhost:8080/ui/ws](http://localhost:8080/ui/ws) URL in your browser. You'll be able to establish a WebSocket connection and all interactions will be proxied by OpenIG.
+Run the `docker compose` command using the updated file. After OpenIG and sample servie are up, open [http://localhost:8080/ui/ws](http://localhost:8080/ui) URL in your browser. You'll be able to establish a WebSocket connection and all interactions will be proxied by OpenIG.
 
 # OpenAM Configuration
 
@@ -307,7 +311,7 @@ Run the `docker-compose` file, setup OpenAM, add cookie domain and setup `jwt` e
 Add OpenAM token validation filters to the `10-websocket.json` file.
 
 ```json
-{
+       {
           "type": "ConditionalFilter",
           "config": {
             "condition": "${empty contexts.sts.issuedToken and not empty request.cookies['iPlanetDirectoryPro'][0].value}",
