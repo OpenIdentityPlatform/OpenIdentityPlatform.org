@@ -1,4 +1,8 @@
 -
+  title: 'How to Run OpenDJ‐based Embedded LDAP in Spring Boot Application'
+  link: '/blog/how-to-run-embedded-opendj-in-spring-boot'
+  description: 'This article explains how to run an embedded OpenDJ instance as part of a Spring Boot application'
+-
   title: 'How to Protect WebSocket connection with OpenAM and OpenIG'
   link: '/blog/openam-openig-websocket'
   description: 'How to setup OpenAM and OpenIG stack to protect WebSocket connection'
