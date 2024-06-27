@@ -18,3 +18,5 @@ imageurl: 'openig-og.png'
 ## Thanks for the contributions
 
 <i id="vharseko"><i>1. <a href="https://github.com/vharseko" target="_blank">vharseko</a></i>
+
+<i id="maximthomas"><i>2. <a href="https://github.com/maximthomas" target="_blank">Maxim Thomas</a></i>

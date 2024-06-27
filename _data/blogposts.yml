@@ -1,4 +1,24 @@
 -
+  title: 'OpenIG 5.2.3 Released'
+  link: '/blog/openig-5-2-3-released'
+  description: 'Add MacOS arm64 support, security updates'
+-
+  title: 'OpenIDM 6.1.0 Released'
+  link: '/blog/openidm-6-1-0-released'
+  description: 'Update OpenICF, security updates'
+-
+  title: 'OpenAM 15.0.2 Released'
+  link: '/blog/openam-15-0-2-released'
+  description: 'Build documentation from source, security updates'
+-
+  title: 'OpenICF 1.6.2 Released'
+  link: '/blog/openicf-1-6-2-released'
+  description: 'Security updates'
+-
+  title: 'OpenDJ 4.6.4 Released'
+  link: '/blog/opendj-4-6-4-released'
+  description: 'Added embedded OpenDJ project, security updates'
+-
   title: 'How to Run OpenDJ‐based Embedded LDAP in Spring Boot Application'
   link: '/blog/how-to-run-embedded-opendj-in-spring-boot'
   description: 'This article explains how to run an embedded OpenDJ instance as part of a Spring Boot application'
@@ -26,6 +46,10 @@
   title: 'How to Setup WebAuthn Authentication in OpenAM'
   link: '/blog/How-to-Setup-WebAuthn-Authentication-in-OpenAM'
   description: 'How to Setup WebAuthn Authentication and Registration in OpenAM'
+-
+  title: 'OpenAM 15.0.1 Released'
+  link: '/blog/openam-15-0-1-released'
+  description: 'Security updates'
 -
   title: 'OpenAM 15.0.0 Released'
   link: '/blog/openam-15-0-0-released'
