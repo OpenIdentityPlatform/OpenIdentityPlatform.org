@@ -1,4 +1,8 @@
 -
+  title: 'API Throughput Control (Throttling) with OpenIG Authorization Gateway'
+  link: '/blog/how-to-setup-throttling-in-openig'
+  description: 'This article explains API throttling use cases and how to setup various throttling policies with OpenIG'
+-
   title: 'OpenIG 5.2.3 Released'
   link: '/blog/openig-5-2-3-released'
   description: 'Add MacOS arm64 support, security updates'
