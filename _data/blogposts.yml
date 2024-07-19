@@ -1,4 +1,16 @@
 -
+  title: 'OpenIDM 6.1.1 Released'
+  link: '/blog/openidm-6-1-1-released'
+  description: 'Added documentation'
+-
+  title: 'OpenAM 15.0.3 Released'
+  link: '/blog/openam-15-0-3-released'
+  description: 'Update OpenDJ version, added documentation'
+-
+  title: 'OpenDJ 4.6.5 Released'
+  link: '/blog/opendj-4-6-5-released'
+  description: 'Build documentation in GitHub actions, fixed version upgrade error, etc'
+-
   title: 'Authentication in a Single‐Page Application via OpenAM using OAuth2 OIDC Protocol'
   link: '/blog/openam-spa-oidc'
   description: 'How to setup federated authentication in a Single Page Application via OpenAM using OIDC OAuth2 Protocol with PKCE'
