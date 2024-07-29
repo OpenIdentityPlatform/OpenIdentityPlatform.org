@@ -1,4 +1,8 @@
 -
+  title: 'OpenAM 15.0.4 Released'
+  link: '/blog/openam-15-0-4-released'
+  description: 'Fixed CVE-2024-41667 FreeMarker template injection'
+-
   title: 'OpenIDM 6.1.1 Released'
   link: '/blog/openidm-6-1-1-released'
   description: 'Added documentation'
