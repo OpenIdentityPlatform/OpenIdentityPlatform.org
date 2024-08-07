@@ -3,6 +3,7 @@ layout: home
 title: OpenDJ - Open Directory Server
 description: OpenDJ - Open Source LDAPv3 compliant directory service.
 keywords: OpenDJ, Directory Service, Directory Services, LDAP, Open Identity Platform
+reponame: OpenDJ
 ---
 <div class="container text-center mb-4">
     <a target="_blank" href="https://github.com/OpenIdentityPlatform/OpenDJ">
@@ -30,3 +31,5 @@ Useful links:
 * [Documentation](https://github.com/OpenIdentityPlatform/OpenDJ/wiki/Documentation)
 * [How To Guides](https://github.com/OpenIdentityPlatform/OpenDJ/wiki/How-To-Guides)
 * [On Wikipedia](https://en.wikipedia.org/wiki/OpenDJ)
+
+ {% include contributors.html %}

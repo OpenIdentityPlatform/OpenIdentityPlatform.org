@@ -3,7 +3,7 @@ layout: home
 title: OpenICF - Open Indentity Gateway
 description: OpenICF - Open Source reserve proxy server with
 keywords: OpenIG, Indentity Gateway, reverse proxy, session management, credential replay, Open Identity Platform
-canonical: https://github.com/OpenIdentityPlatform/OpenICF
+reponame: OpenICF
 ---
 <div class="container text-center mb-4">
     <a target="_blank" href="https://github.com/OpenIdentityPlatform/OpenICF">
@@ -37,3 +37,4 @@ This project is licensed under the [Common Development and Distribution License 
 * [groovy-connector](https://github.com/OpenIdentityPlatform/OpenICF/releases) 
 * [kerberos-connector](https://github.com/OpenIdentityPlatform/OpenICF/releases) 
 
+ {% include contributors.html %}

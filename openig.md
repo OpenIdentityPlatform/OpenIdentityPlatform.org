@@ -3,6 +3,7 @@ layout: home
 title: OpenIG - Open Indentity Gateway
 description: OpenIG - Open Source reserve proxy server with
 keywords: OpenIG, Indentity Gateway, reverse proxy, session management, credential replay, Open Identity Platform
+reponame: OpenIG
 ---
 <div class="container text-center mb-4">
     <a target="_blank" href="https://github.com/OpenIdentityPlatform/OpenIG">
@@ -36,3 +37,5 @@ Useful links:
 * [Run OpenIG as Docker Image](https://hub.docker.com/r/openidentityplatform/openig/)
 * [Documentation](https://github.com/OpenIdentityPlatform/OpenIG/wiki/)
 * [How To Guides](https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-To-Guides)
+
+ {% include contributors.html %}

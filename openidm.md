@@ -3,6 +3,7 @@ layout: home
 title: OpenIDM - Open Identity Management
 description: OpenIDM - OpenIDM is an open standards based Identity Management, Provisioning and Compliance solution.
 keywords: Open IDM, Identity, Management, Identity Management
+reponame: OpenIDM
 ---
 <div class="container text-center mb-4">
     <a target="_blank" href="https://github.com/OpenIdentityPlatform/OpenIDM">
@@ -22,3 +23,5 @@ Useful links:
 * [Fork OpenIDM](https://github.com/OpenIdentityPlatform/OpenIDM)
 * [Run OpenIDM as Docker Image](https://hub.docker.com/r/openidentityplatform/openidm/)
 * [Documentation](https://github.com/OpenIdentityPlatform/OpenIDM/wiki/)
+
+ {% include contributors.html %}
