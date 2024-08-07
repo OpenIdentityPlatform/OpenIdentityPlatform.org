@@ -3,6 +3,7 @@ layout: home
 title: OpenAM - Open Access Manager
 description: OpenAM - Access Management, Identity Management, Single Sign On and Identity Provider Solution to protect your sites.
 keywords: OpenAM, Access Management, Authentication, Authorization, SSO, Single Sign On, Identity Provider, Open Identity Platform
+reponame: OpenAM
 ---
 
 <div class="container text-center mb-4">
@@ -40,3 +41,5 @@ Useful links:
 * [Documentation](https://github.com/OpenIdentityPlatform/OpenAM/wiki/Documentation)
 * [How To Guides](https://github.com/OpenIdentityPlatform/OpenAM/wiki/How-To-Guides)
 * [On Wikipedia](https://en.wikipedia.org/wiki/OpenAM)
+
+ {% include contributors.html %}
