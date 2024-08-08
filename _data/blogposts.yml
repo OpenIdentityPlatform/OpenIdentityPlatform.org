@@ -1,4 +1,8 @@
 -
+  title: 'OpenDJ 4.7.0 Released'
+  link: '/blog/opendj-4-7-0-released'
+  description: 'Added LDAP Relax Rules Control, alias dereferencing for search requests and more'
+-
   title: 'OpenAM 15.0.4 Released'
   link: '/blog/openam-15-0-4-released'
   description: 'Fixed CVE-2024-41667 FreeMarker template injection'
