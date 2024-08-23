@@ -1,4 +1,8 @@
 -
+  title: 'OpenIDM: Active Directory Identity Management'
+  link: '/blog/openidm-ad-idm'
+  description: 'In this article, we will configure Active Directory identity management from OpenIDM.'
+-
   title: 'OpenIDM 6.1.2 Released'
   link: '/blog/openidm-6-1-2-released'
   description: 'Fixed some errors'
