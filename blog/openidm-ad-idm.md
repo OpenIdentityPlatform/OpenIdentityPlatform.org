@@ -16,7 +16,7 @@ Original article: [https://github.com/OpenIdentityPlatform/OpenIDM/wiki/Active-D
 
 In this article, we will configure Active Directory identity management from OpenIDM. Let's look at a typical scenario where HR hires a new employee, and enters their credentials into an account management system (IDM). From this system, the data must be imported into the main directory. Typically, this is Active Directory.
 
-## Настройка OpenIDM
+## OpenIDM Configuration
 
 How to quickly deploy OpenIDM was described in this [article](https://github.com/OpenIdentityPlatform/OpenIDM/wiki/Getting-Started). Therefore, we will assume that you already have OpenIDM deployed.
 
@@ -97,10 +97,10 @@ In the Attributes Grid, configure the attribute mapping according to the table:
 
 | Soruce | Destination | Trasnformation script | Conditional updates |
 | --- | --- | --- | --- |
-| userName | dn | `'CN=' + source + ',CN=Users,DC=ds,DC=gazprombank,DC=ru'` |  |
+| userName | dn | `'CN=' + source + ',CN=Users,DC=example,DC=org'` |  |
 | givenName | givenName |  |  |
 | sn | sn |  |  |
-|  | cn | `source.displayName || (source.givenName + ' ' + [source.sn](http://source.sn/));` |  |
+|  | cn | `source.displayName` || (source.givenName + ' ' + [source.sn](http://source.sn/));` |  |
 | description | description |  | `!!object.description` |
 | telephoneNumber | telephoneNumber |  | `!!object.telephoneNumber` |
 | userName | sAMAccountName |  |  |
