@@ -1,4 +1,24 @@
 -
+  title: 'OpenIDM 6.2.0 Released'
+  link: '/blog/openidm-6-2-0-released'
+  description: 'Docker Image with Java 21, added Java 22 support'
+-
+  title: 'OpenIG 5.3.0 Released'
+  link: '/blog/openig-5-3-0-released'
+  description: 'Docker Image with Java 21, added Java 22 support'
+-
+  title: 'OpenAM 15.1.0 Released'
+  link: '/blog/openam-15-1-0-released'
+  description: 'Docker Image with Java 21, added Java 22 support'
+-
+  title: 'OpenICF 1.7.0 Released'
+  link: '/blog/openicf-1-7-0-released'
+  description: 'Docker Image with Java 21, added Java 22 support'
+-
+  title: 'OpenDJ 4.8.0 Released'
+  link: '/blog/opendj-4-8-0-released'
+  description: 'Docker Image with Java 21, added Java 22 support, documentation improvements and fixed some issues.'
+-
   title: 'OpenIDM: Active Directory Identity Management'
   link: '/blog/openidm-ad-idm'
   description: 'In this article, we will configure Active Directory identity management from OpenIDM.'
