@@ -1,4 +1,20 @@
 -
+  title: 'OpenIDM 6.2.1 Released'
+  link: '/blog/openidm-6-2-1-released'
+  description: 'Docker Image with Java 23, migrated documentation to the AsciiDoc format'
+-
+  title: 'OpenICF 1.7.1 Released'
+  link: '/blog/openicf-1-7-1-released'
+  description: 'Added Java 23 support, added maven-compiler-plugin release for cross compile compatibility'
+-
+  title: 'OpenAM 15.1.1 Released'
+  link: '/blog/openam-15-1-1-released'
+  description: 'Added Java 23 support, migrated documentation to the AsciiDoc format'
+-
+  title: 'OpenDJ 4.8.1 Released'
+  link: '/blog/opendj-4-8-1-released'
+  description: 'Added Java 23 support, migrated documentation to the AsciiDoc format, fixed DIT structure rules control'
+-
   title: 'OpenIDM 6.2.0 Released'
   link: '/blog/openidm-6-2-0-released'
   description: 'Docker Image with Java 21, added Java 22 support'
