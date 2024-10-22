@@ -35,7 +35,8 @@ Useful links:
 * [Latest Release](https://github.com/OpenIdentityPlatform/OpenIG/releases)
 * [Fork OpenIG](https://github.com/OpenIdentityPlatform/OpenIG)
 * [Run OpenIG as Docker Image](https://hub.docker.com/r/openidentityplatform/openig/)
-* [Documentation](https://github.com/OpenIdentityPlatform/OpenIG/wiki/)
-* [How To Guides](https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-To-Guides)
+* [Documentation](https://doc.openidentityplatform.org/openig/)
+* [Wiki](https://github.com/OpenIdentityPlatform/OpenIG/wiki/)
+* [How To Guides](https://github.com/OpenIdentityPlatform/OpenIG/wiki#how-to-guides)
 
  {% include contributors.html %}

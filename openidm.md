@@ -22,6 +22,7 @@ Useful links:
 * [Latest Release](https://github.com/OpenIdentityPlatform/OpenIDM/releases)
 * [Fork OpenIDM](https://github.com/OpenIdentityPlatform/OpenIDM)
 * [Run OpenIDM as Docker Image](https://hub.docker.com/r/openidentityplatform/openidm/)
-* [Documentation](https://github.com/OpenIdentityPlatform/OpenIDM/wiki/)
+* [Documentation](https://doc.openidentityplatform.org/openidm/)
+* [Wiki](https://github.com/OpenIdentityPlatform/OpenIDM/wiki/)
 
  {% include contributors.html %}
