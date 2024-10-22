@@ -38,8 +38,9 @@ Useful links:
 * [Fork OpenAM](https://github.com/OpenIdentityPlatform/OpenAM)
 * [Quick Start Guide](https://github.com/OpenIdentityPlatform/OpenAM/wiki/Quick-Start-Guide)
 * [How OpenAM Works Simple Explanation](/blog/how-openam-works-simple-explanation)
-* [Documentation](https://github.com/OpenIdentityPlatform/OpenAM/wiki/Documentation)
-* [How To Guides](https://github.com/OpenIdentityPlatform/OpenAM/wiki/How-To-Guides)
+* [Documentation](https://doc.openidentityplatform.org/openam/)
+* [Wiki](https://github.com/OpenIdentityPlatform/OpenAM/wiki)
+* [How To Guides](https://github.com/OpenIdentityPlatform/OpenAM/wiki#how-to-guides)
 * [On Wikipedia](https://en.wikipedia.org/wiki/OpenAM)
 
  {% include contributors.html %}
