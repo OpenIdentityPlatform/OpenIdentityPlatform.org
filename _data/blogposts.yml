@@ -1,4 +1,8 @@
 -
+  title: 'OpenIDM 6.2.2 Released'
+  link: '/blog/openidm-6-2-2-released'
+  description: 'Fixed inline javascript editor issues, update documentation links and fixed issues'
+-
   title: 'OpenIDM 6.2.1 Released'
   link: '/blog/openidm-6-2-1-released'
   description: 'Docker Image with Java 23, migrated documentation to the AsciiDoc format'
