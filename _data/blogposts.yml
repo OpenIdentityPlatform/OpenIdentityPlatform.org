@@ -1,4 +1,8 @@
 -
+  title: 'OpenIDM: Can your IDM play chess?'
+  link: '/blog/openidm-can-your-idm-play-chess'
+  description: 'In this article, we will configure OpenIDM workflow to play chess between users.'
+-
   title: 'OpenDJ 4.8.2 Released'
   link: '/blog/opendj-4-8-2-released'
   description: 'Added RFC 3672 and X.501 compartibility, fixed issues'
