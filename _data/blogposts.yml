@@ -1,4 +1,8 @@
 -
+  title: 'OpenDJ 4.8.2 Released'
+  link: '/blog/opendj-4-8-2-released'
+  description: 'Added RFC 3672 and X.501 compartibility, fixed issues'
+-
   title: 'OpenIDM 6.2.2 Released'
   link: '/blog/openidm-6-2-2-released'
   description: 'Fixed inline javascript editor issues, update documentation links and fixed issues'
