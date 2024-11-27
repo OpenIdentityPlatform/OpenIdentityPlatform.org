@@ -1,4 +1,8 @@
 -
+  title: 'OpenIG 5.3.1 Released'
+  link: '/blog/openig-5-3-1-released'
+  description: 'Added Java 23 support, documentation migrated to the AsciiDoc format'
+-
   title: 'OpenAM 15.1.2 Released'
   link: '/blog/openam-15-1-2-released'
   description: 'Fixed CVE-2024-47535 Denial of Service attack, updated OpenDJ, publish javadoc to the documentation site'
