@@ -3,6 +3,14 @@
   link: '/blog/openig-5-3-1-released'
   description: 'Added Java 23 support, documentation migrated to the AsciiDoc format'
 -
+  title: 'OpenAM 15.1.2 Released'
+  link: '/blog/openam-15-1-2-released'
+  description: 'Fixed CVE-2024-47535 Denial of Service attack, updated OpenDJ, publish javadoc to the documentation site'
+-
+  title: 'OpenIDM 6.2.3 Released'
+  link: '/blog/openidm-6-2-3-released'
+  description: 'Fixed missing sample workflow chess image'
+-
   title: 'OpenIDM: Can your IDM play chess?'
   link: '/blog/openidm-can-your-idm-play-chess'
   description: 'In this article, we will configure OpenIDM workflow to play chess between users.'
