@@ -20,3 +20,11 @@
 .popover {
   max-width: 500px
 }
+
+div.skiptranslate > iframe {
+  display: none !important;
+} 
+#google_translate_element {
+  margin-top: 8px;
+  margin-right: 8px;
+}
