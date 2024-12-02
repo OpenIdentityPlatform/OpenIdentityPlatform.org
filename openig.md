@@ -32,11 +32,11 @@ modify the target application or the container that it runs in.
 * Single Sign-On and Single Log-Out
 
 Useful links:
-* [Latest Release](https://github.com/OpenIdentityPlatform/OpenIG/releases)
-* [Fork OpenIG](https://github.com/OpenIdentityPlatform/OpenIG)
-* [Run OpenIG as Docker Image](https://hub.docker.com/r/openidentityplatform/openig/)
+* [License](https://github.com/OpenIdentityPlatform/OpenIG?tab=License-1-ov-file#readme)
+* [Download](https://github.com/OpenIdentityPlatform/OpenIG/releases)
 * [Documentation](https://doc.openidentityplatform.org/openig/)
 * [Wiki](https://github.com/OpenIdentityPlatform/OpenIG/wiki/)
-* [How To Guides](https://github.com/OpenIdentityPlatform/OpenIG/wiki#how-to-guides)
+* [Report problem](https://github.com/OpenIdentityPlatform/OpenIG/issues/new?assignees=&labels=&projects=&template=Bug_report.md)
+* [Propose change](https://github.com/OpenIdentityPlatform/OpenIG/issues/new?assignees=&labels=&projects=&template=Feature_request.md)
 
  {% include contributors.html %}
