@@ -25,12 +25,12 @@ OpenDJ is an LDAPv3 compliant directory service, which has been developed for th
 
 
 Useful links:
-* [Latest Release](https://github.com/OpenIdentityPlatform/OpenDJ/releases)
-* [Fork OpenDJ](https://github.com/OpenIdentityPlatform/OpenDJ)
+* [License](https://github.com/OpenIdentityPlatform/OpenDJ?tab=License-1-ov-file#readme)
+* [Download](https://github.com/OpenIdentityPlatform/OpenDJ/releases)
 * [Documentation](https://doc.openidentityplatform.org/opendj)
-* [Installation Guide](https://doc.openidentityplatform.org/opendj/install-guide/)
-* [How To Guides](https://github.com/OpenIdentityPlatform/OpenDJ/wiki/How-To)
 * [Wiki](https://github.com/OpenIdentityPlatform/OpenDJ/wiki)
-* [On Wikipedia](https://en.wikipedia.org/wiki/OpenDJ)
+* [Wikipedia](https://en.wikipedia.org/wiki/OpenDJ)
+* [Report problem](https://github.com/OpenIdentityPlatform/OpenDJ/issues/new?assignees=&labels=&projects=&template=Bug_report.md)
+* [Propose change](https://github.com/OpenIdentityPlatform/OpenDJ/issues/new?assignees=&labels=&projects=&template=Feature_request.md)
 
  {% include contributors.html %}

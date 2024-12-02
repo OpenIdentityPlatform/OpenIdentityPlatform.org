@@ -34,13 +34,12 @@ So, OpenAM can help you to solve all this issues. Key features of OpenAM are:
 
 
 Useful links:
-* [Latest Release](https://github.com/OpenIdentityPlatform/OpenAM/releases)
-* [Fork OpenAM](https://github.com/OpenIdentityPlatform/OpenAM)
-* [Quick Start Guide](https://github.com/OpenIdentityPlatform/OpenAM/wiki/Quick-Start-Guide)
-* [How OpenAM Works Simple Explanation](/blog/how-openam-works-simple-explanation)
+* [License](https://github.com/OpenIdentityPlatform/OpenAM?tab=License-1-ov-file#readme)
+* [Download](https://github.com/OpenIdentityPlatform/OpenAM/releases)
 * [Documentation](https://doc.openidentityplatform.org/openam/)
 * [Wiki](https://github.com/OpenIdentityPlatform/OpenAM/wiki)
-* [How To Guides](https://github.com/OpenIdentityPlatform/OpenAM/wiki#how-to-guides)
-* [On Wikipedia](https://en.wikipedia.org/wiki/OpenAM)
+* [Wikipedia](https://en.wikipedia.org/wiki/OpenAM)
+* [Report problem](https://github.com/OpenIdentityPlatform/OpenAM/issues/new?assignees=&labels=&projects=&template=Bug_report.md)
+* [Propose change](https://github.com/OpenIdentityPlatform/OpenAM/issues/new?assignees=&labels=&projects=&template=Feature_request.md)
 
  {% include contributors.html %}
