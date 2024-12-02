@@ -4,6 +4,9 @@ title: OpenAM - Open Access Manager
 description: OpenAM - Access Management, Identity Management, Single Sign On and Identity Provider Solution to protect your sites.
 keywords: OpenAM, Access Management, Authentication, Authorization, SSO, Single Sign On, Identity Provider, Open Identity Platform
 reponame: OpenAM
+links: 
+    - title: Wikipedia
+      url: https://en.wikipedia.org/wiki/OpenAM
 ---
 
 <div class="container text-center mb-4">
@@ -32,14 +35,6 @@ So, OpenAM can help you to solve all this issues. Key features of OpenAM are:
 
 * **Security** - As OpenAM is open source, it allows community and clients test it for possible vulnerabilities, and do PEN tests.
 
-
-Useful links:
-* [License](https://github.com/OpenIdentityPlatform/OpenAM?tab=License-1-ov-file#readme)
-* [Download](https://github.com/OpenIdentityPlatform/OpenAM/releases)
-* [Documentation](https://doc.openidentityplatform.org/openam/)
-* [Wiki](https://github.com/OpenIdentityPlatform/OpenAM/wiki)
-* [Wikipedia](https://en.wikipedia.org/wiki/OpenAM)
-* [Report problem](https://github.com/OpenIdentityPlatform/OpenAM/issues/new?assignees=&labels=&projects=&template=Bug_report.md)
-* [Propose change](https://github.com/OpenIdentityPlatform/OpenAM/issues/new?assignees=&labels=&projects=&template=Feature_request.md)
+ {% include product-links.html %}
 
  {% include contributors.html %}
