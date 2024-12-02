@@ -1,0 +1,17 @@
+- title: License
+  url: https://github.com/OpenIdentityPlatform/$product$?tab=License-1-ov-file#readme 
+
+- title: Download
+  url: https://github.com/OpenIdentityPlatform/$product$/releases
+    
+- title: Documentation
+  url: https://github.com/OpenIdentityPlatform/$product$/wiki/
+
+- title: Discussions
+  url: https://github.com/OpenIdentityPlatform/$product$/discussions
+
+- title: Create an issue
+  url: https://github.com/OpenIdentityPlatform/$product$/issues/new/choose
+
+- title: Propose changes
+  url: https://github.com/OpenIdentityPlatform/$product$/compare

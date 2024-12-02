@@ -24,7 +24,16 @@
 div.skiptranslate > iframe {
   display: none !important;
 } 
+
 #google_translate_element {
   margin-top: 8px;
   margin-right: 8px;
+}
+
+.product-links {
+  margin-left: 0;
+  margin-right: 0;  
+  a {
+    white-space: nowrap;
+  }
 }

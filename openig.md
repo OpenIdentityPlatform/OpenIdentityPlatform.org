@@ -4,6 +4,8 @@ title: OpenIG - Open Indentity Gateway
 description: OpenIG - Open Source reserve proxy server with
 keywords: OpenIG, Indentity Gateway, reverse proxy, session management, credential replay, Open Identity Platform
 reponame: OpenIG
+links: []
+
 ---
 <div class="container text-center mb-4">
     <a target="_blank" href="https://github.com/OpenIdentityPlatform/OpenIG">
@@ -31,12 +33,6 @@ modify the target application or the container that it runs in.
 * Works with any identity provider, including OpenAM
 * Single Sign-On and Single Log-Out
 
-Useful links:
-* [License](https://github.com/OpenIdentityPlatform/OpenIG?tab=License-1-ov-file#readme)
-* [Download](https://github.com/OpenIdentityPlatform/OpenIG/releases)
-* [Documentation](https://doc.openidentityplatform.org/openig/)
-* [Wiki](https://github.com/OpenIdentityPlatform/OpenIG/wiki/)
-* [Report problem](https://github.com/OpenIdentityPlatform/OpenIG/issues/new?assignees=&labels=&projects=&template=Bug_report.md)
-* [Propose change](https://github.com/OpenIdentityPlatform/OpenIG/issues/new?assignees=&labels=&projects=&template=Feature_request.md)
+ {% include product-links.html %}
 
  {% include contributors.html %}

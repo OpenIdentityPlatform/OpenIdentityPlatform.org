@@ -4,6 +4,10 @@ title: OpenDJ - Open Directory Server
 description: OpenDJ - Open Source LDAPv3 compliant directory service.
 keywords: OpenDJ, Directory Service, Directory Services, LDAP, Open Identity Platform
 reponame: OpenDJ
+links: 
+    - title: Wikipedia
+      url: https://en.wikipedia.org/wiki/OpenDJ
+
 ---
 <div class="container text-center mb-4">
     <a target="_blank" href="https://github.com/OpenIdentityPlatform/OpenDJ">
@@ -23,14 +27,6 @@ OpenDJ is an LDAPv3 compliant directory service, which has been developed for th
 
 * **Synchronization** OpenDJ supports data synchronization between instances, including not only total data synchronization but also partial synchronization (with fractional, filtered, and subtree capabilities)
 
-
-Useful links:
-* [License](https://github.com/OpenIdentityPlatform/OpenDJ?tab=License-1-ov-file#readme)
-* [Download](https://github.com/OpenIdentityPlatform/OpenDJ/releases)
-* [Documentation](https://doc.openidentityplatform.org/opendj)
-* [Wiki](https://github.com/OpenIdentityPlatform/OpenDJ/wiki)
-* [Wikipedia](https://en.wikipedia.org/wiki/OpenDJ)
-* [Report problem](https://github.com/OpenIdentityPlatform/OpenDJ/issues/new?assignees=&labels=&projects=&template=Bug_report.md)
-* [Propose change](https://github.com/OpenIdentityPlatform/OpenDJ/issues/new?assignees=&labels=&projects=&template=Feature_request.md)
+ {% include product-links.html %}
 
  {% include contributors.html %}

@@ -4,6 +4,10 @@ title: OpenIDM - Open Identity Management
 description: OpenIDM - OpenIDM is an open standards based Identity Management, Provisioning and Compliance solution.
 keywords: Open IDM, Identity, Management, Identity Management
 reponame: OpenIDM
+links: 
+    - title: Wikipedia
+      url: https://en.wikipedia.org/wiki/OpenIDM
+   
 ---
 <div class="container text-center mb-4">
     <a target="_blank" href="https://github.com/OpenIdentityPlatform/OpenIDM">
@@ -18,14 +22,7 @@ A highly flexible user interface combined with a very robust workflow engine mak
 
 OpenIDM provides a modern UI experience that allows you to manage your data without writing a single line of code. The standard RESTful interfaces also offer ultimate flexibility so that you can customize and develop the product to fit the requirements of your deployment.
 
-Useful links:
-* [License](https://github.com/OpenIdentityPlatform/OpenIDM?tab=License-1-ov-file#readme)
-* [Download](https://github.com/OpenIdentityPlatform/OpenIDM/releases)
-* [Documentation](https://doc.openidentityplatform.org/openidm/)
-* [Wiki](https://github.com/OpenIdentityPlatform/OpenIDM/wiki/)
-* [Wikipedia](https://en.wikipedia.org/wiki/OpenIDM)
-* [Report problem](https://github.com/OpenIdentityPlatform/OpenIDM/issues/new?assignees=&labels=&projects=&template=Bug_report.md)
-* [Propose change](https://github.com/OpenIdentityPlatform/OpenIDM/issues/new?assignees=&labels=&projects=&template=Feature_request.md)
 
+ {% include product-links.html %}
 
  {% include contributors.html %}
