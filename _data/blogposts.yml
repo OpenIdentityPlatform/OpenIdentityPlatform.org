@@ -1,4 +1,8 @@
 -
+  title: 'TIP: Bootstrap OpenAM and OpenDJ Docker Containers'
+  link: '/blog/bootstrap-openam-opendj-docker'
+  description: 'How to configure and run OpenAM with OpenDJ in Docker containers'
+-
   title: 'OpenIG 5.3.1 Released'
   link: '/blog/openig-5-3-1-released'
   description: 'Added Java 23 support, documentation migrated to the AsciiDoc format'
