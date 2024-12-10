@@ -1,4 +1,8 @@
 -
+  title: 'SAML Authentication in WordPress via OpenAM'
+  link: '/blog/saml-authentication-in-wordpress-via-openam'
+  description: 'How to setup federated authenticaion in WordPress via OpenAM using SAML'
+-
   title: 'TIP: Bootstrap OpenAM and OpenDJ Docker Containers'
   link: '/blog/bootstrap-openam-opendj-docker'
   description: 'How to configure and run OpenAM with OpenDJ in Docker containers'
