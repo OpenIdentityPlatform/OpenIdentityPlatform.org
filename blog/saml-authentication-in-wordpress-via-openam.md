@@ -223,7 +223,7 @@ Now let's test the solution. Log out of the WordPress administration console, Op
 
 ![WordPress Login](https://raw.githubusercontent.com/wiki/OpenIdentityPlatform/OpenAM/images/saml-wordpress/11-wordpress-login.png)
 
-Нажмите эту кнопку. Вас перенаправит на аутентификацию OpenAM. Введите имя пользователя `demo` и пароль `changeit`.  Пользователь `demo` создается при начальной установке OpenAM. В продуктивной среде его стоит удалить или сменить пароль по умолчанию.
+Click this button. You will be redirected to OpenAM authentication. Enter the user name `demo` and password `changeit`.  The `demo` user is created during the initial installation of OpenAM. In a production environment, you should delete this user or change it's the default password.
 
 ![OpenAM Login](https://raw.githubusercontent.com/wiki/OpenIdentityPlatform/OpenAM/images/saml-wordpress/12-openam-login.png)
 
