@@ -1,4 +1,8 @@
 -
+  title: 'OpenAM 15.1.3 Released'
+  link: '/blog/openam-15-1-3-released'
+  description: 'Update VK, OK OAuth 2.0 providers, added mail.ru OAuth 2.0 provider, change OIDC token issuer validation to support parameterized queries'
+-
   title: 'SAML Authentication in WordPress via OpenAM'
   link: '/blog/saml-authentication-in-wordpress-via-openam'
   description: 'How to setup federated authenticaion in WordPress via OpenAM using SAML'
