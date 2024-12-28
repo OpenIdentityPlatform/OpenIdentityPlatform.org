@@ -1,4 +1,8 @@
 -
+  title: 'OpenDJ 4.9.0 Released'
+  link: '/blog/opendj-4-9-0-released'
+  description: 'Added SQL JDBC Backend, fixed vulnerabilities'
+-
   title: 'OpenAM 15.1.3 Released'
   link: '/blog/openam-15-1-3-released'
   description: 'Update VK, OK OAuth 2.0 providers, added mail.ru OAuth 2.0 provider, change OIDC token issuer validation to support parameterized queries'
