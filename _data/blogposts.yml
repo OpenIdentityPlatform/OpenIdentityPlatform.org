@@ -19,7 +19,7 @@
   products: 
   - opendj
 -
-  title: 'TIP: Bootstrap OpenAM and OpenDJ Docker Containers'
+  title: 'Bootstrap OpenAM and OpenDJ Docker Containers'
   link: '/blog/bootstrap-openam-opendj-docker'
   description: 'How to configure and run OpenAM with OpenDJ in Docker containers'
   products: 
