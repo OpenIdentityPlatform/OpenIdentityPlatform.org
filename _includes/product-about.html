@@ -1,0 +1,27 @@
+<div class="articles pt-2">
+    <h4>About the Product:</h4>
+    <ul>
+        {% assign i = 0 %}
+        {% for post in site.data.blogposts %}  
+            {% if post.products contains page.product %}
+                <li>
+                    <a href="{{post.link}}">{{post.title}}</a>
+                </li>
+                {% assign i = i | plus: 1 %}
+                {% if i > 15 %}                
+                    {% break %}
+                {% endif %}
+            {% endif %}
+
+        {% endfor %}    
+    </ul>
+    <p>
+        <a class="icon-link" href="https://www.youtube.com/results?search_query={{page.product}}" target="_blank">
+            <i class="fa-brands fa-youtube px-1 yt-icon"></i>Videos about {{page.reponame}}
+        </a>                    
+    </p>
+</div>
+
+
+
+

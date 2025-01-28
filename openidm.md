@@ -4,6 +4,7 @@ title: OpenIDM - Open Identity Management
 description: OpenIDM - OpenIDM is an open standards based Identity Management, Provisioning and Compliance solution.
 keywords: Open IDM, Identity, Management, Identity Management
 reponame: OpenIDM
+product: openidm
 links: 
     - title: Wikipedia
       url: https://en.wikipedia.org/wiki/OpenIDM
@@ -24,5 +25,7 @@ OpenIDM provides a modern UI experience that allows you to manage your data with
 
 
  {% include product-links.html %}
+
+ {% include product-about.html %}
 
  {% include contributors.html %}
