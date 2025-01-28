@@ -4,6 +4,7 @@ title: OpenIG - Open Indentity Gateway
 description: OpenIG - Open Source reserve proxy server with
 keywords: OpenIG, Indentity Gateway, reverse proxy, session management, credential replay, Open Identity Platform
 reponame: OpenIG
+product: openig
 links: []
 
 ---
@@ -34,5 +35,7 @@ modify the target application or the container that it runs in.
 * Single Sign-On and Single Log-Out
 
  {% include product-links.html %}
+
+ {% include product-about.html %}
 
  {% include contributors.html %}

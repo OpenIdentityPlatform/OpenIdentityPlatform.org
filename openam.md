@@ -4,6 +4,7 @@ title: OpenAM - Open Access Manager
 description: OpenAM - Access Management, Identity Management, Single Sign On and Identity Provider Solution to protect your sites.
 keywords: OpenAM, Access Management, Authentication, Authorization, SSO, Single Sign On, Identity Provider, Open Identity Platform
 reponame: OpenAM
+product: openam
 links: 
     - title: Wikipedia
       url: https://en.wikipedia.org/wiki/OpenAM
@@ -37,4 +38,8 @@ So, OpenAM can help you to solve all this issues. Key features of OpenAM are:
 
  {% include product-links.html %}
 
+ {% include product-about.html %}
+
  {% include contributors.html %}
+
+

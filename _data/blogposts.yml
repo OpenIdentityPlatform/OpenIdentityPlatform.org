@@ -2,6 +2,8 @@
   title: 'OpenDJ: Using a Relational Database as an LDAP Backend'
   link: '/blog/opendj-using-a-relational-database-as-an-ldap-backend'
   description: 'In the following article we will setup PostgtreSQL as an OpenDJ backend'
+  products: 
+  - opendj
 -
   title: 'OpenDJ 4.9.0 Released'
   link: '/blog/opendj-4-9-0-released'
@@ -14,10 +16,15 @@
   title: 'SAML Authentication in WordPress via OpenAM'
   link: '/blog/saml-authentication-in-wordpress-via-openam'
   description: 'How to setup federated authenticaion in WordPress via OpenAM using SAML'
+  products: 
+  - opendj
 -
-  title: 'TIP: Bootstrap OpenAM and OpenDJ Docker Containers'
+  title: 'Bootstrap OpenAM and OpenDJ Docker Containers'
   link: '/blog/bootstrap-openam-opendj-docker'
   description: 'How to configure and run OpenAM with OpenDJ in Docker containers'
+  products: 
+  - opendj
+  - openam
 -
   title: 'OpenIG 5.3.1 Released'
   link: '/blog/openig-5-3-1-released'
@@ -34,6 +41,8 @@
   title: 'OpenIDM: Can your IDM play chess?'
   link: '/blog/openidm-can-your-idm-play-chess'
   description: 'In this article, we will configure OpenIDM workflow to play chess between users.'
+  products: 
+  - openidm    
 -
   title: 'OpenDJ 4.8.2 Released'
   link: '/blog/opendj-4-8-2-released'
@@ -82,6 +91,8 @@
   title: 'OpenIDM: Active Directory Identity Management'
   link: '/blog/openidm-ad-idm'
   description: 'In this article, we will configure Active Directory identity management from OpenIDM.'
+  products: 
+  - openidm
 -
   title: 'OpenIDM 6.1.2 Released'
   link: '/blog/openidm-6-1-2-released'
@@ -110,10 +121,14 @@
   title: 'Authentication in a Single‐Page Application via OpenAM using OAuth2 OIDC Protocol'
   link: '/blog/openam-spa-oidc'
   description: 'How to setup federated authentication in a Single Page Application via OpenAM using OIDC OAuth2 Protocol with PKCE'
+  products: 
+  - openam
 -
   title: 'API Throughput Control (Throttling) with OpenIG Authorization Gateway'
   link: '/blog/how-to-setup-throttling-in-openig'
   description: 'This article explains API throttling use cases and how to setup various throttling policies with OpenIG'
+  products: 
+  - openig
 -
   title: 'OpenIG 5.2.3 Released'
   link: '/blog/openig-5-2-3-released'
@@ -138,18 +153,27 @@
   title: 'How to Run OpenDJ‐based Embedded LDAP in Spring Boot Application'
   link: '/blog/how-to-run-embedded-opendj-in-spring-boot'
   description: 'This article explains how to run an embedded OpenDJ instance as part of a Spring Boot application'
+  products: 
+  - opendj
 -
   title: 'How to Protect WebSocket connection with OpenAM and OpenIG'
   link: '/blog/openam-openig-websocket'
   description: 'How to setup OpenAM and OpenIG stack to protect WebSocket connection'
+  products: 
+  - openam
+  - openig
 -
   title: 'How To Protect Web Services with OpenIG'
   link: '/blog/How-To-Protect-Web-Services-with-OpenIG'
   description: 'How to protect web services with OpenIG with examples and source code'
+  products: 
+  - openig
 -
   title: 'OpenAM Authentication via Gosuslugi Portal'
   link: '/blog/openam-esia'
   description: 'How to prepare and setup OpenAM to use Gosuslugi Portal Authentication'
+  products: 
+  - openam
 -
   title: 'OpenIDM 6.0.1 Released'
   link: '/blog/openidm-6-0-1-released'
@@ -162,6 +186,8 @@
   title: 'How to Setup WebAuthn Authentication in OpenAM'
   link: '/blog/How-to-Setup-WebAuthn-Authentication-in-OpenAM'
   description: 'How to Setup WebAuthn Authentication and Registration in OpenAM'
+  products: 
+  - openam
 -
   title: 'OpenAM 15.0.1 Released'
   link: '/blog/openam-15-0-1-released'
@@ -188,18 +214,27 @@
   title: 'How to Add Authentication and Protect Your Application With OpenAM and OpenIG Stack'
   link: '/blog/how-to-add-authorization-with-openam-openig'
   description: 'How to add OpenAM authentication for an application, and setup proxying to the application using OpenIG so an unauthenticated user could not access the application'
+  products: 
+  - openam
+  - openig
 -
   title: 'How to Setup Active Directory Authentication in a Spring Boot Application'
   link: '/blog/openam-ad-springboot'
   description: 'How to configure OpenAM to authenticate in a Spring Boot Application via Active Directory'
+  products: 
+  - openam
 -
   title: 'How to Setup OAuth2/OIDC Federation in OpenAM'
   link: '/blog/openam-oauth-federation'
   description: 'How to Setup OAuth2/OIDC federation between OpenAM Server and Client Instances'
+  products: 
+  - openam
 -
   title: 'How to Setup SAMLv2 Federation in OpenAM'
   link: '/blog/openam-saml-idp-sp'
   description: 'How to Setup SAMLv2 Federation between OpenAM Idetity Provider and Service Provider Instances'
+  products: 
+  - openam
 -
   title: 'OpenAM 14.8.4 Released'
   link: '/blog/openam-14-8-4-released'
@@ -217,14 +252,20 @@
   title: 'OpenAM and Spring Boot 3 Integration via OpenAM Cookie'
   link: '/blog/openam-spring-boot-cookie'
   description: 'How to setup authenticaion in Spring Boot Application via OpenAM'
+  products: 
+  - openam
 -
   title: 'OpenAM and Spring Boot 3 Integration via SAMLv2 Protocol'
   link: '/blog/openam-spring-boot-saml'
   description: 'How to setup federated authenticaion in Spring Boot Application via OpenAM using SAMLv2 Protocol'
+  products: 
+  - openam
 -
   title: 'OpenAM and Spring Boot 3 Integration via OIDC OAuth2 Protocol'
   link: '/blog/openam-spring-boot-oidc'
   description: 'How to setup federated authenticaion in Spring Boot Application via OpenAM using OIDC OAuth2 Protocol'
+  products: 
+  - openam
 -
   title: 'OpenAM 14.8.2 Released'
   link: '/blog/openam-14-8-2-released'
@@ -233,6 +274,8 @@
   title: 'SAML Authentication in Yandex Cloud via OpenAM'
   link: '/blog/saml-authentication-in-yandex-cloud-via-openam'
   description: 'How to setup federated authenticaion in Yandex Clound via OpenAM using SAML'
+  products: 
+  - openam
 -
   title: 'OpenIG 5.2.1 Released'
   link: '/blog/openig-5-2-1-released'
@@ -245,6 +288,8 @@
   title: 'OpenDJ: Supercharged LDAP Data Storage and Performance'
   link: '/blog/opendj-ldap-data-storage-and-performance'
   description: 'OpenDJ now supports Apache Cassandra and ScyllaDB as a backend with all performance, resillience and scalability benefits'
+  products: 
+  - opendj
 -
   title: 'OpenDJ 4.6.1 Released'
   link: '/blog/opendj-4-6-1-released'
@@ -276,11 +321,16 @@
   title: 'How to Create Custom OpenAM DataStore Integration'
   link: '/blog/how-to-create-openam-custom-datastore-integration'
   description: 'How to create custom OpenAM DataStore integration using MongoDB as an example'
+  products: 
+  - openam
 
 -
   title: 'Setup Tracing with OpenTelemetry and Jaeger'
   link: '/blog/openam-openig-jaeger'
   description: 'How to setup tracing with OpenTelemetry and Jaeger'
+  products: 
+  - openam
+  - openig
 -
   title: 'OpenIG 5.1.1 Released'
   link: '/blog/openig-5-1-1-released'
@@ -295,6 +345,8 @@
   title: 'How to Customise OpenAM'
   link: '/blog/how-to-customise-openam'
   description: 'This article explains how create custom OpenAM project and run it in the local environment'
+  products: 
+  - openam
   
 -
   title: 'OpenAM 14.7.1 Released'
@@ -328,6 +380,9 @@
   title: 'How to Start OpenAM and OpenDJ in Separate Docker Contaners'
   link: '/blog/openam-opendj-docker'
   description: 'In this article we will prepare and create OpenAM and OpenDJ instances in separate Docker containers'
+  products: 
+  - openam
+  - opendj
 -
   title: 'OpenDJ 4.5.0 Released'
   link: '/blog/opendj-4-5-0-released'
@@ -340,6 +395,8 @@
   title: 'OpenAM Monitoring Using Prometheus'
   link: '/blog/openam-prometheus'
   description: 'This article covers basic OpenAM and Prometheus setup'
+  products: 
+  - openam
 -
   title: 'OpenDJ 4.4.13 Released'
   link: '/blog/opendj-4-4-13-released'
@@ -348,10 +405,14 @@
   title: 'How to Integrate OpenIG and Message Brokers'
   link: '/blog/openig-message-brokers'
   description: 'How to send and receive message broker messages to http and backwards'
+  products: 
+  - openig
 -
   title: 'ICAP Filter in OpenIG'
   link: '/blog/icap-filter-openig'
   description: 'How to setup ICAP Filter for DLP and Antivirus protection with OpenIG'
+  products: 
+  - openig
 
 -
   title: 'OpenIG 5.1.0 Released'
@@ -371,10 +432,13 @@
   title: 'OpenAM QR Authentication'
   link: '/blog/openam-qr-authentication'
   description: 'How QR authentication works and how to setup it in OpenAM'
+  products: 
+  - openam
 -
   title: 'Adaptive Authentication'
   link: '/blog/adaptive-authentication'
   description: 'How to Improve Security Without Annoying Users'
+
 -
   title: 'OpenAM 14.6.2 Released'
   link: '/blog/openam-14-6-2-released'
@@ -391,6 +455,8 @@
   title: 'Migrate OpenAM to Apache Cassandra without a Single Point of Failure'
   link: '/blog/migrate-openam-to-apache-cassandra-without-single-point-of-failure'
   description: 'How to plan data storages and data centers resources for OpenAM fault tolerance'
+  products: 
+  - openam
 -
   title: 'Passwordless Authentication Methods, their Pros, and Cons'
   link: '/blog/passwordless-authentication-methods'
@@ -399,10 +465,14 @@
   title: 'How to Setup 2FA with Google Authenticator in OpenAM'
   link: '/blog/how-to-setup-2fa-with-google-authenticatior-in-openam'
   description: 'How to setup Google Authenticator as two-factor authentication (2FA) in OpenAM'
+  products: 
+  - openam
 -
   title: 'How to Setup Kerberos Authentication with OpenAM'
   link: '/blog/how-to-setup-kerberos-authentication-in-openam'
   description: 'How to setup Kerberos Single Sign On authentication with OpenAM and authenticate seamlessly using Active Directory account'
+  products: 
+  - openam
 -
   title: 'OpenAM 14.5.3 Released'
   link: '/blog/openam-14-5-3-released'
@@ -415,6 +485,8 @@
   title: 'How To Setup Active Directory Authenticaion In OpenAM'
   link: '/blog/how-to-setup-active-directory-authentication-in-openam'
   description: 'How to use Active Directory as a user data source and use for authentication'
+  products: 
+  - openam
 -
   title: 'OpenIG 5.0.8 Released'
   link: '/blog/openig-5-0-8-released'
@@ -431,18 +503,26 @@
   title: 'How To Protect Kubernetes Services With OpenIG'
   link: '/blog/how-to-protect-kubernetes-services-with-openig'
   description: 'This article explains how to protect services deployed on Kubernetes with OpenIG'
+  products: 
+  - openig
 -
   title: 'How To Run OpenIG in Kubernetes'
   link: '/blog/how-to-run-openig-kubernetes'
   description: 'This article explains how to deploy OpenIG in Kubernetes'
+  products: 
+  - openig
 -
   title: 'How To Run OpenDJ in Kubernetes'
   link: '/blog/how-to-run-opendj-kubernetes'
   description: 'This article explains how to run OpenDJ in Kubernetes using StatefulSet'
+  products: 
+  - opendj
 -
   title: 'How To Run OpenAM in Kubernetes'
   link: '/blog/how-to-run-openam-kubernetes'
   description: 'This article explains how to run OpenAM in Kubernetes using StatefulSet'
+  products: 
+  - openam
 -
   title: 'What is Single Sign-On and How does it Work'
   link: '/blog/what-is-single-sign-on-and-how-does-it-work'
@@ -451,10 +531,14 @@
   title: 'How OpenAM Works Simple Explanation'
   link: '/blog/how-openam-works-simple-explanation'
   description: 'This article explains how OpenAM and its ecosystem works in a very simple way'
+  products: 
+  - openam
 -
   title: 'OpenDJ Tips and How-Tos'
   link: '/blog/opendj-tips-and-howtos'
   description: 'Some useful commands one could use to manage OpenDJ'
+  products: 
+  - opendj
 -
   title: 'OpenAM 14.4.2 Released'
   link: '/blog/openam-14-4-2-released'
@@ -463,6 +547,8 @@
   title: 'OpenAM Quick Start Guide'
   link: '/blog/openam-quick-start-guide'
   description: 'How to quick start with OpenAM and Apache HTTP Server'
+  products: 
+  - openam
 -
   title: 'OpenIDM 5.5.0 Released'
   link: '/blog/openidm-5-5-0-released'
@@ -507,6 +593,8 @@
   title: 'How to Use Apache Cassandra as User DataStore'
   link: '/blog/How-to-Use-Apache-Cassandra-as-User-DataStore-in-OpenAM'
   description: 'How to Use High Perfomant and Availability DataStore Apache Cassandra as User DataStore in OpenAM'
+  products: 
+  - openam
 -
   title: 'OpenAM-JEE-Agents 4.1.2 Released'
   link: '/blog/openam-jee-agents-14-2-1-released'
@@ -515,6 +603,9 @@
   title: 'Convert OpenAM Token to OpenID Connect (JWT)'
   link: 'https://github.com/OpenIdentityPlatform/OpenIG/wiki/Convert-OpenAM-token-to-OpenID-Connect-%28JWT%29'
   description: 'Sample configuration shows, how to convert OpenAM token to OpenID Connect (JWT) with OpenIG'
+  products: 
+  - openam
+  - openig
 -
   title: 'OpenAM 14.2.1 Released'
   link: '/blog/openam-14-2-1-released'
@@ -551,10 +642,14 @@
   title: 'OpenAM Google reCaptcha Authentication Module'
   link: https://github.com/OpenIdentityPlatform/OpenAM/wiki/reCaptcha-module
   description: 'How to configure Google reCaptcha Authentication Module for OpenAM'
+  products: 
+  - openam
 -
   title: 'OpenAM Persistent Cookie Authentication Module'
   link: https://github.com/OpenIdentityPlatform/OpenAM/wiki/Persistent-Cookie-module
   description: 'How to configure Authentication Persistent Cookie Authentication Module for OpenAM'
+  products: 
+  - openam
 -
   title: 'OpenDJ Administration Guide'
   link: https://github.com/OpenIdentityPlatform/OpenDJ/wiki/Administration-Guide
@@ -564,9 +659,11 @@
   link: https://github.com/OpenIdentityPlatform/OpenDJ/wiki/OpenDJ-vs-OpenLDAP
   description: 'OpenDJ vs OpenLDAP comparsion'
 -
-  title: 'OpenAM: How to write custom authentication module'
+  title: 'OpenAM: How to write a custom authentication module'
   link: https://github.com/OpenIdentityPlatform/OpenAM/wiki/Write-a-custom-authentication-module
   description: 'Following artice describes how to write a custom authentication module and implement it on OpenAM'
+  products: 
+  - openam
 -
   title: 'OpenDJ 4.2.5 Released'
   link: '/blog/opendj-4-2-5-released'
@@ -575,22 +672,32 @@
   title: 'OpenAM Quick Start with Docker'
   link: 'https://github.com/OpenIdentityPlatform/OpenAM/wiki/Quick-Start-Guide'
   description: 'Following article describes how to install OpenAM with Docker and protect simple site'
+  products: 
+  - openam
 -
   title: 'How to Login via Facebook OAuth2 Identity Provider'
   link: 'https://github.com/OpenIdentityPlatform/OpenAM/wiki/Login-via-Facebook-OAuth2-Identity-Provider'
   description: 'Following article describes how login to OpenAM via Facebook OAuth2 IDP'
+  products: 
+  - openam
 
 -
   title: 'How to Login via VKontakte OAuth2 Identity Provider'
   link: 'https://github.com/OpenIdentityPlatform/OpenAM/wiki/Login-via-VK-OAuth2-Identity-Provider'
   description: 'Following article describes how login to OpenAM via VKontakte OAuth2 IDP'
+  products: 
+  - openam
 
 -
   title: 'How to Login via Odnoklassniki OAuth2 Identity Provider'
   link: 'https://github.com/OpenIdentityPlatform/OpenAM/wiki/Login-via-Odnoklassniki-OAuth2-Identity-Provider'
   description: 'Following article describes how login to OpenAM via Odnoklassniki OAuth2 IDP'
+  products: 
+  - openam
 
 -
   title: 'How to Login via "Gosuslugi RF" OAuth2 Identity Provider'
   link: 'https://github.com/OpenIdentityPlatform/OpenAM/wiki/Login-via-%22%D0%93%D0%BE%D1%81%D1%83%D1%81%D0%BB%D1%83%D0%B3%D0%B8-%D0%A0%D0%A4%22-OAuth2-Identity-Provider'
   description: 'Following article describes how login to OpenAM via "Госуслуги РФ" OAuth2 IDP'
+  products: 
+  - openam
