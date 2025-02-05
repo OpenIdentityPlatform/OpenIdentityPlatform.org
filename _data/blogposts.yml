@@ -1,4 +1,12 @@
 -
+  title: 'OpenDJ 4.9.2 Released'
+  link: '/blog/opendj-4-9-2-released'
+  description: 'Added support for for Oracle, MySQL, and MSSQL for JDBC backend, fixed loading third-party libraries'
+-
+  title: 'OpenDJ 4.9.1 Released'
+  link: '/blog/opendj-4-9-1-released'
+  description: 'Improved JDBC backend performance'
+-
   title: 'OpenDJ: Using a Relational Database as an LDAP Backend'
   link: '/blog/opendj-using-a-relational-database-as-an-ldap-backend'
   description: 'In the following article we will setup PostgtreSQL as an OpenDJ backend'
