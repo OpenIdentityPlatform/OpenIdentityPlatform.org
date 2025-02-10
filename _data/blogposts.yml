@@ -1,4 +1,8 @@
 -
+  title: 'OpenIDM 6.2.4 Released'
+  link: '/blog/openidm-6-2-4-released'
+  description: 'Fixed CVE-2023-2210, allows an attacker to compromise MySQL Connectors, documentation update'
+-
   title: 'OpenDJ: Using a Relational Database as an LDAP Backend'
   link: '/blog/opendj-using-a-relational-database-as-an-ldap-backend'
   description: 'In the following article we will setup PostgtreSQL as an OpenDJ backend'
