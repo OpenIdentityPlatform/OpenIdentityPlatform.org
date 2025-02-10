@@ -1,4 +1,8 @@
 -
+  title: 'OpenICF 1.7.2 Released'
+  link: '/blog/openicf-1-7-2-released'
+  description: 'Fixed CVE-2023-2210, allows an attacker to compromise MySQL Connectors, OpenDJ update'
+-
   title: 'OpenIDM 6.2.4 Released'
   link: '/blog/openidm-6-2-4-released'
   description: 'Fixed CVE-2023-2210, allows an attacker to compromise MySQL Connectors, documentation update'
