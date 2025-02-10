@@ -1,4 +1,8 @@
 -
+  title: 'OpenIDM 6.2.4 Released'
+  link: '/blog/openidm-6-2-4-released'
+  description: 'Fixed CVE-2023-2210, allows an attacker to compromise MySQL Connectors, documentation update'
+-
   title: 'OpenDJ 4.9.2 Released'
   link: '/blog/opendj-4-9-2-released'
   description: 'Added support for for Oracle, MySQL, and MSSQL for JDBC backend, fixed loading third-party libraries'
