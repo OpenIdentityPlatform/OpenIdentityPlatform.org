@@ -1,4 +1,8 @@
 -
+  title: 'OpenAM 15.1.4 Released'
+  link: '/blog/openam-15-1-4-released'
+  description: 'Updated documentation, fixed UI tests, updated dependencies'
+-
   title: 'OpenICF 1.7.2 Released'
   link: '/blog/openicf-1-7-2-released'
   description: 'Fixed CVE-2023-2210, allows an attacker to compromise MySQL Connectors, OpenDJ update'
