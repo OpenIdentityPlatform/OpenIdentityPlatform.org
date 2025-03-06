@@ -18,16 +18,21 @@ First, you must have Java at least 1.8 installed and Docker installed. Run the P
 docker run -it -d -p 5432:5432 -e POSTGRES_DB=database_name -e POSTGRES_PASSWORD=password --name postgres postgres
 ```
 
-Download OpenDJ distribution from the GitHub [https://github.com/OpenIdentityPlatform/OpenDJ/releases](https://github.com/OpenIdentityPlatform/OpenDJ/releases). OpenDJ version must be at least 4.9.0.
+Download the latest OpenDJ version from the GitHub using the following commands:
+```
+export VERSION="$(curl -i -o - --silent https://api.github.com/repos/OpenIdentityPlatform/OpenDJ/releases/latest | grep -m1 "\"name\"" | cut -d\" -f4)" 
+echo "last release: $VERSION"
+curl -L https://github.com/OpenIdentityPlatform/OpenDJ/releases/download/$VERSION/opendj-$VERSION.zip --output opendj.zip
 
 ```
-wget https://github.com/OpenIdentityPlatform/OpenDJ/releases/download/4.9.0/opendj-4.9.0.zip
-```
+
+Or manually from your browser [https://github.com/OpenIdentityPlatform/OpenDJ/releases](https://github.com/OpenIdentityPlatform/OpenDJ/releases).
 
 Unzip the distribution
 
 ```
-unzip opendj-4.9.0.zip
+unzip opendj.zip
+
 ```
 
 Run the OpenDJ setup command
