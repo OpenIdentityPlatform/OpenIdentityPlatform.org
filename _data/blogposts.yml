@@ -1,4 +1,9 @@
 -
+  title: 'OpenAM 15.1.5 Released'
+  link: '/blog/openam-15-1-5-released'
+  description: 'Fixed CVE-2025-27497 Denial of Service (Dos) using alias loop, CVE-2025-2679, fail fast when updating OpenDJ schema on OpenAM'
+
+-
   title: 'OpenDJ 4.9.3 Released'
   link: '/blog/opendj-4-9-3-released'
   description: 'Fixed CVE-2025-27497 Denial of Service (Dos) using alias loop, fixed issues, documentation update'
