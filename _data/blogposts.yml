@@ -1,4 +1,12 @@
 -
+  title: 'OpenAM 15.1.6 Released'
+  link: '/blog/openam-15-1-6-released'
+  description: 'Stability improvements, authentication enhancements, and Docker optimizations.'
+-
+  title: 'OpenDJ 4.9.4 Released'
+  link: '/blog/opendj-4-9-4-released'
+  description: 'Docker enhancements, backend configuration improvements, and Java SE 24 support'
+-
   title: 'OpenAM and OpenIG: Implementing Zero Trust Security Principles'
   link: '/blog/openam-openig-zero-trust'
   description: 'In this article, we’ll explore how to implement Zero Trust principles using a combination of OpenAM and OpenIG.'
