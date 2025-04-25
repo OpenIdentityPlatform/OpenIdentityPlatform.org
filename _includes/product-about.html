@@ -16,7 +16,7 @@
         {% endfor %}    
     </ul>
     <p>
-        <a class="icon-link" href="https://www.youtube.com/results?search_query={{page.reponame}}" target="_blank">
+        <a class="icon-link" href="https://www.youtube.com/results?search_query={%- if page.video -%}{{ page.video }}{%- else -%}{{page.reponame}}{%- endif -%}" target="_blank">
             <i class="fa-brands fa-youtube px-1 yt-icon"></i>Videos
         </a>                    
     </p>

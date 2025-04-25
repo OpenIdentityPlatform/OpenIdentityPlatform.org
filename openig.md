@@ -5,6 +5,7 @@ description: OpenIG - Open Source reserve proxy server with
 keywords: OpenIG, Indentity Gateway, reverse proxy, session management, credential replay, Open Identity Platform
 reponame: OpenIG
 product: openig
+video: ForgeRock+OpenIG 
 links: []
 
 ---
