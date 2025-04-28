@@ -1,4 +1,12 @@
 -
+  title: 'OpenIDM 6.2.4 Released'
+  link: '/blog/openidm-6-2-4-released'
+  description: 'Resolved critical CVE-2025-27497 secutrity vulnerability, introduced support for Java SE 24, fixed issues'
+-
+  title: 'OpenICF 1.7.3 Released'
+  link: '/blog/openicf-1-7-3-released'
+  description: 'Resolved critical CVE-2025-27497 secutrity vulnerability, introduced support for Java SE 24, upgraded OpenDJ to v4.9.4 and Apache Olingo'
+-
   title: 'OpenAM 15.1.6 Released'
   link: '/blog/openam-15-1-6-released'
   description: 'Stability improvements, authentication enhancements, and Docker optimizations.'
