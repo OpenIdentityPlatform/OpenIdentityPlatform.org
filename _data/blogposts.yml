@@ -1,4 +1,8 @@
 -
+  title: 'Configuring OpenIDM for Synchronization Between Active Directory and OpenDJ'
+  link: '/blog/openidm-two-way-ad-opendj'
+  description: 'In this article we will configure two-way synchronization between Active Directory and OpenDJ. Changes made in Active Directory will be synchronized to OpenDJ and vice versa'
+-
   title: 'OpenAM and Zero Trust: Confirming Critical Operations'
   link: '/blog/openam-and-zero-trust'
   description: 'How to configuree Open Identity Platfrom stack to add extra protection to a critical service'
