@@ -1,4 +1,8 @@
 -
+  title: 'Single Sign-On (SSO): Seamless Authentication for Enterprise and Client Services'
+  link: '/blog/sso-seamless-authentication-enterprise-client-services'
+  description: 'In this article, we will explain what SSO is and where it is used. We will also look at a technical implementation example for web applications.'
+-
   title: 'Configuring OpenIDM for Synchronization Between Active Directory and OpenDJ'
   link: '/blog/openidm-two-way-ad-opendj'
   description: 'In this article we will configure two-way synchronization between Active Directory and OpenDJ. Changes made in Active Directory will be synchronized to OpenDJ and vice versa'
