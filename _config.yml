@@ -17,3 +17,11 @@ exclude:
 
 highlighter: rouge
 markdown: kramdown
+
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+
+permalink: /blog2/:year-:month-:day-:title
+paginate_path: "/blog2/page:num/"
+paginate: 15
