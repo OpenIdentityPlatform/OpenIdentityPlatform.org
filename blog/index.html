@@ -43,9 +43,9 @@ canonical: "https://www.openidentityplatform.org/blog/"
         {% assign itemClass = "active" %}
       {% endif %}
       {% if page == 1 %}
-        <li class="page-item {{itemClass}}"><a class="page-link" href="/blog2/">{{page}}</a></li>        
+        <li class="page-item {{itemClass}}"><a class="page-link" href="/blog/">{{page}}</a></li>        
       {% else %}
-        <li class="page-item {{itemClass}}" ><a class="page-link" href="/blog2/page{{page}}/">{{page}}</a></li>
+        <li class="page-item {{itemClass}}" ><a class="page-link" href="/blog/page{{page}}/">{{page}}</a></li>
       {% endif %}
     {% endfor %}
     {% if paginator.next_page %}

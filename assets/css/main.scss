@@ -167,3 +167,21 @@ a.blogpost  {
     top: 5px;
   }
 }
+
+
+//pagination
+
+.page-link {
+  color: $color4;
+  &:hover {
+    color: $color4;
+  }
+}
+.page-item {
+  &.active .page-link {
+    z-index: 3;
+    color: white;
+    background-color: $color4;
+    border-color: $color4;
+  }
+}

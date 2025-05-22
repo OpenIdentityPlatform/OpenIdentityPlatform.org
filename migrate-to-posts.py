@@ -2,6 +2,7 @@ import os
 import subprocess
 import datetime
 import shutil
+from pathlib import Path
 
 def get_last_git_change_date(file_path):
     """
@@ -32,6 +33,18 @@ def copy_file(src_file, target_dir, prefix):
     print(f"new file: {target_file}")
     shutil.copy2(src_file, target_file)
 
+def change_src_file_contents(src_file, prefix):
+    new_file = prefix + "-" + os.path.basename(src_file)
+    redirect_to = "/blog/" +  Path(new_file).stem
+    with open(src_file, 'w') as file:
+        new_contents = f'''---
+layout: redirect
+redirect_to: '{redirect_to}'
+---
+'''
+        print(new_contents)
+        file.write(new_contents)
+
 def transform_files(src_dir, target_dir, extensions):
     """
     Lists files in a directory with specific extensions and their last Git commit dates.
@@ -46,7 +59,8 @@ def transform_files(src_dir, target_dir, extensions):
                 file_path = os.path.join(root, file)
                 last_changed = get_last_git_change_date(file_path)
                 print(f"File: {file_path}, Last Changed: {last_changed if last_changed else 'Not tracked or no commits'}")
-                copy_file(file_path, target_dir, last_changed)
+                #copy_file(file_path, target_dir, last_changed)
+                change_src_file_contents(file_path, last_changed)
 
 if __name__ == "__main__":
     src_dir = "./blog"  # Current directory
