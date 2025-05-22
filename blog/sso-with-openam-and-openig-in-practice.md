@@ -97,5 +97,3 @@ Authentication when using federated SSO generally looks like this, regardless of
 In this article we covered only the most basic ways of Single Sign-On implementation. In practice, they can be combined. For example, Kerberos authentication can be used in OpenAM for federated access to an external application via the SAML protocol. 
 
 Single Sign-On technology provides a convenient and secure way to control access to different services, whether they are sites on the same domain, corporate applications or services on different domains. Using solutions such as OpenAM and OpenIG, you can flexibly configure authentication and authorization processes, adapting them to specific business objectives. Implementing SSO not only simplifies user interaction with systems, but also increases security through centralized management.
-
-[sso-use-cases.drawio](%5Bdraft%5D%20Single%20Sign-On%20c%20OpenAM%20%D0%B8%20OpenIG%20%D0%9F%D1%80%D0%B0%D0%BA%D1%82%D0%B8%D1%87%D0%B5%D1%81%201fae695cedab80dc9c95ea1df0836fff/sso-use-cases.drawio)
