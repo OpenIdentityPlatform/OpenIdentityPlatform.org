@@ -60,7 +60,7 @@ def transform_files(src_dir, target_dir, extensions):
                 last_changed = get_last_git_change_date(file_path)
                 print(f"File: {file_path}, Last Changed: {last_changed if last_changed else 'Not tracked or no commits'}")
                 #copy_file(file_path, target_dir, last_changed)
-                change_src_file_contents(file_path, last_changed)
+                #change_src_file_contents(file_path, last_changed)
 
 if __name__ == "__main__":
     src_dir = "./blog"  # Current directory

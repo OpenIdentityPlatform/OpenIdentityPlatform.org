@@ -16,7 +16,7 @@ canonical: "https://www.openidentityplatform.org/blog/"
   <div class="card-body">
     <h4>
       <a class="blogpost" href="{{post.url}}">
-        {{post.title}}
+        {%- if post.landing-title -%} {{ post.landing-title }} {%- else -%}{{ post.title}}{%- endif -%}
       </a>
     </h4>
     <p>{{post.date |  date: "%d.%m.%Y" }}</p>

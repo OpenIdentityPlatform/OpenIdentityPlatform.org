@@ -46,7 +46,7 @@ canonical: "https://www.openidentityplatform.org"
 <div class="card mb-3">
   <div class="card-body">
     <h4>
-      {{post.title}}
+      {%- if post.landing-title -%} {{ post.landing-title }} {%- else -%}{{ post.title}}{%- endif -%}
     </h4>
     <p>{{post.description}}</p>
   </div>

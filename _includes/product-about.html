@@ -2,10 +2,12 @@
     <h4>About:</h4>
     <ul>
         {% assign i = 0 %}
-        {% for post in site.data.blogposts %}  
+        {% for post in site.posts %}  
             {% if post.products contains page.product %}
                 <li>
-                    <a href="{{post.link}}">{{post.title}}</a>
+                    <a href="{{post.url}}">
+                        {%- if post.landing-title -%} {{ post.landing-title }} {%- else -%}{{ post.title}}{%- endif -%}
+                    </a>
                 </li>
                 {% assign i = i | plus: 1 %}
                 {% if i > 15 %}                
