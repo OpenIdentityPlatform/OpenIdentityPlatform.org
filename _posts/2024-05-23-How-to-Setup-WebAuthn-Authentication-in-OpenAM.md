@@ -5,6 +5,9 @@ landing-title2: "How to Setup WebAuthn Authentication and Registration in OpenAM
 description: "How to Setup WebAuthn Authentication in OpenAM"
 keywords: 'WebAuthn, passkeys, Authentication, Registration, Login, OpenAM, Access Management, Authentication, Authorization, Single Sign On,  Open Identity Platform'
 share-buttons: true
+products: 
+- openam
+
 ---
 
 # How to Setup WebAuthn Authentication in OpenAM

@@ -5,6 +5,9 @@ landing-title2: "How to setup ICAP Filter for DLP and Antivirus protection with 
 description: "How to setup ICAP Filter for DLP and Antivirus protection with OpenIG"
 keywords: 'authentication, icap, dlp, antivirys'
 share-buttons: true
+products: 
+- openig
+
 ---
 
 # How to setup ICAP Filter for DLP and Antivirus protection with OpenIG

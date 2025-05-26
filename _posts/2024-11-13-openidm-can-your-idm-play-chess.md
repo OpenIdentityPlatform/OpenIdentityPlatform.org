@@ -6,6 +6,8 @@ description: "In this article, we will configure OpenIDM workflow to play chess 
 keywords: 'OpenIDM, Identity Management, workflowm chess'
 imageurl: 'openidm-og.png'
 share-buttons: true
+products: 
+- openidm
 ---
 
 <h1>OpenIDM: Can your IDM play chess?</h1>

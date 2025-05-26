@@ -6,6 +6,8 @@ description: "This article explains how OpenAM and its ecosystem works in a very
 keywords: ''
 imageurl: 'openam-og.png'
 share-buttons: true
+products: 
+- openam
 ---
 
 <h1>How <a href="https://github.com/OpenIdentityPlatform/OpenAM">OpenAM</a> Works Simple Explanation</h1>

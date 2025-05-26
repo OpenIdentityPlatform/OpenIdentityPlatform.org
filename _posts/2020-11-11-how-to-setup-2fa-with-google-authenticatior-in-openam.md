@@ -6,6 +6,8 @@ description: "How to setup Google Authenticator as two-factor authentication (2F
 keywords: 'google authenticator, authentication, OTP, HOTP, 2FA'
 imageurl: 'openam-og.png'
 share-buttons: true
+products: 
+- openam
 ---
 <h1>How to Setup 2FA with Google Authenticator in OpenAM</h1>
 

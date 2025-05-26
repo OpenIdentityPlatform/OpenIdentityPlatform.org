@@ -6,6 +6,9 @@ description: "How to Setup SAMLv2 Federation between OpenAM Idetity Provider and
 keywords: 'SAML, SAMLv2 Spring, SSO, OpenAM, Identity Provider, Service Provider'
 imageurl: 'openam-og.png'
 share-buttons: true
+products: 
+- openam
+
 ---
 <h1>How to Setup SAMLv2 Federation in OpenAM</h1>
 

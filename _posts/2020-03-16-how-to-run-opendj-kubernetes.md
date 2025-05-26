@@ -6,6 +6,8 @@ description: "This article explains how to run OpenDJ in Kubernetes"
 keywords: ''
 imageurl: 'opendj-og.png'
 share-buttons: true
+products: 
+- opendj
 ---
 <h1>How To Run OpenDJ on Kubernetes</h1>
 

@@ -6,6 +6,8 @@ description: "This article explains API throttling use cases and how to setup va
 keywords: 'openig, throttling, api, authorization'
 imageurl: 'openig-og.png'
 share-buttons: true
+products: 
+- openig
 ---
 <h1>API Throughput Control (Trotting) with OpenIG Authorization Gateway</h1>
 

@@ -6,6 +6,9 @@ description: "This article explains how develop IdRepo plugin to connect to an e
 keywords: 'OpenAM, Customisation, MongoDB, DataStore'
 imageurl: 'openam-og.png'
 share-buttons: true
+products: 
+- openam
+
 ---
 <h1>How to Create Custom OpenAM DataStore Integration</h1>
 

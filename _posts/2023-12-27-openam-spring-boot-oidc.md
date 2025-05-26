@@ -6,6 +6,8 @@ description: "How to setup federated authenticaion in Spring Boot Application vi
 keywords: 'OAuth2, OIDC, Spring, Spring Boot, Spring Security, SSO, OpenAM'
 imageurl: 'openam-og.png'
 share-buttons: true
+products: 
+- openam
 ---
 <h1>OpenAM and Spring Boot 3 Integration via OIDC OAuth2 Protocol</h1>
 

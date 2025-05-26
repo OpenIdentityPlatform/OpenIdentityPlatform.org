@@ -5,6 +5,8 @@ landing-title2: "How to Use High Perfomant and Availability DataStore Apache Cas
 description: "How to Use Apache Cassandra as User DataStore in OpenAM"
 keywords: 'Apache Cassandra, Cassandra, high perfomance, high availability, OpenAM, Access Management, Authentication, Authorization, DataStore, Single Sign On,  Open Identity Platform'
 share-buttons: true
+products: 
+- openam
 ---
 
 # How to Use Apache Cassandra as User DataStore in OpenAM

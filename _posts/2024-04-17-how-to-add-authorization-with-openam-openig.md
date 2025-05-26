@@ -6,6 +6,9 @@ description: "We will add OpenAM authentication for an application, and setup pr
 keywords: 'OpenAM, proxy, authentication, OpenIG, SSO'
 imageurl: 'openam-og.png'
 share-buttons: true
+products: 
+- openam
+
 ---
 <h1>How to Add Authorization and Protect Your Application With OpenAM and OpenIG Stack</h1>
 

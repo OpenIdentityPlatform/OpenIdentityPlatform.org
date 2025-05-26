@@ -16,10 +16,18 @@ layout: null
     </url>
   {% endfor %}
   {% for page in site.pages %}
-    {% if page.layout != null and page.layout != empty %}
+    {% if page.layout != null and page.layout != empty and  page.layout != "redirect" %}
       <url>
         <loc>{{ site.url }}{{ page.url | remove: "index.html" | remove: ".html" }}</loc>
        </url>
        {% endif %}
+  {% endfor %}
+
+  {% for file in site.static_files %}
+    {% if file.name == "index.html"%}
+      <url>
+        <loc>{{ site.url }}{{ file.path | remove: "index.html" | remove: ".html" }}</loc>
+       </url>
+    {% endif %}
   {% endfor %}
 </urlset>

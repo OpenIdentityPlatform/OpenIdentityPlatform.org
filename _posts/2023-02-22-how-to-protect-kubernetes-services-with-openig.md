@@ -6,6 +6,9 @@ description: "This article explains how to protect services deployed on Kubernet
 keywords: ''
 imageurl: 'openig-og.png'
 share-buttons: true
+products: 
+- openig
+
 ---
 <h1>How To Protect Kubernetes Services With OpenIG</h1>
 

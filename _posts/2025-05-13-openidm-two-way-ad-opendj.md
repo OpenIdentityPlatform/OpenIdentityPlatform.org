@@ -6,6 +6,8 @@ description: "In this article we will configure two-way synchronization between 
 keywords: 'OpenIDM, Active Directory, Identity Management, OpenDJ'
 imageurl: 'openidm-og.png'
 share-buttons: true
+products: 
+- openidm
 ---
 
 <h1>Configuring OpenIDM for Synchronization Between Active Directory and OpenDJ</h1>

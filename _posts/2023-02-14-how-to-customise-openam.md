@@ -6,6 +6,9 @@ description: "This article explains how create custom OpenAM project and run it 
 keywords: 'OpenAM, Customisation'
 imageurl: 'openam-og.png'
 share-buttons: true
+products: 
+- openam
+
 ---
 <h1>How to Customise OpenAM</h1>
 

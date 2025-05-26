@@ -1,11 +1,14 @@
 ---
 layout: home
-title: "TIP: Bootstrap OpenAM and OpenDJ Docker Containers"
-landing-title2: "TIP: Bootstrap OpenAM and OpenDJ Docker Containers"
+title: "Bootstrap OpenAM and OpenDJ Docker Containers"
+landing-title2: "Bootstrap OpenAM and OpenDJ Docker Containers"
 description: "How to configure and run OpenAM with OpenDJ in Docker containers"
 keywords: ''
 imageurl: 'openam-og.png'
 share-buttons: true
+products: 
+- openam
+- opendj
 ---
 
 # TIP: Bootstrap OpenAM and OpenDJ Docker Containers

@@ -6,6 +6,9 @@ description: "How to setup federated authenticaion in Yandex Clound via OpenAM u
 keywords: 'SAML, Yandex, Yandex Cloud, SSO, OpenAM'
 imageurl: 'openam-og.png'
 share-buttons: true
+products: 
+- openam
+
 ---
 <h1>SAML Authentication in Yandex Cloud via OpenAM</h1>
 

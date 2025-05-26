@@ -3,10 +3,9 @@ layout: home
 title: "Single Sign-On (SSO): Seamless Authentication for Enterprise and Client Services"
 landing-title2: "Single Sign-On (SSO): Seamless Authentication for Enterprise and Client Services"
 description: "This article gives a basic understanding about Single Sign-On technology"
-keywords: 'Single Sign-On, SSO, seamless authentication, enterprise authentication, client services authentication,SSO implementation, Kerberos protocol, authorization gateway, centralized access management, user experience, authentication security, corporate applications, digital services security
-
-'
+keywords: 'Single Sign-On, SSO, seamless authentication, enterprise authentication, client services authentication,SSO implementation, Kerberos protocol, authorization gateway, centralized access management, user experience, authentication security, corporate applications, digital services security'
 share-buttons: true
+
 ---
 
 <h1>Single Sign-On (SSO): Seamless Authentication for Enterprise and Client Services</h1>

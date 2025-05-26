@@ -5,6 +5,9 @@ landing-title2: "OpenAM and OpenIG: Implementing Zero Trust Security Principles"
 description: "In this article, we’ll explore how to implement Zero Trust principles using a combination of OpenAM and OpenIG."
 keywords: 'openam, openig, zero trust'
 share-buttons: true
+products: 
+- openig
+- openam
 ---
 
 ## Introduction

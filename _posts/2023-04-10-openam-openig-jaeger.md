@@ -5,6 +5,9 @@ landing-title2: "How to setup tracing with OpenTelemetry and Jaeger"
 description: "In this article we will setup OpenTelemetry and Jaeger to monitor OpenAM and OpenIG applications"
 keywords: 'openam, openig, jaeger, opentelemetry'
 share-buttons: true
+products: 
+- openam
+- openig
 ---
 
 # Setup Tracing with OpenTelemetry and Jaeger

@@ -6,6 +6,8 @@ description: OpenDJ now supports Apache Cassandra and ScyllaDB as a backend with
 keywords: 'OpenDJ, Directory Service, Directory Services, LDAP, Open Identity Platform, Apache Cassandra, Scylla'
 imageurl: 'opendj-og.png'
 share-buttons: true
+products: 
+- opendj
 ---
 
 # OpenDJ: Supercharged LDAP Data Storage and Performance

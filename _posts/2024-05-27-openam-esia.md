@@ -6,6 +6,9 @@ description: "How to prepare and setup OpenAM to use Gosuslugi Portal Authentica
 keywords: 'SSO, OpenAM, ESIA, Gosuslugi'
 imageurl: 'openam-og.png'
 share-buttons: true
+products: 
+- openam
+
 ---
 
 <h1>OpenAM Authentication via Gosuslugi Portal</h1>

@@ -6,6 +6,8 @@ description: In the following article we will setup PostgtreSQL as an OpenDJ bac
 keywords: 'OpenDJ, JDBC, PostgreSQL, RDMS, Open Identity Platform, LDAP'
 imageurl: 'opendj-og.png'
 share-buttons: true
+products: 
+- opendj
 ---
 
 [Original article](https://github.com/OpenIdentityPlatform/OpenDJ/wiki/Using-a-Relational-Database-as-an-LDAP-Backend)

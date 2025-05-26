@@ -6,6 +6,8 @@ description: "How to setup federated authenticaion in WordPress via OpenAM using
 keywords: 'SAML, WordPress, SSO, OpenAM'
 imageurl: 'openam-og.png'
 share-buttons: true
+products: 
+- openam
 ---
 <h1>SAML Authentication in WordPress via OpenAM</h1>
 

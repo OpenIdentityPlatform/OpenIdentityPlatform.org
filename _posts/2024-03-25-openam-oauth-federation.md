@@ -6,6 +6,9 @@ description: "How to Setup OAuth2/OIDC federation between OpenAM Server and Clie
 keywords: 'OAuth2, OIDC, SSO, OpenAM, Identity Provider, Service Provider'
 imageurl: 'openam-og.png'
 share-buttons: true
+products: 
+- openam
+
 ---
 <h1>How to Setup OAuth2/OIDC Federation in OpenAM</h1>
 

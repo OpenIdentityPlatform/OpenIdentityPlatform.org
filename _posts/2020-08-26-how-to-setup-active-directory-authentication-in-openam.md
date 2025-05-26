@@ -6,6 +6,8 @@ description: "How to use Active Directory as a user data source and use for auth
 keywords: ''
 imageurl: 'openam-og.png'
 share-buttons: true
+products: 
+- openam
 ---
 <h1>How To Setup Active Directory Authenticaion In OpenAM</h1>
 

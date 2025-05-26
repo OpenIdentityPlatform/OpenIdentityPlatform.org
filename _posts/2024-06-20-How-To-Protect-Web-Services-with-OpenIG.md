@@ -5,7 +5,9 @@ landing-title2: "How To Protect Web Services with OpenIG"
 description: "How To Protect Web Services with OpenIG"
 keywords: 'OpenIG, API Gateway, Security, Authentication, Authorization, OSWAP, Single Sign On,  Open Identity Platform'
 share-buttons: true
-canonical: https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-To-Protect-Web-Services-with-OpenIG
+products: 
+- openig
+
 ---
 # How To Protect Web Services with OpenIG
 

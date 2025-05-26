@@ -6,6 +6,9 @@ description: "How to setup authenticaion in Spring Boot Application via OpenAM"
 keywords: 'Spring Boot, Spring Security, SSO, OpenAM'
 imageurl: 'openam-og.png'
 share-buttons: true
+products: 
+- openam
+
 ---
 <h1>OpenAM and Spring Boot 3 Integration via OpenAM Cookie</h1>
 

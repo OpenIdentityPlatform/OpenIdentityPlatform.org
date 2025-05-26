@@ -6,6 +6,9 @@ description: "This article explains how to setup Kerberos authentication with Op
 keywords: ''
 imageurl: 'openam-og.png'
 share-buttons: true
+products: 
+- openam
+
 ---
 <h1>How to Setup Kerberos Authentication with OpenAM</h1>
 

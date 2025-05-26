@@ -6,7 +6,8 @@ description: "This article explains how to run an embedded OpenDJ instance as pa
 keywords: 'opendj, ldap, spring, spring boot, embedded ldap'
 imageurl: 'opendj-og.png'
 share-buttons: true
-canonical: https://github.com/OpenIdentityPlatform/OpenDJ/wiki/How-to-Run-OpenDJ%E2%80%90based-Embedded-LDAP-in-Spring-Boot-Application'
+products: 
+- opendj
 ---
 <h1>How to Run OpenDJ‐based Embedded LDAP in Spring Boot Application</h1>
 

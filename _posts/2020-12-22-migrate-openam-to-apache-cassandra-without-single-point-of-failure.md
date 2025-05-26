@@ -6,6 +6,9 @@ description: "How to plan data storages and data centers resources for OpenAM fa
 keywords: 'OpenAM, Apache Cassandra, Data Center, Fault Tolerance'
 imageurl: 'openam-og.png'
 share-buttons: true
+products: 
+- openam
+
 ---
 <h1>Migrate OpenAM to Apache Cassandra without a Single Point of Failure</h1>
 

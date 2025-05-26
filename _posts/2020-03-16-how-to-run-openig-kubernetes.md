@@ -6,7 +6,10 @@ description: "This article explains how to run OpenIG in Kubernetes"
 keywords: ''
 imageurl: 'openig-og.png'
 share-buttons: true
+products: 
+- openig
 ---
+
 <h1>How To Run OpenIG on Kubernetes</h1>
 
 Original article: [https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-To-Run-OpenIG-in-Kubernetes](https://github.com/OpenIdentityPlatform/OpenIG/wiki/How-To-Run-OpenIG-in-Kubernetes)

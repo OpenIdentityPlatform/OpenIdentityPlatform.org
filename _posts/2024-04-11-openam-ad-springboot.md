@@ -6,6 +6,9 @@ description: "How to configure OpenAM to authenticate in a Spring Boot Applicati
 keywords: 'Active Directory, Spring Boot, Spring Security, SSO, OpenAM'
 imageurl: 'openam-og.png'
 share-buttons: true
+products: 
+- openam
+
 ---
 <h1>How to Setup Active Directory Authentication in a Spring Boot Application</h1>
 

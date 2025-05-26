@@ -6,6 +6,8 @@ description: "How to setup federated authentication in a Single Page Application
 keywords: 'OAuth2, OIDC, PKCE, React, SPA, Single page application, OpenAM, authentication'
 imageurl: 'openam-og.png'
 share-buttons: true
+products: 
+- openam
 ---
 <h1>Authentication in a Single‐Page Application via OpenAM using OAuth2 OIDC Protocol</h1>
 

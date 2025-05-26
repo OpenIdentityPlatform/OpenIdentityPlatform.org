@@ -6,6 +6,8 @@ description: "This article explains how to run OpenAM in Kubernetes"
 keywords: ''
 imageurl: 'openam-og.png'
 share-buttons: true
+products: 
+- openam
 ---
 <h1>How To Run OpenAM on Kubernetes</h1>
 

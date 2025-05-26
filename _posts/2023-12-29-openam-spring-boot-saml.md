@@ -6,6 +6,9 @@ description: "How to setup federated authenticaion in Spring Boot Application vi
 keywords: 'SAML, SAMLv2 Spring, Spring Boot, Spring Security, SSO, OpenAM'
 imageurl: 'openam-og.png'
 share-buttons: true
+products: 
+- openam
+
 ---
 <h1>OpenAM and Spring Boot 3 Integration via SAMLv2 Protocol</h1>
 
