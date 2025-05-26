@@ -45,6 +45,18 @@ redirect_to: '{redirect_to}'
         print(new_contents)
         file.write(new_contents)
 
+
+def file_processed(file_path):
+    """Check if the file contains the search string."""
+    try:
+        with open(file_path, 'r', encoding='utf-8') as file:
+            for line in file:
+                if 'layout: redirect' in line:
+                    return True
+    except Exception as e:
+        print(f"Error reading {file_path}: {e}")
+    return False
+
 def transform_files(src_dir, target_dir, extensions):
     """
     Lists files in a directory with specific extensions and their last Git commit dates.
@@ -59,8 +71,13 @@ def transform_files(src_dir, target_dir, extensions):
                 file_path = os.path.join(root, file)
                 last_changed = get_last_git_change_date(file_path)
                 print(f"File: {file_path}, Last Changed: {last_changed if last_changed else 'Not tracked or no commits'}")
-                #copy_file(file_path, target_dir, last_changed)
-                #change_src_file_contents(file_path, last_changed)
+                if file_processed(file_path):                    
+                   print(f"File: {file_path} already processed, skip")
+                   continue
+                else:
+                    print(f"File: {file_path} need process")
+                copy_file(file_path, target_dir, last_changed)
+                change_src_file_contents(file_path, last_changed)
 
 if __name__ == "__main__":
     src_dir = "./blog"  # Current directory
