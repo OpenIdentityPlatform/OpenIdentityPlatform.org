@@ -1,4 +1,8 @@
 -
+  title: 'Single Sign-On with OpenAM and OpenIG: Practical Implementation Examples'
+  link: '/blog/sso-with-openam-and-openig-in-practice'
+  description: 'The article details several SSO approaches using open-source tools OpenAM and OpenIG'
+-
   title: 'Single Sign-On (SSO): Seamless Authentication for Enterprise and Client Services'
   link: '/blog/sso-seamless-authentication-enterprise-client-services'
   description: 'In this article, we will explain what SSO is and where it is used. We will also look at a technical implementation example for web applications.'
