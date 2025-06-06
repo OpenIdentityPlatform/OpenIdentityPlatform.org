@@ -1,4 +1,11 @@
 -
+  title: 'Single Sign-On with OpenAM and OpenIG: Practical Implementation Examples'
+  link: '/blog/sso-with-openam-and-openig-in-practice'
+  description: 'The article details several SSO approaches using open-source tools OpenAM and OpenIG'
+  products: 
+  - openam
+  - openig
+-
   title: 'Single Sign-On (SSO): Seamless Authentication for Enterprise and Client Services'
   link: '/blog/sso-seamless-authentication-enterprise-client-services'
   description: 'In this article, we will explain what SSO is and where it is used. We will also look at a technical implementation example for web applications.'
@@ -6,10 +13,15 @@
   title: 'Configuring OpenIDM for Synchronization Between Active Directory and OpenDJ'
   link: '/blog/openidm-two-way-ad-opendj'
   description: 'In this article we will configure two-way synchronization between Active Directory and OpenDJ. Changes made in Active Directory will be synchronized to OpenDJ and vice versa'
+  products: 
+  - openidm
+  - opendj
 -
   title: 'OpenAM and Zero Trust: Confirming Critical Operations'
   link: '/blog/openam-and-zero-trust'
   description: 'How to configuree Open Identity Platfrom stack to add extra protection to a critical service'
+  products: 
+  - openam
 -
   title: 'OpenIDM 6.2.4 Released'
   link: '/blog/openidm-6-2-4-released'
@@ -30,6 +42,9 @@
   title: 'OpenAM and OpenIG: Implementing Zero Trust Security Principles'
   link: '/blog/openam-openig-zero-trust'
   description: 'In this article, we’ll explore how to implement Zero Trust principles using a combination of OpenAM and OpenIG.'
+  products: 
+  - openam
+  - openig
 -
   title: 'OpenAM 15.1.5 Released'
   link: '/blog/openam-15-1-5-released'
