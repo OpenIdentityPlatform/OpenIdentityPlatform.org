@@ -40,13 +40,13 @@ canonical: "https://www.openidentityplatform.org"
 </div>
 
 <h3>Recent From our Blog:</h3>
-{% for post in site.data.blogposts limit:3%}
+{% for post in site.posts limit:3%}
 
-<a class="blogpost" href="{{post.link}}">
+<a class="blogpost" href="{{post.url}}">
 <div class="card mb-3">
   <div class="card-body">
     <h4>
-      {{post.title}}
+      {%- if post.landing-title -%} {{ post.landing-title }} {%- else -%}{{ post.title}}{%- endif -%}
     </h4>
     <p>{{post.description}}</p>
   </div>

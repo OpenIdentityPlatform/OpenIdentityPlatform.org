@@ -9,16 +9,54 @@ canonical: "https://www.openidentityplatform.org/blog/"
 ---
 
 <h1>Recent blog articles:</h1>
-{% for post in site.data.blogposts %}
 
-<a class="blogpost" target="_blank" href="{{post.link}}">
+{% for post in paginator.posts %}
+
 <div class="card mb-3">
   <div class="card-body">
     <h4>
-      {{post.title}}
+      <a class="blogpost" href="{{post.url}}">
+        {%- if post.landing-title -%} {{ post.landing-title }} {%- else -%}{{ post.title}}{%- endif -%}
+      </a>
     </h4>
+    <p>{{post.date |  date: "%d.%m.%Y" }}</p>
     <p>{{post.description}}</p>
   </div>
 </div>
-</a>
+
 {% endfor %}
+
+<nav class="paginator">
+  <ul class="pagination">
+    {% if paginator.previous_page %}
+      <li class="page-item">
+        <a href="{{ paginator.previous_page_path }}" class="page-link">Back</a>
+      </li>
+    {% else %} 
+      <li class="page-item disabled">
+        <a class="page-link">Back</a>
+      </li>
+    {% endif %}
+    {% for page in (1..paginator.total_pages) %}
+      {% assign itemClass = "" %}
+      {% if paginator.page == page %} 
+        {% assign itemClass = "active" %}
+      {% endif %}
+      {% if page == 1 %}
+        <li class="page-item {{itemClass}}"><a class="page-link" href="/blog/">{{page}}</a></li>        
+      {% else %}
+        <li class="page-item {{itemClass}}" ><a class="page-link" href="/blog/page{{page}}/">{{page}}</a></li>
+      {% endif %}
+    {% endfor %}
+    {% if paginator.next_page %}
+      <li class="page-item">
+        <a href="{{ paginator.next_page_path }}" class="page-link">Next</a>
+      </li>
+    {% else %}
+      <li class="page-item disabled">
+        <a class="page-link">Next</a>
+      </li>
+    {% endif %}    
+  </ul>
+</nav>
+
