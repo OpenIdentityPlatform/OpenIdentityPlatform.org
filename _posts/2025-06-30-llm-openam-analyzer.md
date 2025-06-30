@@ -86,7 +86,7 @@ Let's run the application:
 2025-06-09T10:21:51.532+03:00  INFO 11080 --- [OpenAM AI Analyzer] [           main] o.o.o.a.a.s.AccessManagerAnalyzerService : generated client prompt:
 SYSTEM: You are an information security expert with 20 years of experience.
 USER: I have an access management system with the following modules:
-```json
+'''json
 {
   "modules": [
     ...
@@ -144,7 +144,7 @@ USER: I have an access management system with the following modules:
     },
     ...
 }
-```
+'''
 
 Analyze each module option and suggest security and performance improvements.
 Consider an optimal tradeoff between security and user experience.
