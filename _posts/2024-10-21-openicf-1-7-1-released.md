@@ -16,7 +16,7 @@ canonical: https://github.com/OpenIdentityPlatform/OpenICF/releases/tag/1.7.1
 * Added JDK 23 support
 * Added maven-compiler-plugin release for cross compile compatibility
 
-[Full chageset](https://github.com/OpenIdentityPlatform/OpenICF/compare/1.7.0...1.7.1)
+[Full changeset](https://github.com/OpenIdentityPlatform/OpenICF/compare/1.7.0...1.7.1)
 
 
 ## Thanks for the contibutions

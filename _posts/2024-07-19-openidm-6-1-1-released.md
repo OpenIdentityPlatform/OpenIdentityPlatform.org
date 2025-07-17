@@ -18,7 +18,7 @@ canonical: https://github.com/OpenIdentityPlatform/OpenIDM/releases/tag/6.1.1
 ## Fixed bugs
 * Fixed connector form serialization issue
 
-[Full chageset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/6.1.0...6.1.1)
+[Full changeset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/6.1.0...6.1.1)
 
 
 ## Thanks for the contibutions

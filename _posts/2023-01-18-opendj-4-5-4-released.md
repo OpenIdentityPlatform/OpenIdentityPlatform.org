@@ -16,7 +16,7 @@ share-buttons: true
 * Added JDK 11, 17, 19 support
 * Added Docker JDK 17 platforms: linux/amd64, linux/arm64/8, linux/arm/v7
 
-Full chageset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.5.3...4.5.4))
+Full changeset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.5.3...4.5.4))
 
 ## Thanks for the contibutions
 

@@ -16,7 +16,7 @@ canonical: https://github.com/OpenIdentityPlatform/OpenIDM/releases/tag/6.1.2
 * Fixed script registry error while starting a workflow
 * Fixed provisioner component load
 
-[Full chageset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/6.1.1...6.1.2)
+[Full changeset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/6.1.1...6.1.2)
 
 
 ## Thanks for the contibutions

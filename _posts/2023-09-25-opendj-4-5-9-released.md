@@ -18,7 +18,7 @@ share-buttons: true
 * Convert JMX metrics to appropriate type and value
 
 
-Full chageset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.5.6...4.5.9))
+Full changeset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.5.6...4.5.9))
 
 ## Thanks for the contibutions
 

@@ -19,7 +19,7 @@ canonical: https://github.com/OpenIdentityPlatform/OpenDJ/releases/tag/4.6.5
 * Fixed reset password unpredictable behavior
 * Fixed control panel schema errors in remote mode
 
-Full chageset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.6.4...4.6.5))
+Full changeset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.6.4...4.6.5))
 
 ## Thanks for the contibutions
 

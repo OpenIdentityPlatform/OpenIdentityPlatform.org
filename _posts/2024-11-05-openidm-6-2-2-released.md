@@ -20,7 +20,7 @@ canonical: https://github.com/OpenIdentityPlatform/OpenIDM/releases/tag/6.2.2
 * Fixed documentation display and deployment issues
 
 
-[Full chageset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/6.2.1...6.2.2)
+[Full changeset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/6.2.1...6.2.2)
 
 
 ## Thanks for the contibutions

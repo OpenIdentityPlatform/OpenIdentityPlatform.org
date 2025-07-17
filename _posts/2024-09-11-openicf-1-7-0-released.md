@@ -16,7 +16,7 @@ canonical: https://github.com/OpenIdentityPlatform/OpenICF/releases/tag/1.7.0
 * Switch Docker image to JRE 21 LTS 
 * Added Java 22 support
 
-[Full chageset](https://github.com/OpenIdentityPlatform/OpenICF/compare/1.6.2...1.7.0)
+[Full changeset](https://github.com/OpenIdentityPlatform/OpenICF/compare/1.6.2...1.7.0)
 
 
 ## Thanks for the contibutions

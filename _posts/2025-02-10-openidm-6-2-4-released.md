@@ -20,7 +20,7 @@ canonical: https://github.com/OpenIdentityPlatform/OpenIDM/releases/tag/6.2.4
 * Update documentation formatting and cross references 
 
 
-[Full chageset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/6.2.3...6.2.4)
+[Full changeset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/6.2.3...6.2.4)
 
 
 ## Thanks for the contibutions

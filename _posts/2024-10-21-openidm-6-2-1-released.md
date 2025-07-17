@@ -18,7 +18,7 @@ canonical: https://github.com/OpenIdentityPlatform/OpenIDM/releases/tag/6.2.1
 * Migrated documentation to the AciiDoc format and deploy docs to Antora 
 
 
-[Full chageset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/6.2.0...6.2.1)
+[Full changeset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/6.2.0...6.2.1)
 
 
 ## Thanks for the contibutions

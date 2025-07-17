@@ -15,7 +15,7 @@ share-buttons: true
 ### Fixed Bugs
 * Fixed unused trailing bytes in ASN.1 sequence
 
-Full chageset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.5.5...4.5.6))
+Full changeset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.5.5...4.5.6))
 
 ## Thanks for the contibutions
 

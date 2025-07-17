@@ -26,7 +26,7 @@ share-buttons: true
 * Fixed delete entries bug in overlapping backends
 
 
-Full chageset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.8.0...4.8.1))
+Full changeset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.8.0...4.8.1))
 
 ## Thanks for the contibutions
 

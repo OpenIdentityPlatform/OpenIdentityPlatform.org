@@ -20,7 +20,7 @@ canonical: https://github.com/OpenIdentityPlatform/OpenIDM/releases/tag/6.2.5
 * Resolved [CVE-2025-27497](https://nvd.nist.gov/vuln/detail/CVE-2025-27497), mitigating a Denial of Service (DoS) vulnerability caused by alias loops.
 * Resolved [CVE-2019-17554](https://nvd.nist.gov/vuln/detail/CVE-2019-17554) [CVE-2019-17555](https://nvd.nist.gov/vuln/detail/CVE-2019-17555) [CVE-2020-1925](https://nvd.nist.gov/vuln/detail/CVE-2020-1925), by upgrading Apache Olingo to the latest version
 
-[Full chageset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/6.2.4...6.2.5)
+[Full changeset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/6.2.4...6.2.5)
 
 ## Thanks for the contributions
 

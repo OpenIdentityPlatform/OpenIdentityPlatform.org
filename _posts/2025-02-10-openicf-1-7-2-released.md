@@ -19,7 +19,7 @@ canonical: https://github.com/OpenIdentityPlatform/OpenICF/releases/tag/1.7.2
 * Fixed [CVE-2023-22102](https://nvd.nist.gov/vuln/detail/CVE-2023-22102), allows an attacker to compromise MySQL Connectors
 
 
-[Full chageset](https://github.com/OpenIdentityPlatform/OpenICF/compare/1.7.1...1.7.2)
+[Full changeset](https://github.com/OpenIdentityPlatform/OpenICF/compare/1.7.1...1.7.2)
 
 
 ## Thanks for the contibutions

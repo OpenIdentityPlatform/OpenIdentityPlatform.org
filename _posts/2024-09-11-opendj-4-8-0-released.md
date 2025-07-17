@@ -22,7 +22,7 @@ canonical: https://github.com/OpenIdentityPlatform/OpenDJ/releases/tag/4.8.0
 * Fixed control panel help menu
 * Fixed documentation: `import-ldif` and `export-ldif` binaries should be shown using the `--offline` option 
 
-Full chageset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.7.0...4.8.0))
+Full changeset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.7.0...4.8.0))
 
 ## Thanks for the contibutions
 

@@ -18,7 +18,7 @@ share-buttons: true
 * Change posixGroup type to structural.
 * PBKDF2-HMAC-SHA256 and PBKDF-HMAC-SHA512 password storage is configured by default
 
-Full chageset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.5.4...4.5.5))
+Full changeset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.5.4...4.5.5))
 
 ## Thanks for the contibutions
 

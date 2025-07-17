@@ -20,7 +20,7 @@ share-buttons: true
 Fixed [OpenIDM](https://github.com/OpenIdentityPlatform/OpenIDM) compatibility
 
 
-Full chageset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.6.2...4.6.3))
+Full changeset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.6.2...4.6.3))
 
 ## Thanks for the contibutions
 

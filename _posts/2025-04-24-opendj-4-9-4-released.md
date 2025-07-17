@@ -25,7 +25,7 @@ share-buttons: true
 * Fixed JDBC storage update concurrency
 
 
-Full chageset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.9.3...4.9.4))
+Full changeset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.9.3...4.9.4))
 
 ## Thanks for the contibutions
 

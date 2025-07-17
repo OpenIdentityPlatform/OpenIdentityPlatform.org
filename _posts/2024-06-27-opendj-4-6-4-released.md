@@ -15,7 +15,7 @@ canonical: https://github.com/OpenIdentityPlatform/OpenDJ/releases/tag/4.6.4
 * Embedded OpenDJ module
 * Security updates
 
-Full chageset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.6.3...4.6.4))
+Full changeset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.6.3...4.6.4))
 
 ## Thanks for the contibutions
 

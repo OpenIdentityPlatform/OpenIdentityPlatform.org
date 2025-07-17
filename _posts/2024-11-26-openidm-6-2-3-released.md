@@ -18,7 +18,7 @@ canonical: https://github.com/OpenIdentityPlatform/OpenIDM/releases/tag/6.2.3
 * Fixed missing sample workflow chess image
 
 
-[Full chageset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/6.2.2...6.2.3)
+[Full changeset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/6.2.2...6.2.3)
 
 
 ## Thanks for the contibutions

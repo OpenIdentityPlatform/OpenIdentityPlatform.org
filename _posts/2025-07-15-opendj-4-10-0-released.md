@@ -21,7 +21,7 @@ share-buttons: true
 * Patched security vulnerability CVE-2025-49146 preventing fallback to insecure authentication with channelBinding=require.
 * Fixed makeldif templates by adding missing objectClass attribute to baseDN to improve import/export reliability.
 
-Full chageset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.9.4...4.10.0))
+Full changeset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.9.4...4.10.0))
 
 ## Thanks for the contributions
 

@@ -15,7 +15,7 @@ share-buttons: true
 * Updated [Identity Connector Framework](https://github.com/OpenIdentityPlatform/OpenICF/) to 1.6.0 version
 * Migrated CI/CD to GitHub actions
 
-[Full chageset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/5.5.0...6.0.0)
+[Full changeset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/5.5.0...6.0.0)
 
 
 ## Thanks for the contibutions

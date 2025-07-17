@@ -19,7 +19,7 @@ canonical: https://github.com/OpenIdentityPlatform/OpenIDM/releases/tag/6.2.0
 ## Fixed Bugs
 * Fixed activiti crashes
 
-[Full chageset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/6.1.2...6.2.0)
+[Full changeset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/6.1.2...6.2.0)
 
 
 ## Thanks for the contibutions

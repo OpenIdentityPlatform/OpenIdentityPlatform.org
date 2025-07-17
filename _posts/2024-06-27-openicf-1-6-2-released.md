@@ -15,7 +15,7 @@ canonical: https://github.com/OpenIdentityPlatform/OpenICF/releases/tag/1.6.2
 ## What's new
 * Security updates
 
-[Full chageset](https://github.com/OpenIdentityPlatform/OpenICF/compare/1.6.1...1.6.2)
+[Full changeset](https://github.com/OpenIdentityPlatform/OpenICF/compare/1.6.1...1.6.2)
 
 
 ## Thanks for the contibutions

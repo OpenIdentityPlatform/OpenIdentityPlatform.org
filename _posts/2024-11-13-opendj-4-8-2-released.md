@@ -20,7 +20,7 @@ share-buttons: true
 * Fixed `makeldif` command failure
 
 
-Full chageset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.8.1...4.8.2))
+Full changeset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.8.1...4.8.2))
 
 ## Thanks for the contibutions
 

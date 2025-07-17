@@ -16,7 +16,7 @@ share-buttons: true
 * Fixed loading third-party libraries
 * Updated documentation
 
-Full chageset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.9.1...4.9.2))
+Full changeset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.9.1...4.9.2))
 
 ## Thanks for the contibutions
 

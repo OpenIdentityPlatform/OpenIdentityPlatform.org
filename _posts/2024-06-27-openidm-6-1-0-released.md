@@ -14,7 +14,7 @@ canonical: https://github.com/OpenIdentityPlatform/OpenIDM/releases/tag/6.1.0
 * Update OpenICF to 1.6.2
 * Security updates
 
-[Full chageset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/6.0.2...6.1.0)
+[Full changeset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/6.0.2...6.1.0)
 
 
 ## Thanks for the contibutions

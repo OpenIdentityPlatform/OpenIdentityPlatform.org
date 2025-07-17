@@ -19,7 +19,7 @@ share-buttons: true
 ## Fiexed Bugs
 * Fied OpenIDM compartibility
 
-[Full chageset](https://github.com/OpenIdentityPlatform/OpenICF/compare/1.5.2...1.6.0)
+[Full changeset](https://github.com/OpenIdentityPlatform/OpenICF/compare/1.5.2...1.6.0)
 
 
 ## Thanks for the contibutions

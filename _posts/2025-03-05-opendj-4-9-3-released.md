@@ -16,7 +16,7 @@ share-buttons: true
 * Change permission config.ldif.startok to the owner
 * Updated documentation
 
-Full chageset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.9.2...4.9.3))
+Full changeset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.9.2...4.9.3))
 
 ## Thanks for the contibutions
 

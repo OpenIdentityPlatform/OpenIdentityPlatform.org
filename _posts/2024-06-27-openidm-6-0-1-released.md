@@ -13,7 +13,7 @@ canonical: https://github.com/OpenIdentityPlatform/OpenIDM/releases/tag/6.0.1
 ## What's new
 * Update Docker image to JRE 19 and restore `lnux/s390x` and `linux/arm64/8` platforms
 
-[Full chageset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/6.0.0...6.0.1)
+[Full changeset](https://github.com/OpenIdentityPlatform/OpenIDM/compare/6.0.0...6.0.1)
 
 
 ## Thanks for the contibutions

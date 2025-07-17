@@ -15,7 +15,7 @@ share-buttons: true
 * JDK 21 compartibility
 
 
-Full chageset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.5.9...4.6.1))
+Full changeset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.5.9...4.6.1))
 
 ## Thanks for the contibutions
 

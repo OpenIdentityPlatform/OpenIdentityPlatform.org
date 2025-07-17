@@ -21,7 +21,7 @@ canonical: https://github.com/OpenIdentityPlatform/OpenDJ/releases/tag/4.7.0
 * Fixed incorrect entry-Based ACIs is defined with only "deny" permission without "allow" 
 * Fixed control panel schema errors in remote mode
 
-Full chageset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.6.5...4.7.0))
+Full changeset ([more details](https://github.com/OpenIdentityPlatform/OpenDJ/compare/4.6.5...4.7.0))
 
 ## Thanks for the contibutions
 

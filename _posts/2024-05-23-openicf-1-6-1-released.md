@@ -14,7 +14,7 @@ share-buttons: true
 * Update Docker image to JRE 19 and restore `lnux/s390x` platform
 
 
-[Full chageset](https://github.com/OpenIdentityPlatform/OpenICF/compare/1.6.0...1.6.1)
+[Full changeset](https://github.com/OpenIdentityPlatform/OpenICF/compare/1.6.0...1.6.1)
 
 
 ## Thanks for the contibutions
