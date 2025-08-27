@@ -6,6 +6,8 @@ keywords: OpenDJ, Directory Service, Directory Services, LDAP, Open Identity Pla
 reponame: OpenDJ
 product: opendj
 links: 
+    - title: Donate
+      url: https://opencollective.com/opendj/contribute
     - title: Wikipedia
       url: https://en.wikipedia.org/wiki/OpenDJ
 

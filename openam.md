@@ -6,6 +6,8 @@ keywords: OpenAM, Access Management, Authentication, Authorization, SSO, Single 
 reponame: OpenAM
 product: openam
 links: 
+    - title: Donate
+      url: https://opencollective.com/openam/contribute
     - title: Wikipedia
       url: https://en.wikipedia.org/wiki/OpenAM
 ---

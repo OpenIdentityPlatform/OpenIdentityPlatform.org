@@ -6,7 +6,9 @@ keywords: OpenIG, Indentity Gateway, reverse proxy, session management, credenti
 reponame: OpenIG
 product: openig
 video: ForgeRock+OpenIG 
-links: []
+links: 
+    - title: Donate
+      url: https://opencollective.com/openidm/contribute
 
 ---
 <div class="container text-center mb-4">

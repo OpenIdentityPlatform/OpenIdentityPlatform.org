@@ -6,6 +6,8 @@ keywords: Open IDM, Identity, Management, Identity Management
 reponame: OpenIDM
 product: openidm
 links: 
+    - title: Donate
+      url: https://opencollective.com/openidm/contribute
     - title: Wikipedia
       url: https://en.wikipedia.org/wiki/OpenIDM
    
