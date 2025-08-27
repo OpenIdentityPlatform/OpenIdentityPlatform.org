@@ -4,6 +4,7 @@ title: OpenICF - Open Indentity Gateway
 description: OpenICF - Open Source reserve proxy server with
 keywords: OpenIG, Indentity Gateway, reverse proxy, session management, credential replay, Open Identity Platform
 reponame: OpenICF
+contributors_project: OpenIDM
 ---
 <div class="container text-center mb-4">
     <a target="_blank" href="https://github.com/OpenIdentityPlatform/OpenICF">
