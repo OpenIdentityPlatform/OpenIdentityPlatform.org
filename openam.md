@@ -44,4 +44,5 @@ So, OpenAM can help you to solve all this issues. Key features of OpenAM are:
 
  {% include contributors.html %}
 
+ {% include sponsors.html %}
 

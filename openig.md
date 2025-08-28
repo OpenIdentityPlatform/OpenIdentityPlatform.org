@@ -42,3 +42,5 @@ modify the target application or the container that it runs in.
  {% include product-about.html %}
 
  {% include contributors.html %}
+
+ {% include sponsors.html %}

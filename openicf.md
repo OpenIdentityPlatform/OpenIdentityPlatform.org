@@ -39,3 +39,5 @@ This project is licensed under the [Common Development and Distribution License 
 * [kerberos-connector](https://github.com/OpenIdentityPlatform/OpenICF/releases) 
 
  {% include contributors.html %}
+
+ {% include sponsors.html %}
