@@ -1,7 +1,7 @@
 <div class="row product-links mb-2">
     <p class="text-start">
         {% for link in site.data.product_links %}   
-        <a class="icon-link mr-3" href='{{link.url |  replace: "$product$", page.reponame}}'>
+        <a class="icon-link mr-3" href='{{link.url |  replace: "$product$", page.reponame | replace: "$product_lc$", page.product }}'>
             {{link.title}}
         </a>
         {% endfor %}

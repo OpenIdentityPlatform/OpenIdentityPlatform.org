@@ -5,7 +5,7 @@
   url: https://github.com/OpenIdentityPlatform/$product$/releases
     
 - title: Documentation
-  url: https://github.com/OpenIdentityPlatform/$product$/wiki/
+  url: https://doc.openidentityplatform.org/$product_lc$/
 
 - title: Discussions
   url: https://github.com/OpenIdentityPlatform/$product$/discussions
