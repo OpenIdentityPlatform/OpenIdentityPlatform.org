@@ -4,12 +4,13 @@ landing: true
 landing-title: "Welcome to Open Identity Platform Community"
 landing-title2: "Open-source community organization, hosted on <a target=\"_blank\" href=\"https://github.com/OpenIdentityPlatform\">GitHub</a>"
 landing-title3: "We develop and support Single Sign-On, Access Management, Identity Management, User-Managed Access, Directory Services, and Identity Gateway, designed and built as a single, unified platform"
+
 canonical: "https://www.openidentityplatform.org"
 ---
 <!--<h3>Products</h3>
 <p>Access management, identity management, user-managed access, directory services, and identity gateway, designed and built as a single, unified platform:</p>
 -->
-<div class="row justify-content-center">
+<div id="projects" class="row justify-content-center">
   {% for product in site.data.products %}
   <div class="col-md-4 d-flex align-items-stretch col-sm-12">
     <div class="product card mb-4">
@@ -39,7 +40,8 @@ canonical: "https://www.openidentityplatform.org"
   {% endfor %}
 </div>
 
-<h3>Recent From our Blog:</h3>
+<h3>Recent Insights from Our Community Blog</h3>
+<p>Stay ahead with tutorials, releases, and best practices on open-source IAM. Dive into real-world implementations.</p>
 {% for post in site.posts limit:3%}
 
 <a class="blogpost" href="{{post.url}}">
@@ -54,15 +56,17 @@ canonical: "https://www.openidentityplatform.org"
 </a>
 {% endfor %}
 
-<p>Source code and binary distribution are available under the <a title="License" href="https://github.com/OpenIdentityPlatform/OpenAM/blob/master/LICENSE.md">Common Development and Distribution License (CDDL)</a>.</p>
+<section id="license">
+  <h3>Open Source Licensing</h3>
+  <p>All source code and binaries are freely available under the <a href="https://github.com/OpenIdentityPlatform/OpenAM/blob/master/LICENSE.md">Common Development and Distribution License (CDDL)</a>. Contribute, fork, and deploy without restrictions.</p>
+</section>
 
-<h3>Contacts</h3>
-Join us:
-<ul>
-  <li>
-    Community Discussions: <a title="OpenAM Community Discussions" href="https://github.com/orgs/OpenIdentityPlatform/discussions">https://github.com/orgs/OpenIdentityPlatform/discussions</a>
-  </li>
-</ul>
+<section id="contact">
+  <h3>Join the Open Identity Platform Community</h3>
+  <p>Connect with developers, share ideas, and collaborate on the future of IAM. Whether you're troubleshooting, contributing code, or seeking support - we're here.</p>
+  <p>Join discussions on <a href="https://github.com/OpenIdentityPlatform/discussions">GitHub Discussions</a>.</p>
+</section>
+
 
 <h3>Commercial support</h3>
 <ul>
