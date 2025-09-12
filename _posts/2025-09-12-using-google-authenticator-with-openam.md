@@ -1,14 +1,14 @@
 ---
 layout: home
-landing-title: "Using Microsoft Authenticator with OpenAM"
-landing-title2: "Using Microsoft Authenticator with OpenAM"
-description: Step-by-step guide to implementing two-factor authentication (2FA) in OpenAM using Microsoft Authenticator and TOTP.
-keywords: 'OpenAM, two-factor authentication, 2FA, TOTP, Microsoft Authenticator, access control, OpenAM configuration, authentication module, OATH, multi-factor authentication, secure login, identity management, Open Identity Platform, device registration, authentication chain'
+landing-title: "Using Google Authenticator with OpenAM"
+landing-title2: "Using Google Authenticator with OpenAM"
+description: Step-by-step guide to implementing two-factor authentication (2FA) in OpenAM using Microsoft Google and TOTP.
+keywords: 'OpenAM, two-factor authentication, 2FA, TOTP, Google Authenticator, access control, OpenAM configuration, authentication module, OATH, multi-factor authentication, secure login, identity management, Open Identity Platform, device registration, authentication chain'
 imageurl: 'openam-og.png'
 share-buttons: true
 
 ---
-# Using Microsoft Authenticator with OpenAM
+# Using Google Authenticator with OpenAM
 
 This article is intended for technical specialists or security system architects who want to implement two-factor authentication (2FA) in an access control system to enhance the security of user accounts.
 
@@ -18,9 +18,9 @@ Adding a second factor makes it significantly more difficult for attackers to co
 
 **OpenAM** is an open-source access management system. It is designed for centralized management of authentication, authorization, and user accounts.
 
-**Microsoft Authenticator** is a mobile application designed to be used as an additional authentication factor. It supports push notifications, one-time passwords (TOTP), and biometric authentication.
+**Google Authenticator** is a mobile application designed to be used as an additional authentication factor. It supports one-time passwords (TOTP), and biometric authentication.
 
-In this article, we will deploy OpenAM, configure modules and authentication chains for use with Microsoft Authenticator, and show you how to add a second factor authentication for a user.
+In this article, we will deploy OpenAM, configure modules and authentication chains for use with Google Authenticator, and show you how to add a second factor authentication for a user.
 
 We will use authentication with one-time passwords generated using the TOTP (time-based one-time password) protocol. Such passwords do not need to be sent to the client device via SMS or PUSH notifications. These passwords are generated using a specific cryptographic algorithm directly on the device.
 
@@ -51,7 +51,7 @@ Set the `OATH Algorithm to Use` setting to `TOTP`, enter any non-empty value in 
 
 ### **Configuring the Device Registration Chain**
 
-The registration chain is required so that authenticated users can add a second authentication factor using Microsoft Authenticator.
+The registration chain is required so that authenticated users can add a second authentication factor using Google Authenticator.
 
 In the administrator console, in the realm settings in the left menu, select Authentication → Chains and click the `Add Chain` button in the list that opens.
 
@@ -63,7 +63,7 @@ In the chain settings, click the `Add a Module` button and add the created `totp
 
 ### **Configuring the Authentication Chain**
 
-In this chain, we will configure authentication so that after authenticating with a username and password, the user is required to enter a one-time password from the Microsoft Authenticator mobile app.
+In this chain, we will configure authentication so that after authenticating with a username and password, the user is required to enter a one-time password from the Google Authenticator mobile app.
 
 In the administrator console, in the realm settings in the left menu, select Authentication → Chains and click the `Add Chain` button in the list that opens.
 
@@ -73,33 +73,27 @@ Click `Save Changes`.
 
 ![OpenAM TOTP authentication chain](https://raw.githubusercontent.com/wiki/OpenIdentityPlatform/OpenAM/images/ms-authenticator/3-openam-totp-authentication-chain.png)
 
-## Setting up Microsoft Authenticator.
+## Setting up Google Authenticator.
 
-Download the [Microsoft Authenticator](https://www.microsoft.com/en/security/mobile-authenticator-app) app from the appropriate app store for your device.
+Download the Google Authenticator app from the appropriate app store for your device.
 
 ### Registering a Device
 
-Sign in to the console with a test user account. To do this, eiter sign out of the administrator console or open your browser in incognito mode. Go to the URL [http://openam.example.org:8080/openam/XUI/#login/](http://openam.example.org:8080/openam/XUI/#login/) and log in to OpenAM with the `demo` account. The default password is `changeit`. 
+Sign in to the console with a test user account. To do this, either sign out of the administrator console or open your browser in incognito mode. Go to the URL [http://openam.example.org:8080/openam/XUI/#login/](http://openam.example.org:8080/openam/XUI/#login/) and log in to OpenAM with the `demo` account. The default password is `changeit`. 
 
-After successful authentication, open the device registration chain link in your browser. [http://openam.example.org:8080/openam/XUI/#login&service=totp-register](http://openam.example.org:8080/openam/XUI/#login&service=totp-register).
+After successful authentication, open the device registration chain link in your browser: [http://openam.example.org:8080/openam/XUI/#login&service=totp-register](http://openam.example.org:8080/openam/XUI/#login&service=totp-register).
 
 ![OpenAM register a device](https://raw.githubusercontent.com/wiki/OpenIdentityPlatform/OpenAM/images/ms-authenticator/4-openam-register-device.png)
 
-Open the Microsoft Authenticator app and tap `Add account` button.
+Open the Goole Authenticator app and tap the `Add code` button.
 
-![Microsoft Authenticator Add account](https://raw.githubusercontent.com/wiki/OpenIdentityPlatform/OpenAM/images/ms-authenticator/5-ms-authenticator-add-account.png)
+![Google Authenticator Add Code](https://raw.githubusercontent.com/wiki/OpenIdentityPlatform/OpenAM/images/ms-authenticator/9-google-authenticator.png)
 
-Select `Other account`
-
-![Microsoft Authenticator Other account](https://raw.githubusercontent.com/wiki/OpenIdentityPlatform/OpenAM/images/ms-authenticator/6-ms-authenticator-other-account.png)
-
-You will be prompted to scan a QR code. Scan the QR code displayed in the OpenAM browser window. After scanning, the OpenAM account will be added to the Microsoft Authenticator app. 
-
-![Microsoft Authenticator Account List](https://raw.githubusercontent.com/wiki/OpenIdentityPlatform/OpenAM/images/ms-authenticator/7-ms-authenticator-account-list.png)
+You will be prompted to scan a QR code. Scan the QR code displayed in the OpenAM browser window. After scanning, the OpenAM account will be added to the Google Authenticator app. 
 
 Locate the newly added account. A one-time password will be displayed.
 
-![Microsoft Authenticator One-Time Password](https://raw.githubusercontent.com/wiki/OpenIdentityPlatform/OpenAM/images/ms-authenticator/8-ms-authenticator-otp.png)
+![Google Authenticator One-Time Password](https://raw.githubusercontent.com/wiki/OpenIdentityPlatform/OpenAM/images/ms-authenticator/10-google-authenticator-otp.png)
 
 In your browser, click the `Login Using Verification Code` button.
 
