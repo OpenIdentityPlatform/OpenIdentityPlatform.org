@@ -3,7 +3,7 @@ layout: home
 title: "Getting Started With OpenIDM"
 landing-title2: "Getting Started With OpenIDM"
 description: "Learn OpenIDM basics: Install, start, and reconcile user data between HR & Engineering identity stores."
-keywords: 'OpenIDM, OpenIDM tutorial, identity management, OpenIDM getting started, data reconciliation, OpenIDM workflow, OpenIDM installation, ForgeRock OpenIDM alternative, OpenIdentityPlatform, user synchronization, CSV connector, self-service UI, password management, BPMN workflows, scripted connectors'
+keywords: 'OpenIDM, OpenIDM tutorial, identity management, OpenIDM getting started, data reconciliation, OpenIDM workflow, OpenIDM installation, OpenIdentityPlatform, user synchronization, CSV connector, self-service UI, password management, BPMN workflows, scripted connectors'
 imageurl: 'openidm-og.png'
 share-buttons: true
 products: 
