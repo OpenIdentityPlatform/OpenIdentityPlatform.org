@@ -4,7 +4,7 @@ landing-title: "OpenDJ 5.0.1 Released"
 landing-title2: "OpenDJ 5.0.1 Released"
 description: OpenDJ 5.0.1 introduces Java 11 support, Jakarta EE 9 migration, critical security fixes for CVEs in dependencies
 keywords: 'OpenDJ, LDAP server, directory services, security fixes, Java 11, Jakarta EE, CVE fixes'
-imageurl: 'openam-og.png'
+imageurl: 'opendj-og.png'
 share-buttons: true
 ---
 
