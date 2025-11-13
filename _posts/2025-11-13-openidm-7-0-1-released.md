@@ -4,7 +4,6 @@ landing-title: "OpenIDM 7.0.1 Released"
 landing-title2: "OpenIDM 7.0.1 Released"
 description: Major update with JakartaEE 10 migration, Java 17+ support, Java 25 LTS compatibility, and critical security fixes
 keywords: 'OpenIDM, Identity Management, 7.0.1, JakartaEE 10, Java 17, Java 25 LTS, CVE-2024-38999, security, OpenICF 2.0.1, Pax Web 11'
-imageurl: 'openam-og.png'
 share-buttons: true
 ---
 # OpenIDM 7.0.1 Released
