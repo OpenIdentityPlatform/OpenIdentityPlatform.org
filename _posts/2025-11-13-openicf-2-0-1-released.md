@@ -4,7 +4,6 @@ landing-title: "OpenICF 2.0.1 Released"
 landing-title2: "OpenICF 2.0.1 Released"
 description: Major update with JakartaEE 9 migration, Java 11+ support, and Java 25 LTS compatibility
 keywords: 'OpenICF, Identity Connector Framework, 2.0.1, JakartaEE 9, Java 11, Java 25 LTS, OpenDJ 5.0.1, identity management, connectors'
-imageurl: 'openicf-og.png'
 share-buttons: true
 ---
 # OpenICF 2.0.1 Released
