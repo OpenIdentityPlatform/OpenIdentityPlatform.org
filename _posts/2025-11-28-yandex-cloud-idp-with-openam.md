@@ -35,8 +35,8 @@ After creating the application, open its settings and click the **Download Certi
 ### Service Provider Configuration
 
 1. Open the Yandex settings for the **openam-saml** application and configure the settings:
-1. **SP Entity ID:** `http://localhost:8080/openam`
-2. **ACS URL:** `http://localhost:8080/openam/Consumer/metaAlias/sp`
+    1. **SP Entity ID:** `http://localhost:8080/openam`
+    2. **ACS URL:** `http://localhost:8080/openam/Consumer/metaAlias/sp`
 2. Save the changes.
 
 ![Yandex Cloud Application Settings](https://raw.githubusercontent.com/wiki/OpenIdentityPlatform/OpenAM/images/yandex-cloud-idp-saml/1-yandex-cloud-app-settings.png)
@@ -150,7 +150,7 @@ Log in to the administrator console at [http://localhost:8080/openam](http://loc
 3. Next, click **Create Hosted Service Provider**
 4. Enter any name for **Circle Of Trust**, for example, `openam-yandex`, and click **Configure.**
 
-    ![OpenAM Create SAML Service Provider](https://raw.githubusercontent.com/wiki/OpenIdentityPlatform/OpenAM/images/yandex-cloud-idp-saml/5-openam-create-saml-sp.png)
+    ![OpenAM Realm Settings](https://raw.githubusercontent.com/wiki/OpenIdentityPlatform/OpenAM/images/yandex-cloud-idp-saml/4-openam-realm-settings.png)
 
 5. OpenAM will prompt you to configure Remote Identity Provider. Click Yes.
 
