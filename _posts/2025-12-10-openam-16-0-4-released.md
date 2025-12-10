@@ -22,5 +22,7 @@ share-buttons: true
 Full changeset ([more details](https://github.com/OpenIdentityPlatform/OpenAM/compare/16.0.3...16.0.4))
  
 ## Thanks for the contributions
+
 <i id="vharseko"><i>1. <a href="https://github.com/vharseko" target="_blank">vharseko</a></i>
-<i id="maximthomas"><i>2. <a href="https://github.com/maximthomas" target="_blank"></a></i>
+
+<i id="maximthomas"><i>2. <a href="https://github.com/maximthomas" target="_blank">maximthomas</a></i>
