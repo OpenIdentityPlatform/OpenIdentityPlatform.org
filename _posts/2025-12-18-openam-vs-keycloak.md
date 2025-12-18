@@ -21,7 +21,7 @@ share-buttons: true
 | Current version | 16.0.4 | 26.4.7 |
 | Release and patches | Regular | Regular |
 | Open Source | ✅ | ✅ |
-| Лицензия | CDDL | Apache License 2.0 |
+| License | CDDL | Apache License 2.0 |
 
 ## Single Sign On (SSO) and Federation
 
@@ -36,7 +36,7 @@ share-buttons: true
 
 Supported authentication methods:
 
-| **Модуль аутентификации** | **OpenAM** | **Keycloak** |
+| **Authentication method** | **OpenAM** | **Keycloak** |
 | --- | --- | --- |
 | Login and password authentication | ✅ [doc](https://doc.openidentityplatform.org/openam/reference/chap-auth-modules#data-store-module-ref) | ✅ [doc](https://www.keycloak.org/docs/latest/server_admin/index.html#_authentication-flows) |
 | Microsoft Active Directory authentication | ✅ [doc](https://doc.openidentityplatform.org/openam/reference/chap-auth-modules#active-directory-module-ref) | ✅ [doc](https://www.keycloak.org/docs/latest/server_admin/index.html#_user-storage-federation) |
