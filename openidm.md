@@ -1,8 +1,8 @@
 ---
 layout: home
 title: OpenIDM - Open Identity Management
-description: OpenIDM - OpenIDM is an open standards based Identity Management, Provisioning and Compliance solution.
-keywords: Open IDM, Identity, Management, Identity Management
+description: 'OpenIDM by Open Identity Platform: Identity Management, Provisioning & Compliance solution. Automate user provisioning, synchronization, lifecycle management; consolidate multiple sources with policy/workflow control, modern no-code UI & RESTful APIs.'
+keywords: OpenIDM, Open Identity Management, open source identity management, OpenIDM provisioning, identity provisioning, user synchronization, identity lifecycle management, open source IDM, Open Identity Platform, user provisioning open source, identity governance, compliance identity management, workflow based IAM, RESTful identity management, no code identity UI, identity synchronization, OpenIDM download, open source provisioning, Java identity management
 reponame: OpenIDM
 product: openidm
 links: 
@@ -13,9 +13,11 @@ links:
    
 ---
 <div class="container text-center mb-4">
+  <h1>
     <a target="_blank" href="https://github.com/OpenIdentityPlatform/OpenIDM">
-        <img src="/assets/img/openidm-logo.png" width="40%" alt="OpenIDM Logo"/>
+        <img src="/assets/img/openidm-logo.png" width="40%" alt="{{ page.title }}"/>
     </a>
+  </h1>
 </div>
 
 OpenIDM is an open standards based Identity Management, Provisioning and Compliance solution. Enables you to consolidate multiple identity sources for policy and workflow-based management. OpenIDM can consume, transform and feed data to external sources so that you maintain control over the identities of users, devices and other objects.

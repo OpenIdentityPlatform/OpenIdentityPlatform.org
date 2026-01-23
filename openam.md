@@ -1,8 +1,8 @@
 ---
 layout: home
 title: OpenAM - Open Access Manager
-description: OpenAM - Access Management, Identity Management, Single Sign On and Identity Provider Solution to protect your sites.
-keywords: OpenAM, Access Management, Authentication, Authorization, SSO, Single Sign On, Identity Provider, Open Identity Platform
+description: 'OpenAM by Open Identity Platform: SSO, authentication, OAuth 2.0, OpenID Connect, SAML federation. Enterprise-grade, highly available identity solution.'
+keywords: OpenAM, Open Identity Platform, open source access management, single sign-on, SSO, identity provider, SAML, OAuth 2.0, OpenID Connect, OIDC, authentication, authorization, federation, identity management, IAM, access management, multi-factor authentication, adaptive authentication, high availability, clusterization, open source IAM, enterprise SSO, identity federation, web services security
 reponame: OpenAM
 product: openam
 links: 
@@ -13,9 +13,11 @@ links:
 ---
 
 <div class="container text-center mb-4">
+  <h1>
     <a target="_blank" href="https://github.com/OpenIdentityPlatform/OpenAM">
-        <img src="/assets/img/openam-logo.png" width="40%" alt="OpenAM Logo"/>
+        <img src="/assets/img/openam-logo.png" width="40%" alt="{{ page.title }}"/>
     </a>
+  </h1>
 </div>
 
 If you have multiple sites and applications in your company, probably you need to provide seamless authentication to all of them. So when user logged in at one of your sites once, he does not need to enter his credentials on other sites.

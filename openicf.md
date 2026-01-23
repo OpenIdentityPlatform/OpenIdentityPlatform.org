@@ -1,15 +1,17 @@
 ---
 layout: home
-title: OpenICF - Open Indentity Gateway
-description: OpenICF - Open Source reserve proxy server with
-keywords: OpenIG, Indentity Gateway, reverse proxy, session management, credential replay, Open Identity Platform
+title: OpenICF - Open Identity Connector Framework
+description: 'OpenICF by Open Identity Platform: Framework for identity connectors. Enables provisioning, synchronization, and lifecycle management across resources with LDAP, CSV, DB, SSH, Kerberos connectors; custom Groovy/PowerShell scripting.'
+keywords: OpenICF, Open Identity Connector Framework, open source identity connectors, OpenICF connectors, identity provisioning framework, Open Identity Platform, LDAP connector, database connector, CSV connector, SSH connector, Groovy connector toolkit, scripted connectors, identity synchronization, resource integration, open source ICF, provisioning connectors, Kerberos connector, identity lifecycle connectors, OpenICF download, open source identity framework
 reponame: OpenICF
 contributors_project: OpenIDM
 ---
 <div class="container text-center mb-4">
+  <h1>
     <a target="_blank" href="https://github.com/OpenIdentityPlatform/OpenICF">
-        <img src="/assets/img/openicf-logo.png" width="40%" alt="OpenICF Logo"/>
+      <img src="/assets/img/openicf-logo.png" width="40%" alt="{{ page.title }}"/>
     </a>
+  </h1>
 </div>
 
 The Open Identity Connector Framework (OpenICF) project provides interoperability between identity, compliance, and risk management solutions. An OpenICF Connector enables provisioning software, such as [OpenIDM](https://github.com/OpenIdentityPlatform/OpenIDM), to manage the identities maintained by a specific identity provider.

@@ -1,8 +1,8 @@
 ---
 layout: home
 title: OpenIG - Open Indentity Gateway
-description: OpenIG - Open Source reserve proxy server with
-keywords: OpenIG, Indentity Gateway, reverse proxy, session management, credential replay, Open Identity Platform
+description: 'OpenIG by Open Identity Platform: High-performance identity gateway & reverse proxy. Secure apps/APIs with SSO/SLO, standards federation (OAuth, OIDC, SAML), policy enforcement, no-code integration. High-performance, flexible access management solution.'
+keywords: OpenIG, Open Identity Gateway, open source identity gateway, reverse proxy, OpenIG gateway, Open Identity Platform, SSO gateway, identity gateway open source, OAuth 2.0 gateway, OpenID Connect proxy, SAML 2.0 federation, API security gateway, policy enforcement point, credential replay, secure access proxy, Java reverse proxy, open source SSO, federation gateway, OpenIG download, zero trust access
 reponame: OpenIG
 product: openig
 video: ForgeRock+OpenIG 
@@ -12,9 +12,11 @@ links:
 
 ---
 <div class="container text-center mb-4">
+  <h1>
     <a target="_blank" href="https://github.com/OpenIdentityPlatform/OpenIG">
-        <img src="/assets/img/openig-logo.png" width="40%" alt="OpenDJ Logo"/>
+      <img src="/assets/img/openig-logo.png" width="40%" alt="{{ page.title }}"/>
     </a>
+  </h1>
 </div>
 
 The Open Identity Gateway (OpenIG) is a high-performance reverse proxy server with specialized session management and credential replay functionality.

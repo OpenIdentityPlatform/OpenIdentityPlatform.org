@@ -1,8 +1,8 @@
 ---
 layout: home
 title: OpenDJ - Open Directory Server
-description: OpenDJ - Open Source LDAPv3 compliant directory service.
-keywords: OpenDJ, Directory Service, Directory Services, LDAP, Open Identity Platform
+description: 'OpenDJ by Open Identity Platform: LDAPv3 directory server. Scalable, secure identity storage with easy deployment for enterprise IAM.'
+keywords: OpenDJ, OpenDJ directory server, open source LDAP, LDAPv3 server, Java LDAP server, open source directory service, identity management, Open Identity Platform, OpenDJ, high performance LDAP, scalable directory server, secure identity store, LDAP directory, open source IAM, multi-master replication, OpenDJ download
 reponame: OpenDJ
 product: opendj
 links: 
@@ -13,9 +13,11 @@ links:
 
 ---
 <div class="container text-center mb-4">
+  <h1>
     <a target="_blank" href="https://github.com/OpenIdentityPlatform/OpenDJ">
-        <img src="/assets/img/opendj-logo.png" width="40%" alt="OpenDJ Logo"/>
+        <img src="/assets/img/opendj-logo.png" width="40%" alt="{{ page.title }}"/>
     </a>
+  </h1>
 </div>
 
 OpenDJ is an LDAPv3 compliant directory service, which has been developed for the Java platform, providing a high performance, highly available, and secure store for the identities managed by your organization. Its easy installation process, combined with the power of the Java platform makes OpenDJ the simplest, fastest directory to deploy and manage.
