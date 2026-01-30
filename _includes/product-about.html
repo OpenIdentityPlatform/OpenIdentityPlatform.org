@@ -1,29 +1,27 @@
-<div class="articles pt-2">
-    <h4>About:</h4>
-    <ul>
-        {% assign i = 0 %}
-        {% for post in site.posts %}  
-            {% if post.products contains page.product %}
-                <li>
-                    <a href="{{post.url}}">
-                        {%- if post.landing-title -%} {{ post.landing-title }} {%- else -%}{{ post.title}}{%- endif -%}
-                    </a>
-                </li>
-                {% assign i = i | plus: 1 %}
-                {% if i > 15 %}                
-                    {% break %}
-                {% endif %}
-            {% endif %}
+<section class="py-16 bg-gradient-to-b from-slate-900/30 to-transparent">
+    <div class="max-w-5xl mx-auto px-6">
+        <div class="content-section">
+            <h2 class="text-3xl font-bold mb-6">Related Articles</h2>
+            <div class="space-y-2">
+                {% assign i = 0 %}
+                {% for post in site.posts %}  
+                    {% if post.products contains page.product %}
+                        <a href="{{post.url}}" class="blog-link">
+                            {%- if post.landing-title -%} {{ post.landing-title }} {%- else -%}{{ post.title}}{%- endif -%}
+                        </a>
+                        {% assign i = i | plus: 1 %}
+                        {% if i > 15 %}                
+                            {% break %}
+                        {% endif %}
+                    {% endif %}
 
-        {% endfor %}    
-    </ul>
-    <p>
-        <a class="icon-link" href="https://www.youtube.com/results?search_query={%- if page.video -%}{{ page.video }}{%- else -%}{{page.reponame}}{%- endif -%}" target="_blank">
-            <i class="fa-brands fa-youtube px-1 yt-icon"></i>Videos
-        </a>                    
-    </p>
-</div>
-
-
+                {% endfor %}                   
+            </div>
+            <div class="mt-6 text-center">
+                <a href="https://www.youtube.com/results?search_query={%- if page.video -%}{{ page.video }}{%- else -%}{{page.reponame}}{%- endif -%}" target="_blank" class="btn-primary">Watch Videos</a>
+            </div>
+        </div>
+    </div>
+</section>
 
 
