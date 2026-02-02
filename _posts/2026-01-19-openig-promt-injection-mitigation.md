@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "Prompt Injection Mitigation in AI Systems Using API Gateway"
 landing-title2: "Prompt Injection Mitigation in AI Systems Using API Gateway"
 description: Learn how to prevent prompt injection in AI systems using an API gateway. Step-by-step OpenIG examples, guardrails, and LLM validation.

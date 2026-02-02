@@ -99,19 +99,18 @@ function checkCookieConsent() {
 function acceptCookies() {
     localStorage.setItem('cookieConsent', 'accepted');
     hideCookieBanner();
-    console.log('Cookie consent accepted');
 }
 
 function declineCookies() {
     localStorage.setItem('cookieConsent', 'declined');
     hideCookieBanner();
-    console.log('Cookie consent declined');
 }
 
 function hideCookieBanner() {
     const banner = document.getElementById('cookieBanner');
     banner.classList.remove('show');
     banner.classList.add('hide');
+    window.location.reload();
 }
 
 // Check cookie consent on page load

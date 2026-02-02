@@ -1,0 +1,43 @@
+---
+layout: home
+---
+
+
+<section class="hero pt-24">
+    <div class="hero-bg"></div>
+    <div class="hero-content max-w-7xl mx-auto px-6 py-12">
+        <div class="text-center max-w-4xl mx-auto">
+            <img src="{{page.hero.logo}}" alt="{{ page.title }}" class="h-24 mx-auto mb-6">
+            <h1 class="text-5xl font-bold mb-6 bg-gradient-to-r from-indigo-400 to-purple-600 bg-clip-text text-transparent">
+                {{ page.title }}
+            </h1>
+            <p class="text-xl text-gray-300 leading-relaxed mb-8">
+                {{ page.hero.short_description }}
+            </p>
+        </div>
+    </div>
+</section>
+
+
+{% if page.key_features %}
+
+<section class="py-24 bg-gradient-to-b from-transparent to-slate-900/30">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Key Features</h2>
+            <p class="text-xl text-gray-400">{{page.key_features.intro}}</p>
+        </div>
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for feature in page.key_features.list %}
+              <div class="feature-card">
+                <h3 class="text-xl font-bold mb-3">{{feature.name}}</h3>
+                <p class="text-gray-400">{{feature.description}}</p>
+              </div>
+            {% endfor %}            
+        </div>
+    </div>
+</section>
+
+{% endif %}
+
+{{ content }}

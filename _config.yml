@@ -26,4 +26,4 @@ plugins:
 
 permalink: /blog/:year-:month-:day-:title
 paginate_path: "/blog/page:num/"
-paginate: 10
+paginate: 12

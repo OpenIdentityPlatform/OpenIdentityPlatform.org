@@ -22,7 +22,7 @@ links:
 
 OpenIDM is an open standards based Identity Management, Provisioning and Compliance solution. Enables you to consolidate multiple identity sources for policy and workflow-based management. OpenIDM can consume, transform and feed data to external sources so that you maintain control over the identities of users, devices and other objects.
 
-Experience shows that the most important features of an identity management product are: high flexibility in         Business Process handling and compliance with open standards and interfaces.
+Experience shows that the most important features of an identity management product are: high flexibility in Business Process handling and compliance with open standards and interfaces.
 A highly flexible user interface combined with a very robust workflow engine make OpenIDM ready for any Identity Management project.
 
 OpenIDM provides a modern UI experience that allows you to manage your data without writing a single line of code. The standard RESTful interfaces also offer ultimate flexibility so that you can customize and develop the product to fit the requirements of your deployment.
