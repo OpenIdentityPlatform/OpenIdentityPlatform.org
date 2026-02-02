@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "How To Run OpenAM in Kubernetes"
 landing-title2: "How To Run OpenAM in Kubernetes"
 description: "This article explains how to run OpenAM in Kubernetes"

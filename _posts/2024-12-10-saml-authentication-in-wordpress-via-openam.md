@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "SAML Authentication in WordPress via OpenAM"
 landing-title2: "SAML Authentication in WordPress via OpenAM"
 description: "How to setup federated authenticaion in WordPress via OpenAM using SAML"

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "How to Use Apache Cassandra as User DataStore in OpenAM"
 landing-title2: "How to Use High Perfomant and Availability DataStore Apache Cassandra as User DataStore in OpenAM"
 description: "How to Use Apache Cassandra as User DataStore in OpenAM"

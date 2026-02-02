@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenAM 14.1.17 Released"
 landing-title2: "OpenAM 14.1.17 Released"
 description: Open Identity Community just released OpenAM v14.1.17

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "Getting Started with OpenDJ"
 landing-title2: "Getting Started with OpenDJ"
 description: "Step-by-step guide with CLI commands for quick OpenDJ setup."

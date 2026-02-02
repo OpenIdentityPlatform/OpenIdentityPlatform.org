@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "Getting Started With OpenIDM"
 landing-title2: "Getting Started With OpenIDM"
 description: "Learn OpenIDM basics: Install, start, and reconcile user data between HR & Engineering identity stores."

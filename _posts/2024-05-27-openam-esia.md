@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "OpenAM Authentication via Gosuslugi Portal"
 landing-title2: "OpenAM Authentication via Gosuslugi Portal"
 description: "How to prepare and setup OpenAM to use Gosuslugi Portal Authentication"

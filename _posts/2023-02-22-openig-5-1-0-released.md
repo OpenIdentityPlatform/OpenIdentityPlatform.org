@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenIG 5.1.0 Released"
 landing-title2: "OpenIG 5.1.0 Released"
 description: Open Identity Community just released OpenIG v5.1.0. Added message brokers integration, ICAP Filter for DLP and Antivirus protection by and many other updates

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "Migrate OpenAM to Apache Cassandra without a Single Point of Failure"
 landing-title2: "Migrate OpenAM to Apache Cassandra without a Single Point of Failure"
 description: "How to plan data storages and data centers resources for OpenAM fault tolerance"

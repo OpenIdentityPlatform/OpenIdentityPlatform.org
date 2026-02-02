@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "How To Run OpenIG in Kubernetes"
 landing-title2: "How To Run OpenIG in Kubernetes"
 description: "This article explains how to run OpenIG in Kubernetes"

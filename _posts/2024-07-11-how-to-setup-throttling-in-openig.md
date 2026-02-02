@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "API Throughput Control (Throttling) with OpenIG Authorization Gateway"
 landing-title2: "API Throughput Control (Throttling) with OpenIG Authorization Gateway"
 description: "This article explains API throttling use cases and how to setup various throttling policies with OpenIG"

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "ICAP Filter in OpenIG"
 landing-title2: "How to setup ICAP Filter for DLP and Antivirus protection with OpenIG"
 description: "How to setup ICAP Filter for DLP and Antivirus protection with OpenIG"

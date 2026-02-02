@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "How to Setup 2FA with Google Authenticator in OpenAM"
 landing-title2: "How to Setup 2FA with Google Authenticator in OpenAM"
 description: "How to setup Google Authenticator as two-factor authentication (2FA) in OpenAM"

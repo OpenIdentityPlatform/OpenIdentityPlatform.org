@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "How to Protect WebSocket Connection with OpenAM and OpenIG"
 landing-title2: "How to Protect WebSocket Connection with OpenAM and OpenIG"
 description: "How to setup OpenAM and OpenIG stack to protect WebSocket connection"

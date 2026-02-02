@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "How To Protect Kubernetes Services With OpenIG"
 landing-title2: "How To Protect Kubernetes Services With OpenIG"
 description: "This article explains how to protect services deployed on Kubernetes with OpenIG"

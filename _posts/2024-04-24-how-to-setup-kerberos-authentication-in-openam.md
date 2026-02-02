@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "How to Setup Kerberos Authentication with OpenAM"
 landing-title2: "How to Setup Kerberos Authentication with OpenAM"
 description: "This article explains how to setup Kerberos authentication with OpenAM"

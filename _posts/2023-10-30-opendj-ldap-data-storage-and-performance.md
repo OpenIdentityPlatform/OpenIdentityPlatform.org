@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenDJ: Supercharged LDAP Data Storage and Performance"
 landing-title2: "OpenDJ: Supercharged LDAP Data Storage and Performance"
 description: OpenDJ now supports Apache Cassandra and ScyllaDB as a backend with all performance, resillience and scalability benefits

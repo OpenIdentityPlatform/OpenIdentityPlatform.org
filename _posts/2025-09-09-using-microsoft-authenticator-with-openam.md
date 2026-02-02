@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "Using Microsoft Authenticator with OpenAM"
 landing-title2: "Using Microsoft Authenticator with OpenAM"
 description: Step-by-step guide to implementing two-factor authentication (2FA) in OpenAM using Microsoft Authenticator and TOTP.

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenIG 6.0.1 Released"
 landing-title2: "OpenIG 6.0.1 Released"
 description: Major update with JakartaEE 9 migration, JDK 25 LTS support, and critical security fixes

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenAM-JEE-Agents 4.1.2 Released"
 landing-title2: "OpenAM-JEE-Agents 4.1.2 Released"
 description: Open Identity Community just released OpenAM-JEE-Agents 4.1.2

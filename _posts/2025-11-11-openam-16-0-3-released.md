@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenAM 16.0.3 Released"
 landing-title2: "OpenAM 16.0.3 Released"
 description: OpenAM 16.0.3 updates the target JDK to 11 and JakartaEE 9, adds support for LTS JDK 25, updates the base Docker image to Java 25, addresses multiple security vulnerabilities

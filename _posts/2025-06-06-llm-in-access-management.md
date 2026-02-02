@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "Using Large Language Models (LLMs) in Access Management"
 landing-title2: "Using Large Language Models (LLMs) in Access Management"
 description: "This article gives a basic understanding about Single Sign-On technology"
