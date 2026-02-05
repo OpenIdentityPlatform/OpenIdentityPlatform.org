@@ -571,3 +571,37 @@ footer {
     background: var(--primary);
     color: white;
 }
+
+ table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2rem 0;
+    background: #1a1b26;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+table thead {
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+table th {
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+    color: white;
+}
+
+table td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid #2d3748;
+    color: #cbd5e1;
+}
+
+table tbody tr:hover {
+    background: #252636;
+}
+
+table tbody tr:last-child td {
+    border-bottom: none;
+}
