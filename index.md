@@ -9,7 +9,7 @@ canonical: "https://www.openidentityplatform.org"
 ---
 
 <!-- Hero Section -->
-<section class="hero hero-landing">
+<section class="hero pt-32 pb-24">
     <div class="hero-bg"></div>
     <div class="hero-content max-w-7xl mx-auto px-6">
         <div class="grid md:grid-cols-2 gap-12 items-center">
@@ -20,7 +20,7 @@ canonical: "https://www.openidentityplatform.org"
                 <h2 class="text-3xl font-bold text-gray-200">
                     Secure, Open-Source Identity & Access Management
                 </h2>
-                <p class="text-xl text-gray-300 leading-relaxed">
+                <p class="text-2xl text-gray-200 leading-relaxed">
                     Complete open-source ecosystem for <span class="code-accent">identity</span> and <span class="code-accent">access management</span>. Build secure, scalable authentication with enterprise-grade components.
                 </p>
                 <div class="flex flex-wrap gap-4 pt-4">
@@ -35,10 +35,9 @@ canonical: "https://www.openidentityplatform.org"
                     </button>
                 </div>
             </div>
-            <div class="hidden md:block">
+            <div class="md:block">
                 <div class="relative">
-                    <div class="w-full h-96 bg-gradient-to-br from-indigo-500/20 to-purple-600/20 rounded-2xl backdrop-blur-sm border border-indigo-500/30 flex items-center justify-center">
-                        
+                    <div class="w-full h-96 bg-white rounded-2xl backdrop-blur-sm border border-indigo-500/30 flex items-center justify-center">
                         <a class="oip-star-link">
                             <div class="oip-star"></div>
                         </a>
@@ -50,7 +49,7 @@ canonical: "https://www.openidentityplatform.org"
 </section>
 
 <!-- Products Section -->
-<section id="products" class="py-24 relative">
+<section id="products" class="pt-24 relative">
     <div class="max-w-7xl mx-auto px-6">
         <div class="text-center mb-16 fade-in">
             <h2 class="text-5xl font-bold mb-4">Our Products</h2>
@@ -92,7 +91,7 @@ canonical: "https://www.openidentityplatform.org"
 </section>
 
 <!-- Blog Section -->
-<section id="blog" class="py-24 bg-gradient-to-b from-transparent to-slate-900/30">
+<section id="blog" class="pt-24 bg-gradient-to-b from-transparent to-slate-900/30">
     <div class="max-w-5xl mx-auto px-6">
         <div class="text-center mb-16 fade-in">
             <h2 class="text-5xl font-bold mb-4">Recent Blog Posts</h2>
@@ -122,7 +121,7 @@ canonical: "https://www.openidentityplatform.org"
 </section>
 
 <!-- Open Source License Section -->
-<section id="license" class="py-24">
+<section id="license" class="pt-24">
     <div class="max-w-5xl mx-auto px-6 text-center">
         <div class="fade-in">
             <span class="license-badge">100% OPEN SOURCE</span>
