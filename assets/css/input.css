@@ -540,6 +540,33 @@ footer {
     color: #a5b4fc;
 }
 
+.article-content ul {
+    list-style: none;
+    margin: 1.5rem 0;
+    padding-left: 0;
+}
+
+.article-content ul li {
+    padding-left: 1.5rem;
+    position: relative;
+    color: #cbd5e1;
+}
+
+.article-content ul li:before {
+    content: "•";
+    color: var(--primary);
+    font-weight: bold;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 0;
+    top: -0.5rem;
+}
+
+.article-content ul ul {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
 .article-meta {
     display: flex;
     gap: 1.5rem;

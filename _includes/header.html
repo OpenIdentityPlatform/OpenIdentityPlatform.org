@@ -1,12 +1,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
 {% capture og_image %}{%- if page.imageurl -%}{{ site.url }}/assets/img/{{page.imageurl}}{% else %}https://avatars2.githubusercontent.com/u/30845478?s=280&amp;v=4{%- endif -%}{% endcapture %}
 {% seo %}
 <meta property="og:image" content="{{ og_image }}" />
 <meta property="twitter:image" content="{{ og_image }}" />
 
-<meta name="description" content="{{ page_description }}">
 <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
 <meta name="author" content="{{ site.authors }}">
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
@@ -17,7 +15,6 @@
 {%- if page.canonical -%}
 <link rel="canonical" href="{{page.canonical}}" />
 {%- endif -%}
-<title>{{ page_title }}</title>
 
 <link rel="stylesheet" href="{{'/assets/css/highlight.css'}}" >
 <link rel="stylesheet" href="{{'/assets/css/main.css'}}" >
