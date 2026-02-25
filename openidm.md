@@ -17,8 +17,6 @@ hero:
 key_features:
   intro: Flexible and standards-based identity management
   list:
-  - name: Open Standards Compliance
-    description: Complies with open standards and interfaces. Standard RESTful interfaces offer ultimate flexibility for customization and development.
   - name: Modern UI Experience
     description: Manage your data without writing a single line of code. A highly flexible user interface combined with powerful administration tools.
   - name: Identity Consolidation

@@ -56,7 +56,6 @@ canonical: "https://www.openidentityplatform.org"
             <h2 class="text-5xl font-bold mb-4">Our Products</h2>
             <p class="text-xl text-gray-400">Enterprise-grade identity management components</p>
         </div>
-        
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <!-- OpenAM -->
             <div class="product-card fade-in">
@@ -64,28 +63,24 @@ canonical: "https://www.openidentityplatform.org"
                 <p class="text-gray-400 mb-4">Comprehensive access management solution with SSO, federation, and authorization services. Battle-tested for enterprise environments.</p>
                 <a href="https://github.com/OpenIdentityPlatform/OpenAM" target="_blank" class="code-accent hover:underline">Learn more →</a>
             </div>
-            
             <!-- OpenDJ -->
             <div class="product-card fade-in" style="animation-delay: 0.1s;">
                 <h3 class="text-2xl font-bold mb-3">OpenDJ</h3>
                 <p class="text-gray-400 mb-4">High-performance LDAP directory server designed for identity data. Scales to millions of entries with ease.</p>
                 <a href="https://github.com/OpenIdentityPlatform/OpenDJ" target="_blank" class="code-accent hover:underline">Learn more →</a>
             </div>
-            
             <!-- OpenIG -->
             <div class="product-card fade-in" style="animation-delay: 0.2s;">
                 <h3 class="text-2xl font-bold mb-3">OpenIG</h3>
                 <p class="text-gray-400 mb-4">Identity gateway for secure access to web applications. Provides authentication, authorization, and federation capabilities.</p>
                 <a href="https://github.com/OpenIdentityPlatform/OpenIG" target="_blank" class="code-accent hover:underline">Learn more →</a>
             </div>
-            
             <!-- OpenIDM -->
             <div class="product-card fade-in" style="animation-delay: 0.3s;">
                 <h3 class="text-2xl font-bold mb-3">OpenIDM</h3>
                 <p class="text-gray-400 mb-4">Identity management and provisioning solution. Automate user lifecycle management across your organization.</p>
                 <a href="https://github.com/OpenIdentityPlatform/OpenIDM" target="_blank" class="code-accent hover:underline">Learn more →</a>
             </div>
-            
             <!-- OpenICF -->
             <div class="product-card fade-in" style="animation-delay: 0.4s;">
                 <h3 class="text-2xl font-bold mb-3">OpenICF</h3>
@@ -103,49 +98,21 @@ canonical: "https://www.openidentityplatform.org"
             <h2 class="text-5xl font-bold mb-4">Recent Blog Posts</h2>
             <p class="text-xl text-gray-400">Latest updates from the community</p>
         </div>
-        
         <div class="space-y-6">
+            {% for post in site.posts limit:4%}
+             <a class="blogpost" href="{{post.url}}">
             <article class="blog-post fade-in">
                 <div class="flex items-start justify-between">
                     <div>
-                        <h3 class="text-xl font-bold mb-2">OpenAM 15.0 Release: Enhanced Security Features</h3>
-                        <p class="text-gray-400 mb-2">Discover the latest security enhancements and performance improvements in our newest release...</p>
-                        <span class="text-sm code-accent">January 15, 2026</span>
+                        <h3 class="text-xl font-bold mb-2">{%- if post.landing-title -%} {{ post.landing-title }} {%- else -%}{{ post.title}}{%- endif -%}</h3>
+                        <p class="text-gray-400 mb-2">{{post.description}}</p>
+                        <span class="text-sm code-accent">{{post.date |  date: "%d.%m.%Y" }}</span>
                     </div>
                 </div>
             </article>
-            
-            <article class="blog-post fade-in" style="animation-delay: 0.1s;">
-                <div class="flex items-start justify-between">
-                    <div>
-                        <h3 class="text-xl font-bold mb-2">Building Modern Authentication with OpenAM</h3>
-                        <p class="text-gray-400 mb-2">A comprehensive guide to implementing SSO and multi-factor authentication in your applications...</p>
-                        <span class="text-sm code-accent">January 10, 2026</span>
-                    </div>
-                </div>
-            </article>
-            
-            <article class="blog-post fade-in" style="animation-delay: 0.2s;">
-                <div class="flex items-start justify-between">
-                    <div>
-                        <h3 class="text-xl font-bold mb-2">OpenDJ Performance Optimization Tips</h3>
-                        <p class="text-gray-400 mb-2">Learn how to optimize your LDAP directory for maximum performance and scalability...</p>
-                        <span class="text-sm code-accent">January 5, 2026</span>
-                    </div>
-                </div>
-            </article>
-            
-            <article class="blog-post fade-in" style="animation-delay: 0.3s;">
-                <div class="flex items-start justify-between">
-                    <div>
-                        <h3 class="text-xl font-bold mb-2">Community Spotlight: Enterprise Deployments</h3>
-                        <p class="text-gray-400 mb-2">How organizations are leveraging Open Identity Platform for mission-critical systems...</p>
-                        <span class="text-sm code-accent">December 28, 2025</span>
-                    </div>
-                </div>
-            </article>
+            </a>
+            {% endfor %}
         </div>
-        
         <div class="text-center mt-12">
             <a href="/blog/" class="btn-secondary">
                 View All Posts

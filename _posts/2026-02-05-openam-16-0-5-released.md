@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenAM 16.0.5 Released"
 landing-title2: "OpenAM 16.0.5 Released"
 description: OpenAM 16.0.5 with critical security updates and dependency improvements
