@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "OpenAM Monitoring Using Prometheus"
 landing-title2: "How to Get OpenAM Metrics in Prometheus"
 description: "How to setup OpenAM metrics to monitor in Prometheus"

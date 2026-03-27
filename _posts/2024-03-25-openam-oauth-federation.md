@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "How to Setup OAuth2/OIDC Federation in OpenAM"
 landing-title2: "How to Setup OAuth2/OIDC Federation in OpenAM"
 description: "How to Setup OAuth2/OIDC federation between OpenAM Server and Client Instances"

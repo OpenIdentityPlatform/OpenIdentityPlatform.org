@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "How to Setup WebAuthn Authentication in OpenAM"
 landing-title2: "How to Setup WebAuthn Authentication and Registration in OpenAM"
 description: "How to Setup WebAuthn Authentication in OpenAM"

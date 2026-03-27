@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenAM 16.0.4 Released"
 landing-title2: "OpenAM 16.0.4 Released"
 description: OpenAM 16.0.4 includes security updates, bug fixes, and dependency upgrades to address multiple CVEs and improve stability

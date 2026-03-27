@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenAM 15.2.2 Released"
 landing-title2: "OpenAM 15.2.2 Released"
 description: Open Identity Platform Community released OpenAM 15.2.2. Critical CVE resolutions, dependency updates, documentation enhancements, and authentication module reference generation.

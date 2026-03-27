@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "How to Setup Active Directory Authentication in a Spring Boot Application"
 landing-title2: "How to Setup Active Directory Authentication in a Spring Boot Application"
 description: "How to configure OpenAM to authenticate in a Spring Boot Application via Active Directory"

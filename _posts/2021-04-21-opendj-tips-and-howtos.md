@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "OpenDJ Tips and How-Tos"
 landing-title2: "OpenDJ Tips and How-Tos"
 description: Some useful commands one could use to manage OpenDJ

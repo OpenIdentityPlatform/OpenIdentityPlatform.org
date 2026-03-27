@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "Bootstrap OpenAM and OpenDJ Docker Containers"
 landing-title2: "Bootstrap OpenAM and OpenDJ Docker Containers"
 description: "How to configure and run OpenAM with OpenDJ in Docker containers"

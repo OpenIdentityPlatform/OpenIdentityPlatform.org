@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "How to Start OpenAM and OpenDJ in Separate Docker Contaners"
 landing-title2: "How to Start OpenAM and OpenDJ in Separate Docker Contanerss"
 description: "In this article we will prepare and create OpenAM and OpenDJ instances in separate Docker containers"

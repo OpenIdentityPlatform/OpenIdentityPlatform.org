@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "Single Sign-On (SSO): Seamless Authentication for Enterprise and Client Services"
 landing-title2: "Single Sign-On (SSO): Seamless Authentication for Enterprise and Client Services"
 description: "This article gives a basic understanding about Single Sign-On technology"

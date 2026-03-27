@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenDJ 4.9.2 Released"
 landing-title2: "OpenDJ 4.9.2 Released"
 description: Open Identity Community released OpenDJ v4.9.2

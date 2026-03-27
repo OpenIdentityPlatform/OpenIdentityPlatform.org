@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "Passwordless Authentication Methods, their Pros, and Cons"
 landing-title2: "Passwordless Authentication Methods, their Pros, and Cons"
 description: "In the following article we cover basic passwordless authentication method, their use cases, cons and pros"

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "OpenAM QR Authentication"
 landing-title2: "How QR authentication works and how to setup it in OpenAM"
 description: "How QR authentication works and how to setup it in OpenAM"

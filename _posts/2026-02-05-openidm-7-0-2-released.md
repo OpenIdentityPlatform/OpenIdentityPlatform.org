@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenIDM 7.0.2 Released"
 landing-title2: "OpenIDM 7.0.2 Released"
 description: OpenIDM 7.0.2 with security updates and dependency improvements

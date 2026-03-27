@@ -1,14 +1,19 @@
-<div class="row product-links mb-2">
-    <p class="text-start">
-        {% for link in site.data.product_links %}   
-        <a class="icon-link mr-3" href='{{link.url |  replace: "$product$", page.reponame | replace: "$product_lc$", page.product }}'>
-            {{link.title}}
-        </a>
-        {% endfor %}
-        {% for link in page.links %}   
-        <a class="icon-link mr-3" href="{{link.url}}">
-            {{link.title}}
-        </a>
-        {% endfor %}   
-    </p>
-</div>
+<section class="pb-16">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="content-section">
+            <h2 class="text-3xl font-bold mb-6 text-center">Get Started</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                {% for link in site.data.product_links %}   
+                <a href='{{link.url |  replace: "$product$", page.reponame | replace: "$product_lc$", page.product }}' class="text-gray-300 hover:text-primary transition-colors">
+                    <span class="text-lg">→</span> {{link.title}}
+                </a>
+                {% endfor %}
+                {% for link in page.links %}   
+                <a href="{{link.url}}" class="text-gray-300 hover:text-primary transition-colors">
+                    <span class="text-lg">→</span> {{link.title}}
+                </a>
+                {% endfor %}                  
+            </div>
+        </div>
+    </div>
+</section>

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenIG 5.0.7 Released"
 landing-title2: "OpenIG 5.0.7 Released"
 description: Open Identity Community just released OpenIG v5.0.7

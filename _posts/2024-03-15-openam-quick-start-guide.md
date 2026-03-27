@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenAM Quick Start Guide"
 landing-title2: "OpenAM Quick Start Guide"
 description: "How to quick start with OpenAM and Apache HTTP Server"

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "SAML Authentication in Yandex Cloud via OpenAM"
 landing-title2: "SAML Authentication in Yandex Cloud via OpenAM"
 description: "How to setup federated authenticaion in Yandex Clound via OpenAM using SAML"

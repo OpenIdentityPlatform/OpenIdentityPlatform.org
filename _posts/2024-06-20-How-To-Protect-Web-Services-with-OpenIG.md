@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "How To Protect Web Services with OpenIG"
 landing-title2: "How To Protect Web Services with OpenIG"
 description: "How To Protect Web Services with OpenIG"

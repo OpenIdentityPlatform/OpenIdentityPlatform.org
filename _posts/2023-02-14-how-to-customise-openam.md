@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "How to Customise OpenAM"
 landing-title2: "How to Customise OpenAM"
 description: "This article explains how create custom OpenAM project and run it in the local environment"

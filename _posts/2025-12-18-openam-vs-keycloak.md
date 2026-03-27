@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenAM vs Keycloak"
 landing-title2: "OpenAM vs Keycloak"
 description: A detailed comparative review of OpenAM (Open Identity Platform) and Keycloak, two leading open-source identity and access management (IAM) solutions.

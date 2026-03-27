@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "How To Setup Active Directory Authenticaion In OpenAM"
 landing-title2: "How To Setup Active Directory Authenticaion In OpenAM"
 description: "How to use Active Directory as a user data source and use for authentication"

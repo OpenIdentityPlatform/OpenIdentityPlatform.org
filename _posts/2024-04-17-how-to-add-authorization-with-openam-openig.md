@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "How to Add Authentication and Protect Your Application With OpenAM and OpenIG Stack"
 landing-title2: "How to Add Authentication and Protect Your Application With OpenAM and OpenIG Stack"
 description: "We will add OpenAM authentication for an application, and setup proxying to the application using OpenIG so an unauthenticated user could not access the application."

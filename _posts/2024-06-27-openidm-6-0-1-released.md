@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenIDM 6.0.1 Released"
 landing-title2: "Open Identity Management (OpenIDM) 6.0.1 Released"
 description: Open Identity Community just released OpenIDM v6.0.1

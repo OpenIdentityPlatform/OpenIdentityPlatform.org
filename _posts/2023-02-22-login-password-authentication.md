@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "Login and Password Authenticaion"
 landing-title2: "Login and Password Authenticaion"
 description: "Login and password authentication, implementation, tips and hints, advantages and disadvantages"

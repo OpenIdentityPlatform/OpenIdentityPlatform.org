@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "How to Create Custom OpenAM DataStore Integration"
 landing-title2: "How to Customise OpenAM"
 description: "This article explains how develop IdRepo plugin to connect to an external user data store"

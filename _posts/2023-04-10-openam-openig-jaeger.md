@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "Setup Tracing with OpenTelemetry and Jaegers"
 landing-title2: "How to setup tracing with OpenTelemetry and Jaeger"
 description: "In this article we will setup OpenTelemetry and Jaeger to monitor OpenAM and OpenIG applications"

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "OpenIDM: Active Directory Identity Management"
 landing-title2: "OpenIDM: Active Directory Identity Management"
 description: "In this article, we will configure Active Directory identity management from OpenIDM."
