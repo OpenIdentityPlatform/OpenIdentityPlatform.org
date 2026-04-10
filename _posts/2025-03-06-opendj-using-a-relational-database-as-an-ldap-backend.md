@@ -86,7 +86,7 @@ Address:Port : Protocol               : State
 
 As you can see from the output of the command, the LDAP database has not yet been created.
 
-# Настройка OpenDJ
+# Setup OpenDJ 
 
 Create OpenDJ backend using PostgreSQL database
 
