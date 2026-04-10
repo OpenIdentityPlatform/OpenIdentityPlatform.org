@@ -71,7 +71,7 @@ Download the OpenAPI specification for the service; we'll need it later to valid
 curl -v http://localhost:9966/petclinic/v3/api-docs.yaml -H "Host: petclinic:9966" | grep -v extensions > petclinic.yml
 ```
 
-## Настройка  OpenIG
+## OpenIG Setup
 
 Add OpenIG to the list of services in `docker-compose.yml` and close the port for the `petclinic` service. Now all requests to it will go through OpenIG.
 
