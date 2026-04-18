@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenDJ 5.0.1 Released"
 landing-title2: "OpenDJ 5.0.1 Released"
 description: OpenDJ 5.0.1 introduces Java 11 support, Jakarta EE 9 migration, critical security fixes for CVEs in dependencies

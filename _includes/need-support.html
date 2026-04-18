@@ -1,0 +1,36 @@
+<!-- Floating Support Button -->
+<div class="floating-btn" onclick="openModal()">
+    💬 Need Support?
+</div>
+
+<!-- Support Modal -->
+<div id="supportModal" class="modal">
+    <div class="modal-content">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-3xl font-bold">Get Support</h2>
+            <button onclick="closeModal()" class="text-gray-400 hover:text-white text-3xl">&times;</button>
+        </div>
+        
+        <div class="space-y-6">
+            <div>
+                <h3 class="text-xl font-bold mb-3 code-accent">Community Support</h3>
+                <p class="text-gray-400 mb-3">Join our active community for free support and discussions:</p>
+                <a href="https://github.com/orgs/OpenIdentityPlatform/discussions" target="_blank" class="block w-full bg-slate-800 hover:bg-slate-700 text-white py-3 px-4 rounded-lg transition text-center">
+                    GitHub Discussions →
+                </a>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6">
+                <h3 class="text-xl font-bold mb-3 code-accent">Commercial Support</h3>
+                <p class="text-gray-400 mb-3">For enterprise support, consulting, and custom development:</p>
+                <a href="https://github.com/orgs/OpenIdentityPlatform/discussions" target="_blank" class="block w-full bg-slate-800 hover:bg-slate-700 text-white py-3 px-4 rounded-lg transition text-center">
+                    💼 Approved Vendor List →
+                </a>
+            </div>
+        </div>
+        
+        <button onclick="closeModal()" class="mt-8 w-full btn-secondary">
+            Close
+        </button>
+    </div>
+</div>

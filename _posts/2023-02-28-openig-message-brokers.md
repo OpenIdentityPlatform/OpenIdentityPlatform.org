@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "How to Integrate OpenIG and Message Brokers"
 landing-title2: "How to Integrate OpenIG and Message Brokers"
 description: "How to send and receive message broker messages to http and backwards"

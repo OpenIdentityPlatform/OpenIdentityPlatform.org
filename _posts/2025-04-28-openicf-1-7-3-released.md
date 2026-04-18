@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenICF 1.7.3 Released"
 landing-title2: "Open Identity Connector Framework (OpenICF) 1.7.3 Released"
 description: Open Identity Community just released OpenICF v1.7.3

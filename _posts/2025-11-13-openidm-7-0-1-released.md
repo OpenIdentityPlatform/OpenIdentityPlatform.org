@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenIDM 7.0.1 Released"
 landing-title2: "OpenIDM 7.0.1 Released"
 description: Major update with JakartaEE 10 migration, Java 17+ support, Java 25 LTS compatibility, and critical security fixes

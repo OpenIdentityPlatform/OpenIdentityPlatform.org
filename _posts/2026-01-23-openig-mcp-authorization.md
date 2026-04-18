@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "Configuring Authorization for Access to an MCP Server Using OpenIG"
 landing-title2: "Configuring Authorization for Access to an MCP Server Using OpenIG"
 description: Learn how to configure MCP server authorization using OpenIG. Restrict unsafe MCP tools and secure access step by step.

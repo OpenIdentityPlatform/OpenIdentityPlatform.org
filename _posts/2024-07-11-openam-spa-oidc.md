@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "Authentication in a Single‐Page Application via OpenAM using OAuth2 OIDC Protocol"
 landing-title2: "Authentication in a Single‐Page Application via OpenAM using OAuth2 OIDC Protocol"
 description: "How to setup federated authentication in a Single Page Application via OpenAM using OIDC OAuth2 Protocol with PKCE"

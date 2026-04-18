@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "SSO Configuration: OpenIG as SAML Service Provider for OpenAM"
 landing-title2: "SSO Configuration: OpenIG as SAML Service Provider for OpenAM"
 description: "Implement SAML 2.0 Single Sign-On (SSO) instantly using OpenIG as a proxy and OpenAM as your Identity Provider. This guide details the setup of OpenAM Fedlet and OpenIG configurations via Docker, allowing you to add robust SAML authentication to any application without modifying its source code. Achieve enterprise-grade access management with minimal effort."

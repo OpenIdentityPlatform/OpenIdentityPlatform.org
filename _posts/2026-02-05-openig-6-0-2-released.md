@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenIG 6.0.2 Released"
 landing-title2: "OpenIG 6.0.2 Released"
 description: OpenIG 6.0.2 with critical security updates and bug fixes

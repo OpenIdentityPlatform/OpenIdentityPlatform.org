@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "Single Sign-On with OpenAM and OpenIG: Practical Implementation Examples"
 landing-title2: "Single Sign-On with OpenAM and OpenIG: Practical Implementation Examples"
 description: "This article gives a basic understanding about Single Sign-On technology"

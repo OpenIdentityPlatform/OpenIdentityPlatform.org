@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "Welcome to Open Identity Platform Community"
 landing-title2: "Open Identity Platform Community is open-source community organization, hosted on <a href=\"https://github.com/OpenIdentityPlatform\">GitHub</a>"
 share-buttons: true

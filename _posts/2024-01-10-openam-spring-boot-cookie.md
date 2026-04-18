@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "OpenAM and Spring Boot 3 Integration via OpenAM Cookie"
 landing-title2: "OpenAM and Spring Boot 3 Integration via OpenAM Cookie"
 description: "How to setup authenticaion in Spring Boot Application via OpenAM"

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "OpenIDM: Can your IDM play chess?"
 landing-title2: "OpenIDM:C an your IDM play chess?"
 description: "In this article, we will configure OpenIDM workflow to play chess between users."

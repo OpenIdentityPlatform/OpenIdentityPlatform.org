@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "Configuring authentication in OpenAM via Yandex Cloud using the SAML protocol"
 landing-title2: "Configuring authentication in OpenAM via Yandex Cloud using the SAML protocol"
 description: "Step-by-step guide to configure SAML 2.0 federation between Yandex Cloud (IdP) and OpenAM / Open Identity Platform (SP). Includes Docker deployment, certificate import, realm setup, and full working SSO test"

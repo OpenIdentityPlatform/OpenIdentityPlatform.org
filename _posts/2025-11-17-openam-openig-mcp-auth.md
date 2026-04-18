@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "How to Protect Model Context Protocol (MCP) Servers with OpenAM and OpenIG"
 landing-title2: "How to Protect Model Context Protocol (MCP) Servers with OpenAM and OpenIG"
 description: "Secure your Spring AI MCP server with OAuth 2.1 using OpenAM authentication and OpenIG as an authorization gateway. Full step-by-step tutorial with Docker Compose, OpenIdentityPlatform, and VS Code Copilot integration."

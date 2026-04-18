@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenDJ 4.9.4 Released"
 landing-title2: "OpenDJ 4.9.4 Released"
 description: Open Identity Community released OpenDJ v4.9.4. Docker enhancements, backend configuration improvements, and Java SE 24 support.

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenDJ 5.0.3 Released"
 landing-title2: "OpenDJ 5.0.3 Released"
 description: OpenDJ 5.0.3 with security updates and replication improvements

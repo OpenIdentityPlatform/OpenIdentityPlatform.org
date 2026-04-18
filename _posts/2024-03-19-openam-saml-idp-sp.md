@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "How to Setup SAMLv2 Federation in OpenAM"
 landing-title2: "How to Setup SAMLv2 Federation in OpenAM"
 description: "How to Setup SAMLv2 Federation between OpenAM Idetity Provider and Service Provider Instances"

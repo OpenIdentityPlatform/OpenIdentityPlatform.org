@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenDJ: Using a Relational Database as an LDAP Backend"
 landing-title2: "OpenDJ: Using a Relational Database as an LDAP Backend"
 description: In the following article we will setup PostgtreSQL as an OpenDJ backend

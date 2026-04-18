@@ -1,26 +1,10 @@
 <meta charset="utf-8">
-{% capture og_url %}{{ site.url }}{{ page.url | remove: "index.html" | remove: ".html" }}{% endcapture %}
-{% capture og_image %}{%- if page.imageurl -%}{{ site.url }}/assets/img/{{page.imageurl}}{% else %}https://avatars2.githubusercontent.com/u/30845478?s=280&amp;v=4{%- endif -%}{% endcapture %}
-{% capture page_title %} {%- if page.title -%} {{ page.title | smartify }} · {{ site.title | smartify }}{%- else -%}{{ site.title | smartify }} · {{ site.description | smartify }}{%- endif -%}{% endcapture %}
-{% capture page_description %}{{ page.description | default: site.description | smartify }}{% endcapture %}
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta property="og:locale" content="en_US" />
-<meta property="og:type" content="website" />
-<meta property="og:title" content="{{ page_title }}" />
-<meta property="og:description" content="{{ page_description }}" />
-<meta property="og:url" content="{{ og_url }}" />
-<meta property="og:site_name" content="{{site.site_name}}" />
+{% capture og_image %}{%- if page.imageurl -%}{{ site.url }}/assets/img/{{page.imageurl}}{% else %}https://avatars2.githubusercontent.com/u/30845478?s=280&amp;v=4{%- endif -%}{% endcapture %}
+{% seo %}
 <meta property="og:image" content="{{ og_image }}" />
-
-<!-- Twitter -->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:url" content="{{ og_url }}">
-<meta property="twitter:title" content="{{ page_title }}">
-<meta property="twitter:description" content="{{ page_description }}">
 <meta property="twitter:image" content="{{ og_image }}" />
 
-
-<meta name="description" content="{{ page_description }}">
 <meta name="keywords" content="{{ page.keywords | default: site.keywords }}">
 <meta name="author" content="{{ site.authors }}">
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
@@ -31,62 +15,18 @@
 {%- if page.canonical -%}
 <link rel="canonical" href="{{page.canonical}}" />
 {%- endif -%}
-<title>{{ page_title }}</title>
-<!-- Bootstrap core CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!--<link rel="stylesheet" href="{{'/assets/css/style.css'}}" >-->
+
 <link rel="stylesheet" href="{{'/assets/css/highlight.css'}}" >
 <link rel="stylesheet" href="{{'/assets/css/main.css'}}" >
 
 <!-- Global site tag (gtag.js) - Google Analytics -->
 
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5PEKRFRH8"></script>
-<style>
-  #cookie-notice {padding: 0.5rem 1rem; display: none; text-align: center; position: fixed; bottom: 0; width: calc(100%); background: #222; color: rgba(255,255,255,0.8); z-index: 1;}
-  #cookie-notice a {display: inline-block; cursor: pointer; margin-left: 0.5rem;}
-  @media (max-width: 767px) {
-      #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 1rem;}
-      #cookie-notice a {position: relative; bottom: 4px;}
-  }
-</style>
-<div id="cookie-notice"><span>We would like to use third party cookies and scripts to improve the functionality of this website.</span><a id="cookie-notice-accept" class="btn btn-primary btn-sm">Approve</a><a href="/privacy" class="btn btn-primary btn-sm">More info</a></div>
-<script>
-  function createCookie(name,value,days) {
-      var expires = "";
-      if (days) {
-          var date = new Date();
-          date.setTime(date.getTime() + (days*24*60*60*1000));
-          expires = "; expires=" + date.toUTCString();
-      }
-      document.cookie = name + "=" + value + expires + "; path=/";
-  }
-  function readCookie(name) {
-      var nameEQ = name + "=";
-      var ca = document.cookie.split(';');
-      for(var i=0;i < ca.length;i++) {
-          var c = ca[i];
-          while (c.charAt(0)==' ') c = c.substring(1,c.length);
-          if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
-      }
-      return null;
-  }
-  function eraseCookie(name) {
-      createCookie(name,"",-1);
-  }
-
-  if(readCookie('cookie-notice-dismissed')=='true') {
+<script>  
+  if(localStorage.getItem('cookieConsent') === 'accepted') {
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-Q5PEKRFRH8');
-  } else {
-      document.getElementById('cookie-notice').style.display = 'block';
   }
-  document.getElementById('cookie-notice-accept').addEventListener("click",function() {
-      createCookie('cookie-notice-dismissed','true',31);
-      document.getElementById('cookie-notice').style.display = 'none';
-      location.reload();
-  });
-
 </script>

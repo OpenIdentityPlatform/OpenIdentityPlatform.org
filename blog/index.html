@@ -8,55 +8,76 @@ navbar:
 canonical: "https://www.openidentityplatform.org/blog/"
 ---
 
-<h1>Recent blog articles:</h1>
-
+   <section class="hero pt-24">
+        <div class="hero-bg"></div>
+        <div class="hero-content max-w-7xl mx-auto px-6 py-12">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-5xl font-bold mb-4 bg-gradient-to-r from-indigo-400 to-purple-600 bg-clip-text text-transparent">
+                    Community Blog
+                </h1>
+                <p class="text-xl text-gray-300">
+                    Latest updates, tutorials, and insights from the Open Identity Platform community
+                </p>
+            </div>
+        </div>
+    </section>
+    <section class="py-16">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
 {% for post in paginator.posts %}
-
-<div class="card mb-3">
-  <div class="card-body">
-    <h4>
-      <a class="blogpost" href="{{post.url}}">
-        {%- if post.landing-title -%} {{ post.landing-title }} {%- else -%}{{ post.title}}{%- endif -%}
-      </a>
-    </h4>
-    <p>{{post.date |  date: "%d.%m.%Y" }}</p>
-    <p>{{post.description}}</p>
-  </div>
-</div>
-
+          <a href="{{post.url}}" class="blog-card">
+              <div>
+                  <h2 class="blog-card-title">{%- if post.landing-title -%} {{ post.landing-title }} {%- else -%}{{ post.title}}{%- endif -%}</h2>
+                  <p class="blog-card-excerpt">{{post.description}}</p>
+              </div>
+              <div class="blog-card-meta">
+                  <span>{{post.date |  date: "%d.%m.%Y" }}</span>
+              </div>
+          </a>
 {% endfor %}
+        </div>
+      </div>
 
-<nav class="paginator">
-  <ul class="pagination">
-    {% if paginator.previous_page %}
-      <li class="page-item">
-        <a href="{{ paginator.previous_page_path }}" class="page-link">Back</a>
-      </li>
-    {% else %} 
-      <li class="page-item disabled">
-        <a class="page-link">Back</a>
-      </li>
-    {% endif %}
-    {% for page in (1..paginator.total_pages) %}
-      {% assign itemClass = "" %}
+
+    <!-- Pagination -->
+    <div class="mt-16 flex justify-center items-center space-x-2">
+      {% if paginator.previous_page %}
+          <a href="{{ paginator.previous_page_path }}" class="px-4 py-2 rounded-lg bg-slate-800 text-gray-400 cursor-not-allowed">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+          </a>
+      {% else %} 
+        <a class="px-4 py-2 rounded-lg bg-slate-800 text-gray-400 cursor-not-allowed" disabled>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+            </svg>
+        </a>
+      {% endif %}
+      {% for page in (1..paginator.total_pages) %}
+      {% assign itemClass = "px-4 py-2 rounded-lg bg-slate-800 text-gray-300 hover:bg-slate-700 transition" %}
       {% if paginator.page == page %} 
-        {% assign itemClass = "active" %}
+        {% assign itemClass = "px-4 py-2 rounded-lg bg-primary text-white font-semibold" %}
       {% endif %}
       {% if page == 1 %}
-        <li class="page-item {{itemClass}}"><a class="page-link" href="/blog/">{{page}}</a></li>        
+        <a class="{{itemClass}}" href="/blog/">{{page}}</a>          
       {% else %}
-        <li class="page-item {{itemClass}}" ><a class="page-link" href="/blog/page{{page}}/">{{page}}</a></li>
+        <a class="{{itemClass}}" href="/blog/page{{page}}/">{{page}}</a>
       {% endif %}
     {% endfor %}
-    {% if paginator.next_page %}
-      <li class="page-item">
-        <a href="{{ paginator.next_page_path }}" class="page-link">Next</a>
-      </li>
-    {% else %}
-      <li class="page-item disabled">
-        <a class="page-link">Next</a>
-      </li>
-    {% endif %}    
-  </ul>
-</nav>
+      {% if paginator.next_page %}
+          <a href="{{ paginator.next_page_path }}" class="px-4 py-2 rounded-lg bg-slate-800 text-gray-300 hover:bg-slate-700 transition">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+      {% else %}
+        <a class="px-4 py-2 rounded-lg bg-slate-800 text-gray-300 hover:bg-slate-700 transition" disabled>
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+            </svg>
+          </a>
+      {% endif %}    
+    </div>
+</section>
 

@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "OpenIDM: Active Directory Identity Management"
 landing-title2: "OpenIDM: Active Directory Identity Management"
 description: "In this article we will configure two-way synchronization between Active Directory and OpenDJ. Changes made in Active Directory will be synchronized to OpenDJ and vice versa."

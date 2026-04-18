@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "OpenAM and Spring Boot 3 Integration via OIDC OAuth2 Protocol"
 landing-title2: "OpenAM and Spring Boot 3 Integration via OIDC OAuth2 Protocol"
 description: "How to setup federated authenticaion in Spring Boot Application via OpenAM using OIDC OAuth2 Protocol"

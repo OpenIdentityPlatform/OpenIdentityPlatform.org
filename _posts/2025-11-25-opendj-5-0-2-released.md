@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenDJ 5.0.2 Released"
 landing-title2: "OpenDJ 5.0.2 Released"
 description: OpenDJ 5.0.2 fixes installation issues, improves Windows upgrade process, and adds Docker data generation support

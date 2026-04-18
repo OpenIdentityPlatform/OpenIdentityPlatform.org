@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "OpenAM and Zero Trust: Confirming Critical Operations"
 landing-title2: "OpenAM and Zero Trust: Confirming Critical Operations"
 description: "How to configuree Open Identity Platfrom stack to add extra protection to a critical service"

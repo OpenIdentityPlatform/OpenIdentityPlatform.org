@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenIG Getting Started: How To Protect Web Services with Open Identity Gateway"
 landing-title2: "OpenIG Getting Started: How To Protect Web Services with Open Identity Gateway"
 description: "Secure web services with OpenIG: Learn to proxy, restrict HTTP methods, validate headers, add security headers, and enforce JWT auth & role-based access."

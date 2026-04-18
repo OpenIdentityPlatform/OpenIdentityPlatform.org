@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 title: "How to Run OpenDJ‐based Embedded LDAP in Spring Boot Application"
 landing-title2: "How to Run OpenDJ‐based Embedded LDAP in Spring Boot Application"
 description: "This article explains how to run an embedded OpenDJ instance as part of a Spring Boot application"

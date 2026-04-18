@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "OpenICF 2.0.1 Released"
 landing-title2: "OpenICF 2.0.1 Released"
 description: Major update with JakartaEE 9 migration, Java 11+ support, and Java 25 LTS compatibility

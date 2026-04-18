@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: page
 landing-title: "Using Google Authenticator with OpenAM"
 landing-title2: "Using Google Authenticator with OpenAM"
 description: Step-by-step guide to implementing two-factor authentication (2FA) in OpenAM using Microsoft Google and TOTP.
