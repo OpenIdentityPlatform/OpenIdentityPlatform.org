@@ -1,7 +1,7 @@
 <meta charset="utf-8">
 {% capture og_url %}{{ site.url }}{{ page.url | remove: "index.html" | remove: ".html" }}{% endcapture %}
 {% capture og_image %}{%- if page.imageurl -%}{{ site.url }}/assets/img/{{page.imageurl}}{% else %}https://avatars2.githubusercontent.com/u/30845478?s=280&amp;v=4{%- endif -%}{% endcapture %}
-{% capture page_title %} {%- if page.title -%} {{ page.title | smartify }} · {{ site.title | smartify }}{%- else -%}{{ site.title | smartify }} · {{ site.description | smartify }}{%- endif -%}{% endcapture %}
+{% capture page_title %}{%- if page.title -%}{{ page.title | smartify }}{%- unless page.landing == true -%} · {{ site.title | smartify }}{%- endunless -%}{%- else -%}{{ site.title | smartify }} · {{ site.description | smartify }}{%- endif -%}{% endcapture %}
 {% capture page_description %}{{ page.description | default: site.description | smartify }}{% endcapture %}
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta property="og:locale" content="en_US" />
@@ -26,12 +26,18 @@
 <meta name="generator" content="Jekyll v{{ jekyll.version }}">
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
-<link rel='dns-prefetch' href='https://stackpath.bootstrapcdn.com' />
-<link rel='dns-prefetch' href='https://www.googletagmanager.com' />
-{%- if page.canonical -%}
-<link rel="canonical" href="{{page.canonical}}" />
-{%- endif -%}
+<link rel="dns-prefetch" href="https://stackpath.bootstrapcdn.com" />
+<link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+<link rel="dns-prefetch" href="https://code.jquery.com" />
+<link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
+<link rel="dns-prefetch" href="https://translate.google.com" />
+<link rel="preconnect" href="https://stackpath.bootstrapcdn.com" crossorigin />
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+<link rel="preconnect" href="https://code.jquery.com" crossorigin />
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ site.url }}/feed.xml" />
+<link rel="canonical" href="{{ og_url }}" />
 <title>{{ page_title }}</title>
+
 <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.2/css/bootstrap.min.css" integrity="sha512-rt/SrQ4UNIaGfDyEXZtNcyWvQeOq0QLygHluFQcSjaGB04IxWhal71tKuzP6K8eYXYB6vJV4pHkXcmFGGQ1/0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -76,10 +82,10 @@
   }
 
   if(readCookie('cookie-notice-dismissed')=='true') {
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-Q5PEKRFRH8');
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-Q5PEKRFRH8');
   } else {
       document.getElementById('cookie-notice').style.display = 'block';
   }

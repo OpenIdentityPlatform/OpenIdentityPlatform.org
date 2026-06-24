@@ -1,6 +1,6 @@
 ---
 layout: home
-title: OpenIG - Open Indentity Gateway
+title: OpenIG - Open Identity Gateway
 description: 'OpenIG by Open Identity Platform: High-performance identity gateway & reverse proxy. Secure apps/APIs with SSO/SLO, standards federation (OAuth, OIDC, SAML), policy enforcement, no-code integration. High-performance, flexible access management solution.'
 keywords: OpenIG, Open Identity Gateway, open source identity gateway, reverse proxy, OpenIG gateway, Open Identity Platform, SSO gateway, identity gateway open source, OAuth 2.0 gateway, OpenID Connect proxy, SAML 2.0 federation, API security gateway, policy enforcement point, credential replay, secure access proxy, Java reverse proxy, open source SSO, federation gateway, OpenIG download, zero trust access
 reponame: OpenIG

@@ -1,0 +1,88 @@
+{% capture page_url %}{{ site.url }}{{ page.url | remove: "index.html" | remove: ".html" }}{% endcapture %}
+
+{% comment %}Organization schema on every page{% endcomment %}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ site.title }}",
+  "url": "{{ site.url }}",
+  "logo": "{{ site.image }}",
+  "description": "{{ site.description | smartify }}",
+  "sameAs": [
+    "https://github.com/OpenIdentityPlatform",
+    "https://github.com/orgs/OpenIdentityPlatform/discussions"
+  ]
+}
+</script>
+
+{% comment %}Product schema on product pages{% endcomment %}
+{%- if page.product -%}
+{%- assign product_data = site.data.products | where: "product", page.product | first -%}
+{%- if product_data == nil -%}
+  {%- for p in site.data.products -%}
+    {%- assign p_name = p.name | downcase -%}
+    {%- assign page_product = page.product -%}
+    {%- if p_name == page_product -%}
+      {%- assign product_data = p -%}
+    {%- endif -%}
+  {%- endfor -%}
+{%- endif -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "{{ page.title }}",
+  "description": "{{ page_description }}",
+  "url": "{{ page_url }}",
+  "codeRepository": "{{ product_data.link }}",
+  "programmingLanguage": "Java",
+  "license": "https://spdx.org/licenses/CDDL-1.1",
+  "isPartOf": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}"
+  }
+}
+</script>
+{%- endif -%}
+
+{% comment %}Article schema on blog posts{% endcomment %}
+{%- if page.url contains "/blog/" and page.date -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "{%- if page.landing-title -%}{{ page.landing-title }}{%- else -%}{{ page.title }}{%- endif -%}",
+  "description": "{{ page_description }}",
+  "url": "{{ page_url }}",
+  "datePublished": "{{ page.date | date_to_xmlschema }}",
+  {%- if page.lastmod %}
+  "dateModified": "{{ page.lastmod | date_to_xmlschema }}",
+  {%- else %}
+  "dateModified": "{{ page.date | date_to_xmlschema }}",
+  {%- endif %}
+  "author": {
+    "@type": "Organization",
+    "name": "{{ site.authors }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "{{ site.image }}"
+    }
+  },
+  {%- if page.imageurl %}
+  "image": "{{ site.url }}/assets/img/{{ page.imageurl }}",
+  {%- else %}
+  "image": "{{ site.image }}",
+  {%- endif %}
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "{{ page_url }}"
+  }
+}
+</script>
+{%- endif -%}

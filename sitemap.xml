@@ -3,31 +3,54 @@ layout: null
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  {% assign product_pages = "/opendj,/openam,/openig,/openicf,/openidm" | split: "," %}
   {% for post in site.posts %}
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
-      {% if post.lastmod == null %}
-        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
-      {% else %}
+      {% if post.lastmod %}
         <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+      {% else %}
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
       {% endif %}
-      <changefreq>weekly</changefreq>
-      <priority>1.0</priority>
+      {% assign now_ts = "now" | date: "%s" | times: 1 %}
+      {% assign post_ts = post.date | date: "%s" | times: 1 %}
+      {% assign days_since_post = now_ts | minus: post_ts | divided_by: 86400 %}
+      {% if days_since_post < 90 %}
+        <changefreq>weekly</changefreq>
+      {% else %}
+        <changefreq>monthly</changefreq>
+      {% endif %}
+      <priority>0.8</priority>
     </url>
   {% endfor %}
   {% for page in site.pages %}
-    {% if page.layout != null and page.layout != empty and  page.layout != "redirect" %}
+    {% if page.layout != null and page.layout != empty and page.layout != "redirect" %}
       <url>
         <loc>{{ site.url }}{{ page.url | remove: "index.html" | remove: ".html" }}</loc>
-       </url>
-       {% endif %}
+        {% if page.lastmod %}
+          <lastmod>{{ page.lastmod | date_to_xmlschema }}</lastmod>
+        {% endif %}
+        {% if page.url == "/" %}
+          <changefreq>weekly</changefreq>
+          <priority>1.0</priority>
+        {% elsif product_pages contains page.url %}
+          <changefreq>monthly</changefreq>
+          <priority>0.9</priority>
+        {% else %}
+          <changefreq>monthly</changefreq>
+          <priority>0.5</priority>
+        {% endif %}
+      </url>
+    {% endif %}
   {% endfor %}
 
   {% for file in site.static_files %}
-    {% if file.name == "index.html"%}
+    {% if file.name == "index.html" %}
       <url>
         <loc>{{ site.url }}{{ file.path | remove: "index.html" | remove: ".html" }}</loc>
-       </url>
+        <changefreq>monthly</changefreq>
+        <priority>0.5</priority>
+      </url>
     {% endif %}
   {% endfor %}
 </urlset>
