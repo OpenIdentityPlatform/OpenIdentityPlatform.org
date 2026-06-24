@@ -5,6 +5,7 @@ description: 'OpenAM by Open Identity Platform: SSO, authentication, OAuth 2.0, 
 keywords: OpenAM, Open Identity Platform, open source access management, single sign-on, SSO, identity provider, SAML, OAuth 2.0, OpenID Connect, OIDC, authentication, authorization, federation, identity management, IAM, access management, multi-factor authentication, adaptive authentication, high availability, clusterization, open source IAM, enterprise SSO, identity federation, web services security
 reponame: OpenAM
 product: openam
+lastmod: 2026-06-24
 links: 
     - title: Donate
       url: https://opencollective.com/openam/contribute
@@ -18,16 +19,17 @@ links:
         <img src="/assets/img/openam-logo.png" width="40%" alt="{{ page.title }}"/>
     </a>
   </h1>
+  <h2 class="sr-only">OpenAM — Open Access Manager</h2>
 </div>
 
 If you have multiple sites and applications in your company, probably you need to provide seamless authentication to all of them. So when user logged in at one of your sites once, he does not need to enter his credentials on other sites.
-So, OpenAM can help you to solve all this issues. Key features of OpenAM are:
+So, OpenAM can help you to solve all these issues. Key features of OpenAM are:
 
 * **Authentication**  - OpenAM ships with more than 20 authentication modules, which you can use to customize your authentication process. Also, you can customize sequence of authentication modules, to provide multi-factor or adaptive authentication.
 
 * **Authorization** - OpenAM can also manage authorization, so you can restrict access to desired resources according to different authorization policies.
 
-* **Identity Provider** - OpenAM can act as an Identity Provider, using SAML, OAuth 2.0 or OpenID Connect 1. So, your clients can develop their own applications or websites and authenticate via OpenAM like they authenticate via Facebook or Google.
+* **Identity Provider** - OpenAM can act as an Identity Provider, using SAML, OAuth 2.0 or OpenID Connect 1.0. So, your clients can develop their own applications or websites and authenticate via OpenAM like they authenticate via Facebook or Google.
 
 * **Single Sign On** - after single authentication, user gets access to all resources protected by OpenAM. So, there is no need to authenticate at other services.
 
