@@ -1,11 +1,11 @@
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
   <div class="container">
       <a class="navbar-brand" href="/">{{site.title}}</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarCollapse">
-        <ul class="navbar-nav ml-auto">
+        <ul class="navbar-nav ms-auto">
           <li class="nav-item">
               <div id="google_translate_element"></div>
               <script type="text/javascript">
@@ -23,7 +23,7 @@
               <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="sr-only">(current)</span></a>
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="visually-hidden">(current)</span></a>
             <div class="dropdown-menu">
               {% for product in site.data.products %}
                 <a class="dropdown-item" href="{{product.details_link}}">{{product.short_description}}</a>
@@ -34,10 +34,10 @@
             <a target="_blank" class="nav-link" href="https://doc.openidentityplatform.org">Documentation</a>
           </li>          
           <li class="nav-item {{page.navbar.blog_active}}">
-            <a class="nav-link" href="/blog/">Blog <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="/blog/">Blog <span class="visually-hidden">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a target="_blank" class="nav-link" href="{{site.repo_url}}"><i class="fa-brands fa-github"></i> Fork us<span class="sr-only">(current)</span></a>
+            <a target="_blank" class="nav-link" href="{{site.repo_url}}"><i class="fa-brands fa-github"></i> Fork us<span class="visually-hidden">(current)</span></a>
           </li>
         </ul>
       </div>

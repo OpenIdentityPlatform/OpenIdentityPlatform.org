@@ -22,7 +22,7 @@ links:
   </h1>
 </div>
 
-<h2 class="sr-only">OpenDJ - Open Directory Server</h2>
+<h2 class="visually-hidden">OpenDJ - Open Directory Server</h2>
 
 OpenDJ is an LDAPv3 compliant directory service, which has been developed for the Java platform, providing a high performance, highly available, and secure store for the identities managed by your organization. Its easy installation process, combined with the power of the Java platform makes OpenDJ the simplest, fastest directory to deploy and manage.
 

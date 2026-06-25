@@ -19,7 +19,7 @@ links:
         <img src="/assets/img/openam-logo.png" width="40%" alt="{{ page.title }}"/>
     </a>
   </h1>
-  <h2 class="sr-only">OpenAM — Open Access Manager</h2>
+  <h2 class="visually-hidden">OpenAM — Open Access Manager</h2>
 </div>
 
 If you have multiple sites and applications in your company, probably you need to provide seamless authentication to all of them. So when user logged in at one of your sites once, he does not need to enter his credentials on other sites.
