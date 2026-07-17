@@ -1,17 +1,17 @@
 ---
 layout: home
 title: "ForgeRock Alternative & Migration Path — Open Identity Platform"
-description: "A free, open-source alternative to ForgeRock (now Ping Identity). Open Identity Platform continues the OpenAM, OpenDJ, OpenIDM, OpenIG and OpenICF line under the CDDL license — no license fees, no lock-in. Map your ForgeRock stack and plan a migration."
-keywords: "ForgeRock alternative, ForgeRock open source alternative, ForgeRock migration, migrate from ForgeRock, ForgeRock to open source, Ping Identity alternative, ForgeRock AM alternative, ForgeRock DS alternative, ForgeRock IDM alternative, ForgeRock IG alternative, OpenAM ForgeRock, OpenDJ ForgeRock, ForgeRock end of life, ForgeRock replacement, IAM migration"
+description: "A free, open-source alternative to ForgeRock. Open Identity Platform continues the OpenAM, OpenDJ, OpenIDM, OpenIG and OpenICF line under the CDDL license — no license fees, no lock-in. Map your ForgeRock stack and plan a migration."
+keywords: "ForgeRock alternative, ForgeRock open source alternative, ForgeRock migration, migrate from ForgeRock, ForgeRock to open source, ForgeRock AM alternative, ForgeRock DS alternative, ForgeRock IDM alternative, ForgeRock IG alternative, OpenAM ForgeRock, OpenDJ ForgeRock, ForgeRock end of life, ForgeRock replacement, IAM migration"
 lastmod: 2026-07-17
 faq:
   - q: "Is Open Identity Platform the same as ForgeRock?"
-    a: "No. Open Identity Platform is an independent community project. Its products — OpenAM, OpenDJ, OpenIDM, OpenIG and OpenICF — continue the open-source releases that ForgeRock's commercial products were built on, maintained under the CDDL license. ForgeRock itself is now part of Ping Identity."
+    a: "No. Open Identity Platform is an independent community project. Its products — OpenAM, OpenDJ, OpenIDM, OpenIG and OpenICF — continue the open-source releases that ForgeRock's commercial products were built on, maintained under the CDDL license."
   - q: "Do I have to pay license fees to move off ForgeRock?"
     a: "No. Every Open Identity Platform product is free and open source under the CDDL license — no license fees and no vendor lock-in. Commercial support is entirely optional and comes from independent vendors, not a mandatory subscription."
   - q: "Can I migrate my existing ForgeRock configuration and data?"
     a: "Because the products share a common lineage, many concepts, configurations, and directory data map closely between ForgeRock and Open Identity Platform. The exact effort depends on your versions and customizations — read the documentation, ask the community, or engage an approved vendor for a migration assessment."
-  - q: "Where do I get help migrating from ForgeRock or Ping?"
+  - q: "Where do I get help migrating from ForgeRock?"
     a: "Free community help is available on GitHub Discussions, and full documentation is online. For SLAs, consulting, and hands-on migration work, independent approved vendors are listed on the Support & Services page."
 navbar:
   support_active: ''
@@ -19,22 +19,20 @@ navbar:
 
 <div class="bg-primary text-white p-4 p-md-5 rounded mb-5">
   <h1>ForgeRock Alternative &amp; Open-Source Migration Path</h1>
-  <p class="lead mb-0">Open Identity Platform is the free, open-source continuation of the identity stack that ForgeRock — now part of Ping Identity — was built on. Same lineage, CDDL licensed, no license fees, no vendor lock-in.</p>
+  <p class="lead mb-0">Open Identity Platform is the free, open-source continuation of the identity stack that ForgeRock was built on. Same lineage, CDDL licensed, no license fees, no vendor lock-in.</p>
 </div>
 
-<p>ForgeRock built its identity platform on a family of open-source projects covering access management, directory services, identity management, and an identity gateway. Over time those products moved to a closed, subscription-only model, and ForgeRock is now part of <strong>Ping Identity</strong>. The open-source line did not disappear: the community forked the last freely-licensed releases and has maintained, secured, and modernized them ever since as the <strong>Open Identity Platform</strong>.</p>
+<p>ForgeRock built its identity platform on a family of open-source projects covering access management, directory services, identity management, and an identity gateway. Over time those products moved to a closed, subscription-only model. The open-source line did not disappear: the community forked the last freely-licensed releases and has maintained, secured, and modernized them ever since as the <strong>Open Identity Platform</strong>.</p>
 
-<p>If you run a ForgeRock deployment — or you're weighing Ping's roadmap and licensing — Open Identity Platform is a like-for-like path that keeps your architecture open. Community help stays free on GitHub; independent vendors offer paid migration and support when you want it.</p>
-
-<p class="text-muted">Ping has since rebranded the former ForgeRock products — you may know them as <strong>PingAM</strong>, <strong>PingDS</strong>, <strong>PingIDM</strong>, and <strong>PingGateway</strong>. The mapping below covers both names.</p>
+<p>If you run a ForgeRock deployment — or you're weighing its roadmap and licensing — Open Identity Platform is a like-for-like path that keeps your architecture open. Community help stays free on GitHub; independent vendors offer paid migration and support when you want it.</p>
 
 <h2 class="mb-3">Map your ForgeRock stack to Open Identity Platform</h2>
-<p class="text-muted">Each ForgeRock / Ping product has a directly corresponding open-source project here.</p>
+<p class="text-muted">Each ForgeRock product has a directly corresponding open-source project here.</p>
 <div class="table-responsive mb-5">
   <table class="table table-bordered align-middle">
     <thead>
       <tr>
-        <th scope="col">ForgeRock / Ping product</th>
+        <th scope="col">ForgeRock product</th>
         <th scope="col">Open Identity Platform</th>
         <th scope="col">What it does</th>
         <th scope="col">Get it</th>
@@ -42,31 +40,31 @@ navbar:
     </thead>
     <tbody>
       <tr>
-        <td>ForgeRock Access Management (AM) <span class="text-muted">/ PingAM</span></td>
+        <td>ForgeRock Access Management (AM)</td>
         <td><a href="/openam"><strong>OpenAM</strong></a></td>
         <td>Authentication, SSO, authorization, federation, OAuth2/OIDC/SAML</td>
         <td><a href="https://github.com/OpenIdentityPlatform/OpenAM" target="_blank" rel="noopener">GitHub</a></td>
       </tr>
       <tr>
-        <td>ForgeRock Directory Services (DS) <span class="text-muted">/ PingDS</span></td>
+        <td>ForgeRock Directory Services (DS)</td>
         <td><a href="/opendj"><strong>OpenDJ</strong></a></td>
         <td>LDAPv3-compliant, high-availability directory / identity store</td>
         <td><a href="https://github.com/OpenIdentityPlatform/OpenDJ" target="_blank" rel="noopener">GitHub</a></td>
       </tr>
       <tr>
-        <td>ForgeRock Identity Management (IDM) <span class="text-muted">/ PingIDM</span></td>
+        <td>ForgeRock Identity Management (IDM)</td>
         <td><a href="/openidm"><strong>OpenIDM</strong></a></td>
         <td>Identity management, provisioning, synchronization, compliance</td>
         <td><a href="https://github.com/OpenIdentityPlatform/OpenIDM" target="_blank" rel="noopener">GitHub</a></td>
       </tr>
       <tr>
-        <td>ForgeRock Identity Gateway (IG) <span class="text-muted">/ PingGateway</span></td>
+        <td>ForgeRock Identity Gateway (IG)</td>
         <td><a href="/openig"><strong>OpenIG</strong></a></td>
         <td>Reverse proxy / identity gateway, session and credential handling</td>
         <td><a href="https://github.com/OpenIdentityPlatform/OpenIG" target="_blank" rel="noopener">GitHub</a></td>
       </tr>
       <tr>
-        <td>ForgeRock / Ping connectors (ICF)</td>
+        <td>ForgeRock connectors (ICF)</td>
         <td><a href="/openicf"><strong>OpenICF</strong></a></td>
         <td>Identity connector framework linking IDM to target systems</td>
         <td><a href="https://github.com/OpenIdentityPlatform/OpenICF" target="_blank" rel="noopener">GitHub</a></td>
@@ -128,7 +126,7 @@ navbar:
 <div class="bg-primary text-white p-4 p-md-5 rounded mb-5">
   <div class="row align-items-center">
     <div class="col-md-8 mb-3 mb-md-0">
-      <h2 class="h4 mb-1">Planning a move off ForgeRock or Ping?</h2>
+      <h2 class="h4 mb-1">Planning a move off ForgeRock?</h2>
       <p class="mb-0">Start free on GitHub, or bring in an independent vendor for a migration assessment, SLAs, and hands-on help. The project stays neutral — vendors are listed alphabetically, with no endorsement.</p>
     </div>
     <div class="col-md-4 text-md-end">

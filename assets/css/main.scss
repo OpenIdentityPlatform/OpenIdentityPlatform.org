@@ -108,7 +108,7 @@ img {
 
 .footer {
   width: 100%;
-  padding: 0.85rem 0 1rem;
+  padding: 2.5rem 0 1.25rem;
 }
 
 
@@ -303,10 +303,37 @@ a.blogpost  {
   a { font-weight: 600; }
 }
 
-.footer-links {
-  font-size: 0.9rem;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+.footer-nav {
+  .footer-heading {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 0.75rem;
+  }
 
-  a { text-decoration: none; }
-  a:hover { text-decoration: underline; }
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li { margin-bottom: 0.4rem; }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      opacity: 0.9;
+
+      &:hover { opacity: 1; text-decoration: underline; }
+    }
+  }
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 0.9rem;
+
+  .footer-meta { color: rgba(255, 255, 255, 0.6); }
 }
