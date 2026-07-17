@@ -136,7 +136,7 @@ Both OpenAM and Keycloak are mature, standards-based, open-source IAM platforms,
 - **Choose OpenAM** if you need breadth of authentication modules and adaptive/chained authentication, protocols such as UMA 2.0, SNMP/JMX monitoring, policy agents for web/app servers, or a drop-in continuation of a ForgeRock-based architecture.
 - **Choose Keycloak** if you want a newer admin UI out of the box and are already invested in the Red Hat / Quarkus ecosystem.
 
-If you'd like help matching either platform to your requirements, or planning a migration, independent vendors offer paid consulting and implementation — see the [Support & Services](/support) page for options, while community help stays free on GitHub.
+If you'd like help matching either platform to your requirements, or planning a migration, independent vendors offer paid consulting and implementation — see the [Support & Services](/support) page for options, while community help stays free on GitHub. Moving off a ForgeRock (now Ping Identity) stack? OpenAM is a like-for-like open-source continuation — see the [ForgeRock alternative & migration path](/forgerock-alternative).
 
 ## Useful Links
 

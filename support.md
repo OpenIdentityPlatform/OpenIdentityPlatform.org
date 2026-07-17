@@ -23,6 +23,8 @@ navbar:
   <p class="lead mb-0">Open Identity Platform is free and open source. Get help the way that suits you — ask the community at no cost, or engage an approved independent vendor for SLAs, consulting, and migration. One platform, two paths to support.</p>
 </div>
 
+<p class="fr-callout"><i class="fa-solid fa-circle-info me-2"></i>Migrating from ForgeRock or Ping? See the <a href="/forgerock-alternative">ForgeRock alternative &amp; migration path</a> to map your stack to Open Identity Platform.</p>
+
 <h2 class="mb-1">Free community support</h2>
 <p class="text-muted">Start here — it's free, and most questions are answered by the people who build the software.</p>
 <div class="row g-4 mb-5">
