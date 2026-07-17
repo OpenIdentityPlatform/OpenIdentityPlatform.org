@@ -1,0 +1,24 @@
+<!-- GA4 conversion events. Delegated listener: any element with data-ga-event fires
+     that GA4 event, passing its remaining data-ga-* attributes as parameters
+     (data-ga-vendor -> vendor, data-ga-location -> location, ...). gtag is defined
+     in header.html with Consent Mode v2; when analytics consent is denied gtag drops
+     the hit, so no extra gating is needed here. Runs in the capture phase so the event
+     is queued before same-page navigation unloads the document. -->
+<script>
+(function () {
+  document.addEventListener('click', function (e) {
+    var el = e.target.closest ? e.target.closest('[data-ga-event]') : null;
+    if (!el) return;
+    var name = el.getAttribute('data-ga-event');
+    if (!name || typeof gtag !== 'function') return;
+    var params = {};
+    for (var i = 0; i < el.attributes.length; i++) {
+      var attr = el.attributes[i];
+      if (attr.name.indexOf('data-ga-') === 0 && attr.name !== 'data-ga-event') {
+        params[attr.name.slice(8).replace(/-/g, '_')] = attr.value;
+      }
+    }
+    gtag('event', name, params);
+  }, true);
+})();
+</script>
