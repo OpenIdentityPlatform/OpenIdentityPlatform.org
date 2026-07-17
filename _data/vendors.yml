@@ -1,0 +1,46 @@
+# Approved commercial-support vendors for the Open Identity Platform.
+#
+# Source of truth: https://github.com/OpenIdentityPlatform/.github/wiki/Approved-Vendor-List
+# Order is strict alphabetical. Listing here is NOT an endorsement and implies no ranking.
+#
+# `region` is the vendor's HEADQUARTERS location (a verifiable fact), used by the region
+# filter and the timezone hint on /support. Most vendors serve clients worldwide.
+#
+# Emails are split into user/domain so the address is assembled in the browser (light
+# anti-scraping); the visible "user [at] domain" text on the page is the no-JS fallback.
+- name: "3A Systems LLC"
+  slug: "3a-systems"
+  country: "Russia"
+  region: "cis"
+  region_label: "CIS"
+  languages: "Russian, English"
+  website: "https://www.3a-systems.ru"
+  email_user: "sales"
+  email_domain: "3a-systems.ru"
+- name: "Identity Fusion, Inc."
+  slug: "identity-fusion"
+  country: "United States / United Kingdom"
+  region: "americas"
+  region_label: "Americas"
+  languages: "English"
+  website: "https://www.identityfusion.com"
+  email_user: "info"
+  email_domain: "identityfusion.com"
+- name: "Orchitech Solutions s.r.o."
+  slug: "orchitech"
+  country: "Czechia"
+  region: "europe"
+  region_label: "Europe"
+  languages: "Czech, English"
+  website: "https://orchi.tech"
+  email_user: "info"
+  email_domain: "orchitech.cz"
+- name: "OSSTech Corporation"
+  slug: "osstech"
+  country: "Japan"
+  region: "apac"
+  region_label: "Asia-Pacific"
+  languages: "Japanese, English"
+  website: "https://www.osstech.co.jp"
+  email_user: "info"
+  email_domain: "osstech.co.jp"

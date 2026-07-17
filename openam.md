@@ -44,6 +44,8 @@ So, OpenAM can help you to solve all these issues. Key features of OpenAM are:
 
  {% include product-links.html %}
 
+ {% include support-cta.html %}
+
  {% include product-about.html %}
 
  {% include contributors.html %}

@@ -38,6 +38,8 @@ OpenDJ is an LDAPv3 compliant directory service, which has been developed for th
 
  {% include product-links.html %}
 
+ {% include support-cta.html %}
+
  {% include product-about.html %}
 
  {% include contributors.html %}

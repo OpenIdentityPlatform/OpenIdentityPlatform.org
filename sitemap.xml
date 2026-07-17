@@ -4,6 +4,7 @@ layout: null
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   {% assign product_pages = "/opendj,/openam,/openig,/openicf,/openidm" | split: "," %}
+  {% assign key_pages = "/support" | split: "," %}
   {% for post in site.posts %}
     <url>
       <loc>{{ site.url }}{{ post.url }}</loc>
@@ -34,6 +35,9 @@ layout: null
           <changefreq>weekly</changefreq>
           <priority>1.0</priority>
         {% elsif product_pages contains page.url %}
+          <changefreq>monthly</changefreq>
+          <priority>0.9</priority>
+        {% elsif key_pages contains page.url %}
           <changefreq>monthly</changefreq>
           <priority>0.9</priority>
         {% else %}

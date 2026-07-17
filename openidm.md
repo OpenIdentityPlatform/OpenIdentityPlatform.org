@@ -30,6 +30,8 @@ OpenIDM provides a modern UI experience that allows you to manage your data with
 
  {% include product-links.html %}
 
+ {% include support-cta.html %}
+
  {% include product-about.html %}
 
  {% include contributors.html %}

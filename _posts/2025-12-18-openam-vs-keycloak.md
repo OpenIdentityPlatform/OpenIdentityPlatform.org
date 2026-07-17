@@ -129,6 +129,15 @@ Realm support for isolation of identities and authentication processes
 | SNMP Monitoring | ✅ [doc](https://doc.openidentityplatform.org/openam/admin-guide/chap-monitoring#monitoring-snmp) | ⛔️ |
 | JMX Monitoring | ✅ [doc](https://doc.openidentityplatform.org/openam/admin-guide/chap-monitoring#monitoring-jmx) | ⛔️ |
 
+## Summary
+
+Both OpenAM and Keycloak are mature, standards-based, open-source IAM platforms, and either can anchor a serious SSO deployment. The right choice depends on your context rather than a single winner:
+
+- **Choose OpenAM** if you need breadth of authentication modules and adaptive/chained authentication, protocols such as UMA 2.0, SNMP/JMX monitoring, policy agents for web/app servers, or a drop-in continuation of a ForgeRock-based architecture.
+- **Choose Keycloak** if you want a newer admin UI out of the box and are already invested in the Red Hat / Quarkus ecosystem.
+
+If you'd like help matching either platform to your requirements, or planning a migration, independent vendors offer paid consulting and implementation — see the [Support & Services](/support) page for options, while community help stays free on GitHub.
+
 ## Useful Links
 
 ### OpenAM:
