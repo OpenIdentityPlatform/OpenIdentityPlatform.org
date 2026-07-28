@@ -68,34 +68,32 @@ navbar:
 </p>
 
 <div class="region-filter mb-4" role="group" aria-label="Filter vendors by headquarters region">
-  <button type="button" class="btn active" data-region="all">All</button>
-  <button type="button" class="btn" data-region="europe">Europe</button>
-  <button type="button" class="btn" data-region="americas">Americas</button>
-  <button type="button" class="btn" data-region="apac">Asia-Pacific</button>
-  <button type="button" class="btn" data-region="cis">CIS</button>
+  <button type="button" class="btn active" data-region="all" aria-pressed="true">All</button>
+  <button type="button" class="btn" data-region="europe" aria-pressed="false">Europe</button>
+  <button type="button" class="btn" data-region="americas" aria-pressed="false">Americas</button>
+  <button type="button" class="btn" data-region="apac" aria-pressed="false">Asia-Pacific</button>
+  <button type="button" class="btn" data-region="cis" aria-pressed="false">CIS</button>
 </div>
 
+{%- assign mail_subject = "Open Identity Platform commercial support enquiry" | uri_escape -%}
 <div class="row g-4 mb-4" id="vendor-grid">
   {% for v in site.data.vendors %}
-  <div class="col-md-6 col-lg-3 vendor-col" data-region="{{ v.region }}">
+  <div class="col-md-6 col-lg-3 vendor-col" data-region="{{ v.region | escape }}">
     <div class="card h-100">
       <div class="card-body d-flex flex-column">
-        <span class="region-badge mb-2">{{ v.region_label }}</span>
-        <h3 class="h5 card-title">{{ v.name }}</h3>
+        <span class="region-badge mb-2">{{ v.region_label | escape }}</span>
+        <h3 class="h5 card-title">{{ v.name | escape }}</h3>
         <ul class="vendor-facts list-unstyled">
-          <li><i class="fa-solid fa-location-dot me-2"></i>{{ v.country }}</li>
-          <li><i class="fa-solid fa-language me-2"></i>{{ v.languages }}</li>
+          <li><i class="fa-solid fa-location-dot me-2"></i>{{ v.country | escape }}</li>
+          <li><i class="fa-solid fa-language me-2"></i>{{ v.languages | escape }}</li>
         </ul>
         <div class="mt-auto">
-          <a class="vendor-email btn btn-support w-100 mb-1"
-             href="#vendors"
-             data-user="{{ v.email_user }}"
-             data-domain="{{ v.email_domain }}"
-             data-ga-event="generate_lead" data-ga-vendor="{{ v.slug }}" data-ga-region="{{ v.region }}">
-            <i class="fa-solid fa-envelope me-2"></i>Email {{ v.name }}
+          <a class="btn btn-support w-100 mb-2"
+             href="mailto:{{ v.email | escape }}?subject={{ mail_subject }}"
+             data-ga-event="generate_lead" data-ga-vendor="{{ v.slug | escape }}" data-ga-region="{{ v.region | escape }}">
+            <i class="fa-solid fa-envelope me-2"></i>Email {{ v.name | escape }}
           </a>
-          <p class="vendor-email-fallback"><span>{{ v.email_user }}</span> [at] <span>{{ v.email_domain }}</span></p>
-          <a class="btn btn-outline-secondary w-100" href="{{ v.website }}" target="_blank" rel="noopener">
+          <a class="btn btn-outline-secondary w-100" href="{{ v.website | escape }}" target="_blank" rel="noopener">
             <i class="fa-solid fa-globe me-2"></i>Visit website
           </a>
         </div>
@@ -121,24 +119,17 @@ navbar:
 
 <script>
 (function () {
-  // Assemble each vendor's mailto in the browser. The raw address is never in the static
-  // HTML (light anti-scraping); the visible "user [at] domain" text is the no-JS fallback.
-  var subject = encodeURIComponent('Open Identity Platform — commercial support enquiry');
-  document.querySelectorAll('.vendor-email').forEach(function (el) {
-    var user = el.getAttribute('data-user');
-    var domain = el.getAttribute('data-domain');
-    if (!user || !domain) return;
-    el.setAttribute('href', 'mailto:' + user + '@' + domain + '?subject=' + subject);
-  });
-
   // Region filter — toggles cards; never reorders.
   var buttons = document.querySelectorAll('.region-filter .btn');
   var cols = document.querySelectorAll('.vendor-col');
   buttons.forEach(function (btn) {
     btn.addEventListener('click', function () {
       var region = btn.getAttribute('data-region');
-      buttons.forEach(function (b) { b.classList.remove('active'); });
-      btn.classList.add('active');
+      buttons.forEach(function (b) {
+        var selected = b === btn;
+        b.classList.toggle('active', selected);
+        b.setAttribute('aria-pressed', selected ? 'true' : 'false');
+      });
       cols.forEach(function (col) {
         var show = region === 'all' || col.getAttribute('data-region') === region;
         col.classList.toggle('d-none', !show);

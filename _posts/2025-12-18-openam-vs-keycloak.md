@@ -6,6 +6,7 @@ description: A detailed comparative review of OpenAM (Open Identity Platform) an
 keywords: 'OpenAM vs Keycloak, Keycloak vs OpenAM, OpenAM comparison, Keycloak comparison, open source IAM, identity access management open source, SSO solutions, single sign-on comparison, OAuth2 OIDC SAML, authentication modules, federation protocols, realms isolation, admin GUI customization, identity repositories, Kubernetes deployment IAM, Open Identity Platform, Red Hat Keycloak, IAM tools 2025, IAM tools 2026, best open source access management'
 imageurl: 'openam-og.png'
 share-buttons: true
+lastmod: 2026-07-28
 ---
 
 # OpenAM vs Keycloak

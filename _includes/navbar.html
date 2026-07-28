@@ -23,7 +23,7 @@
               <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products <span class="visually-hidden">(current)</span></a>
+            <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
             <div class="dropdown-menu">
               {% for product in site.data.products %}
                 <a class="dropdown-item" href="{{product.details_link}}">{{product.short_description}}</a>
@@ -34,13 +34,13 @@
             <a target="_blank" class="nav-link" href="https://doc.openidentityplatform.org">Documentation</a>
           </li>
           <li class="nav-item {{page.navbar.support_active}}">
-            <a class="nav-link" href="/support">Support <span class="visually-hidden">(current)</span></a>
+            <a class="nav-link" href="/support"{% if page.navbar.support_active == 'active' %} aria-current="page"{% endif %}>Support</a>
           </li>
           <li class="nav-item {{page.navbar.blog_active}}">
-            <a class="nav-link" href="/blog/">Blog <span class="visually-hidden">(current)</span></a>
+            <a class="nav-link" href="/blog/"{% if page.navbar.blog_active == 'active' %} aria-current="page"{% endif %}>Blog</a>
           </li>
           <li class="nav-item">
-            <a target="_blank" class="nav-link" href="{{site.repo_url}}"><i class="fa-brands fa-github"></i> Fork us<span class="visually-hidden">(current)</span></a>
+            <a target="_blank" class="nav-link" href="{{site.repo_url}}"><i class="fa-brands fa-github"></i> Fork us</a>
           </li>
         </ul>
       </div>

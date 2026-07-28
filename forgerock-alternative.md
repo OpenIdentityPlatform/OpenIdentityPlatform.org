@@ -13,8 +13,6 @@ faq:
     a: "Because the products share a common lineage, many concepts, configurations, and directory data map closely between ForgeRock and Open Identity Platform. The exact effort depends on your versions and customizations — read the documentation, ask the community, or engage an approved vendor for a migration assessment."
   - q: "Where do I get help migrating from ForgeRock?"
     a: "Free community help is available on GitHub Discussions, and full documentation is online. For SLAs, consulting, and hands-on migration work, independent approved vendors are listed on the Support & Services page."
-navbar:
-  support_active: ''
 ---
 
 <div class="bg-primary text-white p-4 p-md-5 rounded mb-5">

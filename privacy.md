@@ -3,11 +3,11 @@ layout: home
 title: Privacy Policy
 description: "How openidentityplatform.org handles data: a static, community-run open-source site with no accounts and no ads. Analytics stay off until you consent. What we collect, the cookies and third parties involved, and your rights."
 keywords: "privacy policy, cookies, Google Analytics, consent, Open Identity Platform, data protection, GDPR"
-lastmod: 2026-07-17
+lastmod: 2026-07-28
 ---
 <h1>Privacy Policy</h1>
 
-<p class="text-muted">Last updated: 17 July 2026</p>
+<p class="text-muted">Last updated: {{ page.lastmod | date: "%-d %B %Y" }}</p>
 
 <p>Open Identity Platform is a community-run, open-source project. Its website,
 <a href="https://www.openidentityplatform.org/" target="_blank" rel="noopener">openidentityplatform.org</a>,
@@ -21,7 +21,8 @@ third-party services we rely on, and the choices and rights you have.</p>
 <h2 class="mt-4">At a glance</h2>
 <ul>
   <li>The site is <strong>static</strong> — we don't ask you to register or submit personal data to us.</li>
-  <li>We use <strong>Google Analytics</strong> to understand usage, but only <strong>after you accept</strong> the cookie notice. It is disabled by default.</li>
+  <li>We use <strong>Google Analytics</strong> to understand usage, but only <strong>after you accept</strong> the cookie notice. Until then the Google Analytics script is never loaded, so no data at all is sent to Google.</li>
+  <li>You can <strong>change or withdraw</strong> your choice at any time from <a href="#" data-cookie-settings>cookie settings</a>.</li>
   <li>We run <strong>no advertising</strong> and never enable advertising or personalization tracking.</li>
   <li>A few third parties (a hosting provider, content delivery networks, and an optional translation widget) load as part of delivering the site and can see your IP address.</li>
   <li>Commercial-support vendors listed on the site are <strong>independent companies</strong>; contacting them is directly between you and them.</li>
@@ -43,9 +44,13 @@ independent company</strong>; we do not receive, store, or broker it. See
 
 <h3 class="h5">Analytics (only with your consent)</h3>
 <p>With your consent, we use <strong>Google Analytics 4</strong> (measurement ID
-<code>G-Q5PEKRFRH8</code>), a service provided by Google. It helps us understand, in aggregate,
-which pages and resources people find useful. When enabled, it may collect information such as
-your device and browser type, an approximate location derived from your IP address, the pages
+<code>G-Q5PEKRFRH8</code>), a service provided by Google. The Google Analytics script is only
+downloaded once you accept the cookie notice — if you decline, or simply ignore it, your browser
+never requests it and no measurement data of any kind is sent to Google Analytics. (The optional
+translation widget described under "Third-party services" is separate and unaffected.) It helps
+us understand, in
+aggregate, which pages and resources people find useful. When enabled, it may collect information
+such as your device and browser type, an approximate location derived from your IP address, the pages
 you view, referring links, and interactions on the page. Google Analytics 4 does not store your
 IP address.</p>
 <p>Beyond page views, we record a small number of non-identifying interaction events so we can
@@ -78,7 +83,7 @@ and user-agent to deliver the site and for security. This is described in the
       <tr>
         <td><code>cookie-notice-dismissed</code></td>
         <td>This site (first-party)</td>
-        <td>Remembers that you accepted the cookie notice, so it isn't shown again and analytics can be enabled.</td>
+        <td>Remembers your answer to the cookie notice — <code>true</code> if you approved, <code>false</code> if you declined — so it isn't shown again.</td>
         <td>~31 days</td>
       </tr>
       <tr>
@@ -101,15 +106,22 @@ and user-agent to deliver the site and for security. This is described in the
 opt-out browser add-on</a>. Blocking cookies may affect some functionality.</p>
 
 <h2 class="mt-4">Consent (how analytics is turned on and off)</h2>
-<p>We use Google Consent Mode v2. On your first visit:</p>
+<p>The cookie notice offers <strong>Approve</strong> and <strong>Decline</strong>, and your choice
+takes effect immediately — no page reload, no dark patterns:</p>
 <ul>
-  <li>Advertising storage, ad personalization, and ad user data are <strong>always denied</strong> — this site runs no ads and never enables them.</li>
-  <li>Analytics storage is <strong>denied by default</strong>. Google Analytics does not store cookies or collect analytics data until you click <strong>Approve</strong> in the cookie notice.</li>
+  <li>Until you approve, the Google Analytics script is <strong>not loaded at all</strong>. Declining
+      it, or ignoring the notice entirely, means no request is made for it and no measurement data
+      — not even a cookieless one — is sent.</li>
+  <li>When you approve, Google Analytics loads and Google Consent Mode v2 is set with analytics
+      storage granted.</li>
+  <li>Advertising storage, ad personalization, and ad user data are <strong>always denied</strong> —
+      this site runs no ads and never enables them.</li>
 </ul>
-<p>Because analytics is off unless you opt in, visitors who do nothing (or who use "Do Not Track"
-settings) are not tracked by Google Analytics. To <strong>withdraw consent</strong> after accepting,
-clear your cookies for this site (which removes <code>cookie-notice-dismissed</code>); analytics
-will return to its default denied state.</p>
+<p>To <strong>change or withdraw</strong> your choice at any time, open
+<a href="#" data-cookie-settings>cookie settings</a> to bring the notice back. Choosing
+<strong>Decline</strong> there stops further measurement and deletes the Google Analytics cookies
+already set in your browser. Clearing this site's cookies has the same effect and makes the notice
+appear again on your next visit.</p>
 
 <h2 class="mt-4">Third-party services</h2>
 <p>To deliver the site, a few third-party services load in your browser. As a normal part of
@@ -124,7 +136,7 @@ We do not control their processing; their own privacy policies apply.</p>
       <tr>
         <td>Google Analytics / Tag (gtag.js)</td>
         <td>Google</td>
-        <td>Usage analytics — loads only to run Analytics (active after consent)</td>
+        <td>Usage analytics — the script is downloaded only after you approve the cookie notice</td>
         <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></td>
       </tr>
       <tr>
@@ -179,7 +191,7 @@ to access, correct, delete, restrict, or object to its processing, and to data p
 Because this site itself does not create user accounts or hold a personal profile about you, most
 choices are exercised directly:</p>
 <ul>
-  <li><strong>Analytics:</strong> decline the cookie notice (or don't accept it) to keep Google Analytics off; clear cookies to withdraw a prior consent; or use the Google Analytics opt-out add-on.</li>
+  <li><strong>Analytics:</strong> decline the cookie notice (or simply ignore it) to keep Google Analytics off; open <a href="#" data-cookie-settings>cookie settings</a> to withdraw a consent you gave earlier; or use the Google Analytics opt-out add-on.</li>
   <li><strong>Google-held data:</strong> exercise rights over Analytics/Translate data with Google, under their privacy policy.</li>
   <li><strong>Hosting logs:</strong> exercise rights relating to server logs with GitHub, under their privacy statement.</li>
   <li><strong>Everything else:</strong> contact us (below) with any privacy question or request.</li>

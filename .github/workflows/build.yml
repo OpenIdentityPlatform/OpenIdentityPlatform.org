@@ -1,0 +1,30 @@
+name: build
+
+on:
+  pull_request:
+  push:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: '3.1'
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build --destination _site
+
+      # Internal links only: external URLs across 150+ posts go stale for reasons
+      # unrelated to a pull request, and would turn this into a flaky gate.
+      - name: Check internal links
+        run: |
+          gem install html-proofer -v '~> 5.0'
+          htmlproofer _site \
+            --checks Links \
+            --ignore-urls "/^https?:\/\//,/^mailto:/" \
+            --assume-extension .html

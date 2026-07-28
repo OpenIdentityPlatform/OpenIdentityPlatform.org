@@ -27,7 +27,6 @@
 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
 <link rel="icon" href="/favicon.ico" type="image/x-icon">
 
-<link rel="dns-prefetch" href="https://www.googletagmanager.com" />
 <link rel="dns-prefetch" href="https://cdn.jsdelivr.net" />
 <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com" />
 <link rel="dns-prefetch" href="https://translate.google.com" />
@@ -44,17 +43,24 @@
 <link rel="stylesheet" href="{{'/assets/css/highlight.css'}}" >
 <link rel="stylesheet" href="{{'/assets/css/main.css'}}" >
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
+<!-- Google Analytics 4 (gtag.js). Consent Mode "basic": nothing is requested from Google
+     and no data leaves the browser until the visitor approves. The choice is stored in the
+     `cookie-notice-dismissed` cookie as "true" (approved), "false" (declined) or unset (not
+     asked yet). Any element with a data-cookie-settings attribute re-opens the notice, so
+     consent can be changed or withdrawn as easily as it was given. -->
 <style>
   #cookie-notice {padding: 0.5rem 1rem; display: none; text-align: center; position: fixed; bottom: 0; width: calc(100%); background: #222; color: rgba(255,255,255,0.8); z-index: 1;}
-  #cookie-notice a {display: inline-block; cursor: pointer; margin-left: 0.5rem;}
+  #cookie-notice a, #cookie-notice button {display: inline-block; cursor: pointer; margin-left: 0.5rem;}
   @media (max-width: 767px) {
       #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 1rem;}
-      #cookie-notice a {position: relative; bottom: 4px;}
+      #cookie-notice a, #cookie-notice button {position: relative; bottom: 4px;}
   }
 </style>
-<div id="cookie-notice"><span>We would like to use third party cookies and scripts to improve the functionality of this website.</span><a id="cookie-notice-accept" class="btn btn-primary btn-sm">Approve</a><a href="/privacy" class="btn btn-primary btn-sm">More info</a></div>
+<div id="cookie-notice"><span>We would like to use third party cookies and scripts to improve the functionality of this website.</span><button type="button" id="cookie-notice-accept" class="btn btn-primary btn-sm">Approve</button><button type="button" id="cookie-notice-decline" class="btn btn-light btn-sm">Decline</button><a href="/privacy" class="btn btn-light btn-sm">More info</a></div>
 <script>
+  var GA_MEASUREMENT_ID = 'G-Q5PEKRFRH8';
+  var CONSENT_COOKIE = 'cookie-notice-dismissed';
+
   function createCookie(name,value,days) {
       var expires = "";
       if (days) {
@@ -78,33 +84,82 @@
       createCookie(name,"",-1);
   }
 
-  // GA4 with Consent Mode v2. gtag is defined globally so any page can queue events;
-  // analytics storage stays denied until the visitor approves, then consent is updated
-  // live. This site runs no ads, so the ad_* signals are never granted.
+  // gtag is defined globally so any page can queue events before the library exists.
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
 
-  var analyticsConsent = readCookie('cookie-notice-dismissed') === 'true' ? 'granted' : 'denied';
-  gtag('consent', 'default', {
-      ad_storage: 'denied',
-      ad_user_data: 'denied',
-      ad_personalization: 'denied',
-      analytics_storage: analyticsConsent
-  });
-
-  gtag('js', new Date());
-  gtag('config', 'G-Q5PEKRFRH8');
-
-  if (analyticsConsent !== 'granted') {
-      document.getElementById('cookie-notice').style.display = 'block';
-  }
-  document.getElementById('cookie-notice-accept').addEventListener("click",function() {
-      createCookie('cookie-notice-dismissed','true',31);
-      document.getElementById('cookie-notice').style.display = 'none';
-      gtag('consent', 'update', {
+  // Loads gtag.js on demand. Called only once the visitor has approved, so no request
+  // reaches Google beforehand. This site runs no ads, so the ad_* signals stay denied.
+  var analyticsLoaded = false;
+  function loadAnalytics() {
+      if (analyticsLoaded) {
+          gtag('consent', 'update', { analytics_storage: 'granted' });
+          return;
+      }
+      analyticsLoaded = true;
+      gtag('consent', 'default', {
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied',
           analytics_storage: 'granted'
       });
+      gtag('js', new Date());
+      gtag('config', GA_MEASUREMENT_ID);
+      var tag = document.createElement('script');
+      tag.async = true;
+      tag.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_MEASUREMENT_ID;
+      document.head.appendChild(tag);
+  }
+
+  // Withdrawal: stop measuring and clear the analytics cookies Google has already set.
+  function disableAnalytics() {
+      if (analyticsLoaded) {
+          gtag('consent', 'update', { analytics_storage: 'denied' });
+      }
+      var host = document.location.hostname;
+      var labels = host.split('.');
+      var domains = ['', '; domain=' + host, '; domain=.' + host];
+      if (labels.length > 2) {
+          domains.push('; domain=.' + labels.slice(-2).join('.'));
+      }
+      var cookies = document.cookie.split(';');
+      for (var i = 0; i < cookies.length; i++) {
+          var name = cookies[i].split('=')[0].replace(/^\s+/, '');
+          if (name.indexOf('_ga') !== 0 && name.indexOf('_gid') !== 0) continue;
+          for (var d = 0; d < domains.length; d++) {
+              document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/' + domains[d];
+          }
+      }
+  }
+
+  var cookieNotice = document.getElementById('cookie-notice');
+  function showCookieNotice() { cookieNotice.style.display = 'block'; }
+  function hideCookieNotice() { cookieNotice.style.display = 'none'; }
+
+  var storedConsent = readCookie(CONSENT_COOKIE);
+  if (storedConsent === 'true') {
+      loadAnalytics();
+  } else if (storedConsent !== 'false') {
+      showCookieNotice();
+  }
+
+  document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+      createCookie(CONSENT_COOKIE,'true',31);
+      hideCookieNotice();
+      loadAnalytics();
+  });
+  document.getElementById('cookie-notice-decline').addEventListener("click",function() {
+      createCookie(CONSENT_COOKIE,'false',31);
+      hideCookieNotice();
+      disableAnalytics();
+  });
+
+  // "Manage cookie settings" links (see /privacy) re-open the notice.
+  document.addEventListener('click', function (e) {
+      var trigger = e.target.closest ? e.target.closest('[data-cookie-settings]') : null;
+      if (!trigger) return;
+      e.preventDefault();
+      showCookieNotice();
   });
 
 </script>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-Q5PEKRFRH8"></script>
