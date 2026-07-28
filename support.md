@@ -3,7 +3,7 @@ layout: home
 title: "Commercial Support & Services"
 description: "Get support for OpenAM, OpenDJ, OpenIG, OpenIDM and OpenICF. Free community help on GitHub, plus SLAs, consulting, implementation and migration from approved independent vendors."
 keywords: "Open Identity Platform support, OpenAM commercial support, OpenDJ enterprise support, OpenAM SLA, OpenAM consulting, OpenIG support, OpenIDM support, IAM support vendors, OpenAM migration services, ForgeRock migration support"
-lastmod: 2026-07-17
+lastmod: 2026-07-28
 service_schema: true
 faq:
   - q: "Is Open Identity Platform free to use?"

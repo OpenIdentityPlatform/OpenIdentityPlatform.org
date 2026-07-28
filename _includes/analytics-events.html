@@ -1,16 +1,19 @@
 <!-- GA4 conversion events. Delegated listener: any element with data-ga-event fires
      that GA4 event, passing its remaining data-ga-* attributes as parameters
-     (data-ga-vendor -> vendor, data-ga-location -> location, ...). gtag is defined
-     in header.html with Consent Mode v2; when analytics consent is denied gtag drops
-     the hit, so no extra gating is needed here. Runs in the capture phase so the event
-     is queued before same-page navigation unloads the document. -->
+     (data-ga-vendor -> vendor, data-ga-location -> location, ...).
+
+     Consent Mode is "basic" (see cookie-notice.html): until the visitor approves,
+     gtag.js is never downloaded, so an event has no destination — gtag() would only
+     append it to the in-memory dataLayer queue. We therefore gate on analyticsLoaded
+     rather than relying on the tag to discard the hit. Runs in the capture phase so
+     the event is queued before same-page navigation unloads the document. -->
 <script>
 (function () {
   document.addEventListener('click', function (e) {
     var el = e.target.closest ? e.target.closest('[data-ga-event]') : null;
     if (!el) return;
     var name = el.getAttribute('data-ga-event');
-    if (!name || typeof gtag !== 'function') return;
+    if (!name || !window.analyticsLoaded) return;
     var params = {};
     for (var i = 0; i < el.attributes.length; i++) {
       var attr = el.attributes[i];
