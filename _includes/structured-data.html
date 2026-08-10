@@ -16,6 +16,48 @@
 }
 </script>
 
+{% comment %}Service schema on the support page{% endcomment %}
+{%- if page.service_schema -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Commercial support and consulting",
+  "name": {{ page.title | jsonify }},
+  "description": {{ page_description | jsonify }},
+  "url": "{{ page_url }}",
+  "provider": {
+    "@type": "Organization",
+    "name": "{{ site.title }}",
+    "url": "{{ site.url }}"
+  },
+  "areaServed": ["Europe", "Americas", "Asia-Pacific", "CIS"]
+}
+</script>
+{%- endif -%}
+
+{% comment %}FAQ schema on pages that declare a faq list{% endcomment %}
+{%- if page.faq -%}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {%- for item in page.faq -%}
+    {
+      "@type": "Question",
+      "name": {{ item.q | jsonify }},
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": {{ item.a | jsonify }}
+      }
+    }{%- unless forloop.last -%},{%- endunless -%}
+    {%- endfor -%}
+  ]
+}
+</script>
+{%- endif -%}
+
 {% comment %}Product schema on product pages{% endcomment %}
 {%- if page.product -%}
 {%- assign product_data = site.data.products | where: "product", page.product | first -%}

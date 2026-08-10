@@ -1,12 +1,47 @@
 <footer class="footer bg-primary text-white">
   <div class="container">
-    <div class="row">
-    <div class="col-8">
-      <a class="text-white text-center align-middle" href="{{site.repo_url}}">&copy;  {{site.title}}</a>
+    <div class="row footer-nav g-4 pb-2">
+      <div class="col-6 col-md-3">
+        <div class="footer-heading">Products</div>
+        <ul class="footer-list">
+          {% for product in site.data.products %}
+          <li><a href="{{ product.details_link }}">{{ product.name }}</a></li>
+          {% endfor %}
+        </ul>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="footer-heading">Resources</div>
+        <ul class="footer-list">
+          <li><a href="https://doc.openidentityplatform.org/" rel="noopener">Documentation</a></li>
+          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/#projects">Downloads</a></li>
+          <li><a href="/privacy">Privacy</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="footer-heading">Community</div>
+        <ul class="footer-list">
+          <li><a href="https://github.com/orgs/OpenIdentityPlatform/discussions" rel="noopener">Discussions</a></li>
+          <li><a href="{{ site.repo_url }}" rel="noopener">GitHub organization</a></li>
+          <li><a href="https://github.com/orgs/OpenIdentityPlatform/repositories" rel="noopener">Contribute</a></li>
+        </ul>
+      </div>
+      <div class="col-6 col-md-3">
+        <div class="footer-heading">Support</div>
+        <ul class="footer-list">
+          <li><a href="/support">Support &amp; Services</a></li>
+          <li><a href="/forgerock-alternative">ForgeRock Migration</a></li>
+        </ul>
+      </div>
     </div>
+    <div class="row align-items-center footer-bottom pt-3">
+      <div class="col-8">
+        <a class="text-white align-middle" href="{{site.repo_url}}">&copy; {{site.title}}</a>
+        <span class="footer-meta d-none d-md-inline">&middot; {{ site.data.products | size }} open-source products &middot; CDDL licensed</span>
+      </div>
       <div class="col-4 text-end">
         <a class="text-white pe-1" href="https://github.com/orgs/OpenIdentityPlatform/discussions" aria-label="Open Identity Platform Community Discussions"><svg style="fill:white;" height="36" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M8.501 4.001H10.5V24H8.501V4.001zm6.999 0V24h-2V4.001h2zM3.5 0h2.001v15H3.5V0zm15 4.001h2V15h-2V4.001z"/></svg></a>
-        <span target="_blank"  class="align-middle" style="font-size: 36px; display: inline-block;" >
+        <span class="align-middle" style="font-size: 36px; display: inline-block;">
           <a target="_blank" href="https://github.com/OpenIdentityPlatform" aria-label="Open Identity Platform GitHub"><i class="fa-brands fa-github"></i></a>
         </span>
       </div>

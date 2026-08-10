@@ -1,0 +1,15 @@
+<!-- Commercial support CTA band. Built from Bootstrap utilities + the site's navy .bg-primary.
+     data-ga-* attributes are inert until the deferred GA event-tracking phase. -->
+<div class="support-cta bg-primary text-white p-4 rounded my-4">
+  <div class="row align-items-center">
+    <div class="col-md-8 mb-3 mb-md-0">
+      <h3 class="h5 mb-1">Running {{ page.reponame | default: "Open Identity Platform" }} in production?</h3>
+      <p class="mb-0">Community help is free on GitHub. When you need SLAs, consulting, implementation, or migration, independent approved vendors are ready.</p>
+    </div>
+    <div class="col-md-4 text-md-end">
+      <a href="/support" class="btn btn-support" data-ga-event="support_cta_click" data-ga-location="product_{{ page.product | default: page.reponame | downcase }}">
+        <i class="fa-solid fa-headset me-2"></i>Support options
+      </a>
+    </div>
+  </div>
+</div>

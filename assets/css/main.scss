@@ -108,8 +108,7 @@ img {
 
 .footer {
   width: 100%;
-  height: 60px;
-  line-height: 60px;
+  padding: 2.5rem 0 1.25rem;
 }
 
 
@@ -127,6 +126,15 @@ th {
 td {
   padding: 5px;
   border: 1px solid black;
+}
+
+.table-bordered {
+  --bs-table-border-color: #dee2e6;
+  th,
+  td,
+  tr {
+    border-color: #dee2e6;
+  }
 }
 
 a.blogpost  {
@@ -188,4 +196,146 @@ a.blogpost  {
     background-color: $color4;
     border-color: $color4;
   }
+}
+
+
+// ============================================================
+// Support page (/support)
+// ============================================================
+
+.support-hero h1 {
+  margin-bottom: 0.5rem;
+}
+
+.btn-support {
+  background-color: $color5;
+  border-color: $color5;
+  color: #fff;
+
+  &:hover, &:focus {
+    background-color: #6f008f;
+    border-color: #6f008f;
+    color: #fff;
+  }
+}
+
+.region-filter {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+
+  .btn {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    color: $color1;
+    font-weight: 600;
+    font-size: 0.85rem;
+    padding: 0.35rem 1rem;
+    border-radius: 999px;
+
+    &:hover {
+      border-color: $color5;
+      color: $color5;
+    }
+
+    &.active {
+      background-color: $color5;
+      border-color: $color5;
+      color: #fff;
+    }
+  }
+}
+
+.region-badge {
+  display: inline-block;
+  align-self: flex-start;
+  background: rgba($color5, 0.1);
+  border: 1px solid rgba($color5, 0.25);
+  border-radius: 8px;
+  padding: 0.15rem 0.6rem;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: $color5;
+}
+
+.vendor-facts {
+  margin: 0.5rem 0 1rem;
+
+  li {
+    font-size: 0.88rem;
+    color: #495057;
+    line-height: 1.7;
+
+    i { color: $color4; width: 1.1rem; }
+  }
+}
+
+.vendor-neutrality-note {
+  font-size: 0.9rem;
+  color: #6c757d;
+  line-height: 1.6;
+  max-width: 820px;
+}
+
+.vendor-tz-ribbon {
+  background: $color5;
+  color: #fff;
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  text-align: center;
+  border-radius: 6px;
+  padding: 0.2rem 0.5rem;
+  margin-bottom: 0.75rem;
+}
+// ForgeRock migration cross-links
+.fr-callout {
+  background: $color3;
+  border-left: 4px solid $color2;
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  font-size: 0.92rem;
+  color: $color1;
+  margin-bottom: 1.5rem;
+
+  i { color: $color2; }
+  a { font-weight: 600; }
+}
+
+.footer-nav {
+  .footer-heading {
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li { margin-bottom: 0.4rem; }
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 0.9rem;
+      opacity: 0.9;
+
+      &:hover { opacity: 1; text-decoration: underline; }
+    }
+  }
+}
+
+.footer-bottom {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+  font-size: 0.9rem;
+
+  .footer-meta { color: rgba(255, 255, 255, 0.6); }
 }

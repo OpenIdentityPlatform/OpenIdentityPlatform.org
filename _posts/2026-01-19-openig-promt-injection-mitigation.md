@@ -12,7 +12,7 @@ share-buttons: true
 
 ## Introduction
 
-In this article, we will configure protection against prompt injection in AI systems using practical examples using the open source gateway [OpenIG](github.com/OpenIdentityPlatform/OpenIG).
+In this article, we will configure protection against prompt injection in AI systems using practical examples using the open source gateway [OpenIG](https://github.com/OpenIdentityPlatform/OpenIG).
 
 Proxying requests to an LLM through a special gateway has several advantages:
 

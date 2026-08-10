@@ -41,6 +41,8 @@ modify the target application or the container that it runs in.
 
  {% include product-links.html %}
 
+ {% include support-cta.html %}
+
  {% include product-about.html %}
 
  {% include contributors.html %}

@@ -33,7 +33,7 @@ navbar:
       </li>
     {% else %} 
       <li class="page-item disabled">
-        <a class="page-link">Back</a>
+        <span class="page-link">Back</span>
       </li>
     {% endif %}
     {% for page in (1..paginator.total_pages) %}
@@ -53,7 +53,7 @@ navbar:
       </li>
     {% else %}
       <li class="page-item disabled">
-        <a class="page-link">Next</a>
+        <span class="page-link">Next</span>
       </li>
     {% endif %}    
   </ul>

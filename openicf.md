@@ -40,6 +40,8 @@ This project is licensed under the [Common Development and Distribution License 
 * [groovy-connector](https://github.com/OpenIdentityPlatform/OpenICF/releases) 
 * [kerberos-connector](https://github.com/OpenIdentityPlatform/OpenICF/releases) 
 
+ {% include support-cta.html %}
+
  {% include contributors.html %}
 
  {% include sponsors.html %}
