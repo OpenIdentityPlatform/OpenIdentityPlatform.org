@@ -1,4 +1,5 @@
 <meta charset="utf-8">
+<meta name="google-site-verification" content="gB-OZuT18mmNEL-k5UNMHmNWQX5Wv46GnWWs1XZxZeE" />
 {% capture og_url %}{{ site.url }}{{ page.url | remove: "index.html" | remove: ".html" }}{% endcapture %}
 {% capture og_image %}{%- if page.imageurl -%}{{ site.url }}/assets/img/{{page.imageurl}}{% else %}https://avatars2.githubusercontent.com/u/30845478?s=280&amp;v=4{%- endif -%}{% endcapture %}
 {% capture page_title %}{%- if page.title -%}{{ page.title | smartify }}{%- unless page.landing == true %} · {{ site.title | smartify }}{%- endunless -%}{%- else -%}{{ site.title | smartify }} · {{ site.description | smartify }}{%- endif -%}{% endcapture %}
