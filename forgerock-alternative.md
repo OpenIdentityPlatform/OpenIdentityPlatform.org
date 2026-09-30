@@ -1,6 +1,6 @@
 ---
 layout: home
-title: "ForgeRock Alternative & Migration Path — Open Identity Platform"
+title: "ForgeRock Alternative & Migration Path"
 description: "A free, open-source alternative to ForgeRock. Open Identity Platform continues the OpenAM, OpenDJ, OpenIDM, OpenIG and OpenICF line under the CDDL license — no license fees, no lock-in. Map your ForgeRock stack and plan a migration."
 keywords: "ForgeRock alternative, ForgeRock open source alternative, ForgeRock migration, migrate from ForgeRock, ForgeRock to open source, ForgeRock AM alternative, ForgeRock DS alternative, ForgeRock IDM alternative, ForgeRock IG alternative, OpenAM ForgeRock, OpenDJ ForgeRock, ForgeRock end of life, ForgeRock replacement, IAM migration"
 lastmod: 2026-07-17
