@@ -1,7 +1,7 @@
 ---
 layout: home
-title: "OpenIDM: Active Directory Identity Management"
-landing-title2: "OpenIDM: Active Directory Identity Management"
+title: "Configuring OpenIDM for Synchronization Between Active Directory and OpenDJ"
+landing-title2: "Configuring OpenIDM for Synchronization Between Active Directory and OpenDJ"
 description: "In this article we will configure two-way synchronization between Active Directory and OpenDJ. Changes made in Active Directory will be synchronized to OpenDJ and vice versa."
 keywords: 'OpenIDM, Active Directory, Identity Management, OpenDJ'
 imageurl: 'openidm-og.png'

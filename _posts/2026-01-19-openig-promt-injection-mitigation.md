@@ -6,6 +6,8 @@ description: Learn how to prevent prompt injection in AI systems using an API ga
 keywords: 'prompt injection mitigation, llm security, api gateway ai, openig, ai guardrails, prompt injection prevention, llm firewall, ai security architecture, ollama llm, secure ai apis'
 imageurl: 'openig-og.png'
 share-buttons: true
+products:
+- openig
 ---
 
 # Prompt Injection Mitigation in AI Systems Using API Gateway

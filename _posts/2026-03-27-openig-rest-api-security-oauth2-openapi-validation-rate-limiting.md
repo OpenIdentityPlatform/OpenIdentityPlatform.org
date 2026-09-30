@@ -6,6 +6,9 @@ description: Learn how to secure a REST API using OpenIG, OpenAM, and Docker —
 keywords: 'OpenIG, OpenAM, REST API security, OAuth 2.0, API gateway, OpenAPI validation, Swagger validation, API rate limiting, throttling, Spring Pet Clinic, Docker Compose, API authorization, Bearer token, access token, resource server filter, mass assignment protection, API security tutorial, identity gateway, open source IAM, request validation, response validation'
 imageurl: 'openig-og.png'
 share-buttons: true
+products:
+- openig
+- openam
 ---
 
 # REST API Security: OAuth OIDC Authorization, OpenAPI Swagger Compliance Validation, Service Level Monitoring
