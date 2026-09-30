@@ -4,7 +4,7 @@ landing-title: "OpenICF 1.7.3 Released"
 landing-title2: "Open Identity Connector Framework (OpenICF) 1.7.3 Released"
 description: Open Identity Community just released OpenICF v1.7.3
 keywords: 'OpenICF, Identity Management, Open Identity Connector Framework, Connector Framework'
-imageurl: 'openicf-logo.png'
+imageurl: 'openicf-og.png'
 share-buttons: true
 canonical: https://github.com/OpenIdentityPlatform/OpenICF/releases/tag/1.7.3
 

@@ -4,7 +4,7 @@ landing-title: "OpenICF 2.0.4 Released"
 landing-title2: "OpenICF 2.0.4 Released"
 description: OpenICF 2.0.4 stabilizes the WebSocket connector server and the batch API, runs the LDAP connector tests against an embedded OpenDJ, modernizes the Docker images and updates OpenDJ to 5.1.2
 keywords: 'OpenICF, Identity Connector Framework, 2.0.4, WebSocket, connector server, batch API, LDAP connector, embedded OpenDJ, Jetty, Grizzly, Docker, CodeQL, OpenDJ 5.1.2'
-imageurl: 'openicf-logo.png'
+imageurl: 'openicf-og.png'
 share-buttons: true
 ---
 # OpenICF 2.0.4 Released
