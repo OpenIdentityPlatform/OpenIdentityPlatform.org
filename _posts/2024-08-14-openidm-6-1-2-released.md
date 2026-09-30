@@ -6,7 +6,6 @@ description: Open Identity Community just released OpenIDM v6.1.2
 keywords: 'OpenIDM, Identity Management, Open Identity Platform'
 imageurl: 'openidm-logo.png'
 share-buttons: true
-canonical: https://github.com/OpenIdentityPlatform/OpenIDM/releases/tag/6.1.2
 ---
 # OpenIDM 6.1.2 Released
 

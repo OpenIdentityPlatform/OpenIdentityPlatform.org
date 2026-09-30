@@ -6,7 +6,6 @@ description: Open Identity Community just released OpenICF v1.7.1
 keywords: 'OpenICF, Identity Management, Open Identity Connector Framework, Connector Framework'
 imageurl: 'openicf-logo.png'
 share-buttons: true
-canonical: https://github.com/OpenIdentityPlatform/OpenICF/releases/tag/1.7.1
 
 ---
 # OpenICF 1.7.1 Released
