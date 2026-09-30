@@ -4,6 +4,7 @@ title: "Adaptive Authentication"
 landing-title2: "Adaptive Authentication: How to Improve Security Without Annoying Users"
 description: "In the following article we cover basic approach to adaptive authentication"
 keywords: 'authentication'
+imageurl: 'oip-og.png'
 share-buttons: true
 ---
 

@@ -1,7 +1,8 @@
 ---
 layout: home
-landing-title: "Welcome to Open Identity Platform Community"
-landing-title2: "Open Identity Platform Community is open-source community organization, hosted on <a href=\"https://github.com/OpenIdentityPlatform\">GitHub</a>"
+landing-title: "Аутентификация через госуслуги (ЕСИА)"
+landing-title2: "Аутентификация через госуслуги (ЕСИА)"
+imageurl: 'oip-og.png'
 share-buttons: true
 ---
 # Аутентификация через госуслуги (ЕСИА)

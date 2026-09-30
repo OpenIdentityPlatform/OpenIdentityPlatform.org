@@ -4,6 +4,7 @@ title: "Using Large Language Models (LLMs) in Access Management"
 landing-title2: "Using Large Language Models (LLMs) in Access Management"
 description: "This article gives a basic understanding about Single Sign-On technology"
 keywords: 'Single Sign-On, SSO, AI, LLM, access management, large launguage models, authentication, authorization, monitoring, audit'
+imageurl: 'oip-og.png'
 share-buttons: true
 
 ---

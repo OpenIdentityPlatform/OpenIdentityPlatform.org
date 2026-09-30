@@ -4,6 +4,7 @@ title: "Using LLM in Access Management with OpenAM and Spring AI as an example."
 landing-title2: "Using LLM in Access Management with OpenAM and Spring AI as an example."
 description: "In this article, we will deploy an access control system and request an LLM to analyze the configuration, returning recommendations."
 keywords: 'OpenAM, LLM, large launguage models, audit,  OpenAM security audit, Spring AI authentication, LLM access control analysis, Access management security, OpenAM configuration audit'
+imageurl: 'openam-og.png'
 share-buttons: true
 products: 
 - openam

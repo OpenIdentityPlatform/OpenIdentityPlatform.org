@@ -4,6 +4,7 @@ title: "Stateful vs Stateless Authentication"
 landing-title2: "Stateful vs Stateless Authentication"
 description: "Stateful vs Stateless Authentication Comparsion"
 keywords: ''
+imageurl: 'oip-og.png'
 share-buttons: true
 ---
 <h1>Stateful vs Stateless Authentication</h1>

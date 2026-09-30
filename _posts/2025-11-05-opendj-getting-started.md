@@ -4,6 +4,7 @@ landing-title: "Getting Started with OpenDJ"
 landing-title2: "Getting Started with OpenDJ"
 description: "Step-by-step guide with CLI commands for quick OpenDJ setup."
 keywords: 'OpenDJ, OpenDJ tutorial, OpenDJ installation, LDAP server setup, OpenIdentityPlatform, generate LDIF data, import-ldif, ldapsearch, directory server, Java LDAP'
+imageurl: 'opendj-og.png'
 share-buttons: true
 products: 
 - opendj

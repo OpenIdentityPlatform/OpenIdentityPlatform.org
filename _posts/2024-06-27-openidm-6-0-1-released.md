@@ -4,7 +4,7 @@ landing-title: "OpenIDM 6.0.1 Released"
 landing-title2: "Open Identity Management (OpenIDM) 6.0.1 Released"
 description: Open Identity Community just released OpenIDM v6.0.1
 keywords: 'OpenIDM, Identity Management, Open Identity Platform, Docker'
-imageurl: 'openidm-logo.png'
+imageurl: 'openidm-og.png'
 share-buttons: true
 canonical: https://github.com/OpenIdentityPlatform/OpenIDM/releases/tag/6.0.1
 ---

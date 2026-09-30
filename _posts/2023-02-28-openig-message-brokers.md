@@ -4,6 +4,7 @@ title: "How to Integrate OpenIG and Message Brokers"
 landing-title2: "How to Integrate OpenIG and Message Brokers"
 description: "How to send and receive message broker messages to http and backwards"
 keywords: 'apache kafka, ibm mq, message broker, openig, gateway, http'
+imageurl: 'openig-og.png'
 share-buttons: true
 products: 
 - openig
