@@ -7,6 +7,8 @@ keywords: 'OpenAM, two-factor authentication, 2FA, TOTP, Microsoft Authenticator
 imageurl: 'openam-og.png'
 share-buttons: true
 
+products:
+- openam
 ---
 # Using Microsoft Authenticator with OpenAM
 

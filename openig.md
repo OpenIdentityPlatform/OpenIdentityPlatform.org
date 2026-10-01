@@ -8,7 +8,7 @@ product: openig
 video: ForgeRock+OpenIG 
 links: 
     - title: Donate
-      url: https://opencollective.com/openidm/contribute
+      url: https://opencollective.com/openig/contribute
 
 ---
 <div class="container text-center mb-4">

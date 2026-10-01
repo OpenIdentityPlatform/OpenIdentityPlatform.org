@@ -7,6 +7,8 @@ keywords: 'OpenAM vs Keycloak, Keycloak vs OpenAM, OpenAM comparison, Keycloak c
 imageurl: 'openam-og.png'
 share-buttons: true
 lastmod: 2026-07-28
+products:
+- openam
 ---
 
 # OpenAM vs Keycloak

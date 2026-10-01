@@ -6,6 +6,8 @@ description: "In this article, we will configure Active Directory identity manag
 keywords: 'OpenIDM, Active Directory, Identity Management, reset password'
 imageurl: 'openidm-og.png'
 share-buttons: true
+products:
+- openidm
 ---
 
 <h1>OpenIDM: Active Directory Identity Management</h1>

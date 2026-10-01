@@ -7,6 +7,8 @@ keywords: 'OpenAM, two-factor authentication, 2FA, TOTP, Google Authenticator, a
 imageurl: 'openam-og.png'
 share-buttons: true
 
+products:
+- openam
 ---
 # Using Google Authenticator with OpenAM
 

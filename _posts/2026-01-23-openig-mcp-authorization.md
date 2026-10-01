@@ -6,6 +6,9 @@ description: Learn how to configure MCP server authorization using OpenIG. Restr
 keywords: 'CP server, Model Context Protocol, OpenIG, OpenAM, MCP authorization, MCP security, MCP tools filter, OpenIdentityPlatform, JSON-RPC, IAM, API security, DevSecOps, Zero Trust'
 imageurl: 'openig-og.png'
 share-buttons: true
+products:
+- openig
+- openam
 ---
 
 # Configuring Authorization for Access to an MCP Server Using OpenIG
