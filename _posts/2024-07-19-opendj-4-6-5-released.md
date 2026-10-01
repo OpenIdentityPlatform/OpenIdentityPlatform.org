@@ -6,7 +6,6 @@ description: Open Identity Community released OpenDJ v4.6.5
 keywords: 'OpenDJ, Directory Service, Directory Services, LDAP, Open Identity Platform, OpenIDM'
 imageurl: 'opendj-og.png'
 share-buttons: true
-canonical: https://github.com/OpenIdentityPlatform/OpenDJ/releases/tag/4.6.5
 ---
 # OpenDJ 4.6.5 Released
 [Download](https://github.com/OpenIdentityPlatform/OpenDJ/releases/tag/4.6.5)

@@ -5,7 +5,6 @@ landing-title2: "OpenAM 15.0.1 Released"
 description: Open Identity Platform Community just released OpenAM v15.0.1
 keywords: 'OpenAM, Access Management, Authentication, SSO, Single Sign On, Open Identity Platform, Release'
 imageurl: 'openam-og.png'
-canonical: https://github.com/OpenIdentityPlatform/OpenAM/releases/tag/15.0.1
 ---
 # OpenAM 15.0.1 Released
 

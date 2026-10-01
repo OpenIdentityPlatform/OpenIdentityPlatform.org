@@ -6,7 +6,6 @@ description: Open Identity Community released OpenDJ v4.7.0
 keywords: 'OpenDJ, Directory Service, Directory Services, LDAP, Open Identity Platform, Cassandra, Relax Rules, alias dereferencing, release'
 imageurl: 'opendj-og.png'
 share-buttons: true
-canonical: https://github.com/OpenIdentityPlatform/OpenDJ/releases/tag/4.7.0
 ---
 # OpenDJ 4.7.0 Released
 [Download](https://github.com/OpenIdentityPlatform/OpenDJ/releases/tag/4.7.0)

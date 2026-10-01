@@ -5,7 +5,6 @@ landing-title2: "OpenIG 5.3.0 Released"
 description: Open Identity Community just released OpenIG v5.3.0.
 keywords: 'OpenIG, API Gateway, Identity Gateway'
 imageurl: 'openig-og.png'
-canonical: https://github.com/OpenIdentityPlatform/OpenIG/releases/tag/5.3.0
 ---
 # OpenIG 5.3.0 Released
 [Download](https://github.com/OpenIdentityPlatform/OpenIG/releases/tag/5.3.0)
