@@ -26,7 +26,7 @@ layout: null
     </url>
   {% endfor %}
   {% for page in site.pages %}
-    {% if page.layout != null and page.layout != empty and page.layout != "redirect" %}
+    {% if page.layout != null and page.layout != empty and page.layout != "redirect" and page.sitemap != false %}
       <url>
         <loc>{{ site.url }}{{ page.url | remove: "index.html" | remove: ".html" }}</loc>
         {% if page.lastmod %}
