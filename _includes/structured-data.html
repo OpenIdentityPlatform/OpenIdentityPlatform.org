@@ -116,7 +116,7 @@
       "url": "{{ site.image }}"
     }
   },
-  {%- if page.imageurl %}
+  {%- if page.imageurl and page.imageurl != "" %}
   "image": "{{ site.url }}/assets/img/{{ page.imageurl }}",
   {%- else %}
   "image": "{{ site.image }}",
