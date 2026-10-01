@@ -4,6 +4,7 @@ title: "OpenAM Monitoring Using Prometheus"
 landing-title2: "How to Get OpenAM Metrics in Prometheus"
 description: "How to setup OpenAM metrics to monitor in Prometheus"
 keywords: 'prometheus, openam, snmp, monitoring'
+imageurl: 'openam-og.png'
 share-buttons: true
 products: 
 - openam

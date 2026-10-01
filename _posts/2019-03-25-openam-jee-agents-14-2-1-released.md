@@ -4,6 +4,7 @@ landing-title: "OpenAM-JEE-Agents 4.1.2 Released"
 landing-title2: "OpenAM-JEE-Agents 4.1.2 Released"
 description: Open Identity Community just released OpenAM-JEE-Agents 4.1.2
 keywords: 'OpenAM, Policy Agent, Access Management, Authentication, Authorization, SSO, Single Sign On, Open Identity Platform, Release, Docker, OpenShift'
+imageurl: 'openam-og.png'
 ---
 # OpenAM-JEE-Agents 4.1.2 Released
 [Download](https://github.com/OpenIdentityPlatform/OpenAM-JEE-Agents/releases/tag/4.1.2)

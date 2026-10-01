@@ -4,6 +4,7 @@ title: "Single Sign-On with OpenAM and OpenIG: Practical Implementation Examples
 landing-title2: "Single Sign-On with OpenAM and OpenIG: Practical Implementation Examples"
 description: "This article gives a basic understanding about Single Sign-On technology"
 keywords: 'Single Sign-On, SSO, seamless authentication, enterprise authentication, client services authentication,SSO implementation, Kerberos protocol, authorization gateway, centralized access management, user experience, authentication security, corporate applications, digital services security'
+imageurl: 'openam-og.png'
 share-buttons: true
 products: 
 - openam

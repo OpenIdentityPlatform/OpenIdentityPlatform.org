@@ -4,6 +4,7 @@ title: "How to Protect WebSocket Connection with OpenAM and OpenIG"
 landing-title2: "How to Protect WebSocket Connection with OpenAM and OpenIG"
 description: "How to setup OpenAM and OpenIG stack to protect WebSocket connection"
 keywords: 'openam, openig, gateway, websocket'
+imageurl: 'openam-og.png'
 share-buttons: true
 products: 
 - openam

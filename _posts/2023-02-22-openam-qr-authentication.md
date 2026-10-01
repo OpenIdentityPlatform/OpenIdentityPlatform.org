@@ -4,6 +4,7 @@ title: "OpenAM QR Authentication"
 landing-title2: "How QR authentication works and how to setup it in OpenAM"
 description: "How QR authentication works and how to setup it in OpenAM"
 keywords: 'authentication, qr'
+imageurl: 'openam-og.png'
 share-buttons: true
 products: 
 - openam

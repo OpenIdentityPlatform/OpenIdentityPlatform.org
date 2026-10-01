@@ -4,7 +4,7 @@ title: "OpenDJ Tips and How-Tos"
 landing-title2: "OpenDJ Tips and How-Tos"
 description: Some useful commands one could use to manage OpenDJ
 keywords: 'OpenDJ, Directory Service, how to, tips, replication, setup'
-imageurl: 'opendj-logo.png'
+imageurl: 'opendj-og.png'
 products: 
 - opendj
 ---

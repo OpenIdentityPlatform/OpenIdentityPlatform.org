@@ -4,6 +4,7 @@ landing-title: "OpenIDM 7.1.0 Released"
 landing-title2: "OpenIDM 7.1.0 Released"
 description: OpenIDM 7.1.0 addresses critical security vulnerabilities including CVE-2026-1605, CVE-2026-33227, CVE-2026-39304, CVE-2018-1294, CVE-2026-42198, and adds new features
 keywords: 'OpenIDM, identity management, release, 7.1.0, security update, CVE-2026-1605, CVE-2026-33227, CVE-2026-39304, CVE-2018-1294, CVE-2026-42198'
+imageurl: 'openidm-og.png'
 share-buttons: true
 ---
 # OpenIDM 7.1.0 Released

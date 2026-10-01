@@ -4,6 +4,7 @@ landing-title: "OpenIG Getting Started: How To Protect Web Services with Open Id
 landing-title2: "OpenIG Getting Started: How To Protect Web Services with Open Identity Gateway"
 description: "Secure web services with OpenIG: Learn to proxy, restrict HTTP methods, validate headers, add security headers, and enforce JWT auth & role-based access."
 keywords: 'OpenIG, OpenIG tutorial, secure web services, Open Identity Gateway, API gateway security, JWT validation, HTTP method restriction, security headers, X-Frame-Options, X-Content-Type-Options, REST API security, OWASP security, Docker OpenIG, authentication check, authorization check, OpenIdentityPlatform'
+imageurl: 'openig-og.png'
 share-buttons: true
 products: 
 - openig
