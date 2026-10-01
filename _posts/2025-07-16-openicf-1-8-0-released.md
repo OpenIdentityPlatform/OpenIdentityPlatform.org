@@ -4,6 +4,7 @@ landing-title: "Open Identity Connector Framework (OpenICF) 1.8.0 Released"
 landing-title2: "Open Identity Connector Framework (OpenICF) 1.8.0 Released"
 description: Open Identity Community released OpenICF 1.8.0
 keywords: 'OpenICF, Open Identity Connector Framework, Identity Management, Connector Framework, Security, Provisioning'
+imageurl: 'openicf-og.png'
 share-buttons: true
 
 ---
