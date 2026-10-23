@@ -7,15 +7,15 @@ on:
 
 jobs:
   build:
-    # Pinned: ubuntu-latest now resolves to ubuntu-26.04, and ruby/ruby-builder has no
-    # Ruby 3.1 build for that image. Unpin once ruby-version is raised to a release that has one.
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
+      # Same Ruby series as the GitHub Pages build (https://pages.github.com/versions.json).
+      # Newer runner images only get the latest patch of each series, so keep the series form.
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.1'
+          ruby-version: '3.3'
           bundler-cache: true
 
       - name: Build site
