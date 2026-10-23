@@ -184,8 +184,4 @@ Links will appear here as the posts are published.
 
 ## Frequently Asked Questions
 
-{% for item in page.faq %}
-### {{ item.q }}
-
-{{ item.a }}
-{% endfor %}
+{% include faq.html %}
