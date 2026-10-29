@@ -136,15 +136,4 @@ faq:
 </div>
 
 <h2 class="mb-3">Frequently asked questions</h2>
-<div class="row g-4 mb-4">
-  {% for item in page.faq %}
-  <div class="col-md-6">
-    <div class="card h-100">
-      <div class="card-body">
-        <h3 class="h6 card-title">{{ item.q }}</h3>
-        <p class="card-text mb-0">{{ item.a }}</p>
-      </div>
-    </div>
-  </div>
-  {% endfor %}
-</div>
+{% include faq.html %}
