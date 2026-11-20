@@ -1,5 +1,7 @@
 ---
 ---
+/* Portions Copyright 2026 3A Systems, LLC. */
+
 @import 'colors.scss';
 
 @import 'widgets.scss';
@@ -68,13 +70,17 @@ img {
 
 #star-scheme {
   .oip-star {
-    background-image: url('/assets/img/oip-star.png?ver2');
-    height: 350px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    display: block;
+    width: 100%;
+    max-width: 760px;
+    height: auto;
+    margin: 0 auto;
   }
   color: $color1;
+}
+
+#star-scheme + #main-section #main {
+  padding-top: 1rem;
 }
 
 .product {
